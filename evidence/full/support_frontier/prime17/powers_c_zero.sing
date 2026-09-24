@@ -1,0 +1,12 @@
+ring r=17,(x,s,t),dp;
+poly a=-3;poly b=s;poly d=t;poly e=2-s-t;
+poly h=x^20+a*x^18+b*x^17+d*x^2+e*x;
+poly H17=x^3+a*x+b;poly H2=3*x^18+d;
+poly H1=3*x^19+a*x^17+2*d*x+e;
+poly R17=resultant(h,H17,x);poly R2=resultant(h,H2,x);poly R1=resultant(h,H1,x);
+ideal I=R17,R2,R1;option(redSB);ideal G=std(I);
+poly q1=s*(s-2);poly q2=s*t+6*s-2*t+5;poly q3=t*(t-11)*(t-14);
+int k;int j;ideal Q=q1,q2,q3;
+for(j=1;j<=3;j++){for(k=1;k<=50;k++){if(reduce(Q[j]^k,G)==0){print(string(j)+" "+string(k));break;}}}
+
+quit;

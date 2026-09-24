@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "base_missing_hasse_order": 3,
+  "base_exact_CA_conditions": 4,
+  "base_normalized_coefficients": [
+    1,
+    0,
+    -1,
+    1,
+    0,
+    -1,
+    0
+  ],
+  "base_root_radius_interval": [
+    4,
+    5
+  ],
+  "base_height_lower_bound_squared": "28/3",
+  "family_integer_parameters_checked": 41,
+  "all_finite_places_argument": "monic integral polynomial and exact root 1"
+}

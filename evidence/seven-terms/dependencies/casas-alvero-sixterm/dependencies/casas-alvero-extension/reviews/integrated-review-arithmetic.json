@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "proofSha256": "f0a128b12e5e594b05c88023af48b79aba725dc66262e25881b2ee61ee774fdb",
+  "remainderExactMatch": true,
+  "H4": 8,
+  "denominatorRootChecks": "PASS",
+  "irreducibilityScalarChecks": "PASS",
+  "sixteenSupportCoverage": "PASS",
+  "sixteenDeterminantResidues": "PASS",
+  "theoremIndexing": "PASS",
+  "base13VisibleSupport": "PASS"
+}

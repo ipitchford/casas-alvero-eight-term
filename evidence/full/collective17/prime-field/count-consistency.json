@@ -1,0 +1,22 @@
+{
+  "scope": "Assignment-bound consistency calculation only; no residue enumeration or Hensel search was run.",
+  "canonicalSupportCount": 240,
+  "activeSizeHistogram": {
+    "3": 1,
+    "4": 6,
+    "5": 21,
+    "6": 51,
+    "7": 71,
+    "8": 45,
+    "9": 27,
+    "10": 11,
+    "11": 6,
+    "12": 1
+  },
+  "primeFieldNonzeroRootChoices": [
+    1,
+    -2
+  ],
+  "assignmentCount": 66120,
+  "presentationSHA256": "bc59991844eadd06a1d8a1946c4fc545f8515c65dcb5c2f7f886f9390b55d04c"
+}

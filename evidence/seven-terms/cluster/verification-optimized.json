@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "arithmetic": "Python standard-library integers",
+  "baseCoefficients": {
+    "20": 1,
+    "16": -4845,
+    "15": 62016,
+    "3": 3,
+    "1": -57175
+  },
+  "BExpansionAtOne": [
+    62016,
+    0,
+    -155040,
+    -155040,
+    -77520,
+    -15504
+  ],
+  "localJacobian": [
+    [
+      9,
+      6
+    ],
+    [
+      4,
+      1
+    ]
+  ],
+  "localJacobianDeterminant": 11,
+  "firstOrderMatrix": [
+    [
+      9,
+      6,
+      8
+    ],
+    [
+      4,
+      1,
+      7
+    ],
+    [
+      0,
+      8,
+      5
+    ]
+  ],
+  "constantVector": [
+    12,
+    6,
+    1
+  ],
+  "matrixDeterminant": 2,
+  "uniqueResidueSolution_t_l_k": [
+    5,
+    7,
+    12
+  ],
+  "middleDerivativeReductionAscending": [
+    4,
+    0,
+    0,
+    0,
+    0,
+    7,
+    11,
+    0,
+    0,
+    0,
+    1
+  ],
+  "Bezout_U_ascending": [
+    2,
+    10,
+    5,
+    12,
+    5,
+    3,
+    0,
+    6,
+    11,
+    1
+  ],
+  "Bezout_V_ascending": [
+    10,
+    7,
+    9,
+    3,
+    2,
+    6,
+    4,
+    10,
+    5,
+    4,
+    0,
+    12,
+    1,
+    2,
+    8,
+    4,
+    0,
+    7,
+    2,
+    12
+  ],
+  "BezoutIdentity": "U*h+V*g=1 in F13[X]",
+  "scope": "Arithmetic replay; arbitrary-ramification inequalities are proved in PROOF.md"
+}

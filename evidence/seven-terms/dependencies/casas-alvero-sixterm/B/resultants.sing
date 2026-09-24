@@ -1,0 +1,21 @@
+ring r=13,(x,u),lp;
+poly b=4*u^13*(u^3-1);
+poly q=u+1;
+poly K=(5*u^19+9*u^16+4*u^13-5)/(u-1);
+if(K*(u-1)!=(5*u^19+9*u^16+4*u^13-5)){ERROR("division failed");}
+poly c=-K;
+poly d=q*(-5-b)-c;
+poly P=q*(x^19+4*x^16+b*x^3)+c*x^2+d;
+poly D3=q*(9*x^17+3*x^14+4*b*x)+c;
+poly D1=q*(7*x^19+3*x^16+4*b*x^3)+3*c*x^2+d;
+int started=timer;
+poly R3=resultant(P,D3,x);
+print("R3_degree");print(deg(R3));print(timer-started);
+poly R1=resultant(P,D1,x);
+print("R1_degree");print(deg(R1));print(timer-started);
+poly G=gcd(c*R3,d*R1);
+print("GCD");print(G);
+print("FACTORIZATION");factorize(G);
+print("R3");print(R3);
+print("R1");print(R1);
+quit;

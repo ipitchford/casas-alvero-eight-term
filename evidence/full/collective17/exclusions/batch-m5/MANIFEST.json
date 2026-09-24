@@ -1,0 +1,57 @@
+{
+  "scope": "28 checked exclusions collectively; remaining 212 systems unexecuted.",
+  "files": {
+    "BATCH2_PROOF.md": {
+      "bytes": 4032,
+      "sha256": "5a18f7d2bd795521f3decc3d013633dc56656ae509f641280acc3258cae9e348"
+    },
+    "enumeration-process.json": {
+      "bytes": 85,
+      "sha256": "53b01220135a365fe792163db36613546a608296db073e4fdaaf6b7efbd7f27e"
+    },
+    "enumeration.log": {
+      "bytes": 2411,
+      "sha256": "58ddfde3f08b690dd7bfa992635f18b3c27251921200c9093a44636265a1bb38"
+    },
+    "fourth-digit-integer-check.json": {
+      "bytes": 310,
+      "sha256": "6c868385bbba409c831972abfa998200e7cd76746d93e0d1ea87c78d81f67405"
+    },
+    "lift-batch.json": {
+      "bytes": 215605,
+      "sha256": "985e7f871a1113e460cdf9207f5a66dad791d5bc6d9ab0d76d6d5c7deda3d042"
+    },
+    "lifting.log": {
+      "bytes": 7215,
+      "sha256": "aeda8eb904d97f27edcb4de5dc572007d66d1110b60e2ed7ddeaaf71dac444c9"
+    },
+    "native-input-independent.txt": {
+      "bytes": 750,
+      "sha256": "89102598ffeb49995c2d3b6b99cc0043d3682bf40f2245c162a494fad68f0ec1"
+    },
+    "native-input.txt": {
+      "bytes": 750,
+      "sha256": "89102598ffeb49995c2d3b6b99cc0043d3682bf40f2245c162a494fad68f0ec1"
+    },
+    "native-process.json": {
+      "bytes": 86,
+      "sha256": "77f6a4d37941f2616a6e663d502d6446f075555fe1340b64884fc5a114783d8b"
+    },
+    "native-replay.log": {
+      "bytes": 3192,
+      "sha256": "5b3da85afcfbb8a121291b763b5cd2087beac2e8ddef2bb4a17e970a24019c8e"
+    },
+    "residue-batch.json": {
+      "bytes": 28296,
+      "sha256": "13a7b29742603e47eaf6b24a3c13a96e42e57fa74531e4a1911ff8ca2280af15"
+    },
+    "verification-normal.json": {
+      "bytes": 5024,
+      "sha256": "b3c72be7f64113fb8bded97da2c7c0c4f4c51f454e8632c84b6f1c5408663c13"
+    },
+    "verification-optimized.json": {
+      "bytes": 5024,
+      "sha256": "b3c72be7f64113fb8bded97da2c7c0c4f4c51f454e8632c84b6f1c5408663c13"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "Collective finite-flat reduction; final generic norms unevaluated; no branch exclusion.",
+  "files": {
+    "FINITE_FLAT_REDUCTION.md": {
+      "bytes": 12114,
+      "sha256": "30891fd0bff71d1678a669155d643c01d3d74214ec34a63dfc2e9344a6349573"
+    },
+    "REPORT.md": {
+      "bytes": 2106,
+      "sha256": "12db4f4f34d8dd2eb8505bbab40bf339496dd1c16c6700dd4e60312c6eabf1d4"
+    },
+    "build-receipt.json": {
+      "bytes": 233,
+      "sha256": "47eec3380284bc676a34baa651bf9a0c60c5c832938b695c0ef8e3e653d33bf9"
+    },
+    "build_presentation.py": {
+      "bytes": 3948,
+      "sha256": "2fea8bbf880a913b5b8af37e7fa4f7b75e417bcec96ad29fa1c59fe7962c755b"
+    },
+    "check_presentation.py": {
+      "bytes": 6389,
+      "sha256": "37ee5fdc9ece2bafdfe0761c43a28fbca75cc479b144f8e815bd5653e0d08ad2"
+    },
+    "presentation.json": {
+      "bytes": 62471,
+      "sha256": "bc59991844eadd06a1d8a1946c4fc545f8515c65dcb5c2f7f886f9390b55d04c"
+    },
+    "verification-normal.json": {
+      "bytes": 707,
+      "sha256": "24db29a4e5c1d4092dd0bc6dc021cc07fe64f7d4f9a855a4125f0281f566fb99"
+    },
+    "verification-optimized.json": {
+      "bytes": 707,
+      "sha256": "24db29a4e5c1d4092dd0bc6dc021cc07fe64f7d4f9a855a4125f0281f566fb99"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "binary": "/Users/admin/.local/bin/cvc5",
+  "observedVersion": "1.3.4",
+  "probe": "One-variable QF_FF equation x+1=0 over F17",
+  "result": "unsupported in installed build",
+  "exactError": "cvc5 can't solve field problems since it was not configured with --cocoa",
+  "fullProblemRunAttempted": false
+}

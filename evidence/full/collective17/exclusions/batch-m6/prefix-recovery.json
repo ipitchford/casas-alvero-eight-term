@@ -1,0 +1,65 @@
+{
+  "status": "COMPLETE_PREFIX_RECOVERED",
+  "casesRecovered": 46,
+  "markingsRecovered": 1110328174,
+  "survivorsIndependentlyChecked": 652,
+  "remainingCases": 5,
+  "remainingSupports": [
+    [
+      3,
+      8,
+      9,
+      10,
+      11,
+      14,
+      16,
+      18,
+      19
+    ],
+    [
+      3,
+      8,
+      9,
+      10,
+      12,
+      14,
+      16,
+      18,
+      19
+    ],
+    [
+      3,
+      8,
+      10,
+      11,
+      13,
+      15,
+      16,
+      18,
+      19
+    ],
+    [
+      3,
+      8,
+      10,
+      12,
+      13,
+      14,
+      16,
+      18,
+      19
+    ],
+    [
+      3,
+      8,
+      10,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19
+    ]
+  ],
+  "producerReceiptSHA256": "957d6ab452b8aa2387671839ae225ec60d798844c7ece9eb2cec48c74d65c237"
+}

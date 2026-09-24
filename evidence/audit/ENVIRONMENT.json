@@ -1,0 +1,8 @@
+{
+  "python": "3.14.7",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "singular": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34",
+  "sympy": "1.14.0",
+  "required_for_main_replay": "Python 3.10+ standard library only",
+  "optional_discovery_tools": "Singular, SymPy"
+}

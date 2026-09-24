@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "full_matrix_normal": true,
+  "nonnormal_block_dimensions": [
+    2,
+    3
+  ],
+  "all_trace_vector_moments_checked": true,
+  "shared_original_eigenvalue": 0,
+  "original_kernel_orthogonal_to_shared_blocks": true,
+  "only_missing_block_dimension": 3,
+  "universal_plane_obstruction": "n independent projectors in real dimension 4"
+}

@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "branch": "B0",
+      "resultantDegrees": [
+        20,
+        21
+      ],
+      "degreeBounds": [
+        38,
+        39
+      ],
+      "exactExtensionFieldDeterminants": [
+        39,
+        40
+      ],
+      "gcdLowFirst": [
+        1
+      ]
+    },
+    {
+      "branch": "U1",
+      "resultantDegrees": [
+        20,
+        21
+      ],
+      "degreeBounds": [
+        38,
+        39
+      ],
+      "exactExtensionFieldDeterminants": [
+        39,
+        40
+      ],
+      "gcdLowFirst": [
+        9,
+        1
+      ]
+    },
+    {
+      "branch": "GENERIC",
+      "resultantDegrees": [
+        360,
+        378
+      ],
+      "degreeBounds": [
+        684,
+        702
+      ],
+      "exactExtensionFieldDeterminants": [
+        685,
+        703
+      ],
+      "gcdLowFirst": [
+        1
+      ]
+    }
+  ],
+  "extensionField": "F13[t]/(t^3-2)",
+  "sourceSha256": "774b4affe23f53d88f1a4dada4d9fecd6b1544f5c1084ac2c16c7988f0b7cf0b",
+  "finalMarkedRootGcds": {
+    "H17": "X-1",
+    "H16": "X-1",
+    "H2": "X-1",
+    "H1": "X-7"
+  },
+  "derivativeAtOne": 11,
+  "elapsedSeconds": 3.668,
+  "conclusion": "For the normalized a!=0 seed, b=0 and a marked H16 root u!=0,1 are impossible; u=1 forces b=1,c=4,d=3."
+}

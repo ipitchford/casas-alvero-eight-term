@@ -1,0 +1,9 @@
+{
+  "status": "terminated_without_result",
+  "scope": "Exploratory residue solver, no mathematical conclusion",
+  "requestedSolverTimeoutMilliseconds": 30000,
+  "observedRuntimeSecondsLowerBound": 266,
+  "authoritativeObservation": "Process18936 sampled inside Z3_solver_check_assumptions and rational linear-arithmetic pivoting; still CPU-active. Root explicitly terminated the bounded pilot with SIGTERM, then confirmed exit.",
+  "nextAction": "Use an exact finite-field or bit-vector encoding with an external wall-clock bound before any new broad solver run.",
+  "runtimeEvidence": "The final recorded ps snapshot reported elapsed04:26 before later sampling and explicit termination."
+}

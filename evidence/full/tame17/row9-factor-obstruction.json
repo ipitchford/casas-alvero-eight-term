@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "factorizationChecked": true,
+  "irreducibilityChecks": [
+    {
+      "degree": 5,
+      "properPowerChecks": {
+        "1": {
+          "remainder": [
+            1,
+            8,
+            14,
+            13,
+            8
+          ],
+          "gcdWithXPowerMinusX": [
+            1
+          ]
+        }
+      },
+      "fullFrobeniusRemainder": [
+        0,
+        1
+      ],
+      "irreducible": true
+    },
+    {
+      "degree": 10,
+      "properPowerChecks": {
+        "2": {
+          "remainder": [
+            14,
+            3,
+            2,
+            6,
+            2,
+            9,
+            8,
+            10,
+            15
+          ],
+          "gcdWithXPowerMinusX": [
+            1
+          ]
+        },
+        "5": {
+          "remainder": [
+            5,
+            11,
+            6,
+            10,
+            0,
+            4,
+            3,
+            4,
+            5,
+            14
+          ],
+          "gcdWithXPowerMinusX": [
+            1
+          ]
+        }
+      },
+      "fullFrobeniusRemainder": [
+        0,
+        1
+      ],
+      "irreducible": true
+    }
+  ],
+  "splittingFieldDegree": 10,
+  "distinctSeedRootCount": 18,
+  "H2DividedBy17Constant": -8037,
+  "H2DividedBy17ConstantMod17": 4,
+  "H2DividedBy17CoefficientsMod17ForJ4Through16": [
+    5,
+    15,
+    3,
+    9,
+    9,
+    16,
+    10,
+    16,
+    9,
+    9,
+    3,
+    15,
+    5
+  ]
+}

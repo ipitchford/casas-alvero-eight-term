@@ -1,0 +1,21 @@
+ring r=0,(x,t),dp;
+poly f=x20-4845*x16+62016*x15+2*t*x10+(-397784-9*t)*x3+(340612+7*t)*x;
+poly q=f/x;
+poly h3=diff(diff(diff(f,x),x),x)/6;
+poly h10=f;
+for(int i=1;i<=10;i++){h10=diff(h10,x)/i;}
+"f(1), h15(1), h1(1)";
+subst(f,x,1);
+poly h15=h10;
+for(i=11;i<=15;i++){h15=diff(h15,x)/i;}
+subst(h15,x,1);
+subst(diff(f,x),x,1);
+"R3";
+poly R3=resultant(q,h3,x);
+R3;
+"R10";
+poly R10=resultant(q,h10,x);
+R10;
+"gcd";
+gcd(R3,R10);
+quit;

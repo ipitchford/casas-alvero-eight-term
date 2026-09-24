@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "mutation": "row8-domain",
+      "optimized": false,
+      "status": "REJECTED",
+      "stderrSHA256": "135f9c42632a298386199875831cc759025a579c66af7a1fb040b9871ca58a28"
+    },
+    {
+      "mutation": "row8-domain",
+      "optimized": true,
+      "status": "REJECTED",
+      "stderrSHA256": "135f9c42632a298386199875831cc759025a579c66af7a1fb040b9871ca58a28"
+    },
+    {
+      "mutation": "quadratic-discriminant",
+      "optimized": false,
+      "status": "REJECTED",
+      "stderrSHA256": "a90079b00752551a23beaab3576ca9a001e8c85fd2ccd8596d8457a3cb7b0a0d"
+    },
+    {
+      "mutation": "quadratic-discriminant",
+      "optimized": true,
+      "status": "REJECTED",
+      "stderrSHA256": "a90079b00752551a23beaab3576ca9a001e8c85fd2ccd8596d8457a3cb7b0a0d"
+    },
+    {
+      "mutation": "row2-final-sign",
+      "optimized": false,
+      "status": "REJECTED",
+      "stderrSHA256": "7a7c0718c777a1c0ae7cd32c1a96a8165ce05ab49b87e1baa3315ea0e4fd987c"
+    },
+    {
+      "mutation": "row2-final-sign",
+      "optimized": true,
+      "status": "REJECTED",
+      "stderrSHA256": "7a7c0718c777a1c0ae7cd32c1a96a8165ce05ab49b87e1baa3315ea0e4fd987c"
+    },
+    {
+      "mutation": "missing-support",
+      "optimized": false,
+      "status": "REJECTED"
+    },
+    {
+      "mutation": "missing-support",
+      "optimized": true,
+      "status": "REJECTED"
+    }
+  ],
+  "scope": "Eight bounded mutation executions and runner contract checks; not full proof verification."
+}

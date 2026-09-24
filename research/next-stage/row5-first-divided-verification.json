@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "normalOptimizedMatch": true,
+  "arbitraryWorkingDirectory": true,
+  "assignments": 27,
+  "branchTests": 108,
+  "survivorCounts": [
+    0,
+    2,
+    2,
+    6
+  ],
+  "sha256": {
+    "ROW5_FIRST_DIVIDED.md": "4f429fce666152f1d836fdedad40077925af2a0f4201d818147da22afbe646fc",
+    "check_row5_first_divided.py": "530606c1854543c2da09c1ec049fc7784f2b1a4a28c469e3b437290b02b768ad",
+    "row5-first-divided-normal.json": "227dc4abddd50d48d6e4cc89e1b34510dff2060aeae21514ae55474ee1f54fca",
+    "row5-first-divided-optimized.json": "227dc4abddd50d48d6e4cc89e1b34510dff2060aeae21514ae55474ee1f54fca"
+  },
+  "scope": "first divided sieve only; no complete support exclusion"
+}

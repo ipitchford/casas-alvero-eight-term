@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "scope": "Two complete residue shapes; no characteristic-zero exclusion",
+  "records": [
+    {
+      "quarticAscending": [
+        0,
+        0,
+        4,
+        0,
+        1
+      ],
+      "degree20Ascending": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "rootMultiplicities": {
+        "0": 10,
+        "1": 5,
+        "4": 5
+      },
+      "all19HasseWitnesses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "quarticAscending": [
+        0,
+        3,
+        0,
+        1,
+        1
+      ],
+      "degree20Ascending": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "rootMultiplicities": {
+        "0": 5,
+        "1": 10,
+        "2": 5
+      },
+      "all19HasseWitnesses": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

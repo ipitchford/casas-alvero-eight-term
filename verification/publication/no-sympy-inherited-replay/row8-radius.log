@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "allNineteenSeedHasseGcdDegrees": {
+    "1": 17,
+    "2": 17,
+    "3": 17,
+    "4": 20,
+    "5": 20,
+    "6": 20,
+    "7": 20,
+    "8": 20,
+    "9": 20,
+    "10": 20,
+    "11": 20,
+    "12": 20,
+    "13": 20,
+    "14": 20,
+    "15": 20,
+    "16": 20,
+    "17": 3,
+    "18": 2,
+    "19": 1
+  },
+  "zeroClusterMinimumNonzeroRootValuation": "1/13",
+  "coefficientValuationBounds_a17_a18_a19": [
+    "14/13",
+    "15/13",
+    "16/13"
+  ],
+  "dividedIdentityRightHandSideMod17": 16,
+  "singleUnitWitnessCases": [
+    {
+      "degree": 11,
+      "unitExponent": 0,
+      "coefficient": [
+        11,
+        0
+      ]
+    }
+  ],
+  "twoIndependentCensusTotals": [
+    233310,
+    180341
+  ],
+  "scope": "Exact support for proved necessary conditions and a complete finite residue census; no characteristic-zero lift or row exclusion."
+}

@@ -1,0 +1,881 @@
+{
+  "oldCriteria": "Lucas/singleton plus deFrutos2013 Prop3.5.5 (with both binomial residues !=1), Massri pair restrictions, CLO determinant",
+  "formulaCrossChecks": 1224,
+  "baselines": [
+    {
+      "lowerTermCount": 4,
+      "totalTermCount": 5,
+      "counts": {
+        "all": 3060,
+        "allLucasSingleton": 8,
+        "oldTwoVisible": 4,
+        "massri": 4,
+        "cloDeterminant": 1,
+        "newCharacteristic13Mask": 0
+      },
+      "oldOnlySurvivors": [
+        [
+          4,
+          10,
+          17,
+          19
+        ]
+      ],
+      "afterNewMask": [],
+      "records": [
+        {
+          "support": [
+            4,
+            10,
+            17,
+            19
+          ],
+          "oldPairTests": [
+            {
+              "r": 10,
+              "s": 19,
+              "prime": 3,
+              "B": 1,
+              "D": 2,
+              "C": 1,
+              "gcd": 1,
+              "Nmodp": 0,
+              "sourceResidue": 0,
+              "nonzeroNonunitBinomialGuard": false,
+              "excludes": false
+            },
+            {
+              "r": 17,
+              "s": 19,
+              "prime": 17,
+              "B": 1,
+              "D": 3,
+              "C": 3,
+              "gcd": 1,
+              "Nmodp": 0,
+              "sourceResidue": 0,
+              "nonzeroNonunitBinomialGuard": false,
+              "excludes": false
+            }
+          ],
+          "exactCloDeterminant": "-1859459402030630400",
+          "newMaskExcluded": true
+        }
+      ]
+    },
+    {
+      "lowerTermCount": 5,
+      "totalTermCount": 6,
+      "counts": {
+        "all": 8568,
+        "allLucasSingleton": 100,
+        "oldTwoVisible": 54,
+        "massri": 54,
+        "cloDeterminant": 5,
+        "newCharacteristic13Mask": 4
+      },
+      "oldOnlySurvivors": [
+        [
+          3,
+          4,
+          10,
+          18,
+          19
+        ],
+        [
+          3,
+          10,
+          16,
+          17,
+          19
+        ],
+        [
+          4,
+          5,
+          10,
+          17,
+          19
+        ],
+        [
+          4,
+          10,
+          12,
+          17,
+          19
+        ],
+        [
+          8,
+          10,
+          16,
+          17,
+          19
+        ]
+      ],
+      "afterNewMask": [
+        [
+          3,
+          4,
+          10,
+          18,
+          19
+        ],
+        [
+          3,
+          10,
+          16,
+          17,
+          19
+        ],
+        [
+          4,
+          5,
+          10,
+          17,
+          19
+        ],
+        [
+          8,
+          10,
+          16,
+          17,
+          19
+        ]
+      ],
+      "records": [
+        {
+          "support": [
+            3,
+            4,
+            10,
+            18,
+            19
+          ],
+          "oldPairTests": [],
+          "exactCloDeterminant": "192171504952627200",
+          "newMaskExcluded": false
+        },
+        {
+          "support": [
+            3,
+            10,
+            16,
+            17,
+            19
+          ],
+          "oldPairTests": [
+            {
+              "r": 10,
+              "s": 19,
+              "prime": 3,
+              "B": 1,
+              "D": 2,
+              "C": 1,
+              "gcd": 1,
+              "Nmodp": 0,
+              "sourceResidue": 0,
+              "nonzeroNonunitBinomialGuard": false,
+              "excludes": false
+            }
+          ],
+          "exactCloDeterminant": "-282258870830576640",
+          "newMaskExcluded": false
+        },
+        {
+          "support": [
+            4,
+            5,
+            10,
+            17,
+            19
+          ],
+          "oldPairTests": [
+            {
+              "r": 10,
+              "s": 19,
+              "prime": 3,
+              "B": 1,
+              "D": 2,
+              "C": 1,
+              "gcd": 1,
+              "Nmodp": 0,
+              "sourceResidue": 0,
+              "nonzeroNonunitBinomialGuard": false,
+              "excludes": false
+            },
+            {
+              "r": 5,
+              "s": 10,
+              "prime": 5,
+              "B": 4,
+              "D": 1,
+              "C": 3,
+              "gcd": 5,
+              "Nmodp": 1,
+              "sourceResidue": 4,
+              "nonzeroNonunitBinomialGuard": false,
+              "excludes": false
+            },
+            {
+              "r": 17,
+              "s": 19,
+              "prime": 17,
+              "B": 1,
+              "D": 3,
+              "C": 3,
+              "gcd": 1,
+              "Nmodp": 0,
+              "sourceResidue": 0,
+              "nonzeroNonunitBinomialGuard": false,
+              "excludes": false
+            }
+          ],
+          "exactCloDeterminant": "-1420548674118013440",
+          "newMaskExcluded": false
+        },
+        {
+          "support": [
+            4,
+            10,
+            12,
+            17,
+            19
+          ],
+          "oldPairTests": [
+            {
+              "r": 10,
+              "s": 19,
+              "prime": 3,
+              "B": 1,
+              "D": 2,
+              "C": 1,
+              "gcd": 1,
+              "Nmodp": 0,
+              "sourceResidue": 0,
+              "nonzeroNonunitBinomialGuard": false,
+              "excludes": false
+            },
+            {
+              "r": 17,
+              "s": 19,
+              "prime": 17,
+              "B": 1,
+              "D": 3,
+              "C": 3,
+              "gcd": 1,
+              "Nmodp": 0,
+              "sourceResidue": 0,
+              "nonzeroNonunitBinomialGuard": false,
+              "excludes": false
+            }
+          ],
+          "exactCloDeterminant": "-2902491741766780800",
+          "newMaskExcluded": true
+        },
+        {
+          "support": [
+            8,
+            10,
+            16,
+            17,
+            19
+          ],
+          "oldPairTests": [
+            {
+              "r": 10,
+              "s": 19,
+              "prime": 3,
+              "B": 1,
+              "D": 2,
+              "C": 1,
+              "gcd": 1,
+              "Nmodp": 0,
+              "sourceResidue": 0,
+              "nonzeroNonunitBinomialGuard": false,
+              "excludes": false
+            },
+            {
+              "r": 17,
+              "s": 19,
+              "prime": 17,
+              "B": 1,
+              "D": 3,
+              "C": 3,
+              "gcd": 1,
+              "Nmodp": 0,
+              "sourceResidue": 0,
+              "nonzeroNonunitBinomialGuard": false,
+              "excludes": false
+            }
+          ],
+          "exactCloDeterminant": "-37632142744035840",
+          "newMaskExcluded": false
+        }
+      ]
+    }
+  ],
+  "survivorArithmeticModels": [
+    {
+      "support": [
+        3,
+        4,
+        10,
+        18,
+        19
+      ],
+      "polynomialExponents": [
+        20,
+        17,
+        16,
+        10,
+        2,
+        1
+      ],
+      "primeModels": [
+        {
+          "prime": 2,
+          "visibleDeficiencies": [
+            4
+          ],
+          "visibleExponents": [
+            16
+          ],
+          "lowerCoefficientCount": 1,
+          "binomialCaDegenerationIndex": 4,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 3,
+          "visibleDeficiencies": [
+            10,
+            18,
+            19
+          ],
+          "visibleExponents": [
+            10,
+            2,
+            1
+          ],
+          "lowerCoefficientCount": 3,
+          "binomialCaDegenerationIndex": 10,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 5,
+          "visibleDeficiencies": [
+            10
+          ],
+          "visibleExponents": [
+            10
+          ],
+          "lowerCoefficientCount": 1,
+          "binomialCaDegenerationIndex": 10,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 7,
+          "visibleDeficiencies": [
+            3,
+            4,
+            10,
+            18,
+            19
+          ],
+          "visibleExponents": [
+            17,
+            16,
+            10,
+            2,
+            1
+          ],
+          "lowerCoefficientCount": 5,
+          "binomialCaDegenerationIndex": 4,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 11,
+          "visibleDeficiencies": [
+            3,
+            4,
+            18,
+            19
+          ],
+          "visibleExponents": [
+            17,
+            16,
+            2,
+            1
+          ],
+          "lowerCoefficientCount": 4,
+          "binomialCaDegenerationIndex": null,
+          "closedMaskExclusionPossible": true
+        },
+        {
+          "prime": 13,
+          "visibleDeficiencies": [
+            3,
+            4,
+            18,
+            19
+          ],
+          "visibleExponents": [
+            17,
+            16,
+            2,
+            1
+          ],
+          "lowerCoefficientCount": 4,
+          "binomialCaDegenerationIndex": null,
+          "closedMaskExclusionPossible": true
+        },
+        {
+          "prime": 17,
+          "visibleDeficiencies": [
+            3,
+            18,
+            19
+          ],
+          "visibleExponents": [
+            17,
+            2,
+            1
+          ],
+          "lowerCoefficientCount": 3,
+          "binomialCaDegenerationIndex": 3,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 19,
+          "visibleDeficiencies": [
+            19
+          ],
+          "visibleExponents": [
+            1
+          ],
+          "lowerCoefficientCount": 1,
+          "binomialCaDegenerationIndex": 19,
+          "closedMaskExclusionPossible": false
+        }
+      ]
+    },
+    {
+      "support": [
+        3,
+        10,
+        16,
+        17,
+        19
+      ],
+      "polynomialExponents": [
+        20,
+        17,
+        10,
+        4,
+        3,
+        1
+      ],
+      "primeModels": [
+        {
+          "prime": 2,
+          "visibleDeficiencies": [
+            16
+          ],
+          "visibleExponents": [
+            4
+          ],
+          "lowerCoefficientCount": 1,
+          "binomialCaDegenerationIndex": 16,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 3,
+          "visibleDeficiencies": [
+            10,
+            19
+          ],
+          "visibleExponents": [
+            10,
+            1
+          ],
+          "lowerCoefficientCount": 2,
+          "binomialCaDegenerationIndex": 10,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 5,
+          "visibleDeficiencies": [
+            10
+          ],
+          "visibleExponents": [
+            10
+          ],
+          "lowerCoefficientCount": 1,
+          "binomialCaDegenerationIndex": 10,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 7,
+          "visibleDeficiencies": [
+            3,
+            10,
+            16,
+            17,
+            19
+          ],
+          "visibleExponents": [
+            17,
+            10,
+            4,
+            3,
+            1
+          ],
+          "lowerCoefficientCount": 5,
+          "binomialCaDegenerationIndex": 16,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 11,
+          "visibleDeficiencies": [
+            3,
+            16,
+            17,
+            19
+          ],
+          "visibleExponents": [
+            17,
+            4,
+            3,
+            1
+          ],
+          "lowerCoefficientCount": 4,
+          "binomialCaDegenerationIndex": null,
+          "closedMaskExclusionPossible": true
+        },
+        {
+          "prime": 13,
+          "visibleDeficiencies": [
+            3,
+            16,
+            17,
+            19
+          ],
+          "visibleExponents": [
+            17,
+            4,
+            3,
+            1
+          ],
+          "lowerCoefficientCount": 4,
+          "binomialCaDegenerationIndex": null,
+          "closedMaskExclusionPossible": true
+        },
+        {
+          "prime": 17,
+          "visibleDeficiencies": [
+            3,
+            17,
+            19
+          ],
+          "visibleExponents": [
+            17,
+            3,
+            1
+          ],
+          "lowerCoefficientCount": 3,
+          "binomialCaDegenerationIndex": 3,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 19,
+          "visibleDeficiencies": [
+            19
+          ],
+          "visibleExponents": [
+            1
+          ],
+          "lowerCoefficientCount": 1,
+          "binomialCaDegenerationIndex": 19,
+          "closedMaskExclusionPossible": false
+        }
+      ]
+    },
+    {
+      "support": [
+        4,
+        5,
+        10,
+        17,
+        19
+      ],
+      "polynomialExponents": [
+        20,
+        16,
+        15,
+        10,
+        3,
+        1
+      ],
+      "primeModels": [
+        {
+          "prime": 2,
+          "visibleDeficiencies": [
+            4
+          ],
+          "visibleExponents": [
+            16
+          ],
+          "lowerCoefficientCount": 1,
+          "binomialCaDegenerationIndex": 4,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 3,
+          "visibleDeficiencies": [
+            10,
+            19
+          ],
+          "visibleExponents": [
+            10,
+            1
+          ],
+          "lowerCoefficientCount": 2,
+          "binomialCaDegenerationIndex": 10,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 5,
+          "visibleDeficiencies": [
+            5,
+            10
+          ],
+          "visibleExponents": [
+            15,
+            10
+          ],
+          "lowerCoefficientCount": 2,
+          "binomialCaDegenerationIndex": 10,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 7,
+          "visibleDeficiencies": [
+            4,
+            5,
+            10,
+            17,
+            19
+          ],
+          "visibleExponents": [
+            16,
+            15,
+            10,
+            3,
+            1
+          ],
+          "lowerCoefficientCount": 5,
+          "binomialCaDegenerationIndex": 4,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 11,
+          "visibleDeficiencies": [
+            4,
+            5,
+            17,
+            19
+          ],
+          "visibleExponents": [
+            16,
+            15,
+            3,
+            1
+          ],
+          "lowerCoefficientCount": 4,
+          "binomialCaDegenerationIndex": null,
+          "closedMaskExclusionPossible": true
+        },
+        {
+          "prime": 13,
+          "visibleDeficiencies": [
+            4,
+            5,
+            17,
+            19
+          ],
+          "visibleExponents": [
+            16,
+            15,
+            3,
+            1
+          ],
+          "lowerCoefficientCount": 4,
+          "binomialCaDegenerationIndex": null,
+          "closedMaskExclusionPossible": true
+        },
+        {
+          "prime": 17,
+          "visibleDeficiencies": [
+            17,
+            19
+          ],
+          "visibleExponents": [
+            3,
+            1
+          ],
+          "lowerCoefficientCount": 2,
+          "binomialCaDegenerationIndex": 17,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 19,
+          "visibleDeficiencies": [
+            19
+          ],
+          "visibleExponents": [
+            1
+          ],
+          "lowerCoefficientCount": 1,
+          "binomialCaDegenerationIndex": 19,
+          "closedMaskExclusionPossible": false
+        }
+      ]
+    },
+    {
+      "support": [
+        8,
+        10,
+        16,
+        17,
+        19
+      ],
+      "polynomialExponents": [
+        20,
+        12,
+        10,
+        4,
+        3,
+        1
+      ],
+      "primeModels": [
+        {
+          "prime": 2,
+          "visibleDeficiencies": [
+            16
+          ],
+          "visibleExponents": [
+            4
+          ],
+          "lowerCoefficientCount": 1,
+          "binomialCaDegenerationIndex": 16,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 3,
+          "visibleDeficiencies": [
+            10,
+            19
+          ],
+          "visibleExponents": [
+            10,
+            1
+          ],
+          "lowerCoefficientCount": 2,
+          "binomialCaDegenerationIndex": 10,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 5,
+          "visibleDeficiencies": [
+            10
+          ],
+          "visibleExponents": [
+            10
+          ],
+          "lowerCoefficientCount": 1,
+          "binomialCaDegenerationIndex": 10,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 7,
+          "visibleDeficiencies": [
+            8,
+            10,
+            16,
+            17,
+            19
+          ],
+          "visibleExponents": [
+            12,
+            10,
+            4,
+            3,
+            1
+          ],
+          "lowerCoefficientCount": 5,
+          "binomialCaDegenerationIndex": 16,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 11,
+          "visibleDeficiencies": [
+            8,
+            16,
+            17,
+            19
+          ],
+          "visibleExponents": [
+            12,
+            4,
+            3,
+            1
+          ],
+          "lowerCoefficientCount": 4,
+          "binomialCaDegenerationIndex": null,
+          "closedMaskExclusionPossible": true
+        },
+        {
+          "prime": 13,
+          "visibleDeficiencies": [
+            16,
+            17,
+            19
+          ],
+          "visibleExponents": [
+            4,
+            3,
+            1
+          ],
+          "lowerCoefficientCount": 3,
+          "binomialCaDegenerationIndex": null,
+          "closedMaskExclusionPossible": true
+        },
+        {
+          "prime": 17,
+          "visibleDeficiencies": [
+            17,
+            19
+          ],
+          "visibleExponents": [
+            3,
+            1
+          ],
+          "lowerCoefficientCount": 2,
+          "binomialCaDegenerationIndex": 17,
+          "closedMaskExclusionPossible": false
+        },
+        {
+          "prime": 19,
+          "visibleDeficiencies": [
+            19
+          ],
+          "visibleExponents": [
+            1
+          ],
+          "lowerCoefficientCount": 1,
+          "binomialCaDegenerationIndex": 19,
+          "closedMaskExclusionPossible": false
+        }
+      ]
+    }
+  ],
+  "warning": "A finite-field binomial CA degeneration makes exclusion of the entire closed reduction mask impossible at that prime; it does not prove the characteristic-zero family exists."
+}

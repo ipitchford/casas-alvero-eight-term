@@ -1,0 +1,7 @@
+{
+  "script": "full/collective17/exclusions/batch-m6/check_batch.py",
+  "defaultArguments": [],
+  "freshCensusArguments": [
+    "--rerun-native"
+  ]
+}

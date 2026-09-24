@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE_VERIFIED",
+  "systemsExcluded": 51,
+  "markings": 1231016019,
+  "residueSurvivors": 686,
+  "frobeniusOrbits": 252,
+  "producerExecution": "180-second timeout after 46 complete systems, then one five-system-only continuation completed in 16.03 seconds.",
+  "nativeReplaySeconds": 165.234420666995,
+  "verification": "Normal and optimized independent survivor/lift replay outputs agree; no exhaustive independent FLINT enumeration for m6.",
+  "globalCoverageAfterThisBatch": {
+    "excluded": 79,
+    "unexecuted": 161
+  },
+  "replayCommand": "python3 work/casas-alvero-full/collective17/exclusions/batch-m6/check_batch.py",
+  "optionalFullNativeReplayFlag": "--rerun-native",
+  "cwd": "/Users/admin/Documents/Codex/2026-09-21/fi",
+  "activeProcesses": 0
+}

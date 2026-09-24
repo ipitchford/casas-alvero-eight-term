@@ -1,0 +1,5 @@
+New checks: Python >=3.10, standard library only.
+Inherited checks: Python >=3.10, C++17 compiler; optional SymPy==1.14.0 for historical independent-integral-cut cross-check.
+Publication local run: Python 3.14.7, Apple clang 21.0.0, macOS arm64.
+Typesetting: Pandoc and Tectonic, build/build_publication.py; fonts and TeX are not a hermetic lock.
+The included CI configuration targets additional Linux versions; configuration alone does not evidence an executed run. Check receipts, not this description, for actual executions and omissions.

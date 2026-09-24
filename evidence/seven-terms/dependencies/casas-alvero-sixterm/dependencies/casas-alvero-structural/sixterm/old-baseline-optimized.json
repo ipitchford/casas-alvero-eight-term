@@ -1,0 +1,106 @@
+{
+  "baselines": [
+    {
+      "lowerTermCount": 4,
+      "totalTermCount": 5,
+      "counts": {
+        "all": 3060,
+        "allLucasSingleton": 8,
+        "oldTwoVisible": 4,
+        "massri": 4,
+        "cloDeterminant": 1,
+        "newCharacteristic13Mask": 0
+      },
+      "oldOnlySurvivors": [
+        [
+          4,
+          10,
+          17,
+          19
+        ]
+      ],
+      "afterNewMask": []
+    },
+    {
+      "lowerTermCount": 5,
+      "totalTermCount": 6,
+      "counts": {
+        "all": 8568,
+        "allLucasSingleton": 100,
+        "oldTwoVisible": 54,
+        "massri": 54,
+        "cloDeterminant": 5,
+        "newCharacteristic13Mask": 4
+      },
+      "oldOnlySurvivors": [
+        [
+          3,
+          4,
+          10,
+          18,
+          19
+        ],
+        [
+          3,
+          10,
+          16,
+          17,
+          19
+        ],
+        [
+          4,
+          5,
+          10,
+          17,
+          19
+        ],
+        [
+          4,
+          10,
+          12,
+          17,
+          19
+        ],
+        [
+          8,
+          10,
+          16,
+          17,
+          19
+        ]
+      ],
+      "afterNewMask": [
+        [
+          3,
+          4,
+          10,
+          18,
+          19
+        ],
+        [
+          3,
+          10,
+          16,
+          17,
+          19
+        ],
+        [
+          4,
+          5,
+          10,
+          17,
+          19
+        ],
+        [
+          8,
+          10,
+          16,
+          17,
+          19
+        ]
+      ]
+    }
+  ],
+  "remainingSupportCount": 4,
+  "formulaCrossChecks": 1224
+}

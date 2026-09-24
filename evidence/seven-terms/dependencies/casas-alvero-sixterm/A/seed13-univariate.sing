@@ -1,0 +1,36 @@
+ring r=13,(x,u),dp;
+poly b,c,d,P,H2,H1,R2,R1,G;
+int begin=timer;
+// b=0, with parameter u=c. Zero coefficients are covered by the factors c,d.
+b=0;c=u;d=-5-c;
+P=x19+4*x16+b*x15+c*x+d;
+H2=8*x18+11*x15+3*b*x14+c;
+H1=7*x19+3*x16+3*b*x15+2*c*x+d;
+R2=c*resultant(P,H2,x);R1=d*resultant(P,H1,x);G=gcd(R2,R1);
+print("B0_SECONDS");print(timer-begin);print("B0_GCD");G;
+write("work/casas-alvero-sixterm/A/seed13-univariate.txt","B0_R2 "+string(R2));
+write("work/casas-alvero-sixterm/A/seed13-univariate.txt","B0_R1 "+string(R1));
+// The marked H16 root u=1 gives b=1. Here the parameter u again denotes c.
+b=1;c=u;d=-6-c;
+P=x19+4*x16+b*x15+c*x+d;
+H2=8*x18+11*x15+3*b*x14+c;
+H1=7*x19+3*x16+3*b*x15+2*c*x+d;
+R2=c*resultant(P,H2,x);R1=d*resultant(P,H1,x);G=gcd(R2,R1);
+print("U1_SECONDS");print(timer-begin);print("U1_GCD");G;
+write("work/casas-alvero-sixterm/A/seed13-univariate.txt","U1_R2 "+string(R2));
+write("work/casas-alvero-sixterm/A/seed13-univariate.txt","U1_R1 "+string(R1));
+// b!=0 gives a nonzero H16 root u. For u!=1, h(u)/u determines c.
+b=4*u4-3*u;
+c=(5+b-5*u19-u16)/(u-1);
+print("DIVISION_REMAINDER");print((u-1)*c-(5+b-5*u19-u16));
+d=-5-b-c;
+P=x19+4*x16+b*x15+c*x+d;
+H2=8*x18+11*x15+3*b*x14+c;
+H1=7*x19+3*x16+3*b*x15+2*c*x+d;
+R2=c*resultant(P,H2,x);R1=d*resultant(P,H1,x);G=gcd(R2,R1);
+print("GENERIC_SECONDS");print(timer-begin);print("GENERIC_GCD");G;
+print("GENERIC_DEGREES");print(deg(R2));print(deg(R1));
+write("work/casas-alvero-sixterm/A/seed13-univariate.txt","GENERIC_C "+string(c));
+write("work/casas-alvero-sixterm/A/seed13-univariate.txt","GENERIC_R2 "+string(R2));
+write("work/casas-alvero-sixterm/A/seed13-univariate.txt","GENERIC_R1 "+string(R1));
+quit;

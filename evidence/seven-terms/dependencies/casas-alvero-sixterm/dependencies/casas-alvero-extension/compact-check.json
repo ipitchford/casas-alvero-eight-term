@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "prime": 13,
+  "ratioEquation": "t^19=4",
+  "quarticEliminationDegrees": [
+    4,
+    3
+  ],
+  "Rdegree": 19,
+  "Rterms": 10,
+  "Hdegree": 18,
+  "Hterms": 16,
+  "Hat4": 8,
+  "Hleading": 5,
+  "Hcoefficient16": 10,
+  "fiveQcoefficient16": 2,
+  "frobeniusOrder": 18,
+  "denominatorRoots": [
+    6,
+    7
+  ],
+  "degenerationArithmetic": "PASS",
+  "mutationControl": "PASS",
+  "scope": "Finite arithmetic for characteristic-13 emptiness; lifting is a separate proof."
+}

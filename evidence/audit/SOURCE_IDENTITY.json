@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-23",
+  "source": "https://arxiv.org/abs/2501.09272v2",
+  "versionHistoryDate": "2026-03-21",
+  "internalManuscriptDate": "2026-08-24",
+  "files": [
+    {
+      "name": "2501.09272v2.pdf",
+      "sha256": "562050e1bff0fbfae2493951b4456485c61181381ba374271889d81d96bb5daa",
+      "bytes": 559355,
+      "redistributed": false
+    },
+    {
+      "name": "2501.09272v2.html",
+      "sha256": "3b2ad984494a32385e1260466539681c7dcdfc63b3fbf2ec8659cdd60cbb11fa",
+      "bytes": 1209361,
+      "redistributed": false
+    }
+  ]
+}

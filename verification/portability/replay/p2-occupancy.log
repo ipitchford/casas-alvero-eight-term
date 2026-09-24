@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "type": "A",
+      "meanResidueClusterSize": 16,
+      "forbiddenNormalizedWitnessLabels": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "markedAssignmentsRemoved": 4,
+      "coefficientPatternsAffected": 3,
+      "coefficientPatternsRemovedEntirely": 0,
+      "fullyRemovedSupports": [],
+      "markedAssignmentsRemaining": 40956,
+      "coefficientPatternsRemaining": 465
+    },
+    {
+      "type": "B",
+      "meanResidueClusterSize": 4,
+      "forbiddenNormalizedWitnessLabels": [
+        17,
+        18,
+        19
+      ],
+      "markedAssignmentsRemoved": 4096,
+      "coefficientPatternsAffected": 345,
+      "coefficientPatternsRemovedEntirely": 0,
+      "fullyRemovedSupports": [],
+      "markedAssignmentsRemaining": 36864,
+      "coefficientPatternsRemaining": 603
+    }
+  ],
+  "totalMarkedAssignmentsRemaining": 77820,
+  "totalCoefficientPatternsRemaining": 1068,
+  "scope": "Occupancy pruning uses the proven cluster-collapse lemma plus the characteristic-zero simple-mean theorem. No coefficient residue pattern is entirely removed by this occupancy step."
+}

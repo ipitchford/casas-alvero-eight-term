@@ -1,0 +1,297 @@
+{
+  "status": "PASS",
+  "scope": "Specified complete canonical systems, including all extension roots and coefficient degenerations.",
+  "compilerArgv": [
+    "c++"
+  ],
+  "compileWallLimitSeconds": 30.0,
+  "nativeWallLimitSeconds": 90.0,
+  "activeSizes": [
+    5
+  ],
+  "totalMarkings": 29816997,
+  "residueSurvivors": 113,
+  "liftedFrobeniusOrbits": 48,
+  "markingsExcludedByPrecision": {
+    "2": 112,
+    "4": 1
+  },
+  "cases": [
+    {
+      "active": [
+        4,
+        5,
+        7,
+        10,
+        13
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        8,
+        10,
+        11
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        9,
+        12,
+        15
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        9,
+        14,
+        15
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        6,
+        8,
+        10,
+        13
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 19,
+      "liftedOrbits": 6,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        6,
+        8,
+        10,
+        16
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 17,
+      "liftedOrbits": 4,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        7,
+        8,
+        10,
+        16
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        7,
+        9,
+        10,
+        15
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        7,
+        10,
+        11,
+        13
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        7,
+        10,
+        13,
+        15
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 18,
+      "liftedOrbits": 5,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        9,
+        10,
+        14,
+        15
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        10,
+        11,
+        14,
+        15
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        10,
+        12,
+        14,
+        15
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        6,
+        9,
+        15,
+        16
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        6,
+        10,
+        13,
+        16
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 17,
+      "liftedOrbits": 4,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        11,
+        13,
+        15,
+        16
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        12,
+        14,
+        15,
+        16
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 0,
+      "liftedOrbits": 0,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        6,
+        10,
+        11,
+        15,
+        16
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 0,
+      "liftedOrbits": 0,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        7,
+        10,
+        12,
+        14,
+        16
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 0,
+      "liftedOrbits": 0,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        8,
+        10,
+        13,
+        15,
+        16
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        10,
+        11,
+        14,
+        15,
+        16
+      ],
+      "markings": 1419857,
+      "firstResidueSurvivors": 17,
+      "liftedOrbits": 4,
+      "status": "EXCLUDED"
+    }
+  ],
+  "residueSHA256": "13a7b29742603e47eaf6b24a3c13a96e42e57fa74531e4a1911ff8ca2280af15",
+  "nativeSourceSHA256": "93cec48bd2f4ed8afe418f2042354b39760e4f7939952b9042d5d41d5e88955f",
+  "liftCertificateSHA256": "985e7f871a1113e460cdf9207f5a66dad791d5bc6d9ab0d76d6d5c7deda3d042"
+}

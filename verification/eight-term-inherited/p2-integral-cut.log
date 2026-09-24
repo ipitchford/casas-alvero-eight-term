@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "certificate": "S=P+w^m*q+(g+1)*(F+g+q), T=S/2 in Z[a1,...,a19,w]",
+  "results": [
+    {
+      "type": "A_16plus4",
+      "normalizingDegree": 4,
+      "oppositeDegree": 16,
+      "integralNumeratorTermCount": 189,
+      "quotientPolynomialSHA256": "f8bcf164d018e5208b0246b4850b1aecd4de7703906ceba1716a784e764a5f3c",
+      "cutIndices": [
+        8,
+        12,
+        18
+      ],
+      "survivingCoefficientPatterns": 465,
+      "survivingMarkedAssignments": 40960,
+      "rootValuationLowerBound": "1/14",
+      "oppositeNormalizedCoefficientValuationLowerBound": "8/7",
+      "projectedResidues_a2_a8_a12_a18": [
+        {
+          "bits": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficientPatternCount": 180
+        },
+        {
+          "bits": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "coefficientPatternCount": 90
+        },
+        {
+          "bits": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "coefficientPatternCount": 21
+        },
+        {
+          "bits": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficientPatternCount": 111
+        },
+        {
+          "bits": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "coefficientPatternCount": 63
+        }
+      ]
+    },
+    {
+      "type": "B_4plus16",
+      "normalizingDegree": 16,
+      "oppositeDegree": 4,
+      "integralNumeratorTermCount": 291,
+      "quotientPolynomialSHA256": "b38086ae37d1641274da5bad76aca822ed263c643289b0dc235d541d9c7230ff",
+      "cutIndices": [
+        2,
+        12,
+        18
+      ],
+      "survivingCoefficientPatterns": 603,
+      "survivingMarkedAssignments": 40960,
+      "rootValuationLowerBound": "1/2",
+      "oppositeNormalizedCoefficientValuationLowerBound": "2",
+      "projectedResidues_a2_a8_a12_a18": [
+        {
+          "bits": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficientPatternCount": 368
+        },
+        {
+          "bits": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficientPatternCount": 99
+        },
+        {
+          "bits": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "coefficientPatternCount": 21
+        },
+        {
+          "bits": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "coefficientPatternCount": 78
+        },
+        {
+          "bits": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "coefficientPatternCount": 37
+        }
+      ]
+    }
+  ],
+  "remainingCoefficientPatterns": 1068,
+  "remainingMarkedResidueAssignments": 81920,
+  "scope": "Exact necessary 2-saturation cuts and valuation bounds. Surviving patterns are not claimed to lift; neither residue type is excluded."
+}

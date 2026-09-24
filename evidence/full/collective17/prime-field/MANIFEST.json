@@ -1,0 +1,13 @@
+{
+  "scope": "External-theorem corollary; consistency count only. No complete-support coverage update.",
+  "files": {
+    "PRIOR_ART.md": {
+      "bytes": 3510,
+      "sha256": "7227ca866ef3050ea6b879a0b5aa2a4c955e20337580b34aecd207de88bd1277"
+    },
+    "count-consistency.json": {
+      "bytes": 480,
+      "sha256": "4cae009ee06818b80f8aeb597cd0db89c9902eacd54f4ce0294f8387ce24e2fb"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "row7HasseOrders0to2AtSeven": [
+    0,
+    0,
+    8
+  ],
+  "criticalEquationDerivativeMod17": 11,
+  "constant_a18": "-1480",
+  "constant_a19": "279109/20",
+  "rows": [
+    {
+      "j": 4,
+      "a18Partial": "-3060",
+      "a19Partial": "115311/4"
+    },
+    {
+      "j": 5,
+      "a18Partial": "-8568",
+      "a19Partial": "403104/5"
+    },
+    {
+      "j": 6,
+      "a18Partial": "-18564",
+      "a19Partial": "174420"
+    },
+    {
+      "j": 7,
+      "a18Partial": "-31824",
+      "a19Partial": "298452"
+    },
+    {
+      "j": 8,
+      "a18Partial": "-43758",
+      "a19Partial": "818805/2"
+    },
+    {
+      "j": 9,
+      "a18Partial": "-48620",
+      "a19Partial": "453492"
+    },
+    {
+      "j": 10,
+      "a18Partial": "-43758",
+      "a19Partial": "2032316/5"
+    },
+    {
+      "j": 11,
+      "a18Partial": "-31824",
+      "a19Partial": "293930"
+    },
+    {
+      "j": 12,
+      "a18Partial": "-18564",
+      "a19Partial": "340119/2"
+    },
+    {
+      "j": 13,
+      "a18Partial": "-8568",
+      "a19Partial": "77520"
+    },
+    {
+      "j": 14,
+      "a18Partial": "-3060",
+      "a19Partial": "27132"
+    },
+    {
+      "j": 15,
+      "a18Partial": "-816",
+      "a19Partial": "34884/5"
+    },
+    {
+      "j": 16,
+      "a18Partial": "-153",
+      "a19Partial": "4845/4"
+    }
+  ],
+  "scope": "Exact arithmetic; Jacobian and uniqueness proved separately"
+}

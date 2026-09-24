@@ -1,0 +1,289 @@
+{
+  "status": "PASS",
+  "field": "F17[s]/(s^2-14)",
+  "totalAssignments": 1216,
+  "totalDividedIdentitySurvivors": 0,
+  "collisionFiltersUsed": false,
+  "inputInventorySha256": "893589536f6414504b4c7e523e9dee61e1c94e64015ab936755f20695bf7b899",
+  "checkerSha256": "593d9e24a8164e3271de4d7e21a389b714a14c881827529df15ca4be8b87d5e2",
+  "supports": [
+    {
+      "deficiencySupport": [
+        2,
+        3,
+        4,
+        10,
+        12,
+        19
+      ],
+      "activeMiddle": [
+        4,
+        10,
+        12
+      ],
+      "assignments": 64,
+      "afterDividedIdentity": 0,
+      "seedRowsAllowedByExactZeroCoefficients": [
+        5,
+        8
+      ],
+      "attainedSumCount": 14,
+      "sumHistogramSha256": "d83f8af0eca29fb4ebbb218e2c642e24173b0c41644d70bfe18c909c94130ef2"
+    },
+    {
+      "deficiencySupport": [
+        3,
+        4,
+        9,
+        10,
+        12,
+        19
+      ],
+      "activeMiddle": [
+        4,
+        9,
+        10,
+        12
+      ],
+      "assignments": 256,
+      "afterDividedIdentity": 0,
+      "seedRowsAllowedByExactZeroCoefficients": [
+        8
+      ],
+      "attainedSumCount": 124,
+      "sumHistogramSha256": "f0d1ae06053b3d168c3ab9cd10ca832973489748583b575a7d7f4c28b25e7f3a"
+    },
+    {
+      "deficiencySupport": [
+        3,
+        4,
+        5,
+        10,
+        13,
+        19
+      ],
+      "activeMiddle": [
+        4,
+        5,
+        10,
+        13
+      ],
+      "assignments": 256,
+      "afterDividedIdentity": 0,
+      "seedRowsAllowedByExactZeroCoefficients": [
+        8
+      ],
+      "attainedSumCount": 89,
+      "sumHistogramSha256": "63b01c5db3677d427a042055cfdb59118c7b355f4bdde296fdda87648507873d"
+    },
+    {
+      "deficiencySupport": [
+        3,
+        4,
+        10,
+        12,
+        15,
+        19
+      ],
+      "activeMiddle": [
+        4,
+        10,
+        12,
+        15
+      ],
+      "assignments": 256,
+      "afterDividedIdentity": 0,
+      "seedRowsAllowedByExactZeroCoefficients": [
+        8
+      ],
+      "attainedSumCount": 50,
+      "sumHistogramSha256": "b7b6aaabc848a904efc6fe34b86dc082a3883b6588f65cf8a99bf0b4ce8cf516"
+    },
+    {
+      "deficiencySupport": [
+        3,
+        7,
+        9,
+        10,
+        16,
+        19
+      ],
+      "activeMiddle": [
+        7,
+        9,
+        10,
+        16
+      ],
+      "assignments": 256,
+      "afterDividedIdentity": 0,
+      "seedRowsAllowedByExactZeroCoefficients": [
+        8
+      ],
+      "attainedSumCount": 20,
+      "sumHistogramSha256": "fc3f69f7876ed7910664241b58fda2810156314281dd1e53b2b3513544b77662"
+    },
+    {
+      "deficiencySupport": [
+        3,
+        6,
+        10,
+        16,
+        17,
+        19
+      ],
+      "activeMiddle": [
+        6,
+        10,
+        16
+      ],
+      "assignments": 64,
+      "afterDividedIdentity": 0,
+      "seedRowsAllowedByExactZeroCoefficients": [
+        1,
+        8
+      ],
+      "attainedSumCount": 20,
+      "sumHistogramSha256": "9788972c8c45d671772c0efca6fb4f431f6ff0cb54cc20fe4be50601179d1448"
+    },
+    {
+      "deficiencySupport": [
+        3,
+        4,
+        10,
+        13,
+        18,
+        19
+      ],
+      "activeMiddle": [
+        4,
+        10,
+        13
+      ],
+      "assignments": 64,
+      "afterDividedIdentity": 0,
+      "seedRowsAllowedByExactZeroCoefficients": [
+        8,
+        9
+      ],
+      "attainedSumCount": 16,
+      "sumHistogramSha256": "0a984295a99b4775f9d7bdc2fc2c6b4ec78fd1cfc02a543908c28b4ef11c353f"
+    }
+  ],
+  "globallyExcludedWithPriorLocalTheorems": [
+    [
+      2,
+      4,
+      10,
+      12,
+      18,
+      19
+    ],
+    [
+      3,
+      4,
+      5,
+      10,
+      13,
+      19
+    ],
+    [
+      3,
+      4,
+      9,
+      10,
+      12,
+      19
+    ],
+    [
+      3,
+      4,
+      10,
+      12,
+      15,
+      19
+    ],
+    [
+      3,
+      4,
+      10,
+      13,
+      18,
+      19
+    ],
+    [
+      3,
+      7,
+      9,
+      10,
+      16,
+      19
+    ]
+  ],
+  "remainingSevenTermSupports": [
+    [
+      2,
+      3,
+      4,
+      10,
+      12,
+      19
+    ],
+    [
+      3,
+      6,
+      10,
+      16,
+      17,
+      19
+    ],
+    [
+      7,
+      8,
+      10,
+      16,
+      17,
+      19
+    ],
+    [
+      10,
+      12,
+      13,
+      16,
+      17,
+      19
+    ],
+    [
+      6,
+      10,
+      15,
+      16,
+      17,
+      19
+    ],
+    [
+      9,
+      10,
+      15,
+      16,
+      17,
+      19
+    ],
+    [
+      2,
+      4,
+      10,
+      17,
+      18,
+      19
+    ],
+    [
+      4,
+      10,
+      16,
+      17,
+      18,
+      19
+    ]
+  ],
+  "scope": "Complete row-8 necessary census for seven exact supports; five global exclusions after stated seed routing and prior row-9 theorem. Adding the separately proved row-4 global corollary changes 14 to 8."
+}

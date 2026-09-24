@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "normalOptimizedMatch": true,
+  "proofSha256": "15220be1d85f153acf0cefb331abe69decdca96b93b3900fd367d3486989df1b",
+  "checkerSha256": "18a9975461afb5f8e316feed824f972346153bcb204d6c83b41ebf5c498457d0",
+  "scope": "small exact examples and structural proof audit; no new exclusion"
+}

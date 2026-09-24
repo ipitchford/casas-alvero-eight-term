@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "sourceSha256": "07d55eb8f3288378b28911576a885fcd63c46d59949193661512fb5a23f61b25",
+  "test": "gcd(H,z^(p+6)-289), deleting roots of z*(51-35z)*(3z^6-595)",
+  "records": [
+    {
+      "prime": 13,
+      "Hdegree": 72,
+      "rawGcdDegree": 0,
+      "removedDenominatorDegree": 0,
+      "admissibleDegree": 0,
+      "admissibleCoefficientsLowFirst": [
+        1
+      ],
+      "disposition": "excluded a!=0 branch"
+    },
+    {
+      "prime": 19,
+      "Hdegree": 72,
+      "rawGcdDegree": 1,
+      "removedDenominatorDegree": 0,
+      "admissibleDegree": 1,
+      "admissibleCoefficientsLowFirst": [
+        10,
+        1
+      ],
+      "disposition": "necessary test passes; existence not established"
+    },
+    {
+      "prime": 23,
+      "Hdegree": 72,
+      "rawGcdDegree": 1,
+      "removedDenominatorDegree": 0,
+      "admissibleDegree": 1,
+      "admissibleCoefficientsLowFirst": [
+        21,
+        1
+      ],
+      "disposition": "necessary test passes; existence not established"
+    },
+    {
+      "prime": 79,
+      "Hdegree": 72,
+      "rawGcdDegree": 1,
+      "removedDenominatorDegree": 0,
+      "admissibleDegree": 1,
+      "admissibleCoefficientsLowFirst": [
+        61,
+        1
+      ],
+      "disposition": "necessary test passes; existence not established"
+    },
+    {
+      "prime": 137,
+      "Hdegree": 72,
+      "rawGcdDegree": 0,
+      "removedDenominatorDegree": 0,
+      "admissibleDegree": 0,
+      "admissibleCoefficientsLowFirst": [
+        1
+      ],
+      "disposition": "excluded a!=0 branch"
+    },
+    {
+      "prime": 257,
+      "Hdegree": 72,
+      "rawGcdDegree": 1,
+      "removedDenominatorDegree": 0,
+      "admissibleDegree": 1,
+      "admissibleCoefficientsLowFirst": [
+        249,
+        1
+      ],
+      "disposition": "necessary test passes; existence not established"
+    },
+    {
+      "prime": 823,
+      "Hdegree": 72,
+      "rawGcdDegree": 0,
+      "removedDenominatorDegree": 0,
+      "admissibleDegree": 0,
+      "admissibleCoefficientsLowFirst": [
+        1
+      ],
+      "disposition": "excluded a!=0 branch"
+    },
+    {
+      "prime": 1973,
+      "Hdegree": 72,
+      "rawGcdDegree": 0,
+      "removedDenominatorDegree": 0,
+      "admissibleDegree": 0,
+      "admissibleCoefficientsLowFirst": [
+        1
+      ],
+      "disposition": "excluded a!=0 branch"
+    },
+    {
+      "prime": 87169343,
+      "Hdegree": 72,
+      "rawGcdDegree": 1,
+      "removedDenominatorDegree": 0,
+      "admissibleDegree": 1,
+      "admissibleCoefficientsLowFirst": [
+        21288634,
+        1
+      ],
+      "disposition": "necessary test passes; existence not established"
+    }
+  ],
+  "scope": "Necessary conditions only, using the separately derived fixed polynomial H."
+}

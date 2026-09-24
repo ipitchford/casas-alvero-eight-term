@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "certificateSHA256": "e43bd1bf6710a1ae682e1603d82137ed26e43b2d83e47a25a38b5aa8868d928e",
+  "degrees": {
+    "P": 19,
+    "Q": 19,
+    "A": 18,
+    "B": 18
+  },
+  "D": "2347990055314667642830371373680474152955750087350688785027939089482846402772",
+  "Ddiv17cubedModulo17": 13,
+  "v17D": 3,
+  "identity": "A*P+B*Q=D in Z[X]",
+  "negativeControls": {
+    "changedAConstantRejected": true,
+    "changedDRejected": true
+  },
+  "scope": "At an integral input, min(v17(P),v17(Q))<=3. The local characteristic-zero application requires its own hypotheses."
+}

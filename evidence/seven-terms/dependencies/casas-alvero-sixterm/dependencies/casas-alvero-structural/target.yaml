@@ -1,0 +1,20 @@
+date: 2026-09-23
+status: internally-audited-research-candidate
+target: uniform restricted-support Casas-Alvero obstruction
+family: X^(p+7) + a*X^(p+3) + c*X^3 + d*X
+quantifiers: prime p > 7; coefficients in an algebraic closure of F_p
+result: exclusion outside the prime divisors of a specified nonzero integer Delta
+arithmetic_core:
+  fixed_polynomial_degree: 72
+  frobenius_composition_degree: 432
+  nonzero_resultant_certificate: explicit Bezout identity modulo 11
+  ordinary_derivatives_in_positive_characteristic: false
+  hasse_derivatives_in_positive_characteristic: true
+characteristic_zero_consequence: specified coefficient obstruction at any chosen root in degrees (p+7)*p^e
+not_claimed:
+  - full Casas-Alvero conjecture
+  - complete solution of a new unrestricted degree
+  - exact classification of all exceptional primes
+  - verified historical originality
+  - external peer review
+  - publication readiness

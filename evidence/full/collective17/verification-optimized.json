@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "exhaustiveFoldChecks": 65504,
+  "savedSearchRecords": [
+    {
+      "file": "bv-fixture.json",
+      "status": "model_limit",
+      "fieldDegree": 10,
+      "completeDomainSize": 18,
+      "verifiedModels": 1
+    },
+    {
+      "file": "bv-nonprime.json",
+      "status": "unknown",
+      "fieldDegree": 10,
+      "completeDomainSize": 18,
+      "verifiedModels": 0
+    },
+    {
+      "file": "bv-initial-fixture.json",
+      "status": "unknown",
+      "fieldDegree": 10,
+      "completeDomainSize": 18,
+      "verifiedModels": 0
+    },
+    {
+      "file": "bv-subfield5.json",
+      "status": "unknown",
+      "fieldDegree": 5,
+      "completeDomainSize": 8,
+      "verifiedModels": 0
+    },
+    {
+      "file": "bv-subfield5-supports.json",
+      "status": "unknown",
+      "fieldDegree": 5,
+      "completeDomainSize": 8,
+      "verifiedModels": 0
+    }
+  ],
+  "scope": "One known SAT fixture verified. Four timeout records give no mathematical result."
+}

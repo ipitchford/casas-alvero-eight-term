@@ -1,0 +1,78 @@
+{
+  "status": "unknown",
+  "reason": "timeout",
+  "buildSeconds": 0.18227087499690242,
+  "elapsedSeconds": 25.426837457998772,
+  "solver": "QF_BV; no Int/Mod/URem",
+  "scope": "Residue assignments only; incomplete enumeration and no characteristic-zero conclusion.",
+  "completeRootDomain": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      8,
+      14,
+      13,
+      8
+    ],
+    [
+      9,
+      2,
+      10,
+      16,
+      8
+    ],
+    [
+      13,
+      10,
+      10,
+      6,
+      16
+    ],
+    [
+      14,
+      13,
+      0,
+      16,
+      2
+    ],
+    [
+      15,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "fieldDegree": 5,
+  "domainScope": "All eight F17^5-valued roots only; degree10-root component separate.",
+  "fieldModulusAscending": [
+    14,
+    12,
+    15,
+    0,
+    14,
+    1
+  ],
+  "assignmentUpperBound": 549755813888,
+  "models": []
+}

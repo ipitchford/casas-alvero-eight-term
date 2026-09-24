@@ -1,0 +1,8 @@
+{"active": [4, 10, 13], "markings": 4913, "survivors": 1, "orbits": 1, "seconds": 0.013467457989463583}
+{"active": [4, 5, 12, 15], "markings": 83521, "survivors": 1, "orbits": 1, "seconds": 0.2843555409926921}
+{"active": [4, 7, 10, 15], "markings": 83521, "survivors": 0, "orbits": 0, "seconds": 0.28696433300501667}
+{"active": [4, 9, 10, 12], "markings": 83521, "survivors": 0, "orbits": 0, "seconds": 0.2917581250076182}
+{"active": [4, 9, 10, 14], "markings": 83521, "survivors": 17, "orbits": 4, "seconds": 0.2868567499972414}
+{"active": [5, 12, 15, 16], "markings": 83521, "survivors": 1, "orbits": 1, "seconds": 0.2894904169952497}
+{"active": [10, 11, 15, 16], "markings": 83521, "survivors": 0, "orbits": 0, "seconds": 0.2827488750044722}
+{"complete": true, "totalMarkings": 506039, "seconds": 1.756953208008781}

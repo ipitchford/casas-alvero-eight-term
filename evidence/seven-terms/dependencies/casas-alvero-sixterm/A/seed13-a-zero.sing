@@ -1,0 +1,12 @@
+ring r=13,(w,v),dp;
+option(redSB);
+poly b=4;
+poly c=-8*v18-3*b*v14;
+poly d=-1-b-c;
+proc f(poly x){return(x^20+b*x^16+c*x^2+d*x);}
+ideal I=f(v),f(w),7*w19+3*b*w15+2*c*w+d;
+int begin=timer;
+ideal G=std(I);
+print("SECONDS");print(timer-begin);
+print("BASIS");G;
+quit;

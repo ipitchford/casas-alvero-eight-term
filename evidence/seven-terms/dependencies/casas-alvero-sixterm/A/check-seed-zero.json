@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "branch": "zero",
+      "status": "PASS",
+      "generatorCount": 3,
+      "targetCount": 1,
+      "matrixTermCount": 1935,
+      "sourceSha256": "92a95af19a2ea412913cee4773da139baf35286f8bd15c9e3ab5f00c17c5883e"
+    }
+  ],
+  "scope": "Exact sparse-polynomial identity replay of the stated ordinary ideals, including reconstruction of original generators."
+}

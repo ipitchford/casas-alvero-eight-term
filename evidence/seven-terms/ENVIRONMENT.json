@@ -1,0 +1,8 @@
+{
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "mainReplay": "Python standard library only",
+  "previousArchiveSha256": "a7a5bc1f02ee1a4943825f6b08e3a5a78b82076e7b521c4e371fbdc85bde56df",
+  "optionalResultantProducer": "Singular 4.4.1",
+  "mainProofRequiresOptionalResultant": false
+}

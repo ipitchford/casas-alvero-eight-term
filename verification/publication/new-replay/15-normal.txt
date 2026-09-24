@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "counts": {
+    "linearTermSupports": 6188,
+    "afterSingleton": 586,
+    "afterTwoVisible": 348,
+    "afterCLO": 14
+  },
+  "survivors": [
+    [
+      2,
+      3,
+      4,
+      10,
+      12,
+      19
+    ],
+    [
+      2,
+      4,
+      10,
+      12,
+      18,
+      19
+    ],
+    [
+      2,
+      4,
+      10,
+      17,
+      18,
+      19
+    ],
+    [
+      3,
+      4,
+      5,
+      10,
+      13,
+      19
+    ],
+    [
+      3,
+      4,
+      9,
+      10,
+      12,
+      19
+    ],
+    [
+      3,
+      4,
+      10,
+      12,
+      15,
+      19
+    ],
+    [
+      3,
+      4,
+      10,
+      13,
+      18,
+      19
+    ],
+    [
+      3,
+      6,
+      10,
+      16,
+      17,
+      19
+    ],
+    [
+      3,
+      7,
+      9,
+      10,
+      16,
+      19
+    ],
+    [
+      4,
+      10,
+      16,
+      17,
+      18,
+      19
+    ],
+    [
+      6,
+      10,
+      15,
+      16,
+      17,
+      19
+    ],
+    [
+      7,
+      8,
+      10,
+      16,
+      17,
+      19
+    ],
+    [
+      9,
+      10,
+      15,
+      16,
+      17,
+      19
+    ],
+    [
+      10,
+      12,
+      13,
+      16,
+      17,
+      19
+    ]
+  ],
+  "massriFilterApplied": false,
+  "massriConditionsRedundant": true,
+  "scope": "Necessary support restrictions only; no listed support is asserted realizable. Uses the published two-visible and CLO determinant criteria; it does not prove them."
+}

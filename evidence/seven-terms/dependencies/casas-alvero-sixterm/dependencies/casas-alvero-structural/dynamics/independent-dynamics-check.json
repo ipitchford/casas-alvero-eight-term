@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "arithmetic": "Python standard library integers",
+  "raw_norm_content": 6975757441,
+  "H_degree": 72,
+  "C_degree": 432,
+  "H_coefficients_sha256": "89ebc4ec6b1a31d5c39918878ad8f9bec391069e062a7257c00e2418d183deaa",
+  "mod11_Bezout_verified": true,
+  "mod11_U_degree": 431,
+  "mod11_V_degree": 71,
+  "modular_checks": {
+    "11": {
+      "H_degree": 72,
+      "C_degree": 432,
+      "gcd_degree": 0
+    },
+    "13": {
+      "H_degree": 72,
+      "C_degree": 432,
+      "gcd_degree": 0
+    },
+    "19": {
+      "H_degree": 72,
+      "C_degree": 432,
+      "gcd_degree": 4
+    },
+    "23": {
+      "H_degree": 72,
+      "C_degree": 432,
+      "gcd_degree": 4
+    },
+    "29": {
+      "H_degree": 72,
+      "C_degree": 432,
+      "gcd_degree": 0
+    },
+    "31": {
+      "H_degree": 72,
+      "C_degree": 432,
+      "gcd_degree": 0
+    }
+  },
+  "degenerate_a_zero_obstruction_K": -17696646119024
+}

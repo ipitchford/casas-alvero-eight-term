@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "support": [
+    5,
+    16,
+    19
+  ],
+  "prime": 31,
+  "certificateSha256": "e63069da3f19151f84cd44ec9f5c46e55d6d806e743c0ccbd25827c6214020a0",
+  "identity": "C1*E1+C2*E2+C3*E3 = 1 in F31[u,v]",
+  "generatorTermCounts": [
+    7,
+    5,
+    4
+  ],
+  "certificateTermCounts": [
+    515,
+    629,
+    656
+  ],
+  "maxCertificateTotalDegree": 39,
+  "mutationControl": "PASS",
+  "integrality": {
+    "uDegree": 19,
+    "uLeadingInteger": -4844,
+    "uLeadingResidue": 23,
+    "vDegree": 19,
+    "vLeadingCoefficient": 1,
+    "moduleGeneratorBound": 361
+  },
+  "assurance": "Exact finite certificate and integrality hypotheses checked; normalization and Nakayama argument are written mathematical proofs, not formal verification."
+}

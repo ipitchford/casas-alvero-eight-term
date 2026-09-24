@@ -1,0 +1,21 @@
+ring r=31,(u,v,w,z),dp;
+int degBound=40;
+poly a0=-(1)^3;
+poly a1=-(u)^4-4*a0*(u)^1;
+poly a2=-(v)^10-120*a0*(v)^7-210*a1*(v)^6;
+poly a3=-(w)^18-816*a0*(w)^15-3060*a1*(w)^14-43758*a2*(w)^8;
+poly a4=-(z)^19-969*a0*(z)^16-3876*a1*(z)^15-92378*a2*(z)^9-19*a3*(z)^1;
+poly E0=(1)^20+1140*a0*(1)^17+4845*a1*(1)^16+184756*a2*(1)^10+190*a3*(1)^2+20*a4*(1)^1;
+poly E1=(u)^20+1140*a0*(u)^17+4845*a1*(u)^16+184756*a2*(u)^10+190*a3*(u)^2+20*a4*(u)^1;
+poly E2=(v)^20+1140*a0*(v)^17+4845*a1*(v)^16+184756*a2*(v)^10+190*a3*(v)^2+20*a4*(v)^1;
+poly E3=(w)^20+1140*a0*(w)^17+4845*a1*(w)^16+184756*a2*(w)^10+190*a3*(w)^2+20*a4*(w)^1;
+poly E4=(z)^20+1140*a0*(z)^17+4845*a1*(z)^16+184756*a2*(z)^10+190*a3*(z)^2+20*a4*(z)^1;
+ideal I=E0,E1,E2,E3,E4;
+int started=timer;
+ideal G=std(I);
+print("elapsed_seconds");
+print(timer-started);
+print("basis_size");
+print(size(G));
+if (size(G)==1 && G[1]==1) {print("UNIT");} else {print("INCONCLUSIVE_BOUNDED_BASIS");}
+quit;

@@ -1,0 +1,10 @@
+{
+  "python": "3.14.7",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "required": "Python 3.10+ standard library only",
+  "discovery_tools": [
+    "Singular 4.4.1",
+    "SymPy 1.14.0"
+  ],
+  "main_proof": "Compact exact arithmetic and written valuation/Frobenius argument; CAS is optional corroboration."
+}

@@ -1,0 +1,254 @@
+{
+  "status": "PASS",
+  "tropicalBounds": [
+    {
+      "J": 4,
+      "nondegenerateScale": "1",
+      "m": 16
+    },
+    {
+      "J": 5,
+      "nondegenerateScale": "1/2",
+      "m": 15
+    },
+    {
+      "J": 6,
+      "nondegenerateScale": "1/3",
+      "m": 14
+    },
+    {
+      "J": 7,
+      "nondegenerateScale": "1/4",
+      "m": 13
+    },
+    {
+      "J": 8,
+      "nondegenerateScale": "1/5",
+      "m": 12
+    },
+    {
+      "J": 9,
+      "nondegenerateScale": "1/6",
+      "m": 11
+    },
+    {
+      "J": 10,
+      "nondegenerateScale": "1/7",
+      "m": 10
+    },
+    {
+      "J": 11,
+      "nondegenerateScale": "1/8",
+      "m": 9
+    },
+    {
+      "J": 12,
+      "nondegenerateScale": "1/9",
+      "m": 8
+    },
+    {
+      "J": 13,
+      "nondegenerateScale": "1/10",
+      "m": 7
+    },
+    {
+      "J": 14,
+      "nondegenerateScale": "1/11",
+      "m": 6
+    },
+    {
+      "J": 15,
+      "nondegenerateScale": "1/12",
+      "m": 5
+    },
+    {
+      "J": 16,
+      "nondegenerateScale": "1/13",
+      "m": 4
+    }
+  ],
+  "finiteLeadingModels": [
+    {
+      "m": 4,
+      "variables": 2,
+      "standardMonomialDimension": 289,
+      "equationTermCounts": [
+        3,
+        4
+      ]
+    },
+    {
+      "m": 5,
+      "variables": 3,
+      "standardMonomialDimension": 4913,
+      "equationTermCounts": [
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "m": 6,
+      "variables": 4,
+      "standardMonomialDimension": 83521,
+      "equationTermCounts": [
+        9,
+        13,
+        15,
+        16
+      ]
+    },
+    {
+      "m": 7,
+      "variables": 5,
+      "standardMonomialDimension": 1419857,
+      "equationTermCounts": [
+        17,
+        25,
+        28,
+        30,
+        32
+      ]
+    },
+    {
+      "m": 8,
+      "variables": 6,
+      "standardMonomialDimension": 24137569,
+      "equationTermCounts": [
+        33,
+        49,
+        57,
+        61,
+        63,
+        64
+      ]
+    },
+    {
+      "m": 9,
+      "variables": 7,
+      "standardMonomialDimension": 410338673,
+      "equationTermCounts": [
+        65,
+        97,
+        112,
+        120,
+        125,
+        127,
+        128
+      ]
+    },
+    {
+      "m": 10,
+      "variables": 8,
+      "standardMonomialDimension": 6975757441,
+      "equationTermCounts": [
+        129,
+        193,
+        222,
+        239,
+        249,
+        253,
+        254,
+        256
+      ]
+    },
+    {
+      "m": 11,
+      "variables": 9,
+      "standardMonomialDimension": 118587876497,
+      "equationTermCounts": [
+        257,
+        385,
+        445,
+        477,
+        497,
+        505,
+        509,
+        511,
+        512
+      ]
+    },
+    {
+      "m": 12,
+      "variables": 10,
+      "standardMonomialDimension": 2015993900449,
+      "equationTermCounts": [
+        513,
+        769,
+        888,
+        953,
+        993,
+        1009,
+        1016,
+        1021,
+        1023,
+        1024
+      ]
+    },
+    {
+      "m": 13,
+      "variables": 11,
+      "standardMonomialDimension": 34271896307633,
+      "equationTermCounts": [
+        1025,
+        1537,
+        1775,
+        1904,
+        1985,
+        2017,
+        2031,
+        2041,
+        2044,
+        2047,
+        2048
+      ]
+    }
+  ],
+  "strataByJ": {
+    "7": [
+      3,
+      0
+    ],
+    "9": [
+      19,
+      0
+    ],
+    "10": [
+      53,
+      0
+    ],
+    "11": [
+      185,
+      0
+    ],
+    "12": [
+      728,
+      4
+    ],
+    "13": [
+      2741,
+      10
+    ],
+    "14": [
+      10772,
+      27
+    ],
+    "15": [
+      41196,
+      122
+    ],
+    "16": [
+      124068,
+      413
+    ]
+  },
+  "nondegenerateAssignments": 179765,
+  "degenerateAssignmentsRetained": 576,
+  "prime19MarkedSpecialFibrePoints": 131072,
+  "prime19CoefficientChecksum": 162346154,
+  "negativeControls": [
+    "degree18 lower-tail mutation rejected",
+    "discarding576degeneratecases rejected"
+  ],
+  "scope": "Exact arithmetic and polynomial identities only; no lift enumeration or branch exclusion."
+}

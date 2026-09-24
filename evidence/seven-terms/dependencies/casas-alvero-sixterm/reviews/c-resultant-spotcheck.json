@@ -1,0 +1,208 @@
+{
+  "status": "PASS",
+  "method": "Direct prime-field Sylvester determinant",
+  "resultantEvaluations": 50,
+  "scope": "Supplementary independent spot check; not substituted for the complete interpolation proof",
+  "points": [
+    {
+      "chart": "generic",
+      "parameter": 0,
+      "resultants": [
+        12,
+        0
+      ]
+    },
+    {
+      "chart": "generic",
+      "parameter": 1,
+      "resultants": [
+        0,
+        0
+      ]
+    },
+    {
+      "chart": "generic",
+      "parameter": 2,
+      "resultants": [
+        0,
+        0
+      ]
+    },
+    {
+      "chart": "generic",
+      "parameter": 3,
+      "resultants": [
+        6,
+        5
+      ]
+    },
+    {
+      "chart": "generic",
+      "parameter": 4,
+      "resultants": [
+        3,
+        11
+      ]
+    },
+    {
+      "chart": "generic",
+      "parameter": 5,
+      "resultants": [
+        12,
+        4
+      ]
+    },
+    {
+      "chart": "generic",
+      "parameter": 6,
+      "resultants": [
+        5,
+        12
+      ]
+    },
+    {
+      "chart": "generic",
+      "parameter": 7,
+      "resultants": [
+        6,
+        5
+      ]
+    },
+    {
+      "chart": "generic",
+      "parameter": 8,
+      "resultants": [
+        3,
+        6
+      ]
+    },
+    {
+      "chart": "generic",
+      "parameter": 9,
+      "resultants": [
+        0,
+        6
+      ]
+    },
+    {
+      "chart": "generic",
+      "parameter": 10,
+      "resultants": [
+        5,
+        0
+      ]
+    },
+    {
+      "chart": "generic",
+      "parameter": 11,
+      "resultants": [
+        7,
+        0
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 0,
+      "resultants": [
+        0,
+        3
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 1,
+      "resultants": [
+        1,
+        6
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 2,
+      "resultants": [
+        0,
+        0
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 3,
+      "resultants": [
+        0,
+        0
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 4,
+      "resultants": [
+        8,
+        11
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 5,
+      "resultants": [
+        11,
+        10
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 6,
+      "resultants": [
+        2,
+        3
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 7,
+      "resultants": [
+        12,
+        4
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 8,
+      "resultants": [
+        7,
+        10
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 9,
+      "resultants": [
+        7,
+        2
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 10,
+      "resultants": [
+        0,
+        0
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 11,
+      "resultants": [
+        2,
+        2
+      ]
+    },
+    {
+      "chart": "special",
+      "parameter": 12,
+      "resultants": [
+        6,
+        2
+      ]
+    }
+  ]
+}

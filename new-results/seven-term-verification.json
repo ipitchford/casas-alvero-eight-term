@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "normalOptimizedMatch": true,
+  "explicitInventoryMatch": true,
+  "packagedLayoutMatch": true,
+  "arbitraryWorkingDirectory": true,
+  "totalAssignments": 1216,
+  "dividedIdentitySurvivors": 0,
+  "collisionFiltersUsed": false,
+  "globalExclusionsWithPriorTheorems": 6,
+  "remainingFrontierSize": 8,
+  "sha256": {
+    "check_row8_seven_term.py": "593d9e24a8164e3271de4d7e21a389b714a14c881827529df15ca4be8b87d5e2",
+    "GLOBAL_SUPPORT_COROLLARY.md": "bc6812a8cadec6b7c24602c9eb57e17183d356e4d16461e0630c8dc3dcab56e0",
+    "SEVEN_TERM_FRONTIER.md": "4eccb2fceddb99e2337dd80d85cc34ba237d2c0c7e7bfa2b1538a08a2cb258db",
+    "row8-seven-term-normal.json": "2c83645d6edd7723deedb709bfea8e6328b6402f8c6e90719e5e2bdde376dea4",
+    "row8-seven-term-optimized.json": "2c83645d6edd7723deedb709bfea8e6328b6402f8c6e90719e5e2bdde376dea4"
+  }
+}

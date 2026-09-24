@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "python": "3.14.7",
+  "manifest_files_checked": 27,
+  "checks": [
+    {
+      "script": "check_audit.py",
+      "mode": "normal",
+      "status": "PASS"
+    },
+    {
+      "script": "check_audit.py",
+      "mode": "optimized",
+      "status": "PASS"
+    },
+    {
+      "script": "check_support_filter.py",
+      "mode": "normal",
+      "status": "PASS"
+    },
+    {
+      "script": "check_support_filter.py",
+      "mode": "optimized",
+      "status": "PASS"
+    },
+    {
+      "script": "verify_mod31.py",
+      "mode": "normal",
+      "status": "PASS"
+    },
+    {
+      "script": "verify_mod31.py",
+      "mode": "optimized",
+      "status": "PASS"
+    }
+  ],
+  "scope": "File integrity and finite exact identities; written proof dependencies and novelty require separate assessment."
+}

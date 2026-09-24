@@ -1,0 +1,16 @@
+dim S/F
+1
+dim S/D (includes free t)
+2
+completion 1
+0
+completion 2
+0
+completion 3
+0
+completion 4
+0
+completion 5
+0
+completion 6
+0

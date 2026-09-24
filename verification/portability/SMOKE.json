@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "Portability only; no full m6 enumeration or proof extension.",
+  "checks": [
+    "finite positive guards; quoted compiler argv and CXX inheritance",
+    "top runner propagation, scaled defaults, explicit headroom and saved-only m6 default (mocked checks)",
+    "real outer process-group timeout on a short sleeping checker",
+    "benign process-exit/deadline race emits a TIMEOUT receipt (mocked process)",
+    "m6 checker-to-worker compiler and guard propagation (mocked worker)",
+    "real C++17 compilation, full field validation and 4913 markings of one existing small system",
+    "quoted compiler path, short timeout exit/receipt and refusal to overwrite historical execution files"
+  ]
+}

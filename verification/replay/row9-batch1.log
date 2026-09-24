@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "scope": "Specified complete canonical systems, including all extension roots and coefficient degenerations.",
+  "activeSizes": [
+    3,
+    4
+  ],
+  "totalMarkings": 506039,
+  "residueSurvivors": 20,
+  "liftedFrobeniusOrbits": 7,
+  "markingsExcludedByPrecision": {
+    "3": 1,
+    "2": 19
+  },
+  "cases": [
+    {
+      "active": [
+        4,
+        10,
+        13
+      ],
+      "markings": 4913,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        12,
+        15
+      ],
+      "markings": 83521,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        7,
+        10,
+        15
+      ],
+      "markings": 83521,
+      "firstResidueSurvivors": 0,
+      "liftedOrbits": 0,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        9,
+        10,
+        12
+      ],
+      "markings": 83521,
+      "firstResidueSurvivors": 0,
+      "liftedOrbits": 0,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        9,
+        10,
+        14
+      ],
+      "markings": 83521,
+      "firstResidueSurvivors": 17,
+      "liftedOrbits": 4,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        12,
+        15,
+        16
+      ],
+      "markings": 83521,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        10,
+        11,
+        15,
+        16
+      ],
+      "markings": 83521,
+      "firstResidueSurvivors": 0,
+      "liftedOrbits": 0,
+      "status": "EXCLUDED"
+    }
+  ],
+  "residueSHA256": "9c14cd5c11b2a7decade6baef13431ce77a035c31754114428f9b52d95332797",
+  "nativeSourceSHA256": "93cec48bd2f4ed8afe418f2042354b39760e4f7939952b9042d5d41d5e88955f",
+  "liftCertificateSHA256": "154ddc8de0ab895d30299d068bd65f67dcac046a86e4a4ff2ce5ddbd7658ba89"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "presentationSHA256": "bc59991844eadd06a1d8a1946c4fc545f8515c65dcb5c2f7f886f9390b55d04c",
+  "normalizedHasseCoefficientChecks": 182,
+  "affineDirections": 14,
+  "exactDoubleRootDivision": true,
+  "exactTIdentity": true,
+  "squarefreeResidueDomainDegree": 18,
+  "frobeniusConjugacyChecked": true,
+  "canonicalSupportCount": 240,
+  "canonicalHistogram": {
+    "3": 1,
+    "4": 6,
+    "5": 21,
+    "6": 51,
+    "7": 71,
+    "8": 45,
+    "9": 27,
+    "10": 11,
+    "11": 6,
+    "12": 1
+  },
+  "fullRank": 20822964865671168,
+  "canonicalTotalRank": 813975725115600,
+  "scope": "Coefficient presentation and rank arithmetic replayed; finite-flat proof is prose, final norm unevaluated."
+}

@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "prime_rows": {
+    "2": [
+      4,
+      16
+    ],
+    "3": [
+      2,
+      9,
+      10,
+      11,
+      18,
+      19
+    ],
+    "5": [
+      5,
+      10,
+      15
+    ],
+    "17": [
+      2,
+      3,
+      17,
+      18,
+      19
+    ],
+    "19": [
+      19
+    ]
+  },
+  "support_count": 16,
+  "records": [
+    {
+      "support": [
+        2,
+        4,
+        5,
+        19
+      ],
+      "determinant": -260772237908582400,
+      "residue_mod19": 5
+    },
+    {
+      "support": [
+        4,
+        5,
+        18,
+        19
+      ],
+      "determinant": 5642527719628800,
+      "residue_mod19": 17
+    },
+    {
+      "support": [
+        2,
+        4,
+        10,
+        19
+      ],
+      "determinant": -21724614487947571200,
+      "residue_mod19": 1
+    },
+    {
+      "support": [
+        3,
+        4,
+        10,
+        19
+      ],
+      "determinant": -7356300711324364800,
+      "residue_mod19": 1
+    },
+    {
+      "support": [
+        4,
+        10,
+        17,
+        19
+      ],
+      "determinant": -1859459402030630400,
+      "residue_mod19": 0
+    },
+    {
+      "support": [
+        4,
+        10,
+        18,
+        19
+      ],
+      "determinant": 235816289675366400,
+      "residue_mod19": 7
+    },
+    {
+      "support": [
+        2,
+        4,
+        15,
+        19
+      ],
+      "determinant": -1146476277609062400,
+      "residue_mod19": 17
+    },
+    {
+      "support": [
+        4,
+        15,
+        18,
+        19
+      ],
+      "determinant": 4343554575360000,
+      "residue_mod19": 3
+    },
+    {
+      "support": [
+        2,
+        5,
+        16,
+        19
+      ],
+      "determinant": -846190617453941760,
+      "residue_mod19": 13
+    },
+    {
+      "support": [
+        5,
+        16,
+        18,
+        19
+      ],
+      "determinant": 889549847746560,
+      "residue_mod19": 12
+    },
+    {
+      "support": [
+        2,
+        10,
+        16,
+        19
+      ],
+      "determinant": -3755839826011553280,
+      "residue_mod19": 18
+    },
+    {
+      "support": [
+        3,
+        10,
+        16,
+        19
+      ],
+      "determinant": -6770094928735057920,
+      "residue_mod19": 14
+    },
+    {
+      "support": [
+        10,
+        16,
+        17,
+        19
+      ],
+      "determinant": -7119973091911680,
+      "residue_mod19": 11
+    },
+    {
+      "support": [
+        10,
+        16,
+        18,
+        19
+      ],
+      "determinant": 903957513338880,
+      "residue_mod19": 2
+    },
+    {
+      "support": [
+        2,
+        15,
+        16,
+        19
+      ],
+      "determinant": -7299955164902400,
+      "residue_mod19": 9
+    },
+    {
+      "support": [
+        15,
+        16,
+        18,
+        19
+      ],
+      "determinant": 547977830400,
+      "residue_mod19": 2
+    }
+  ],
+  "remaining_support": [
+    4,
+    10,
+    17,
+    19
+  ],
+  "published_degree12_fixture": [
+    [
+      3,
+      8
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      7,
+      9
+    ]
+  ],
+  "J": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    13,
+    14,
+    15,
+    16,
+    18
+  ],
+  "K": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19
+  ],
+  "forbidden_centered_mask": [
+    4,
+    8,
+    9,
+    10,
+    11,
+    12,
+    17,
+    19
+  ],
+  "lucas_examples": [
+    {
+      "e": 0,
+      "q": 1,
+      "degree": 20,
+      "required_indices": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        13,
+        14,
+        15,
+        16,
+        18
+      ],
+      "derivative_orders": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "e": 1,
+      "q": 13,
+      "degree": 260,
+      "required_indices": [
+        13,
+        26,
+        39,
+        65,
+        78,
+        91,
+        169,
+        182,
+        195,
+        208,
+        234
+      ],
+      "derivative_orders": [
+        26,
+        52,
+        65,
+        78,
+        91,
+        169,
+        182,
+        195,
+        221,
+        234,
+        247
+      ]
+    },
+    {
+      "e": 2,
+      "q": 169,
+      "degree": 3380,
+      "required_indices": [
+        169,
+        338,
+        507,
+        845,
+        1014,
+        1183,
+        2197,
+        2366,
+        2535,
+        2704,
+        3042
+      ],
+      "derivative_orders": [
+        338,
+        676,
+        845,
+        1014,
+        1183,
+        2197,
+        2366,
+        2535,
+        2873,
+        3042,
+        3211
+      ]
+    }
+  ],
+  "scope": "Finite binomial rows, determinants, and examples e=0,1,2; all-e transfer is proved symbolically in PROOF.md."
+}

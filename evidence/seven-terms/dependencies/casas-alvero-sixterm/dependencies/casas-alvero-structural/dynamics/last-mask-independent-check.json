@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "method": "SymPy direct resultant of cubic and degree-16 equation",
+  "direct_resultant_matches_all_coefficients": true,
+  "R_degree": 19,
+  "U_degree": 22,
+  "H_degree": 21,
+  "homogenized_substitution_remainder_matches": true,
+  "Bezout_identity_verified_by_multiplication": true,
+  "Bezout_degrees": [
+    20,
+    21
+  ],
+  "saved_Bezout_array_lengths": [
+    21,
+    22
+  ],
+  "denominator_and_zero_chart_constants_checked": true
+}

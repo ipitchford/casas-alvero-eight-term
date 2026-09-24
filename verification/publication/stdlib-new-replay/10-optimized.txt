@@ -1,0 +1,639 @@
+{
+  "checker_sha256": "090b820edc1a069e18d7f2e605da0fec6676e544c4c4f1d1b13577de2329b8c9",
+  "checks": [
+    {
+      "E_over_17_residue": 6,
+      "R_mod_quadratic": [
+        11,
+        2
+      ],
+      "R_quotient": [
+        7,
+        13,
+        15,
+        11,
+        3,
+        11,
+        5,
+        12,
+        8,
+        2,
+        11,
+        8,
+        5,
+        4,
+        4,
+        7
+      ],
+      "baseline_H": 1961247925,
+      "baseline_H_valuation": 2,
+      "binary_census": [
+        {
+          "W": 3,
+          "coefficients": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "witnesses": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "W": 0,
+          "coefficients": [
+            0,
+            0,
+            0,
+            16
+          ],
+          "witnesses": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "W": 4,
+          "coefficients": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "witnesses": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "W": 15,
+          "coefficients": [
+            0,
+            0,
+            16,
+            15
+          ],
+          "witnesses": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "W": 14,
+          "coefficients": [
+            0,
+            16,
+            0,
+            0
+          ],
+          "witnesses": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "W": 14,
+          "coefficients": [
+            0,
+            16,
+            0,
+            0
+          ],
+          "witnesses": [
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "W": 2,
+          "coefficients": [
+            0,
+            16,
+            12,
+            0
+          ],
+          "witnesses": [
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "W": 4,
+          "coefficients": [
+            0,
+            16,
+            12,
+            12
+          ],
+          "witnesses": [
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "W": 2,
+          "coefficients": [
+            16,
+            0,
+            0,
+            0
+          ],
+          "witnesses": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "W": 2,
+          "coefficients": [
+            16,
+            0,
+            0,
+            0
+          ],
+          "witnesses": [
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "W": 6,
+          "coefficients": [
+            16,
+            0,
+            13,
+            0
+          ],
+          "witnesses": [
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "W": 11,
+          "coefficients": [
+            16,
+            0,
+            13,
+            13
+          ],
+          "witnesses": [
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "W": 1,
+          "coefficients": [
+            16,
+            14,
+            0,
+            0
+          ],
+          "witnesses": [
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "W": 10,
+          "coefficients": [
+            16,
+            14,
+            0,
+            3
+          ],
+          "witnesses": [
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "W": 0,
+          "coefficients": [
+            16,
+            14,
+            1,
+            0
+          ],
+          "witnesses": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "W": 12,
+          "coefficients": [
+            16,
+            14,
+            1,
+            4
+          ],
+          "witnesses": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "c2_over_17_residue": 5,
+      "critical_Gj": 13,
+      "critical_effective_H_weight": -4961280,
+      "critical_quadratic_jet": -780,
+      "forced_a16": [
+        242879,
+        3
+      ],
+      "forced_a16_valuation": 1,
+      "g16_small_exponent": 3,
+      "g16_unit_value": 13,
+      "lambda": [
+        14,
+        2,
+        0
+      ],
+      "last_remainder": [
+        13
+      ],
+      "name": "10-12-13-16",
+      "quadratic": [
+        13,
+        2,
+        5
+      ],
+      "quadratic_quotient": [
+        0,
+        11
+      ],
+      "small_root_required_a16_valuation": [
+        3,
+        2
+      ],
+      "support": [
+        10,
+        12,
+        13,
+        16,
+        17,
+        19
+      ],
+      "unit_derivative_residues": [
+        10,
+        16,
+        0
+      ]
+    },
+    {
+      "E_over_17_residue": 7,
+      "R_mod_quadratic": [
+        4,
+        3
+      ],
+      "R_quotient": [
+        5,
+        0,
+        9,
+        10,
+        0,
+        12,
+        2,
+        0,
+        16,
+        14,
+        0,
+        10,
+        13,
+        0,
+        2,
+        6
+      ],
+      "baseline_H": 5132750687,
+      "baseline_H_valuation": 2,
+      "binary_census": [
+        {
+          "W": 3,
+          "coefficients": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "witnesses": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "W": 0,
+          "coefficients": [
+            0,
+            0,
+            0,
+            16
+          ],
+          "witnesses": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "W": 9,
+          "coefficients": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "witnesses": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "W": 3,
+          "coefficients": [
+            0,
+            0,
+            16,
+            15
+          ],
+          "witnesses": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "W": 2,
+          "coefficients": [
+            0,
+            16,
+            0,
+            0
+          ],
+          "witnesses": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "W": 2,
+          "coefficients": [
+            0,
+            16,
+            0,
+            0
+          ],
+          "witnesses": [
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "W": 10,
+          "coefficients": [
+            0,
+            16,
+            10,
+            0
+          ],
+          "witnesses": [
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "W": 6,
+          "coefficients": [
+            0,
+            16,
+            10,
+            10
+          ],
+          "witnesses": [
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "W": 11,
+          "coefficients": [
+            16,
+            0,
+            0,
+            0
+          ],
+          "witnesses": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "W": 5,
+          "coefficients": [
+            16,
+            0,
+            0,
+            15
+          ],
+          "witnesses": [
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "W": 9,
+          "coefficients": [
+            16,
+            0,
+            6,
+            0
+          ],
+          "witnesses": [
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "W": 4,
+          "coefficients": [
+            16,
+            0,
+            6,
+            4
+          ],
+          "witnesses": [
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "W": 3,
+          "coefficients": [
+            16,
+            9,
+            0,
+            0
+          ],
+          "witnesses": [
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "W": 4,
+          "coefficients": [
+            16,
+            9,
+            0,
+            6
+          ],
+          "witnesses": [
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "W": 0,
+          "coefficients": [
+            16,
+            9,
+            9,
+            0
+          ],
+          "witnesses": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "W": 11,
+          "coefficients": [
+            16,
+            9,
+            9,
+            15
+          ],
+          "witnesses": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "c2_over_17_residue": 3,
+      "critical_Gj": 10,
+      "critical_effective_H_weight": 702257556,
+      "critical_quadratic_jet": 45,
+      "forced_a16": [
+        15890869,
+        75
+      ],
+      "forced_a16_valuation": 1,
+      "g16_small_exponent": 1,
+      "g16_unit_value": 2,
+      "lambda": [
+        12,
+        0,
+        3
+      ],
+      "last_remainder": [
+        7
+      ],
+      "name": "9-10-15-16",
+      "quadratic": [
+        6,
+        16,
+        3
+      ],
+      "quadratic_quotient": [
+        4,
+        1
+      ],
+      "small_root_required_a16_valuation": [
+        1,
+        2
+      ],
+      "support": [
+        9,
+        10,
+        15,
+        16,
+        17,
+        19
+      ],
+      "unit_derivative_residues": [
+        9,
+        0,
+        9
+      ]
+    }
+  ],
+  "negative_control": "changed quadratic constant rejected",
+  "prime": 17,
+  "scope": "finite identities only; see MIXED_STRATA.md for valuation and coverage proofs",
+  "status": "PASS"
+}

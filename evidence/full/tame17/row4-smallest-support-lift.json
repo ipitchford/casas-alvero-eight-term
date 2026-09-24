@@ -1,0 +1,71 @@
+{
+  "status": "EXCLUDED",
+  "scope": "Row4 canonical middle support {4,10,12} only.",
+  "modulus": 4913,
+  "unramified_quadratic": [
+    3,
+    3,
+    1
+  ],
+  "lift_stages": [
+    {
+      "precision": 2,
+      "t": 95,
+      "s": 91,
+      "u": {
+        "4": 86,
+        "10": 191,
+        "12": 9
+      }
+    },
+    {
+      "precision": 3,
+      "t": 2696,
+      "s": 1536,
+      "u": {
+        "4": 1531,
+        "10": 2792,
+        "12": 2610
+      }
+    }
+  ],
+  "ordinary_coefficients": [
+    0,
+    1453,
+    2527,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3740,
+    0,
+    3230,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3978,
+    0,
+    4723,
+    0,
+    1
+  ],
+  "critical_root": [
+    2788,
+    3707
+  ],
+  "critical_value": [
+    2601,
+    1156
+  ],
+  "critical_value_divided_by_17_squared": [
+    9,
+    4
+  ],
+  "critical_derivative": [
+    0,
+    0
+  ]
+}

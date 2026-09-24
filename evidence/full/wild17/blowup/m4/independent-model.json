@@ -1,0 +1,296 @@
+{
+  "status": "PASS",
+  "prime": 17,
+  "RAscending": [
+    11,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    12,
+    12,
+    0,
+    13
+  ],
+  "factorization": [
+    [
+      [
+        8,
+        1
+      ],
+      2
+    ],
+    [
+      [
+        10,
+        1
+      ],
+      2
+    ],
+    [
+      [
+        16,
+        1
+      ],
+      3
+    ],
+    [
+      [
+        6,
+        6,
+        0,
+        9,
+        1,
+        1
+      ],
+      1
+    ],
+    [
+      [
+        9,
+        8,
+        7,
+        13,
+        1,
+        0,
+        1
+      ],
+      1
+    ]
+  ],
+  "distinctNonzeroTValues": 14,
+  "reducedMarkedPoints": 209,
+  "extensionGcds": [
+    {
+      "parameterFactor": [
+        8,
+        1
+      ],
+      "H1GcdAscendingOverExtension": [
+        [
+          8
+        ],
+        [
+          1
+        ]
+      ],
+      "H2GcdAscendingOverExtension": [
+        [
+          16
+        ],
+        [
+          1
+        ]
+      ],
+      "H3GcdAscendingOverExtension": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "parameterFactor": [
+        10,
+        1
+      ],
+      "H1GcdAscendingOverExtension": [
+        [
+          10
+        ],
+        [
+          1
+        ]
+      ],
+      "H2GcdAscendingOverExtension": [
+        [
+          16
+        ],
+        [
+          1
+        ]
+      ],
+      "H3GcdAscendingOverExtension": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "parameterFactor": [
+        16,
+        1
+      ],
+      "H1GcdAscendingOverExtension": [
+        [
+          1
+        ],
+        [
+          15
+        ],
+        [
+          1
+        ]
+      ],
+      "H2GcdAscendingOverExtension": [
+        [
+          16
+        ],
+        [
+          1
+        ]
+      ],
+      "H3GcdAscendingOverExtension": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "parameterFactor": [
+        6,
+        6,
+        0,
+        9,
+        1,
+        1
+      ],
+      "H1GcdAscendingOverExtension": [
+        [
+          0,
+          16
+        ],
+        [
+          1
+        ]
+      ],
+      "H2GcdAscendingOverExtension": [
+        [
+          16
+        ],
+        [
+          1
+        ]
+      ],
+      "H3GcdAscendingOverExtension": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "parameterFactor": [
+        9,
+        8,
+        7,
+        13,
+        1,
+        0,
+        1
+      ],
+      "H1GcdAscendingOverExtension": [
+        [
+          0,
+          16
+        ],
+        [
+          1
+        ]
+      ],
+      "H2GcdAscendingOverExtension": [
+        [
+          16
+        ],
+        [
+          1
+        ]
+      ],
+      "H3GcdAscendingOverExtension": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ]
+    }
+  ],
+  "boundaryGcds": [
+    {
+      "chart": "u=v=0",
+      "HasseGcdsAscending": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "chart": "u=0,v!=0",
+      "HasseGcdsAscending": [
+        [
+          16,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "chart": "v=0,u!=0",
+      "HasseGcdsAscending": [
+        [
+          0,
+          1
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "scope": "Reduced characteristic-17 model and marked root multiplicities only; no original characteristic-zero lift exclusion."
+}

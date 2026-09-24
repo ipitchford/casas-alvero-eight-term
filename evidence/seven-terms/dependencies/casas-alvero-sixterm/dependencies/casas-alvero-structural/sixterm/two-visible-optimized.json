@@ -1,0 +1,317 @@
+{
+  "source": "de Frutos Marin2013 Proposition3.5.5 (printedp57/PDFp79), as audited by prior-art agent",
+  "newMaskFirstBaselineCount": 8,
+  "oldPairExcluded": [
+    [
+      2,
+      4,
+      5,
+      10,
+      19
+    ],
+    [
+      2,
+      4,
+      10,
+      12,
+      19
+    ],
+    [
+      2,
+      4,
+      10,
+      16,
+      19
+    ],
+    [
+      2,
+      10,
+      14,
+      16,
+      19
+    ]
+  ],
+  "survivors": [
+    [
+      3,
+      4,
+      10,
+      18,
+      19
+    ],
+    [
+      3,
+      10,
+      16,
+      17,
+      19
+    ],
+    [
+      4,
+      5,
+      10,
+      17,
+      19
+    ],
+    [
+      8,
+      10,
+      16,
+      17,
+      19
+    ]
+  ],
+  "records": [
+    {
+      "support": [
+        2,
+        4,
+        5,
+        10,
+        19
+      ],
+      "tests": [
+        {
+          "r": 5,
+          "s": 10,
+          "prime": 5,
+          "B": 4,
+          "D": 1,
+          "C": 3,
+          "gcd": 5,
+          "Nmodp": 1,
+          "sourceResidue": 4,
+          "nonzeroNonunitBinomialGuard": false,
+          "excludes": false
+        },
+        {
+          "r": 2,
+          "s": 19,
+          "prime": 17,
+          "B": 3,
+          "D": 3,
+          "C": 1,
+          "gcd": 1,
+          "Nmodp": 2,
+          "sourceResidue": 15,
+          "nonzeroNonunitBinomialGuard": true,
+          "excludes": true
+        }
+      ],
+      "excludedByOldPairCriterion": true
+    },
+    {
+      "support": [
+        2,
+        4,
+        10,
+        12,
+        19
+      ],
+      "tests": [
+        {
+          "r": 2,
+          "s": 19,
+          "prime": 17,
+          "B": 3,
+          "D": 3,
+          "C": 1,
+          "gcd": 1,
+          "Nmodp": 2,
+          "sourceResidue": 15,
+          "nonzeroNonunitBinomialGuard": true,
+          "excludes": true
+        }
+      ],
+      "excludedByOldPairCriterion": true
+    },
+    {
+      "support": [
+        2,
+        4,
+        10,
+        16,
+        19
+      ],
+      "tests": [
+        {
+          "r": 4,
+          "s": 16,
+          "prime": 2,
+          "B": 1,
+          "D": 1,
+          "C": 0,
+          "gcd": 4,
+          "Nmodp": 1,
+          "sourceResidue": 1,
+          "nonzeroNonunitBinomialGuard": false,
+          "excludes": false
+        },
+        {
+          "r": 2,
+          "s": 19,
+          "prime": 17,
+          "B": 3,
+          "D": 3,
+          "C": 1,
+          "gcd": 1,
+          "Nmodp": 2,
+          "sourceResidue": 15,
+          "nonzeroNonunitBinomialGuard": true,
+          "excludes": true
+        }
+      ],
+      "excludedByOldPairCriterion": true
+    },
+    {
+      "support": [
+        2,
+        10,
+        14,
+        16,
+        19
+      ],
+      "tests": [
+        {
+          "r": 2,
+          "s": 19,
+          "prime": 17,
+          "B": 3,
+          "D": 3,
+          "C": 1,
+          "gcd": 1,
+          "Nmodp": 2,
+          "sourceResidue": 15,
+          "nonzeroNonunitBinomialGuard": true,
+          "excludes": true
+        }
+      ],
+      "excludedByOldPairCriterion": true
+    },
+    {
+      "support": [
+        3,
+        4,
+        10,
+        18,
+        19
+      ],
+      "tests": [],
+      "excludedByOldPairCriterion": false
+    },
+    {
+      "support": [
+        3,
+        10,
+        16,
+        17,
+        19
+      ],
+      "tests": [
+        {
+          "r": 10,
+          "s": 19,
+          "prime": 3,
+          "B": 1,
+          "D": 2,
+          "C": 1,
+          "gcd": 1,
+          "Nmodp": 0,
+          "sourceResidue": 0,
+          "nonzeroNonunitBinomialGuard": false,
+          "excludes": false
+        }
+      ],
+      "excludedByOldPairCriterion": false
+    },
+    {
+      "support": [
+        4,
+        5,
+        10,
+        17,
+        19
+      ],
+      "tests": [
+        {
+          "r": 10,
+          "s": 19,
+          "prime": 3,
+          "B": 1,
+          "D": 2,
+          "C": 1,
+          "gcd": 1,
+          "Nmodp": 0,
+          "sourceResidue": 0,
+          "nonzeroNonunitBinomialGuard": false,
+          "excludes": false
+        },
+        {
+          "r": 5,
+          "s": 10,
+          "prime": 5,
+          "B": 4,
+          "D": 1,
+          "C": 3,
+          "gcd": 5,
+          "Nmodp": 1,
+          "sourceResidue": 4,
+          "nonzeroNonunitBinomialGuard": false,
+          "excludes": false
+        },
+        {
+          "r": 17,
+          "s": 19,
+          "prime": 17,
+          "B": 1,
+          "D": 3,
+          "C": 3,
+          "gcd": 1,
+          "Nmodp": 0,
+          "sourceResidue": 0,
+          "nonzeroNonunitBinomialGuard": false,
+          "excludes": false
+        }
+      ],
+      "excludedByOldPairCriterion": false
+    },
+    {
+      "support": [
+        8,
+        10,
+        16,
+        17,
+        19
+      ],
+      "tests": [
+        {
+          "r": 10,
+          "s": 19,
+          "prime": 3,
+          "B": 1,
+          "D": 2,
+          "C": 1,
+          "gcd": 1,
+          "Nmodp": 0,
+          "sourceResidue": 0,
+          "nonzeroNonunitBinomialGuard": false,
+          "excludes": false
+        },
+        {
+          "r": 17,
+          "s": 19,
+          "prime": 17,
+          "B": 1,
+          "D": 3,
+          "C": 3,
+          "gcd": 1,
+          "Nmodp": 0,
+          "sourceResidue": 0,
+          "nonzeroNonunitBinomialGuard": false,
+          "excludes": false
+        }
+      ],
+      "excludedByOldPairCriterion": false
+    }
+  ]
+}

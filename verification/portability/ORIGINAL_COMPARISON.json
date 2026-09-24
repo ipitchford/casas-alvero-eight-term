@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "originalPackageEntriesVerified": 620,
+  "originalFilesCompared": 621,
+  "modifiedOriginalPaths": [
+    "CHECKS.md",
+    "MANIFEST.json",
+    "README.md",
+    "REVIEW_GUIDE.md",
+    "evidence/full/collective17/exclusions/MANIFEST.json",
+    "evidence/full/collective17/exclusions/batch-m6/MANIFEST.json",
+    "evidence/full/collective17/exclusions/batch-m6/check_batch.py",
+    "evidence/full/collective17/exclusions/batch-m6/run_native.py",
+    "evidence/full/collective17/exclusions/check_batch.py",
+    "replay.py"
+  ],
+  "scope": "Only these ten original files differ; all other original files, including raw receipts, are unchanged. New documentation, tests, backups and verification outputs are additional."
+}

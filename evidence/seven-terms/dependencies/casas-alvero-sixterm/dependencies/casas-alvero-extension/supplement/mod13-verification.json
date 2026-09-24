@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "support": [
+    4,
+    10,
+    17,
+    19
+  ],
+  "prime": 13,
+  "certificateSha256": "23552e44cc926d21e48b0e57e2022d309b91c34df265292a8dc753f61cd000d9",
+  "certificateTerms": [
+    481,
+    649,
+    647
+  ],
+  "maximumCertificateTotalDegree": 38,
+  "modularIdentity": "C1*E1+C2*Ev+C3*Ew=1",
+  "mutationControl": "PASS",
+  "coefficientBIdenticallyZeroMod13": true,
+  "leadingFormsMod13": [
+    "u^19+4*u^2*v^17",
+    "5*v^19"
+  ],
+  "macaulayDegree": 37,
+  "macaulayMatrixSize": 38,
+  "macaulayDeterminantMod13": 5,
+  "wRelation": "monicdegree19",
+  "finiteModuleGeneratorBound": 13357,
+  "assurance": "Exact arithmetic and transfer hypotheses checked; normalization and finite-module implication are written proofs, not formally verified."
+}

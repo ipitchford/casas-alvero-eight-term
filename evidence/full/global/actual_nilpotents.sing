@@ -1,0 +1,13 @@
+// A genuine small characteristic-zero CA determinantal quotient.
+LIB "primdec.lib";
+ring R=0,(t,x,y,z),dp;
+short=0;
+poly a=x*y*z; poly b=x*y+x*z+y*z; poly c=x+y+z;
+ideal F=t*a,t*b+a,t*c+b;
+ideal D=a^2,a*b,b^2-c*a;
+print("DIM_D_INCLUDING_FREE_T");print(dim(std(D)));
+print("RADICAL_D");radical(D);
+ideal E=eliminate(F,t);
+print("CONTRACTION_MINUS_D");reduce(E,std(D));
+print("D_MINUS_CONTRACTION");reduce(D,std(E));
+quit;

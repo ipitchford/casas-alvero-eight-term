@@ -1,0 +1,295 @@
+{
+  "status": "PASS",
+  "scope": "Listed finite arithmetic and coverage replays only",
+  "integrityFiles": 885,
+  "checks": [
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.404,
+      "wallLimitSeconds": 120,
+      "log": "audit.log",
+      "logSHA256": "124301ed94fb9403794bec95098138f0261142ce6c5d1b39579d8c0a6c5cc422",
+      "check": "audit",
+      "script": "audit/replay.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 12.475,
+      "wallLimitSeconds": 180,
+      "log": "seven-terms.log",
+      "logSHA256": "10787746dd3b33bc906b2f4f60941e8923469c4b7f96f99b7de5c9d2662b4d0d",
+      "check": "seven-terms",
+      "script": "seven-terms/replay.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.037,
+      "wallLimitSeconds": 120,
+      "log": "p17-classification.log",
+      "logSHA256": "b952eb050e26652886c22380837b8dad9931d54fcc1ff4d6d91401365703ac23",
+      "check": "p17-classification",
+      "script": "full/support_frontier/prime17/check_classification.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.04,
+      "wallLimitSeconds": 30,
+      "log": "seed-gcds.log",
+      "logSHA256": "1c2f355cea4530940725989a2404ffc00944bb9abe3cf8dc85822e14ecb58273",
+      "check": "seed-gcds",
+      "script": "full/literature/check_prime17_seed_gcds.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.037,
+      "wallLimitSeconds": 30,
+      "log": "p5-classification.log",
+      "logSHA256": "ffdbac1c3145c8c661e902961e2b04231758103fa2e6ef59df6b0c0b7feac68c",
+      "check": "p5-classification",
+      "script": "full/five_adic/check_reduction.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.23,
+      "wallLimitSeconds": 60,
+      "log": "p2-integral-cut.log",
+      "logSHA256": "b265dd3f90f7bf8a9d1917981941e06c7a60af84d0473161a4737e230fdabea2",
+      "check": "p2-integral-cut",
+      "script": "full/two_adic/check_first_saturation.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.765,
+      "wallLimitSeconds": 60,
+      "log": "p2-occupancy.log",
+      "logSHA256": "b889974100eeccff327c27cb746a329882e536b5ba3356d5371176d213fd0253",
+      "check": "p2-occupancy",
+      "script": "full/two_adic/check_cluster_occupancy.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.041,
+      "wallLimitSeconds": 30,
+      "log": "row4-quadratic.log",
+      "logSHA256": "c06c9e491ecaf3035173b6bbdfdb7d0489d4f83d749e5942b7cef9630d45f4ad",
+      "check": "row4-quadratic",
+      "script": "full/tame17/check_row4_quadratic_constants.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.199,
+      "wallLimitSeconds": 120,
+      "log": "row4-exclusion.log",
+      "logSHA256": "cc00ece2ed240b19845f08c7ce9041d096346b39a8830bcf211e624ea7e7656b",
+      "check": "row4-exclusion",
+      "script": "full/tame17/check_row4_smallest_support.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.075,
+      "wallLimitSeconds": 30,
+      "log": "row6-etale.log",
+      "logSHA256": "7c2531582c0c3fb0007c22d42af84916daf9f9ab99568afed6be318460274d68",
+      "check": "row6-etale",
+      "script": "full/tame17/check_row6_etale_constants.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.039,
+      "wallLimitSeconds": 30,
+      "log": "row7-etale.log",
+      "logSHA256": "6a4977fcde42f84513a7c0220cb1be9d7acc5e175dba29bc78ae705f783792c2",
+      "check": "row7-etale",
+      "script": "full/tame17/check_row7_etale_constants.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.04,
+      "wallLimitSeconds": 30,
+      "log": "row9-etale.log",
+      "logSHA256": "125841b18ad879f1dea290d1df92cac990a97a3db1882805721f4c2ebf0e13bd",
+      "check": "row9-etale",
+      "script": "full/tame17/check_row9_etale_constants.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.937,
+      "wallLimitSeconds": 120,
+      "log": "row9-batch1.log",
+      "logSHA256": "9e1e41bdea688189ecaad78fe6e27adad5226e966743e8e0ff0cefd8b3530c1b",
+      "check": "row9-batch1",
+      "script": "full/collective17/exclusions/check_batch.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 5.013,
+      "wallLimitSeconds": 120,
+      "log": "row9-batch2.log",
+      "logSHA256": "2e6cd9aecea1b3927538a71775cdbb455631de37406661f99ef4e56d9aaa1443",
+      "check": "row9-batch2",
+      "script": "full/collective17/exclusions/check_batch.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.078,
+      "wallLimitSeconds": 30,
+      "log": "row9-algebra.log",
+      "logSHA256": "24db29a4e5c1d4092dd0bc6dc021cc07fe64f7d4f9a855a4125f0281f566fb99",
+      "check": "row9-algebra",
+      "script": "full/collective17/elimination/check_presentation.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.401,
+      "wallLimitSeconds": 60,
+      "log": "cross-prime.log",
+      "logSHA256": "e73642f393f13fdb06e75d778853b673a7b8050b17150c878da8eb3d336b5aa9",
+      "check": "cross-prime",
+      "script": "full/cross_prime/check_cross_prime.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.04,
+      "wallLimitSeconds": 30,
+      "log": "row8-radius.log",
+      "logSHA256": "579dd1b065006a3514e9d9daa316af6a35a9a7b62252f2d4fd42011622abec08",
+      "check": "row8-radius",
+      "script": "full/wild17/check_row8_bound.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.71,
+      "wallLimitSeconds": 60,
+      "log": "row8-collective.log",
+      "logSHA256": "bc39865216a0f9b109bcdc404d6d00d88d24d724f11bd078bd748d7d41ee59d2",
+      "check": "row8-collective",
+      "script": "full/wild17/blowup/check_collective.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.036,
+      "wallLimitSeconds": 60,
+      "log": "quartic-models.log",
+      "logSHA256": "b5a18bbdf2c5a434aaa35480285fc7337503585ad037df08cf6fc7aee28e4bda",
+      "check": "quartic-models",
+      "script": "full/wild17/blowup/m4/check_independent_model.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.038,
+      "wallLimitSeconds": 30,
+      "log": "quartic-lift.log",
+      "logSHA256": "e7633bc26741b7ad2114fe8840139212669c3da3e512c768b8865dcb3c4fb1e9",
+      "check": "quartic-lift",
+      "script": "full/wild17/blowup/m4/check_lift_consequences.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.038,
+      "wallLimitSeconds": 30,
+      "log": "p19-first-jet.log",
+      "logSHA256": "90588c9a7198a836fb40e1411fb17dfa3ae76880c284d86995f5cfb3c8fed14a",
+      "check": "p19-first-jet",
+      "script": "full/global/verify_p19_first_jet.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.038,
+      "wallLimitSeconds": 30,
+      "log": "digit-blocks.log",
+      "logSHA256": "c0bc664d3d586d8caa1379e987eeed0629d03afd302138f4ef347b24c2aa9254",
+      "check": "digit-blocks",
+      "script": "full/cluster_tree/verify_digit_blocks.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.496,
+      "wallLimitSeconds": 30,
+      "log": "analytic-models.log",
+      "logSHA256": "934391e017ea97179df8c592de5c58cebb87ad96b0d7d33047729766bd37cd40",
+      "check": "analytic-models",
+      "script": "full/global_analytic/verify_integral_countermodels.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.039,
+      "wallLimitSeconds": 30,
+      "log": "height-models.log",
+      "logSHA256": "c4afe289b212c73e6855b49921c0b11de7a448797c0eb05969a4882f69eea639",
+      "check": "height-models",
+      "script": "full/global_height/verify_height_models.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.075,
+      "wallLimitSeconds": 30,
+      "log": "matrix-models.log",
+      "logSHA256": "5eb110ff6bd49898dee57d3ec3925b5c6dc1edb9f98e765346af18d4b2d4e61d",
+      "check": "matrix-models",
+      "script": "full/global_matrix/verify_compressions.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.09,
+      "wallLimitSeconds": 60,
+      "log": "independent-integral-cut.log",
+      "logSHA256": "987ecc98b95b1ee963083ba93b3a27b959f3634969bd83f778922c6e21931d8c",
+      "check": "independent-integral-cut",
+      "script": "full/check_integral_syzygy.py"
+    },
+    {
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 11.241,
+      "wallLimitSeconds": 300,
+      "log": "row9-batch3.log",
+      "logSHA256": "91c3dbaa73fa8517c2d84ad2cc28802ab69f5a9f28ce6ce66e69a420ce9c2398",
+      "check": "row9-batch3",
+      "script": "full/collective17/exclusions/batch-m6/check_batch.py"
+    }
+  ],
+  "executedCount": 27,
+  "omitted": [],
+  "sympyIndependentSyzygyIncluded": true,
+  "m6SavedCertificateChecked": true,
+  "m6FreshCensusIncluded": false,
+  "portabilityOptions": {
+    "cxx": "c++",
+    "timeoutScale": 1,
+    "checkTimeout": null,
+    "compileTimeout": 30,
+    "nativeTimeout": null
+  },
+  "notProved": [
+    "unrestricted degree20",
+    "all-degree Casas-Alvero",
+    "novelty",
+    "external validation"
+  ]
+}

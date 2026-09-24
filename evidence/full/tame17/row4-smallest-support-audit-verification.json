@@ -1,0 +1,196 @@
+{
+  "status": "PASS",
+  "scope": "Row4 exact deficiency support {2,4,10,12,18,19} only",
+  "implementation": "standard library; no producer imports or FLINT",
+  "field_elements_tested": 83521,
+  "distinct_roots": 18,
+  "oriented_markings": 9826,
+  "survivors": [
+    {
+      "alpha": [
+        1,
+        7,
+        16,
+        7
+      ],
+      "witnesses": [
+        [
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0,
+          0
+        ]
+      ],
+      "u": {
+        "4": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "10": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "12": [
+          9,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "alpha": [
+        13,
+        10,
+        1,
+        10
+      ],
+      "witnesses": [
+        [
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0,
+          0
+        ]
+      ],
+      "u": {
+        "4": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "10": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "12": [
+          9,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "ell_active": [
+    [
+      10,
+      14
+    ],
+    [
+      16,
+      15
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      16,
+      15
+    ]
+  ],
+  "square_jacobian_mod17": [
+    [
+      2,
+      12
+    ],
+    [
+      0,
+      9
+    ]
+  ],
+  "lift_stages": [
+    {
+      "precision": 2,
+      "t": 95,
+      "s": 91,
+      "u": {
+        "4": 86,
+        "10": 191,
+        "12": 9
+      }
+    },
+    {
+      "precision": 3,
+      "t": 2696,
+      "s": 1536,
+      "u": {
+        "4": 1531,
+        "10": 2792,
+        "12": 2610
+      }
+    }
+  ],
+  "critical_orientations": [
+    {
+      "root": [
+        2788,
+        3707
+      ],
+      "value": [
+        2601,
+        1156
+      ],
+      "divided": [
+        9,
+        4
+      ],
+      "norm_mod17": 4
+    },
+    {
+      "root": [
+        1493,
+        1206
+      ],
+      "value": [
+        4046,
+        3757
+      ],
+      "divided": [
+        14,
+        13
+      ],
+      "norm_mod17": 4
+    }
+  ],
+  "unused_filter": "quadratic first-jet feature was not invoked",
+  "producer_fingerprints": {
+    "row4_first_obstruction.py": "c40cadbe7eea2d5b32cd0f9b592a3a2ba8eba6a83d3a04430284f4603d908367",
+    "row4-first-obstruction.json": "6f8753353f48baecd57f274a42c6911e22668666068d394601c94e2c2dc869f0",
+    "lift_row4_smallest_support.py": "e24980a68a085b32a77e6f7a8588a03f20b94b7f177f28acd91433182bc32cb6",
+    "row4-smallest-support-lift.json": "9300cc66e2de49b58c1efbbd8764bcc940c1c46188fa0e54134cfb6c6959c363",
+    "ROW4_SMALLEST_SUPPORT_EXCLUSION.md": "c3c0ad6657c26cac1b1f1cd8d2b65d7416b3751736f037941c740444a6f5dc6d"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "scope": "28 checked exclusions collectively; remaining 212 systems unexecuted.",
+  "files": {
+    "BATCH1_PROOF.md": {
+      "bytes": 6649,
+      "sha256": "d44071baca52fdd79f78a30f84b7c3a199d08b18fac3192717abf208ca0533a7"
+    },
+    "COVERAGE.json": {
+      "bytes": 34853,
+      "sha256": "37f009e3dd2359a367f53da1338252795b82b07b9b79d89df1ee5af229208fe4"
+    },
+    "REPORT.md": {
+      "bytes": 2075,
+      "sha256": "c11afcb06d35d37df05c72b996a0d23cbf4926f1ec25ed35018d2b41203b6ca6"
+    },
+    "batch-m5/BATCH2_PROOF.md": {
+      "bytes": 4032,
+      "sha256": "5a18f7d2bd795521f3decc3d013633dc56656ae509f641280acc3258cae9e348"
+    },
+    "batch-m5/enumeration-process.json": {
+      "bytes": 85,
+      "sha256": "53b01220135a365fe792163db36613546a608296db073e4fdaaf6b7efbd7f27e"
+    },
+    "batch-m5/enumeration.log": {
+      "bytes": 2411,
+      "sha256": "58ddfde3f08b690dd7bfa992635f18b3c27251921200c9093a44636265a1bb38"
+    },
+    "batch-m5/fourth-digit-integer-check.json": {
+      "bytes": 310,
+      "sha256": "6c868385bbba409c831972abfa998200e7cd76746d93e0d1ea87c78d81f67405"
+    },
+    "batch-m5/lift-batch.json": {
+      "bytes": 215605,
+      "sha256": "985e7f871a1113e460cdf9207f5a66dad791d5bc6d9ab0d76d6d5c7deda3d042"
+    },
+    "batch-m5/lifting.log": {
+      "bytes": 7215,
+      "sha256": "aeda8eb904d97f27edcb4de5dc572007d66d1110b60e2ed7ddeaaf71dac444c9"
+    },
+    "batch-m5/native-input-independent.txt": {
+      "bytes": 750,
+      "sha256": "89102598ffeb49995c2d3b6b99cc0043d3682bf40f2245c162a494fad68f0ec1"
+    },
+    "batch-m5/native-input.txt": {
+      "bytes": 750,
+      "sha256": "89102598ffeb49995c2d3b6b99cc0043d3682bf40f2245c162a494fad68f0ec1"
+    },
+    "batch-m5/native-process.json": {
+      "bytes": 86,
+      "sha256": "77f6a4d37941f2616a6e663d502d6446f075555fe1340b64884fc5a114783d8b"
+    },
+    "batch-m5/native-replay.log": {
+      "bytes": 3192,
+      "sha256": "5b3da85afcfbb8a121291b763b5cd2087beac2e8ddef2bb4a17e970a24019c8e"
+    },
+    "batch-m5/residue-batch.json": {
+      "bytes": 28296,
+      "sha256": "13a7b29742603e47eaf6b24a3c13a96e42e57fa74531e4a1911ff8ca2280af15"
+    },
+    "batch-m5/verification-normal.json": {
+      "bytes": 5024,
+      "sha256": "b3c72be7f64113fb8bded97da2c7c0c4f4c51f454e8632c84b6f1c5408663c13"
+    },
+    "batch-m5/verification-optimized.json": {
+      "bytes": 5024,
+      "sha256": "b3c72be7f64113fb8bded97da2c7c0c4f4c51f454e8632c84b6f1c5408663c13"
+    },
+    "check_batch.py": {
+      "bytes": 11690,
+      "sha256": "822217a245ea6ab62bb97064b989bf5f47ae658f0c7d19a4ac57b68dd1c5e645"
+    },
+    "enumerate_batch.py": {
+      "bytes": 5123,
+      "sha256": "a38bd367bd218bd2a2a3f0a19bfd62cc0d997eb690f392f9acf7e14cf35adcb1"
+    },
+    "enumeration.log": {
+      "bytes": 819,
+      "sha256": "f9c0dfe08b4f4a7f95794ad4e4bf696696506cc0f49ea19995dff131974bd4a3"
+    },
+    "lift-batch.json": {
+      "bytes": 30185,
+      "sha256": "154ddc8de0ab895d30299d068bd65f67dcac046a86e4a4ff2ce5ddbd7658ba89"
+    },
+    "lift_batch.py": {
+      "bytes": 5777,
+      "sha256": "e1034f129db77d6f7b2d05eb1ff6517a90c9e45dd6f67cccd9cdebd37282bcf8"
+    },
+    "lifting.log": {
+      "bytes": 1094,
+      "sha256": "bba1f92a2c98cfb45700ba7fb50c8d6f74e7e5ce58f50b4c985df0bb1966e2d9"
+    },
+    "native-input.txt": {
+      "bytes": 519,
+      "sha256": "c7708aa69b8aa6d714ba96c7d29f37057a805760f6b7be4c92842f382d6b90d8"
+    },
+    "native-replay.log": {
+      "bytes": 602,
+      "sha256": "c31cad7db626f9b4f3c709ab19764be3453168234312658bb40990063836ac1f"
+    },
+    "replay_residues.cpp": {
+      "bytes": 4543,
+      "sha256": "93cec48bd2f4ed8afe418f2042354b39760e4f7939952b9042d5d41d5e88955f"
+    },
+    "residue-batch.json": {
+      "bytes": 7821,
+      "sha256": "9c14cd5c11b2a7decade6baef13431ce77a035c31754114428f9b52d95332797"
+    },
+    "verification-normal.json": {
+      "bytes": 1975,
+      "sha256": "26e11999db88072a39827b023f5087758e89b8327d9d74afeff941e8660557be"
+    },
+    "verification-optimized.json": {
+      "bytes": 1975,
+      "sha256": "26e11999db88072a39827b023f5087758e89b8327d9d74afeff941e8660557be"
+    }
+  }
+}

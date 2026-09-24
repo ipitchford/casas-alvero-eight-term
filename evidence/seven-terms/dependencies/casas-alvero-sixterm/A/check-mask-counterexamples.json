@@ -1,0 +1,185 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "prime": 11,
+      "degree": 20,
+      "coefficients": {
+        "20": 1,
+        "17": 4,
+        "2": 5,
+        "1": 1
+      },
+      "allNineteenHasseWitnesses": [
+        {
+          "order": 1,
+          "commonRoot": 1
+        },
+        {
+          "order": 2,
+          "commonRoot": 5
+        },
+        {
+          "order": 3,
+          "commonRoot": 0
+        },
+        {
+          "order": 4,
+          "commonRoot": 0
+        },
+        {
+          "order": 5,
+          "commonRoot": 0
+        },
+        {
+          "order": 6,
+          "commonRoot": 0
+        },
+        {
+          "order": 7,
+          "commonRoot": 0
+        },
+        {
+          "order": 8,
+          "commonRoot": 0
+        },
+        {
+          "order": 9,
+          "commonRoot": 0
+        },
+        {
+          "order": 10,
+          "commonRoot": 0
+        },
+        {
+          "order": 11,
+          "commonRoot": 0
+        },
+        {
+          "order": 12,
+          "commonRoot": 0
+        },
+        {
+          "order": 13,
+          "commonRoot": 0
+        },
+        {
+          "order": 14,
+          "commonRoot": 0
+        },
+        {
+          "order": 15,
+          "commonRoot": 0
+        },
+        {
+          "order": 16,
+          "commonRoot": 0
+        },
+        {
+          "order": 17,
+          "commonRoot": 1
+        },
+        {
+          "order": 18,
+          "commonRoot": 0
+        },
+        {
+          "order": 19,
+          "commonRoot": 0
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "prime": 13,
+      "degree": 20,
+      "coefficients": {
+        "20": 1,
+        "17": 4,
+        "16": 1,
+        "2": 4,
+        "1": 3
+      },
+      "allNineteenHasseWitnesses": [
+        {
+          "order": 1,
+          "commonRoot": 7
+        },
+        {
+          "order": 2,
+          "commonRoot": 1
+        },
+        {
+          "order": 3,
+          "commonRoot": 0
+        },
+        {
+          "order": 4,
+          "commonRoot": 0
+        },
+        {
+          "order": 5,
+          "commonRoot": 0
+        },
+        {
+          "order": 6,
+          "commonRoot": 0
+        },
+        {
+          "order": 7,
+          "commonRoot": 0
+        },
+        {
+          "order": 8,
+          "commonRoot": 0
+        },
+        {
+          "order": 9,
+          "commonRoot": 0
+        },
+        {
+          "order": 10,
+          "commonRoot": 0
+        },
+        {
+          "order": 11,
+          "commonRoot": 0
+        },
+        {
+          "order": 12,
+          "commonRoot": 0
+        },
+        {
+          "order": 13,
+          "commonRoot": 0
+        },
+        {
+          "order": 14,
+          "commonRoot": 0
+        },
+        {
+          "order": 15,
+          "commonRoot": 0
+        },
+        {
+          "order": 16,
+          "commonRoot": 1
+        },
+        {
+          "order": 17,
+          "commonRoot": 1
+        },
+        {
+          "order": 18,
+          "commonRoot": 0
+        },
+        {
+          "order": 19,
+          "commonRoot": 0
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "scope": "These prove that the closed characteristic-11 and characteristic-13 masks admit nontrivial CA polynomials. They do not give characteristic-zero counterexamples."
+}

@@ -1,0 +1,15 @@
+{
+  "support": [
+    3,
+    4,
+    10,
+    18,
+    19
+  ],
+  "prime": 31,
+  "chart": "highest displayed coefficient nonzero",
+  "degree_bound": 40,
+  "timeout_seconds": 110,
+  "status": "TIME_LIMIT_INCONCLUSIVE",
+  "limitation": "Neither a partial basis nor a modular unit alone proves the characteristic-zero family excluded."
+}

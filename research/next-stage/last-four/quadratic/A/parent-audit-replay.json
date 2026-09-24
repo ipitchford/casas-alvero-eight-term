@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "normalOptimizedEqual": true,
+  "output": "PASS: row1 exact identities, complete first sieves, corrected 4913-marking jet, final residue 5; row2 sole residue survivor (9,6).",
+  "hashes": {
+    "A_ROW1_EXCLUSION.md": "336a587c43501633de0400a3cd552f6c5ef12558ceb9bf01977ca0798e29f7df",
+    "A_ANALYSIS.md": "1b4aee5f88d4ead8633cee4bc6d705721aa192b875b1f47aebe70d820b694733",
+    "check_arithmetic.py": "433add7d46fd9743921b3d36b66b8be4c461021f7ed504ae1b4748ae1f102705"
+  }
+}

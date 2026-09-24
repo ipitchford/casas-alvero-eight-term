@@ -1,0 +1,1 @@
+All campaign subagents completed and their results were collected. The session exposes no close_agent operation; the tool registry was searched and no equivalent was available. Existing agents were reused rather than adding new slots. No ongoing computation is inferred from a stale file or status; all recorded CAS probes have terminal results.

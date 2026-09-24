@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "producerRecordSha256": "f906bbcc0a82bd63c1512df41272ea4bedeb3670917fd98eae4d83dd5eb8d82f",
+  "independentResultantMethod": "19x19 Sylvester matrix, polynomial Bareiss; producer used5x5 scaled remainder",
+  "Rdegree": 19,
+  "Udegree": 22,
+  "Hdegree": 21,
+  "bezoutCoefficientSlots": 43,
+  "bezoutNonzeroTerms": 37,
+  "exactBezoutIdentity": "CU*U+CH*H=1",
+  "mutationControl": "PASS",
+  "zeroChartScalarChecks": "PASS",
+  "denominatorChart": "D roots6,7 have B values9,12",
+  "assurance": "Arithmetic identities verified; the accompanying normalization and necessary-equation implications remain written mathematics."
+}

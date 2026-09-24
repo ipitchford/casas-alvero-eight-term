@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "sResidue": 6,
+  "rResidue": 10,
+  "a18_sMod17": 11,
+  "a19_sMod17": 6,
+  "totalDerivative_fOfs": 7,
+  "criticalDerivative_r": 9,
+  "criticalDerivative_s": 5,
+  "scope": "Exact local arithmetic; structural proof in ROW6_ETALE_AUDIT.md"
+}

@@ -1,0 +1,271 @@
+{
+  "excludedVolatileFiles": [
+    "compiled replay_residues binaries",
+    "RUN.lock",
+    "__pycache__ directories",
+    "this manifest itself"
+  ],
+  "files": {
+    "BATCH1_PROOF.md": {
+      "bytes": 6649,
+      "sha256": "d44071baca52fdd79f78a30f84b7c3a199d08b18fac3192717abf208ca0533a7"
+    },
+    "COVERAGE.json": {
+      "bytes": 58901,
+      "sha256": "e62025e1a557de21a6ea375a2bf496ada17eaa6c267c5ea75d7e1a4a3e4dc52a"
+    },
+    "MANIFEST.before-m6.json": {
+      "bytes": 4109,
+      "sha256": "21056bba2fea98831281ed9f3d7d9d3fb9262bfa46fb61867d2d9b27fc4451d3"
+    },
+    "REPORT.md": {
+      "bytes": 3208,
+      "sha256": "692c2174dfcbf72382234920374676ed7dcb2566633504445f403ca79d813db4"
+    },
+    "batch-m5/BATCH2_PROOF.md": {
+      "bytes": 4032,
+      "sha256": "5a18f7d2bd795521f3decc3d013633dc56656ae509f641280acc3258cae9e348"
+    },
+    "batch-m5/MANIFEST.json": {
+      "bytes": 1933,
+      "sha256": "84c16c0bf0503393eb218678b18d0607c1d0567ccffdd20a79ccfb0eabc1b842"
+    },
+    "batch-m5/enumeration-process.json": {
+      "bytes": 85,
+      "sha256": "53b01220135a365fe792163db36613546a608296db073e4fdaaf6b7efbd7f27e"
+    },
+    "batch-m5/enumeration.log": {
+      "bytes": 2411,
+      "sha256": "58ddfde3f08b690dd7bfa992635f18b3c27251921200c9093a44636265a1bb38"
+    },
+    "batch-m5/fourth-digit-integer-check.json": {
+      "bytes": 310,
+      "sha256": "6c868385bbba409c831972abfa998200e7cd76746d93e0d1ea87c78d81f67405"
+    },
+    "batch-m5/lift-batch.json": {
+      "bytes": 215605,
+      "sha256": "985e7f871a1113e460cdf9207f5a66dad791d5bc6d9ab0d76d6d5c7deda3d042"
+    },
+    "batch-m5/lifting.log": {
+      "bytes": 7215,
+      "sha256": "aeda8eb904d97f27edcb4de5dc572007d66d1110b60e2ed7ddeaaf71dac444c9"
+    },
+    "batch-m5/native-input-independent.txt": {
+      "bytes": 750,
+      "sha256": "89102598ffeb49995c2d3b6b99cc0043d3682bf40f2245c162a494fad68f0ec1"
+    },
+    "batch-m5/native-input.txt": {
+      "bytes": 750,
+      "sha256": "89102598ffeb49995c2d3b6b99cc0043d3682bf40f2245c162a494fad68f0ec1"
+    },
+    "batch-m5/native-process.json": {
+      "bytes": 86,
+      "sha256": "77f6a4d37941f2616a6e663d502d6446f075555fe1340b64884fc5a114783d8b"
+    },
+    "batch-m5/native-replay.log": {
+      "bytes": 3192,
+      "sha256": "5b3da85afcfbb8a121291b763b5cd2087beac2e8ddef2bb4a17e970a24019c8e"
+    },
+    "batch-m5/residue-batch.json": {
+      "bytes": 28296,
+      "sha256": "13a7b29742603e47eaf6b24a3c13a96e42e57fa74531e4a1911ff8ca2280af15"
+    },
+    "batch-m5/verification-normal.json": {
+      "bytes": 5024,
+      "sha256": "b3c72be7f64113fb8bded97da2c7c0c4f4c51f454e8632c84b6f1c5408663c13"
+    },
+    "batch-m5/verification-optimized.json": {
+      "bytes": 5024,
+      "sha256": "b3c72be7f64113fb8bded97da2c7c0c4f4c51f454e8632c84b6f1c5408663c13"
+    },
+    "batch-m6/COMPLETION.json": {
+      "bytes": 779,
+      "sha256": "8ab690812c79c24142eb97ab080b578095b2143edc20bae78e2dff94039c4ac6"
+    },
+    "batch-m6/CONFIG.json": {
+      "bytes": 7756,
+      "sha256": "d70578518144ae322be3ebfdb7db568fcf428f1b270c79c6224802969031de08"
+    },
+    "batch-m6/COVERAGE.before-m6.json": {
+      "bytes": 34853,
+      "sha256": "37f009e3dd2359a367f53da1338252795b82b07b9b79d89df1ee5af229208fe4"
+    },
+    "batch-m6/MANIFEST.json": {
+      "bytes": 5545,
+      "sha256": "5a88f0824e931d868d3b5a3eac78bb8320eb3bbdc394912c36023f2368265fd8"
+    },
+    "batch-m6/REPORT.before-m6.md": {
+      "bytes": 2075,
+      "sha256": "c11afcb06d35d37df05c72b996a0d23cbf4926f1ec25ed35018d2b41203b6ca6"
+    },
+    "batch-m6/REVIEW_ADDENDUM.md": {
+      "bytes": 7568,
+      "sha256": "ffe360b55aec1b368565bad48f065cfd6c6154cf3896f34d33c118c56fd595c0"
+    },
+    "batch-m6/assemble_runs.py": {
+      "bytes": 5801,
+      "sha256": "dab6f4ee378ad309ad96451ee565a66cdee8b3297dfe5b3ee46c28cddca615f1"
+    },
+    "batch-m6/check_batch.py": {
+      "bytes": 17261,
+      "sha256": "54374c117fcdaea4271b065999f37f70436d07accf539960bf33dd13a707d044"
+    },
+    "batch-m6/collect_native.py": {
+      "bytes": 3176,
+      "sha256": "3d7d9d3b5bc2f9a9e76f90b074a95fc66dba492bb1429cb6f6b98db41b8708ed"
+    },
+    "batch-m6/combined-process.json": {
+      "bytes": 650,
+      "sha256": "016b2915c70d537753a5cd0adf71b9aa362142c8516b4602983e7857ce054adb"
+    },
+    "batch-m6/combined-producer.log": {
+      "bytes": 18572,
+      "sha256": "bcf48a0913d9233603ceef3cb2c89bdf0ecc51554eef4a8e144b1152670d2be6"
+    },
+    "batch-m6/continuation-input.txt": {
+      "bytes": 527,
+      "sha256": "617b12fba291838dd53940da17a10f9546e8360e11240f079c68a10beb121f0b"
+    },
+    "batch-m6/continuation-process.json": {
+      "bytes": 583,
+      "sha256": "c08e7ed36dba16828b7d600f3708144424044121eaf05be6f1c6770c2c0fafb0"
+    },
+    "batch-m6/continuation-progress.log": {
+      "bytes": 308,
+      "sha256": "8434879d5a9c32b5b84ac6ae85a76c3deaf4294a13e462c1582c45ff232e806d"
+    },
+    "batch-m6/continuation.log": {
+      "bytes": 1049,
+      "sha256": "d432fd329b45767819d48f13abe35d225c5c3969c83080cabe5314345449d821"
+    },
+    "batch-m6/lift-batch.json": {
+      "bytes": 1259405,
+      "sha256": "de050c34c37bf59b8cf24cbd858919020a7ffbc4837790aa4068908f8c12bdd6"
+    },
+    "batch-m6/lift_batch.py": {
+      "bytes": 5783,
+      "sha256": "bddb69b421d1bda21b28595471ad64df0933538b9966ccf71bcb77bc94856c57"
+    },
+    "batch-m6/lifting-process.json": {
+      "bytes": 112,
+      "sha256": "9ef981a0f2ec24b8af1ee6967ae9b35007b5acae57bed9ff41da57141f1e8419"
+    },
+    "batch-m6/lifting.log": {
+      "bytes": 38877,
+      "sha256": "042e1b3a7f7dab05eb0062fb5222c3cbf132e9ffb9054980bb5872570928c52e"
+    },
+    "batch-m6/native-input.txt": {
+      "bytes": 1324,
+      "sha256": "e9c6bebb2458aa945616433b0ef315e58a2e8525176cb03e38426bad959f5f22"
+    },
+    "batch-m6/prefix-recovery.json": {
+      "bytes": 788,
+      "sha256": "5eeb13850378a393d4e9c7818517c7e9754c32a09eee9fdf96ba470d9bb3b3ec"
+    },
+    "batch-m6/producer-process.json": {
+      "bytes": 559,
+      "sha256": "957d6ab452b8aa2387671839ae225ec60d798844c7ece9eb2cec48c74d65c237"
+    },
+    "batch-m6/producer-progress.log": {
+      "bytes": 2896,
+      "sha256": "9e3c838ab80d545afdfbf63510c0a0ef35fd934af47f89546887a4a98e720a02"
+    },
+    "batch-m6/producer.log": {
+      "bytes": 17536,
+      "sha256": "d532ea41dafcd6189442d50386f1a7e5be2507e7028a620abb9c78f4f4a2f2ad"
+    },
+    "batch-m6/replay-process.json": {
+      "bytes": 576,
+      "sha256": "b6fed9883015b786abc7f920c57211d0d02f9d9e4a5d73b8db68b0455747aff0"
+    },
+    "batch-m6/replay-progress.log": {
+      "bytes": 3210,
+      "sha256": "082c349f5273f85abbf4a01ccdfa741b2439f393aeed96e63ce2a735912bb529"
+    },
+    "batch-m6/replay.log": {
+      "bytes": 18572,
+      "sha256": "bcf48a0913d9233603ceef3cb2c89bdf0ecc51554eef4a8e144b1152670d2be6"
+    },
+    "batch-m6/replay_residues.cpp": {
+      "bytes": 4840,
+      "sha256": "bf4c3066bc57c3a74844c99ee74e91505a5f13c59183bea4bb44a8b3923b9873"
+    },
+    "batch-m6/residue-batch.json": {
+      "bytes": 133645,
+      "sha256": "7dfbf2c1b6e9323374d3cef2f80645dd706b7b3f24ad2176881f141b8ddf7399"
+    },
+    "batch-m6/run_native.py": {
+      "bytes": 3322,
+      "sha256": "ce71756a9e1dd95ef972ac9c0e806cee2e923e758e6bf2d620a20b54b40aa91e"
+    },
+    "batch-m6/verification-normal.json": {
+      "bytes": 12047,
+      "sha256": "91c3dbaa73fa8517c2d84ad2cc28802ab69f5a9f28ce6ce66e69a420ce9c2398"
+    },
+    "batch-m6/verification-optimized.json": {
+      "bytes": 12047,
+      "sha256": "91c3dbaa73fa8517c2d84ad2cc28802ab69f5a9f28ce6ce66e69a420ce9c2398"
+    },
+    "batch-m6/verification-process.json": {
+      "bytes": 291,
+      "sha256": "1cb9fafa4452c3cb59968a4cd73586ab9761e929dd13a8805ce73be259edb87a"
+    },
+    "check_batch.py": {
+      "bytes": 12007,
+      "sha256": "eebf941417cb76fc72142322d6f46a726de6f6cedca5feb2d9084138443043d5"
+    },
+    "enumerate_batch.py": {
+      "bytes": 5123,
+      "sha256": "a38bd367bd218bd2a2a3f0a19bfd62cc0d997eb690f392f9acf7e14cf35adcb1"
+    },
+    "enumeration.log": {
+      "bytes": 819,
+      "sha256": "f9c0dfe08b4f4a7f95794ad4e4bf696696506cc0f49ea19995dff131974bd4a3"
+    },
+    "lift-batch.json": {
+      "bytes": 30185,
+      "sha256": "154ddc8de0ab895d30299d068bd65f67dcac046a86e4a4ff2ce5ddbd7658ba89"
+    },
+    "lift_batch.py": {
+      "bytes": 5777,
+      "sha256": "e1034f129db77d6f7b2d05eb1ff6517a90c9e45dd6f67cccd9cdebd37282bcf8"
+    },
+    "lifting.log": {
+      "bytes": 1094,
+      "sha256": "bba1f92a2c98cfb45700ba7fb50c8d6f74e7e5ce58f50b4c985df0bb1966e2d9"
+    },
+    "native-input.txt": {
+      "bytes": 519,
+      "sha256": "c7708aa69b8aa6d714ba96c7d29f37057a805760f6b7be4c92842f382d6b90d8"
+    },
+    "native-replay.log": {
+      "bytes": 602,
+      "sha256": "c31cad7db626f9b4f3c709ab19764be3453168234312658bb40990063836ac1f"
+    },
+    "native_options.py": {
+      "bytes": 1548,
+      "sha256": "34b1636ce7f83fb9f7a4bfc037e20ef39352ad86e5392a8e2f819e8f394c5248"
+    },
+    "replay_residues.cpp": {
+      "bytes": 4543,
+      "sha256": "93cec48bd2f4ed8afe418f2042354b39760e4f7939952b9042d5d41d5e88955f"
+    },
+    "residue-batch.json": {
+      "bytes": 7821,
+      "sha256": "9c14cd5c11b2a7decade6baef13431ce77a035c31754114428f9b52d95332797"
+    },
+    "verification-normal.json": {
+      "bytes": 1975,
+      "sha256": "26e11999db88072a39827b023f5087758e89b8327d9d74afeff941e8660557be"
+    },
+    "verification-optimized.json": {
+      "bytes": 1975,
+      "sha256": "26e11999db88072a39827b023f5087758e89b8327d9d74afeff941e8660557be"
+    }
+  },
+  "historicalSnapshots": {
+    "MANIFEST.before-m6.json": "Earlier 28-system manifest: resolve REPORT.md and COVERAGE.json against batch-m6/*.before-m6.*; resolve the revised check_batch.py against package-root portability-originals/evidence/full/collective17/exclusions/check_batch.py. Other historical inputs are unchanged."
+  },
+  "portabilityRevision": "Current script hashes updated; original scripts/manifests preserved under package-root portability-originals. Raw mathematical certificates and execution receipts unchanged.",
+  "scope": "Current review manifest: 79 canonical systems excluded; 161 systems unexecuted. m6 uses repeated native enumeration and independent survivor/lift arithmetic, without exhaustive FLINT replay."
+}

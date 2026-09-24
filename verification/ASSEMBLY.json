@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scope": "Assembly checks only; not mathematical validation",
+  "pdfPages": 28,
+  "pdfCompileExitCode": 0,
+  "missingGlyphWarnings": false,
+  "overfullBoxes": false,
+  "visuallyInspectedPages": [
+    1,
+    13,
+    14,
+    22,
+    28
+  ],
+  "explicitMarkdownEvidenceLinksChecked": 31,
+  "missingEvidenceLinks": [],
+  "sourceEvidenceByteComparison": {
+    "full": 290,
+    "audit": 29,
+    "seven-terms": 257,
+    "mismatches": []
+  },
+  "defaultReplayChecks": 27,
+  "defaultReplayStatus": "PASS",
+  "m6DefaultReplay": "saved census records and separate survivor/lift arithmetic",
+  "m6FreshFullNativeRepeat": "completed earlier in this closeout; same implementation, not independent FLINT",
+  "originalTargetsProved": false
+}

@@ -1,0 +1,259 @@
+{
+  "status": "PASS",
+  "integerFactorAndCoefficientIdentities": "PASS",
+  "originalNormalizationValuationTransport": "PASS",
+  "valuationGapChecks": {
+    "X2_second_term_minus_first": [
+      0,
+      2
+    ],
+    "X2_third_term_minus_first": [
+      1,
+      2
+    ],
+    "G4_middle_term_minus_u4": [
+      0,
+      3
+    ],
+    "G4_row67_last_term_minus_u4": [
+      0,
+      6
+    ]
+  },
+  "distinguishedRootSimplicityAt17": [
+    {
+      "row": 4,
+      "hDerivativeAtOneMod17": 13
+    },
+    {
+      "row": 6,
+      "hDerivativeAtOneMod17": 11
+    },
+    {
+      "row": 7,
+      "hDerivativeAtOneMod17": 14
+    }
+  ],
+  "residueIntersectionResults": [
+    {
+      "row": "4",
+      "twoAdicType": "A",
+      "distinguishedRootResidue": 0,
+      "coefficientPatternCount": 50,
+      "markedAssignmentCount": 4095,
+      "assignmentsWithH1WitnessInZeroCluster": 2047,
+      "sampleNecessaryResidueAssignment": {
+        "normalizedCoefficientOnes": [
+          4
+        ],
+        "unitWitnessNormalizedDegrees": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "row": "4",
+      "twoAdicType": "A",
+      "distinguishedRootResidue": 1,
+      "coefficientPatternCount": 58,
+      "markedAssignmentCount": 6143,
+      "assignmentsWithH1WitnessInZeroCluster": 3071,
+      "sampleNecessaryResidueAssignment": {
+        "normalizedCoefficientOnes": [
+          2,
+          4
+        ],
+        "unitWitnessNormalizedDegrees": [
+          2,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "row": "4",
+      "twoAdicType": "B",
+      "distinguishedRootResidue": 0,
+      "coefficientPatternCount": 145,
+      "markedAssignmentCount": 4608,
+      "assignmentsWithH1WitnessInZeroCluster": 1536,
+      "sampleNecessaryResidueAssignment": {
+        "normalizedCoefficientOnes": [
+          16
+        ],
+        "unitWitnessNormalizedDegrees": [
+          16,
+          18
+        ]
+      }
+    },
+    {
+      "row": "4",
+      "twoAdicType": "B",
+      "distinguishedRootResidue": 1,
+      "coefficientPatternCount": 97,
+      "markedAssignmentCount": 3584,
+      "assignmentsWithH1WitnessInZeroCluster": 1536,
+      "sampleNecessaryResidueAssignment": {
+        "normalizedCoefficientOnes": [
+          2,
+          16,
+          18
+        ],
+        "unitWitnessNormalizedDegrees": [
+          2,
+          16,
+          18
+        ]
+      }
+    },
+    {
+      "row": "6/7",
+      "twoAdicType": "A",
+      "distinguishedRootResidue": 0,
+      "coefficientPatternCount": 50,
+      "markedAssignmentCount": 4095,
+      "assignmentsWithH1WitnessInZeroCluster": 2047,
+      "sampleNecessaryResidueAssignment": {
+        "normalizedCoefficientOnes": [
+          4
+        ],
+        "unitWitnessNormalizedDegrees": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "row": "6/7",
+      "twoAdicType": "A",
+      "distinguishedRootResidue": 1,
+      "coefficientPatternCount": 58,
+      "markedAssignmentCount": 6143,
+      "assignmentsWithH1WitnessInZeroCluster": 3071,
+      "sampleNecessaryResidueAssignment": {
+        "normalizedCoefficientOnes": [
+          2,
+          4
+        ],
+        "unitWitnessNormalizedDegrees": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "row": "6/7",
+      "twoAdicType": "B",
+      "distinguishedRootResidue": 0,
+      "coefficientPatternCount": 145,
+      "markedAssignmentCount": 4608,
+      "assignmentsWithH1WitnessInZeroCluster": 1536,
+      "sampleNecessaryResidueAssignment": {
+        "normalizedCoefficientOnes": [
+          16
+        ],
+        "unitWitnessNormalizedDegrees": [
+          16,
+          18
+        ]
+      }
+    },
+    {
+      "row": "6/7",
+      "twoAdicType": "B",
+      "distinguishedRootResidue": 1,
+      "coefficientPatternCount": 97,
+      "markedAssignmentCount": 3584,
+      "assignmentsWithH1WitnessInZeroCluster": 1536,
+      "sampleNecessaryResidueAssignment": {
+        "normalizedCoefficientOnes": [
+          2,
+          16,
+          18
+        ],
+        "unitWitnessNormalizedDegrees": [
+          2,
+          3,
+          16,
+          18
+        ]
+      }
+    },
+    {
+      "row": "9",
+      "twoAdicType": "A",
+      "distinguishedRootResidue": 0,
+      "coefficientPatternCount": 22,
+      "markedAssignmentCount": 1535,
+      "assignmentsWithH1WitnessInZeroCluster": 1535,
+      "sampleNecessaryResidueAssignment": {
+        "normalizedCoefficientOnes": [
+          4
+        ],
+        "unitWitnessNormalizedDegrees": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "row": "9",
+      "twoAdicType": "A",
+      "distinguishedRootResidue": 1,
+      "coefficientPatternCount": 24,
+      "markedAssignmentCount": 512,
+      "assignmentsWithH1WitnessInZeroCluster": 0,
+      "sampleNecessaryResidueAssignment": {
+        "normalizedCoefficientOnes": [
+          3,
+          4,
+          8,
+          18,
+          19
+        ],
+        "unitWitnessNormalizedDegrees": [
+          3,
+          4,
+          8,
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "row": "9",
+      "twoAdicType": "B",
+      "distinguishedRootResidue": 0,
+      "coefficientPatternCount": 0,
+      "markedAssignmentCount": 0,
+      "assignmentsWithH1WitnessInZeroCluster": 0,
+      "sampleNecessaryResidueAssignment": null
+    },
+    {
+      "row": "9",
+      "twoAdicType": "B",
+      "distinguishedRootResidue": 1,
+      "coefficientPatternCount": 161,
+      "markedAssignmentCount": 1536,
+      "assignmentsWithH1WitnessInZeroCluster": 0,
+      "sampleNecessaryResidueAssignment": {
+        "normalizedCoefficientOnes": [
+          3,
+          16,
+          19
+        ],
+        "unitWitnessNormalizedDegrees": [
+          3,
+          16,
+          18,
+          19
+        ]
+      }
+    }
+  ],
+  "scope": "One full scale/type subcase of row9 is excluded. Rows4/6/7 have additional conditional exact valuation restrictions. No complete p17 row is excluded, and surviving residue assignments are not claimed to lift."
+}

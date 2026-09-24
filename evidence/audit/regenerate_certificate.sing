@@ -1,0 +1,23 @@
+// Run in a fresh directory: write() appends to certificate.generated.txt.
+// Verify with: python3 /path/to/verify_mod31.py certificate.generated.txt
+// Exact F31 computation; roots u and v need not be distinct.
+ring R=31,(u,v),dp;
+poly a1=-15504;
+poly a2=-4845*u^16-a1*1365*u^11;
+poly a3=-20*v^19-a1*15*v^14-a2*4*v^3;
+ideal I=1+a1+a2+a3,u^19+a1*u^14+a2*u^3+a3,v^19+a1*v^14+a2*v^3+a3;
+ideal G=std(I);
+print("UNSATURATED_BASIS_BEGIN"); G; print("UNSATURATED_BASIS_END");
+if (size(G)!=1 || G[1]!=1) { print("FAIL_NOT_UNIT"); quit; }
+matrix M=lift(I,ideal(1));
+poly total=I[1]*M[1,1]+I[2]*M[2,1]+I[3]*M[3,1];
+if (total!=1) { print("FAIL_LIFT"); quit; }
+int i; poly q;
+for(i=1;i<=3;i++) {
+ q=I[i];
+ while(q!=0) { write("certificate.generated.txt","I|"+string(i)+"|"+string(leadcoef(q))+"|"+string(leadexp(q))); q=q-lead(q); }
+ q=M[i,1];
+ while(q!=0) { write("certificate.generated.txt","C|"+string(i)+"|"+string(leadcoef(q))+"|"+string(leadexp(q))); q=q-lead(q); }
+}
+print("PASS_UNSATURATED_UNIT_IDENTITY_EXPORTED");
+quit;

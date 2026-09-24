@@ -1,0 +1,14 @@
+ring r=17,x,dp;
+proc row(poly a,poly b,poly c,poly d,poly e)
+{poly h=x^20+a*x^18+b*x^17+c*x^3+d*x^2+e*x;
+print("COEFF");print(string(a)+","+string(b)+","+string(c)+","+string(d)+","+string(e));
+print("H18");print(gcd(h,3*x^2+a));
+print("H17");print(gcd(h,x^3+a*x+b));
+print("H3");print(gcd(h,x^17+c));
+print("H2");print(gcd(h,3*x^18+3*c*x+d));
+print("H1");print(gcd(h,3*x^19+a*x^17+3*c*x^2+2*d*x+e));}
+row(0,0,-1,0,0);row(-3,0,-1,0,3);row(-3,8,-1,12,0);
+row(-3,0,0,11,8);row(-3,2,0,0,0);row(-3,2,0,11,6);row(-3,2,0,14,3);
+row(0,-1,0,0,0);row(0,-1,0,14,3);row(0,-1,0,12,5);
+row(0,0,0,-3,2);
+quit;

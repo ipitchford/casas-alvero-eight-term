@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "charts": [
+    {
+      "chart": "generic",
+      "resultantDegrees": [
+        359,
+        395
+      ],
+      "degreeBounds": [
+        648,
+        684
+      ],
+      "distinctFieldPoints": 685,
+      "BezoutIdentity": "PASS",
+      "mutationControl": "PASS"
+    },
+    {
+      "chart": "special",
+      "resultantDegrees": [
+        19,
+        21
+      ],
+      "degreeBounds": [
+        36,
+        38
+      ],
+      "distinctFieldPoints": 39,
+      "BezoutIdentity": "PASS",
+      "mutationControl": "PASS"
+    }
+  ],
+  "field": "F13[t]/(t3-t-1)",
+  "sharedImplementation": "/Users/admin/Documents/Codex/2026-09-21/fi/work/casas-alvero-sixterm/B/verify_certificate.py",
+  "sharedImplementationSha256": "76de89d46c42577b0d8f9129ef0f25a77cd4fed34c595bf48a0f0594a6b3bfc1",
+  "certificateSha256": "c8a9258481d6c007041453acdc23bff2b643b767896e6a5f5d3bb7a8ee346273",
+  "elapsedSeconds": 0.39129625000350643
+}

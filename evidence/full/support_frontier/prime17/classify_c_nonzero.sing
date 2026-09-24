@@ -1,0 +1,27 @@
+ring r=17,(x,s,t),dp;
+proc classify(poly a,poly b,poly d,string name)
+{
+  poly e=-a-b-d;
+  poly h=x^20+a*x^18+b*x^17-x^3+d*x^2+e*x;
+  poly H18=3*x^2+a;
+  poly H2=3*x^18-3*x+d;
+  poly H1=3*x^19+a*x^17-3*x^2+2*d*x+e;
+  print("CHART "+name);
+  int started=timer;
+  poly R18=resultant(h,H18,x);
+  poly R2=resultant(h,H2,x);
+  poly R1=resultant(h,H1,x);
+  print("RESULTANT_SECONDS");print(timer-started);
+  ideal I=R18,R2,R1;
+  option(redSB);
+  ideal G=std(I);
+  print("BASIS_SECONDS");print(timer-started);
+  print("DIMENSION");print(dim(G));
+  print("VDIM");print(vdim(G));
+  print("BASIS");G;
+  print("R18");print(R18);
+  print("R2");print(R2);
+  print("R1");print(R1);
+}
+classify(s,0,t,"b_zero");
+quit;

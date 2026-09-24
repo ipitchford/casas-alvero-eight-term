@@ -1,0 +1,328 @@
+{
+  "status": "PASS",
+  "checkers": 16,
+  "executions": 32,
+  "records": [
+    {
+      "checker": "../../new-results/check_row8_seven_term.py",
+      "sourceSHA256": "593d9e24a8164e3271de4d7e21a389b714a14c881827529df15ca4be8b87d5e2",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "01-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "01-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "check_row1_certificate.py",
+      "sourceSHA256": "893832c74625a721706bdb385535494ea1de29f2d6a46af628190e1bf596871e",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "02-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "02-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "check_row1_binary_census.py",
+      "sourceSHA256": "973b5cf655773e0b5b31b1dc7da4099b59359a8b25f84778d4f70b31604e78af",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "03-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "03-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "check_row5_first_divided.py",
+      "sourceSHA256": "530606c1854543c2da09c1ec049fc7784f2b1a4a28c469e3b437290b02b768ad",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "04-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "04-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "row5-unit/check_row5_unit.py",
+      "sourceSHA256": "519bf5fb81f4b64890911139457703be52a7f4fd476c28ca207c412a688cd131",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "05-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "05-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "row5-jets/check_row5_jets.py",
+      "sourceSHA256": "1da001ee2d90d4582dd7702e3c9b713ba318c105cc9994c6e122b212fe4d5db6",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "06-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "06-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "row1-ramification/check_row1_elimination.py",
+      "sourceSHA256": "43128c3b951f5fce880309be875b650f2cf849ab8de740d2f08e6ab234d2d478",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "07-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "07-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "last-four/boundary/check_direct_jet.py",
+      "sourceSHA256": "03db4d040e416fa114fae93cb82a9502eeb4636ffb70b416f741ed375b029f67",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "08-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "08-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "last-four/middle/check_direct_jet_independent.py",
+      "sourceSHA256": "ae126df0375c03a39f5c4650a81ede432b3c7794945ad856aca59a3de147484e",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "09-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "09-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "last-four/middle/check_mixed_strata.py",
+      "sourceSHA256": "090b820edc1a069e18d7f2e605da0fec6676e544c4c4f1d1b13577de2329b8c9",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "10-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "10-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "last-four/quadratic/A/check_arithmetic.py",
+      "sourceSHA256": "433add7d46fd9743921b3d36b66b8be4c461021f7ed504ae1b4748ae1f102705",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "11-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "11-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "last-four/quadratic/B/check_B.py",
+      "sourceSHA256": "cdd1088cf338fd86a3ed6708524399a62d85248b2fc3a004e8679ae52bae941e",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "12-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "12-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "last-four/row2/check_row2.py",
+      "sourceSHA256": "628217978eed4707de53b202b67ff7ec33ba7d58a1eb284436c021b814a4130e",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "13-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "13-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "last-four/row2/check_row2_independent.py",
+      "sourceSHA256": "35d3e5f0d96eddd33a7cfd9e33c46b494f3b82ab0ca2aa052c979b16bde381ba",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "14-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "14-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "coverage/check_seven_term_inventory.py",
+      "sourceSHA256": "cea4f40ec5b6ced2b11b335a7e21cfb3516db792503eddb90de7687fd24c45c5",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "15-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "15-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    },
+    {
+      "checker": "coverage/check_eight_term_assembly.py",
+      "sourceSHA256": "a74928d6b43a62e96cf89dac9eb8fc570fdb9a901638fb6c6951d3d8ee902203",
+      "modes": [
+        {
+          "mode": "normal",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "16-normal.txt"
+        },
+        {
+          "mode": "optimized",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "16-optimized.txt"
+        }
+      ],
+      "identicalModeOutput": true,
+      "status": "PASS"
+    }
+  ],
+  "scope": "Exact arithmetic and assembly replay only. Mathematical arguments and external novelty require separate review."
+}

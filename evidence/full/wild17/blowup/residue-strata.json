@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "strata": [
+    {"lastUnitDegree":7,"lastUnitCoefficientDegree":7,"count":3},
+    {"lastUnitDegree":9,"lastUnitCoefficientDegree":9,"count":19},
+    {"lastUnitDegree":10,"lastUnitCoefficientDegree":10,"count":53},
+    {"lastUnitDegree":11,"lastUnitCoefficientDegree":11,"count":185},
+    {"lastUnitDegree":12,"lastUnitCoefficientDegree":9,"count":2},
+    {"lastUnitDegree":12,"lastUnitCoefficientDegree":11,"count":2},
+    {"lastUnitDegree":12,"lastUnitCoefficientDegree":12,"count":728},
+    {"lastUnitDegree":13,"lastUnitCoefficientDegree":10,"count":2},
+    {"lastUnitDegree":13,"lastUnitCoefficientDegree":11,"count":4},
+    {"lastUnitDegree":13,"lastUnitCoefficientDegree":12,"count":4},
+    {"lastUnitDegree":13,"lastUnitCoefficientDegree":13,"count":2741},
+    {"lastUnitDegree":14,"lastUnitCoefficientDegree":12,"count":2},
+    {"lastUnitDegree":14,"lastUnitCoefficientDegree":13,"count":25},
+    {"lastUnitDegree":14,"lastUnitCoefficientDegree":14,"count":10772},
+    {"lastUnitDegree":15,"lastUnitCoefficientDegree":11,"count":3},
+    {"lastUnitDegree":15,"lastUnitCoefficientDegree":12,"count":11},
+    {"lastUnitDegree":15,"lastUnitCoefficientDegree":13,"count":21},
+    {"lastUnitDegree":15,"lastUnitCoefficientDegree":14,"count":87},
+    {"lastUnitDegree":15,"lastUnitCoefficientDegree":15,"count":41196},
+    {"lastUnitDegree":16,"lastUnitCoefficientDegree":11,"count":1},
+    {"lastUnitDegree":16,"lastUnitCoefficientDegree":12,"count":10},
+    {"lastUnitDegree":16,"lastUnitCoefficientDegree":13,"count":26},
+    {"lastUnitDegree":16,"lastUnitCoefficientDegree":14,"count":74},
+    {"lastUnitDegree":16,"lastUnitCoefficientDegree":15,"count":302},
+    {"lastUnitDegree":16,"lastUnitCoefficientDegree":16,"count":124068}
+  ],
+  "nondegenerateAssignments": 179765,
+  "degenerateAssignments": 576,
+  "totalFilteredAssignments": 180341
+}

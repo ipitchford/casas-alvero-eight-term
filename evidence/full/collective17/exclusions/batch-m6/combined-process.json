@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE",
+  "caseCount": 51,
+  "markings": 1231016019,
+  "segments": [
+    {
+      "role": "producer",
+      "globalStart": 0,
+      "caseCount": 46,
+      "receiptSHA256": "957d6ab452b8aa2387671839ae225ec60d798844c7ece9eb2cec48c74d65c237"
+    },
+    {
+      "role": "continuation",
+      "globalStart": 46,
+      "caseCount": 5,
+      "receiptSHA256": "c08e7ed36dba16828b7d600f3708144424044121eaf05be6f1c6770c2c0fafb0"
+    }
+  ],
+  "combinedOutputSHA256": "bcf48a0913d9233603ceef3cb2c89bdf0ecc51554eef4a8e144b1152670d2be6",
+  "scope": "Producer split after original 180-second timeout; continuation contains only remaining cases."
+}

@@ -1,0 +1,9 @@
+ring r=17,(x,s,t),dp;
+poly a=-3;poly b=s;poly d=t;poly e=2-s-t;
+poly h=x^20+a*x^18+b*x^17+d*x^2+e*x;
+poly H17=x^3+a*x+b;poly H2=3*x^18+d;
+poly H1=3*x^19+a*x^17+2*d*x+e;
+poly R17=resultant(h,H17,x);poly R2=resultant(h,H2,x);poly R1=resultant(h,H1,x);
+ideal I=R17,R2,R1;option(redSB);ideal G=std(I);
+ring q=17,(s,t),lp; ideal J=imap(r,I); LIB "primdec.lib"; ideal K=radical(J); print("RADICAL");std(K); print("VDIM");vdim(std(K));
+quit;

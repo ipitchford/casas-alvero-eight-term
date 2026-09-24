@@ -1,0 +1,735 @@
+{
+  "status": "PASS",
+  "scope": "m=6 native coverage run twice; no independent exhaustive FLINT replay. All survivors and precision certificates independently verified.",
+  "residualOrbits": [],
+  "activeSizes": [
+    6
+  ],
+  "totalMarkings": 1231016019,
+  "residueSurvivors": 686,
+  "liftedFrobeniusOrbits": 252,
+  "markingsExcludedByPrecision": {
+    "2": 680,
+    "3": 5,
+    "4": 1
+  },
+  "cases": [
+    {
+      "active": [
+        4,
+        5,
+        6,
+        7,
+        10,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        6,
+        7,
+        12,
+        15
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 21,
+      "liftedOrbits": 8,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        7,
+        8,
+        12,
+        15
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 5,
+      "liftedOrbits": 5,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        7,
+        8,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 0,
+      "liftedOrbits": 0,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        7,
+        10,
+        12,
+        13
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        7,
+        11,
+        12,
+        15
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 54,
+      "liftedOrbits": 15,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        7,
+        11,
+        14,
+        15
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 23,
+      "liftedOrbits": 10,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        7,
+        12,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        8,
+        9,
+        14,
+        15
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        8,
+        10,
+        11,
+        12
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 20,
+      "liftedOrbits": 7,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        8,
+        10,
+        11,
+        13
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 39,
+      "liftedOrbits": 13,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        8,
+        10,
+        11,
+        14
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 4,
+      "liftedOrbits": 4,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        10,
+        11,
+        12,
+        13
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 4,
+      "liftedOrbits": 4,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        10,
+        11,
+        13,
+        14
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        10,
+        11,
+        14,
+        15
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 5,
+      "liftedOrbits": 5,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        5,
+        11,
+        13,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        6,
+        7,
+        9,
+        10,
+        12
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 4,
+      "liftedOrbits": 4,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        6,
+        7,
+        9,
+        10,
+        14
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        6,
+        7,
+        10,
+        13,
+        14
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 19,
+      "liftedOrbits": 6,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        6,
+        8,
+        9,
+        10,
+        13
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        6,
+        8,
+        9,
+        10,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        6,
+        9,
+        10,
+        12,
+        13
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        6,
+        9,
+        10,
+        12,
+        14
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        7,
+        8,
+        10,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        7,
+        9,
+        10,
+        11,
+        13
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 5,
+      "liftedOrbits": 5,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        7,
+        9,
+        10,
+        13,
+        15
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 18,
+      "liftedOrbits": 5,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        7,
+        10,
+        11,
+        13,
+        15
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 6,
+      "liftedOrbits": 6,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 308,
+      "liftedOrbits": 43,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        9,
+        10,
+        11,
+        12,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 5,
+      "liftedOrbits": 5,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        4,
+        10,
+        11,
+        13,
+        14,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        6,
+        7,
+        9,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        6,
+        9,
+        14,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 4,
+      "liftedOrbits": 4,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        7,
+        8,
+        13,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        7,
+        9,
+        13,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 23,
+      "liftedOrbits": 10,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        7,
+        10,
+        13,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        8,
+        9,
+        10,
+        13,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 7,
+      "liftedOrbits": 7,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        9,
+        11,
+        13,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 7,
+      "liftedOrbits": 7,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        10,
+        11,
+        13,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 0,
+      "liftedOrbits": 0,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        5,
+        11,
+        13,
+        14,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        6,
+        7,
+        10,
+        12,
+        14,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 0,
+      "liftedOrbits": 0,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        6,
+        8,
+        10,
+        13,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        6,
+        10,
+        11,
+        14,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 23,
+      "liftedOrbits": 10,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        7,
+        8,
+        9,
+        10,
+        12,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 2,
+      "liftedOrbits": 2,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        7,
+        10,
+        12,
+        13,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        8,
+        9,
+        10,
+        11,
+        14,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 4,
+      "liftedOrbits": 4,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        8,
+        9,
+        10,
+        12,
+        14,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 1,
+      "liftedOrbits": 1,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        8,
+        10,
+        11,
+        13,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 5,
+      "liftedOrbits": 5,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        8,
+        10,
+        12,
+        13,
+        14,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 21,
+      "liftedOrbits": 8,
+      "status": "EXCLUDED"
+    },
+    {
+      "active": [
+        8,
+        10,
+        13,
+        14,
+        15,
+        16
+      ],
+      "markings": 24137569,
+      "firstResidueSurvivors": 3,
+      "liftedOrbits": 3,
+      "status": "EXCLUDED"
+    }
+  ],
+  "residueSHA256": "7dfbf2c1b6e9323374d3cef2f80645dd706b7b3f24ad2176881f141b8ddf7399",
+  "nativeSourceSHA256": "bf4c3066bc57c3a74844c99ee74e91505a5f13c59183bea4bb44a8b3923b9873",
+  "liftCertificateSHA256": "de050c34c37bf59b8cf24cbd858919020a7ffbc4837790aa4068908f8c12bdd6"
+}

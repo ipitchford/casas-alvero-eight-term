@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "certificateSHA256": "c9cac222f898ebf56de2b94e8a0a40a4dfc9fafed937affe85de4f358b8a7102",
+  "cases": [
+    {
+      "G3Witness": "one",
+      "G12Witness": "one",
+      "degrees": {
+        "f(r)": 20,
+        "fprime(1)": 4,
+        "A": 3,
+        "B": 19
+      },
+      "integerConstant": "145055822961627974500415776768585427673212392548137242490613691492806412704963213793512986660667250634266768389302074773160817058357174447126687284669021090000",
+      "v17Constant": 1,
+      "identity": "A*f(r)+B*fprime(1)=nonzero integer",
+      "coefficientMutationRejected": true
+    },
+    {
+      "G3Witness": "one",
+      "G12Witness": "r",
+      "degrees": {
+        "f(r)": 20,
+        "fprime(1)": 12,
+        "A": 11,
+        "B": 19
+      },
+      "integerConstant": "24045433175287197117285103813472546808976373238454014878574891563367159521211747304260589616926823885693433991467491586228227272749766188758571234105230623424243776420624955708616641391808495966127452167557680",
+      "v17Constant": 2,
+      "identity": "A*f(r)+B*fprime(1)=nonzero integer",
+      "coefficientMutationRejected": true
+    },
+    {
+      "G3Witness": "r",
+      "G12Witness": "one",
+      "degrees": {
+        "f(r)": 20,
+        "fprime(1)": 4,
+        "A": 3,
+        "B": 19
+      },
+      "integerConstant": "428298637415944001560761438518220014850760480013691552793021219021044698152377686202675538827145926670328218814552717088551631194935449998678978520866856504674121244597614858560",
+      "v17Constant": 2,
+      "identity": "A*f(r)+B*fprime(1)=nonzero integer",
+      "coefficientMutationRejected": true
+    },
+    {
+      "G3Witness": "r",
+      "G12Witness": "r",
+      "degrees": {
+        "f(r)": 20,
+        "fprime(1)": 12,
+        "A": 11,
+        "B": 19
+      },
+      "integerConstant": "52226614665939122799530955140020971807738164757957553106004019184713402773503890388984959484967301606837621441356764224583663573201438462816098012750071826607066847824579456717903744988499993548429413507109034429760",
+      "v17Constant": 2,
+      "identity": "A*f(r)+B*fprime(1)=nonzero integer",
+      "coefficientMutationRejected": true
+    }
+  ],
+  "conclusion": "All four exact unit-witness systems are inconsistent over every characteristic-zero field.",
+  "scope": "Requires exact H1 witness 1, G4 witness r, G10 witness 1, G3 witness 1 or r, and G12 witness 1 or r. No zero-residue G10/G12 branch is addressed."
+}

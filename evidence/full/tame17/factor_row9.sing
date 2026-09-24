@@ -1,0 +1,1 @@
+ring r=17,x,dp; poly h=x^20-x^17-3*x^2+3*x; factorize(h); quit;

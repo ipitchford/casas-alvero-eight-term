@@ -1,0 +1,2 @@
+{"phase": "built", "seconds": 0.2780720000009751, "conditionalCongruences": 525, "maxPositiveSumWidth": 14, "cachedScalarTerms": 2740}
+{"phase": "check", "result": "unknown", "seconds": 25.178091207999387}

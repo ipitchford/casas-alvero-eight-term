@@ -1,0 +1,572 @@
+{
+  "status": "PASS",
+  "prime": 17,
+  "censuses": [
+    {
+      "activeDeficiencies": [
+        7,
+        8,
+        10,
+        16
+      ],
+      "fullDeficiencySupport": [
+        7,
+        8,
+        10,
+        16,
+        17,
+        19
+      ],
+      "assignmentCount": 16,
+      "weightsModulo17": [
+        4,
+        8,
+        1,
+        3
+      ],
+      "survivors": [
+        {
+          "witnesses": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "activeCoefficients": [
+            0,
+            0,
+            0,
+            16
+          ],
+          "W": 0
+        }
+      ],
+      "allAssignments": [
+        {
+          "witnesses": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "activeCoefficients": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "W": 3
+        },
+        {
+          "witnesses": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "activeCoefficients": [
+            0,
+            0,
+            0,
+            16
+          ],
+          "W": 0
+        },
+        {
+          "witnesses": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "activeCoefficients": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "W": 2
+        },
+        {
+          "witnesses": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "activeCoefficients": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "W": 2
+        },
+        {
+          "witnesses": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "activeCoefficients": [
+            0,
+            16,
+            0,
+            0
+          ],
+          "W": 12
+        },
+        {
+          "witnesses": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "activeCoefficients": [
+            0,
+            16,
+            0,
+            0
+          ],
+          "W": 12
+        },
+        {
+          "witnesses": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "activeCoefficients": [
+            0,
+            16,
+            10,
+            0
+          ],
+          "W": 5
+        },
+        {
+          "witnesses": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "activeCoefficients": [
+            0,
+            16,
+            10,
+            7
+          ],
+          "W": 9
+        },
+        {
+          "witnesses": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "activeCoefficients": [
+            16,
+            0,
+            0,
+            0
+          ],
+          "W": 16
+        },
+        {
+          "witnesses": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "activeCoefficients": [
+            16,
+            0,
+            0,
+            15
+          ],
+          "W": 10
+        },
+        {
+          "witnesses": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "activeCoefficients": [
+            16,
+            0,
+            0,
+            0
+          ],
+          "W": 16
+        },
+        {
+          "witnesses": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "activeCoefficients": [
+            16,
+            0,
+            0,
+            15
+          ],
+          "W": 10
+        },
+        {
+          "witnesses": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "activeCoefficients": [
+            16,
+            7,
+            0,
+            0
+          ],
+          "W": 4
+        },
+        {
+          "witnesses": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "activeCoefficients": [
+            16,
+            7,
+            0,
+            8
+          ],
+          "W": 11
+        },
+        {
+          "witnesses": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "activeCoefficients": [
+            16,
+            7,
+            8,
+            0
+          ],
+          "W": 12
+        },
+        {
+          "witnesses": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "activeCoefficients": [
+            16,
+            7,
+            8,
+            0
+          ],
+          "W": 12
+        }
+      ]
+    },
+    {
+      "activeDeficiencies": [
+        6,
+        10,
+        15,
+        16
+      ],
+      "fullDeficiencySupport": [
+        6,
+        10,
+        15,
+        16,
+        17,
+        19
+      ],
+      "assignmentCount": 16,
+      "weightsModulo17": [
+        15,
+        1,
+        11,
+        3
+      ],
+      "survivors": [
+        {
+          "witnesses": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "activeCoefficients": [
+            0,
+            0,
+            0,
+            16
+          ],
+          "W": 0
+        }
+      ],
+      "allAssignments": [
+        {
+          "witnesses": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "activeCoefficients": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "W": 3
+        },
+        {
+          "witnesses": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "activeCoefficients": [
+            0,
+            0,
+            0,
+            16
+          ],
+          "W": 0
+        },
+        {
+          "witnesses": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "activeCoefficients": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "W": 9
+        },
+        {
+          "witnesses": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "activeCoefficients": [
+            0,
+            0,
+            16,
+            15
+          ],
+          "W": 3
+        },
+        {
+          "witnesses": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "activeCoefficients": [
+            0,
+            16,
+            0,
+            0
+          ],
+          "W": 2
+        },
+        {
+          "witnesses": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "activeCoefficients": [
+            0,
+            16,
+            0,
+            0
+          ],
+          "W": 2
+        },
+        {
+          "witnesses": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "activeCoefficients": [
+            0,
+            16,
+            10,
+            0
+          ],
+          "W": 10
+        },
+        {
+          "witnesses": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "activeCoefficients": [
+            0,
+            16,
+            10,
+            10
+          ],
+          "W": 6
+        },
+        {
+          "witnesses": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "activeCoefficients": [
+            16,
+            0,
+            0,
+            0
+          ],
+          "W": 5
+        },
+        {
+          "witnesses": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "activeCoefficients": [
+            16,
+            0,
+            0,
+            0
+          ],
+          "W": 5
+        },
+        {
+          "witnesses": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "activeCoefficients": [
+            16,
+            0,
+            6,
+            0
+          ],
+          "W": 3
+        },
+        {
+          "witnesses": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "activeCoefficients": [
+            16,
+            0,
+            6,
+            6
+          ],
+          "W": 4
+        },
+        {
+          "witnesses": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "activeCoefficients": [
+            16,
+            5,
+            0,
+            0
+          ],
+          "W": 10
+        },
+        {
+          "witnesses": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "activeCoefficients": [
+            16,
+            5,
+            0,
+            12
+          ],
+          "W": 12
+        },
+        {
+          "witnesses": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "activeCoefficients": [
+            16,
+            5,
+            2,
+            0
+          ],
+          "W": 15
+        },
+        {
+          "witnesses": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "activeCoefficients": [
+            16,
+            5,
+            2,
+            14
+          ],
+          "W": 6
+        }
+      ]
+    }
+  ],
+  "totalAssignments": 32,
+  "scope": "All binary residue markings of G_4,...,G_16 at the stated supports, filtered by the specified divided first constraint. No characteristic-zero lift or complete branch exclusion is claimed."
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "fixedPolynomialSha256": "07d55eb8f3288378b28911576a885fcd63c46d59949193661512fb5a23f61b25",
+  "controls": [
+    {
+      "prime": 19,
+      "z": 9,
+      "psi": 9,
+      "H": 0,
+      "C": 0,
+      "resultantModuloPrime": 0
+    },
+    {
+      "prime": 23,
+      "z": 2,
+      "psi": 2,
+      "H": 0,
+      "C": 0,
+      "resultantModuloPrime": 0
+    },
+    {
+      "prime": 87169343,
+      "z": 65880709,
+      "psi": 65880709,
+      "H": 0,
+      "C": 0,
+      "resultantModuloPrime": 0
+    }
+  ],
+  "scope": "Positive controls only; not an independent resultant reconstruction."
+}

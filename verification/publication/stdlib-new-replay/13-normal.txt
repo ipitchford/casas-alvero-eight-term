@@ -1,0 +1,308 @@
+{
+  "B": "-1387/1092",
+  "F": "-6329185",
+  "base_difference": 739143224468,
+  "base_difference_over_17_squared_residue": 8,
+  "base_difference_valuation": 2,
+  "c4_formula": {
+    "F": 0,
+    "T": 0,
+    "a": 8817900,
+    "b": 38798760,
+    "constant": -576555
+  },
+  "c4_over_17_residue": 8,
+  "checker_sha256": "628217978eed4707de53b202b67ff7ec33ba7d58a1eb284436c021b814a4130e",
+  "coefficient_formulas": {
+    "1": {
+      "F": 1,
+      "T": 2,
+      "a": -5353725,
+      "b": -42678636,
+      "constant": 304589
+    },
+    "17": {
+      "F": 0,
+      "T": 0,
+      "a": 0,
+      "b": 0,
+      "constant": -2280
+    },
+    "18": {
+      "F": 0,
+      "T": 0,
+      "a": 0,
+      "b": 0,
+      "constant": 0
+    },
+    "19": {
+      "F": 0,
+      "T": 0,
+      "a": 0,
+      "b": 0,
+      "constant": 20
+    },
+    "2": {
+      "F": 1,
+      "T": 3,
+      "a": -7558200,
+      "b": -58198140,
+      "constant": 432820
+    },
+    "20": {
+      "F": 0,
+      "T": 0,
+      "a": 0,
+      "b": 0,
+      "constant": 1
+    },
+    "3": {
+      "F": 0,
+      "T": 1,
+      "a": 0,
+      "b": 0,
+      "constant": 0
+    }
+  },
+  "common_hasse_locations": {
+    "1": [
+      "1"
+    ],
+    "2": [
+      "0",
+      "1"
+    ],
+    "3": [
+      "1"
+    ]
+  },
+  "difference_formula": {
+    "F": 0,
+    "T": 0,
+    "a": -2204475,
+    "b": -15519504,
+    "constant": 128231
+  },
+  "final_mod_289_values": {
+    "G10": [
+      204,
+      0
+    ],
+    "G10prime": [
+      0,
+      92
+    ],
+    "f": [
+      0,
+      170
+    ],
+    "fprime": [
+      130,
+      283
+    ]
+  },
+  "final_two_sign_residuals": {
+    "-s": {
+      "h": [
+        11,
+        15
+      ],
+      "residual": [
+        3,
+        8
+      ]
+    },
+    "s": {
+      "h": [
+        11,
+        2
+      ],
+      "residual": [
+        3,
+        9
+      ]
+    }
+  },
+  "hasse_values_at_seed_roots": {
+    "1": {
+      "-s": [
+        11,
+        6
+      ],
+      "0": [
+        3,
+        0
+      ],
+      "1": [
+        0,
+        0
+      ],
+      "s": [
+        11,
+        11
+      ]
+    },
+    "2": {
+      "-s": [
+        8,
+        3
+      ],
+      "0": [
+        0,
+        0
+      ],
+      "1": [
+        0,
+        0
+      ],
+      "s": [
+        8,
+        14
+      ]
+    },
+    "3": {
+      "-s": [
+        16,
+        1
+      ],
+      "0": [
+        16,
+        0
+      ],
+      "1": [
+        0,
+        0
+      ],
+      "s": [
+        16,
+        16
+      ]
+    }
+  },
+  "negative_control": "altered f-value coefficient rejected",
+  "outside_witness_census": [
+    {
+      "a": 5,
+      "b": 14,
+      "divided": 2,
+      "w10": "1",
+      "w4": "1"
+    },
+    {
+      "a": 5,
+      "b": 8,
+      "divided": 6,
+      "w10": "s",
+      "w4": "1"
+    },
+    {
+      "a": 5,
+      "b": 8,
+      "divided": 6,
+      "w10": "-s",
+      "w4": "1"
+    },
+    {
+      "a": 9,
+      "b": 7,
+      "divided": 5,
+      "w10": "1",
+      "w4": "s"
+    },
+    {
+      "a": 9,
+      "b": 6,
+      "divided": 0,
+      "w10": "s",
+      "w4": "s"
+    },
+    {
+      "a": 9,
+      "b": 6,
+      "divided": 0,
+      "w10": "-s",
+      "w4": "s"
+    },
+    {
+      "a": 9,
+      "b": 7,
+      "divided": 5,
+      "w10": "1",
+      "w4": "-s"
+    },
+    {
+      "a": 9,
+      "b": 6,
+      "divided": 0,
+      "w10": "s",
+      "w4": "-s"
+    },
+    {
+      "a": 9,
+      "b": 6,
+      "divided": 0,
+      "w10": "-s",
+      "w4": "-s"
+    }
+  ],
+  "quartic_discriminant": 4725,
+  "rho_euclidean": {
+    "first_quotient": [
+      0,
+      7,
+      0,
+      4,
+      0,
+      12,
+      0,
+      2,
+      0,
+      6,
+      0,
+      1
+    ],
+    "first_remainder": [
+      12,
+      8
+    ],
+    "last_remainder": [
+      9
+    ],
+    "second_quotient": [
+      3,
+      15
+    ]
+  },
+  "scope": "Finite exact arithmetic only; arbitrary-ramification and cluster-cover arguments are audited separately.",
+  "status": "PASS",
+  "survivors": [
+    {
+      "a": 9,
+      "b": 6,
+      "divided": 0,
+      "w10": "s",
+      "w4": "s"
+    },
+    {
+      "a": 9,
+      "b": 6,
+      "divided": 0,
+      "w10": "-s",
+      "w4": "s"
+    },
+    {
+      "a": 9,
+      "b": 6,
+      "divided": 0,
+      "w10": "s",
+      "w4": "-s"
+    },
+    {
+      "a": 9,
+      "b": 6,
+      "divided": 0,
+      "w10": "-s",
+      "w4": "-s"
+    }
+  ]
+}

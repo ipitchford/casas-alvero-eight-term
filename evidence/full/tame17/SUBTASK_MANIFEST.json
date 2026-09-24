@@ -1,0 +1,14 @@
+{
+  "NORMALFORMS_AND_LIMIT.md": "e73348e3e6ed60b3931bc3611398a29ff9147059e789e2abd56caae90754ad3a",
+  "ROW9_ONE_SCENARIO_PROOF.md": "c67b1c0002a4279128c3882fbe30e6c50312a83ecdd25bfee313968cc734e081",
+  "construct_partial_families.py": "2df5c8db2c69569bc4c858473256dc7ce3894ccdc8ab1f3001bcf0eb1b9fb0e0",
+  "check_partial_families.py": "3d2402002c78a6a669e8d5a865292c3f8a24d171bf6534642a449035b7f26f79",
+  "check_row9_factor_and_obstruction.py": "c9cd0cf0223edd52d055a89567309252d54b1e0ec0c78060d0a7bc51d47ed5d1",
+  "lift_row9_one_scenario.py": "93788cfbadd61bcc9198619d6f257b6e38b7b5fc22cb22ee3a17ae3990e28c72",
+  "check_row9_one_scenario.py": "2f98fc51967696fabd0e2eb704eb5c53ac86bfd0e90e49cdc95b42b2ebe2aecf",
+  "partial-families.json": "4d762a74a6e88e190e6f5b57baaa1cc9798c2db8b453d1722a2693990f4bd6cc",
+  "partial-replay.json": "96ea7bb23408a1a8f45391892506cdf3882c509b5ed73cee5236853ac70d02fd",
+  "row9-factor-obstruction.json": "be309f1aa5a8385f8ae137e170b779f40d4cb20e91e154e6e8dcee2673adff31",
+  "row9-one-scenario.json": "45bef42e75324d2a4af9cae8675605ffe60c40a9ed10da522be5ef49092977b4",
+  "row9-one-scenario-replay.json": "d6d94dac22c83589fa4c8d2e341239c4bf284a2809b3d5390ae66aa8cca319ce"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "file": "new-results/GLOBAL_SUPPORT_COROLLARY.md",
+    "sourceSHA256": "bc6812a8cadec6b7c24602c9eb57e17183d356e4d16461e0630c8dc3dcab56e0",
+    "packagedSHA256": "474f7fdfa502918cbde4223cbb7b88bf6bed650491f8cd4e4531dd2a4ea031e6",
+    "change": "Relative evidence links only; mathematical text unchanged"
+  },
+  {
+    "file": "new-results/SEVEN_TERM_FRONTIER.md",
+    "sourceSHA256": "4eccb2fceddb99e2337dd80d85cc34ba237d2c0c7e7bfa2b1538a08a2cb258db",
+    "packagedSHA256": "1c55e4f9693df68facdc212e734d29c52c84682f48b93f1a74a6747163ad1335",
+    "change": "Relative evidence links only; mathematical text unchanged"
+  },
+  {
+    "file": "new-results/STRUCTURAL_ARGUMENT.md",
+    "sourceSHA256": "15220be1d85f153acf0cefb331abe69decdca96b93b3900fd367d3486989df1b",
+    "packagedSHA256": "97c81316da2cc8757831e778cd62953dc950193483b2d17eb3aab33d966544ec",
+    "change": "Relative evidence links only; mathematical text unchanged"
+  }
+]

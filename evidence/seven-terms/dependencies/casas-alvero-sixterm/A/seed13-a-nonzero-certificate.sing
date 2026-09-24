@@ -1,0 +1,23 @@
+ring r=13,(w,v,u),dp;
+option(redSB);
+poly a=4;
+poly b=-9*u4-3*u;
+poly c=-8*v18-11*v15-3*b*v14;
+poly d=-1-a-b-c;
+proc f(poly x){return(x^20+a*x^17+b*x^16+c*x^2+d*x);}
+ideal I=f(u),f(v),f(w),7*w19+3*w16+3*b*w15+2*c*w+d;
+ideal J=u-1,v-1,w+6;
+int begin=timer;
+matrix L=lift(I,J);
+print("SECONDS");print(timer-begin);
+print("DIFFERENCE");print(matrix(I)*L-matrix(J));
+write("work/casas-alvero-sixterm/A/seed13-a-nonzero-certificate.txt", "VARIABLES w v u");
+int i,j;
+for(i=1;i<=4;i++){write("work/casas-alvero-sixterm/A/seed13-a-nonzero-certificate.txt", "I "+string(i)+" "+string(I[i]));}
+for(j=1;j<=3;j++){
+  write("work/casas-alvero-sixterm/A/seed13-a-nonzero-certificate.txt", "J "+string(j)+" "+string(J[j]));
+  for(i=1;i<=4;i++){
+    write("work/casas-alvero-sixterm/A/seed13-a-nonzero-certificate.txt", "L "+string(i)+" "+string(j)+" "+string(L[i,j]));
+  }
+}
+quit;

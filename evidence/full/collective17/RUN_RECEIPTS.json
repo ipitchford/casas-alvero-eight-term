@@ -1,0 +1,75 @@
+{
+  "scope": "Bounded prototype benchmarks; no complete search or exclusion.",
+  "runs": [
+    {
+      "command": "python3 residue_bv.py --fixture --wall-seconds 40 --timeout-ms 20000",
+      "receipt": "bv-fixture.json",
+      "progress": "bv-fixture-progress.log",
+      "status": "model_limit",
+      "reason": null,
+      "buildSeconds": 1.0666617499955464,
+      "elapsedSeconds": 1.4213353329978418,
+      "solverSeconds": [
+        0.3525000419904245
+      ],
+      "newResiduePointsDiscovered": 0,
+      "knownFixtureModelsVerified": 1
+    },
+    {
+      "command": "python3 residue_bv.py --nonprime --wall-seconds 40 --timeout-ms 25000 --models 3",
+      "receipt": "bv-nonprime.json",
+      "progress": "bv-nonprime-progress.log",
+      "status": "unknown",
+      "reason": "timeout",
+      "buildSeconds": 1.0898053749988321,
+      "elapsedSeconds": 29.826821750000818,
+      "solverSeconds": [
+        28.73637837500428
+      ],
+      "newResiduePointsDiscovered": 0,
+      "knownFixtureModelsVerified": 0
+    },
+    {
+      "command": "python3 residue_bv.py --nonprime --initial-fixture --models 1 --wall-seconds 30 --timeout-ms 15000",
+      "receipt": "bv-initial-fixture.json",
+      "progress": "bv-initial-fixture-progress.log",
+      "status": "unknown",
+      "reason": "timeout",
+      "buildSeconds": 1.3494866249966435,
+      "elapsedSeconds": 18.72083120798925,
+      "solverSeconds": [
+        17.370778332988266
+      ],
+      "newResiduePointsDiscovered": 0,
+      "knownFixtureModelsVerified": 0
+    },
+    {
+      "command": "python3 residue_bv.py --subfield5 --nonprime --models 1 --wall-seconds 40 --timeout-ms 25000",
+      "receipt": "bv-subfield5.json",
+      "progress": "bv-subfield5-progress.log",
+      "status": "unknown",
+      "reason": "timeout",
+      "buildSeconds": 0.18227087499690242,
+      "elapsedSeconds": 25.426837457998772,
+      "solverSeconds": [
+        25.244150958009413
+      ],
+      "newResiduePointsDiscovered": 0,
+      "knownFixtureModelsVerified": 0
+    },
+    {
+      "command": "python3 residue_bv.py --subfield5 --nonprime --old-support-filter --models 1 --wall-seconds 40 --timeout-ms 25000",
+      "receipt": "bv-subfield5-supports.json",
+      "progress": "bv-subfield5-supports-progress.log",
+      "status": "unknown",
+      "reason": "timeout",
+      "buildSeconds": 0.2780720000009751,
+      "elapsedSeconds": 25.456565832995693,
+      "solverSeconds": [
+        25.178091207999387
+      ],
+      "newResiduePointsDiscovered": 0,
+      "knownFixtureModelsVerified": 0
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "status": "PASS",
+  "support": [
+    2,
+    3,
+    4,
+    10,
+    12,
+    19
+  ],
+  "middleIndices": [
+    4,
+    10,
+    12
+  ],
+  "assignments": 27,
+  "branchTests": 108,
+  "dividedBaseAtMinus2": [
+    -20446986,
+    18678330,
+    11150568,
+    1911780
+  ],
+  "dividedBaseAtMinus2Residues": [
+    2,
+    5,
+    13,
+    11
+  ],
+  "totalJacobianAtMinus2Mod17": 16,
+  "zeroRepeatedRootRadiusBound": "1/9",
+  "linearCoefficientValuationBound": "16/9",
+  "branches": [
+    {
+      "G3WitnessResidue": 1,
+      "H1WitnessResidue": 0,
+      "survivorCount": 0,
+      "survivors": []
+    },
+    {
+      "G3WitnessResidue": 1,
+      "H1WitnessResidue": 1,
+      "survivorCount": 2,
+      "survivors": [
+        {
+          "middleWitnessResidues": [
+            -2,
+            0,
+            -2
+          ],
+          "middleCoefficientResidues": [
+            7,
+            0,
+            9
+          ],
+          "correctionT": 0
+        },
+        {
+          "middleWitnessResidues": [
+            -2,
+            1,
+            -2
+          ],
+          "middleCoefficientResidues": [
+            7,
+            0,
+            9
+          ],
+          "correctionT": 0
+        }
+      ]
+    },
+    {
+      "G3WitnessResidue": -2,
+      "H1WitnessResidue": 0,
+      "survivorCount": 2,
+      "survivors": [
+        {
+          "middleWitnessResidues": [
+            -2,
+            0,
+            0
+          ],
+          "middleCoefficientResidues": [
+            7,
+            0,
+            0
+          ],
+          "correctionT": 3
+        },
+        {
+          "middleWitnessResidues": [
+            -2,
+            1,
+            0
+          ],
+          "middleCoefficientResidues": [
+            7,
+            0,
+            0
+          ],
+          "correctionT": 3
+        }
+      ]
+    },
+    {
+      "G3WitnessResidue": -2,
+      "H1WitnessResidue": 1,
+      "survivorCount": 6,
+      "survivors": [
+        {
+          "middleWitnessResidues": [
+            -2,
+            0,
+            0
+          ],
+          "middleCoefficientResidues": [
+            7,
+            0,
+            0
+          ],
+          "correctionT": 3
+        },
+        {
+          "middleWitnessResidues": [
+            -2,
+            0,
+            1
+          ],
+          "middleCoefficientResidues": [
+            7,
+            0,
+            2
+          ],
+          "correctionT": 8
+        },
+        {
+          "middleWitnessResidues": [
+            -2,
+            0,
+            -2
+          ],
+          "middleCoefficientResidues": [
+            7,
+            0,
+            9
+          ],
+          "correctionT": 0
+        },
+        {
+          "middleWitnessResidues": [
+            -2,
+            1,
+            0
+          ],
+          "middleCoefficientResidues": [
+            7,
+            0,
+            0
+          ],
+          "correctionT": 3
+        },
+        {
+          "middleWitnessResidues": [
+            -2,
+            1,
+            1
+          ],
+          "middleCoefficientResidues": [
+            7,
+            0,
+            2
+          ],
+          "correctionT": 8
+        },
+        {
+          "middleWitnessResidues": [
+            -2,
+            1,
+            -2
+          ],
+          "middleCoefficientResidues": [
+            7,
+            0,
+            9
+          ],
+          "correctionT": 0
+        }
+      ]
+    }
+  ],
+  "allAssignments": [
+    {
+      "witnesses": [
+        0,
+        0,
+        0
+      ],
+      "coefficients": [
+        0,
+        0,
+        0
+      ],
+      "minus2CorrectionT": 2,
+      "dividedValues": {
+        "y1_w0": 13,
+        "y1_w1": 2,
+        "y-2_w0": 14,
+        "y-2_w1": 3
+      }
+    },
+    {
+      "witnesses": [
+        0,
+        0,
+        1
+      ],
+      "coefficients": [
+        0,
+        0,
+        16
+      ],
+      "minus2CorrectionT": 8,
+      "dividedValues": {
+        "y1_w0": 11,
+        "y1_w1": 16,
+        "y-2_w0": 15,
+        "y-2_w1": 3
+      }
+    },
+    {
+      "witnesses": [
+        0,
+        0,
+        -2
+      ],
+      "coefficients": [
+        0,
+        0,
+        6
+      ],
+      "minus2CorrectionT": 0,
+      "dividedValues": {
+        "y1_w0": 8,
+        "y1_w1": 3,
+        "y-2_w0": 8,
+        "y-2_w1": 3
+      }
+    },
+    {
+      "witnesses": [
+        0,
+        1,
+        0
+      ],
+      "coefficients": [
+        0,
+        8,
+        0
+      ],
+      "minus2CorrectionT": 4,
+      "dividedValues": {
+        "y1_w0": 7,
+        "y1_w1": 5,
+        "y-2_w0": 9,
+        "y-2_w1": 7
+      }
+    },
+    {
+      "witnesses": [
+        0,
+        1,
+        1
+      ],
+      "coefficients": [
+        0,
+        8,
+        15
+      ],
+      "minus2CorrectionT": 16,
+      "dividedValues": {
+        "y1_w0": 3,
+        "y1_w1": 16,
+        "y-2_w0": 11,
+        "y-2_w1": 7
+      }
+    },
+    {
+      "witnesses": [
+        0,
+        1,
+        -2
+      ],
+      "coefficients": [
+        0,
+        8,
+        2
+      ],
+      "minus2CorrectionT": 9,
+      "dividedValues": {
+        "y1_w0": 11,
+        "y1_w1": 11,
+        "y-2_w0": 7,
+        "y-2_w1": 7
+      }
+    },
+    {
+      "witnesses": [
+        0,
+        -2,
+        0
+      ],
+      "coefficients": [
+        0,
+        8,
+        0
+      ],
+      "minus2CorrectionT": 4,
+      "dividedValues": {
+        "y1_w0": 7,
+        "y1_w1": 5,
+        "y-2_w0": 9,
+        "y-2_w1": 7
+      }
+    },
+    {
+      "witnesses": [
+        0,
+        -2,
+        1
+      ],
+      "coefficients": [
+        0,
+        8,
+        15
+      ],
+      "minus2CorrectionT": 16,
+      "dividedValues": {
+        "y1_w0": 3,
+        "y1_w1": 16,
+        "y-2_w0": 11,
+        "y-2_w1": 7
+      }
+    },
+    {
+      "witnesses": [
+        0,
+        -2,
+        -2
+      ],
+      "coefficients": [
+        0,
+        8,
+        2
+      ],
+      "minus2CorrectionT": 9,
+      "dividedValues": {
+        "y1_w0": 11,
+        "y1_w1": 11,
+        "y-2_w0": 7,
+        "y-2_w1": 7
+      }
+    },
+    {
+      "witnesses": [
+        1,
+        0,
+        0
+      ],
+      "coefficients": [
+        14,
+        0,
+        0
+      ],
+      "minus2CorrectionT": 4,
+      "dividedValues": {
+        "y1_w0": 1,
+        "y1_w1": 12,
+        "y-2_w0": 3,
+        "y-2_w1": 14
+      }
+    },
+    {
+      "witnesses": [
+        1,
+        0,
+        1
+      ],
+      "coefficients": [
+        14,
+        0,
+        5
+      ],
+      "minus2CorrectionT": 8,
+      "dividedValues": {
+        "y1_w0": 11,
+        "y1_w1": 10,
+        "y-2_w0": 15,
+        "y-2_w1": 14
+      }
+    },
+    {
+      "witnesses": [
+        1,
+        0,
+        -2
+      ],
+      "coefficients": [
+        14,
+        0,
+        12
+      ],
+      "minus2CorrectionT": 0,
+      "dividedValues": {
+        "y1_w0": 8,
+        "y1_w1": 14,
+        "y-2_w0": 8,
+        "y-2_w1": 14
+      }
+    },
+    {
+      "witnesses": [
+        1,
+        1,
+        0
+      ],
+      "coefficients": [
+        14,
+        9,
+        0
+      ],
+      "minus2CorrectionT": 2,
+      "dividedValues": {
+        "y1_w0": 7,
+        "y1_w1": 9,
+        "y-2_w0": 8,
+        "y-2_w1": 10
+      }
+    },
+    {
+      "witnesses": [
+        1,
+        1,
+        1
+      ],
+      "coefficients": [
+        14,
+        9,
+        6
+      ],
+      "minus2CorrectionT": 0,
+      "dividedValues": {
+        "y1_w0": 2,
+        "y1_w1": 10,
+        "y-2_w0": 2,
+        "y-2_w1": 10
+      }
+    },
+    {
+      "witnesses": [
+        1,
+        1,
+        -2
+      ],
+      "coefficients": [
+        14,
+        9,
+        16
+      ],
+      "minus2CorrectionT": 8,
+      "dividedValues": {
+        "y1_w0": 5,
+        "y1_w1": 6,
+        "y-2_w0": 9,
+        "y-2_w1": 10
+      }
+    },
+    {
+      "witnesses": [
+        1,
+        -2,
+        0
+      ],
+      "coefficients": [
+        14,
+        4,
+        0
+      ],
+      "minus2CorrectionT": 5,
+      "dividedValues": {
+        "y1_w0": 15,
+        "y1_w1": 5,
+        "y-2_w0": 9,
+        "y-2_w1": 16
+      }
+    },
+    {
+      "witnesses": [
+        1,
+        -2,
+        1
+      ],
+      "coefficients": [
+        14,
+        4,
+        13
+      ],
+      "minus2CorrectionT": 12,
+      "dividedValues": {
+        "y1_w0": 7,
+        "y1_w1": 10,
+        "y-2_w0": 13,
+        "y-2_w1": 16
+      }
+    },
+    {
+      "witnesses": [
+        1,
+        -2,
+        -2
+      ],
+      "coefficients": [
+        14,
+        4,
+        10
+      ],
+      "minus2CorrectionT": 13,
+      "dividedValues": {
+        "y1_w0": 1,
+        "y1_w1": 1,
+        "y-2_w0": 16,
+        "y-2_w1": 16
+      }
+    },
+    {
+      "witnesses": [
+        -2,
+        0,
+        0
+      ],
+      "coefficients": [
+        7,
+        0,
+        0
+      ],
+      "minus2CorrectionT": 3,
+      "dividedValues": {
+        "y1_w0": 7,
+        "y1_w1": 7,
+        "y-2_w0": 0,
+        "y-2_w1": 0
+      }
+    },
+    {
+      "witnesses": [
+        -2,
+        0,
+        1
+      ],
+      "coefficients": [
+        7,
+        0,
+        2
+      ],
+      "minus2CorrectionT": 8,
+      "dividedValues": {
+        "y1_w0": 11,
+        "y1_w1": 13,
+        "y-2_w0": 15,
+        "y-2_w1": 0
+      }
+    },
+    {
+      "witnesses": [
+        -2,
+        0,
+        -2
+      ],
+      "coefficients": [
+        7,
+        0,
+        9
+      ],
+      "minus2CorrectionT": 0,
+      "dividedValues": {
+        "y1_w0": 8,
+        "y1_w1": 0,
+        "y-2_w0": 8,
+        "y-2_w1": 0
+      }
+    },
+    {
+      "witnesses": [
+        -2,
+        1,
+        0
+      ],
+      "coefficients": [
+        7,
+        0,
+        0
+      ],
+      "minus2CorrectionT": 3,
+      "dividedValues": {
+        "y1_w0": 7,
+        "y1_w1": 7,
+        "y-2_w0": 0,
+        "y-2_w1": 0
+      }
+    },
+    {
+      "witnesses": [
+        -2,
+        1,
+        1
+      ],
+      "coefficients": [
+        7,
+        0,
+        2
+      ],
+      "minus2CorrectionT": 8,
+      "dividedValues": {
+        "y1_w0": 11,
+        "y1_w1": 13,
+        "y-2_w0": 15,
+        "y-2_w1": 0
+      }
+    },
+    {
+      "witnesses": [
+        -2,
+        1,
+        -2
+      ],
+      "coefficients": [
+        7,
+        0,
+        9
+      ],
+      "minus2CorrectionT": 0,
+      "dividedValues": {
+        "y1_w0": 8,
+        "y1_w1": 0,
+        "y-2_w0": 8,
+        "y-2_w1": 0
+      }
+    },
+    {
+      "witnesses": [
+        -2,
+        -2,
+        0
+      ],
+      "coefficients": [
+        7,
+        6,
+        0
+      ],
+      "minus2CorrectionT": 13,
+      "dividedValues": {
+        "y1_w0": 11,
+        "y1_w1": 5,
+        "y-2_w0": 9,
+        "y-2_w1": 3
+      }
+    },
+    {
+      "witnesses": [
+        -2,
+        -2,
+        1
+      ],
+      "coefficients": [
+        7,
+        6,
+        14
+      ],
+      "minus2CorrectionT": 14,
+      "dividedValues": {
+        "y1_w0": 5,
+        "y1_w1": 13,
+        "y-2_w0": 12,
+        "y-2_w1": 3
+      }
+    },
+    {
+      "witnesses": [
+        -2,
+        -2,
+        -2
+      ],
+      "coefficients": [
+        7,
+        6,
+        6
+      ],
+      "minus2CorrectionT": 11,
+      "dividedValues": {
+        "y1_w0": 6,
+        "y1_w1": 6,
+        "y-2_w0": 3,
+        "y-2_w1": 3
+      }
+    }
+  ],
+  "checkerSha256": "530606c1854543c2da09c1ec049fc7784f2b1a4a28c469e3b437290b02b768ad",
+  "scope": "Complete first-divided necessary residue sieve; ten marked branch assignments survive; no row-5 or global support exclusion."
+}

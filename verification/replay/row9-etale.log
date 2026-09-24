@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "eliminationDeterminantMod17": 8,
+  "constant_a18": "959/10",
+  "constant_a19": "-8541/10",
+  "normalizedCoefficientResidues_a18_a19": [
+    16,
+    1
+  ],
+  "rows": [
+    {
+      "j": 4,
+      "binomial": 4845,
+      "a18Partial": "-765/2",
+      "a19Partial": "6783/2"
+    },
+    {
+      "j": 5,
+      "binomial": 15504,
+      "a18Partial": "-5712/5",
+      "a19Partial": "50388/5"
+    },
+    {
+      "j": 6,
+      "binomial": 38760,
+      "a18Partial": "-2652",
+      "a19Partial": "23256"
+    },
+    {
+      "j": 7,
+      "binomial": 77520,
+      "a18Partial": "-4896",
+      "a19Partial": "42636"
+    },
+    {
+      "j": 8,
+      "binomial": 125970,
+      "a18Partial": "-7293",
+      "a19Partial": "62985"
+    },
+    {
+      "j": 9,
+      "binomial": 167960,
+      "a18Partial": "-8840",
+      "a19Partial": "75582"
+    },
+    {
+      "j": 10,
+      "binomial": 184756,
+      "a18Partial": "-43758/5",
+      "a19Partial": "369512/5"
+    },
+    {
+      "j": 11,
+      "binomial": 167960,
+      "a18Partial": "-7072",
+      "a19Partial": "58786"
+    },
+    {
+      "j": 12,
+      "binomial": 125970,
+      "a18Partial": "-4641",
+      "a19Partial": "37791"
+    },
+    {
+      "j": 13,
+      "binomial": 77520,
+      "a18Partial": "-2448",
+      "a19Partial": "19380"
+    },
+    {
+      "j": 14,
+      "binomial": 38760,
+      "a18Partial": "-1020",
+      "a19Partial": "7752"
+    },
+    {
+      "j": 15,
+      "binomial": 15504,
+      "a18Partial": "-1632/5",
+      "a19Partial": "11628/5"
+    },
+    {
+      "j": 16,
+      "binomial": 4845,
+      "a18Partial": "-153/2",
+      "a19Partial": "969/2"
+    }
+  ],
+  "scope": "Exact coefficient arithmetic; structural Jacobian and Hensel proof in accompanying audit"
+}

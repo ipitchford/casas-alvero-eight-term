@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "engine": "SymPy",
+  "version": "1.14.0",
+  "variable_order": [
+    "v",
+    "u"
+  ],
+  "monomial_order": "grevlex",
+  "modulus": 31,
+  "basis": [
+    "1"
+  ],
+  "saturation_used": false,
+  "normalization_a": -15504,
+  "normalization_b": "-4845*u**16 + 21162960*u**11",
+  "normalization_c": "-20*v**19 + 232560*v**14 - v**3*(-19380*u**16 + 84651840*u**11)",
+  "u_relation": "-4844*u**19 + 4845*u**16 + 21147456*u**14 - 21162960*u**11 + 15503",
+  "u_leading_coefficient_mod31": 23,
+  "v_relation": "4845*u**16 - 21162960*u**11 + v**19 - 15504*v**14 + v**3*(-4845*u**16 + 21162960*u**11) + 15503",
+  "module_generator_bound": 361,
+  "six_supports": [
+    {
+      "support": [
+        4,
+        5,
+        19
+      ],
+      "determinant_mod19": 15
+    },
+    {
+      "support": [
+        4,
+        10,
+        19
+      ],
+      "determinant_mod19": 7
+    },
+    {
+      "support": [
+        4,
+        15,
+        19
+      ],
+      "determinant_mod19": 10
+    },
+    {
+      "support": [
+        5,
+        16,
+        19
+      ],
+      "determinant_mod19": 0
+    },
+    {
+      "support": [
+        10,
+        16,
+        19
+      ],
+      "determinant_mod19": 12
+    },
+    {
+      "support": [
+        15,
+        16,
+        19
+      ],
+      "determinant_mod19": 13
+    }
+  ],
+  "scope": "No nontrivial centered characteristic-zero CA polynomial of degree 20 has at most four nonzero terms, conditional on cited CLO results and the written finite-module argument."
+}

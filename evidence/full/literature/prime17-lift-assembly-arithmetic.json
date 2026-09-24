@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "row9HasseOrders0to3AtOne": [
+    0,
+    0,
+    0,
+    1
+  ],
+  "rows6and7DerivativeAtOne": [
+    11,
+    14
+  ],
+  "row9ExactNormalizedCoefficients": {
+    "a2": 0,
+    "a17": 0,
+    "a3": -1
+  },
+  "rows6and7ExactNormalizedCoefficients": {
+    "a2": -1,
+    "a3": 2,
+    "a17": 0
+  },
+  "scope": "Finite arithmetic supporting the separately audited cluster proof"
+}

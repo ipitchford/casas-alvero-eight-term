@@ -1,0 +1,1354 @@
+{
+  "status": "PASS",
+  "manifestFiles": 256,
+  "inheritedCheckCount": 40,
+  "newCheckCount": 10,
+  "totalCheckCount": 50,
+  "coveredResidueRows": [
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      4
+    ],
+    [
+      2,
+      2,
+      1
+    ],
+    [
+      2,
+      2,
+      4
+    ],
+    [
+      11,
+      1,
+      3
+    ],
+    [
+      11,
+      1,
+      11
+    ]
+  ],
+  "checks": [
+    {
+      "script": "cluster/check_jets.py",
+      "optimized": false,
+      "receipt": {
+        "status": "PASS",
+        "arithmetic": "Python standard-library integers",
+        "baseCoefficients": {
+          "20": 1,
+          "16": -4845,
+          "15": 62016,
+          "3": 3,
+          "1": -57175
+        },
+        "BExpansionAtOne": [
+          62016,
+          0,
+          -155040,
+          -155040,
+          -77520,
+          -15504
+        ],
+        "localJacobian": [
+          [
+            9,
+            6
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "localJacobianDeterminant": 11,
+        "firstOrderMatrix": [
+          [
+            9,
+            6,
+            8
+          ],
+          [
+            4,
+            1,
+            7
+          ],
+          [
+            0,
+            8,
+            5
+          ]
+        ],
+        "constantVector": [
+          12,
+          6,
+          1
+        ],
+        "matrixDeterminant": 2,
+        "uniqueResidueSolution_t_l_k": [
+          5,
+          7,
+          12
+        ],
+        "middleDerivativeReductionAscending": [
+          4,
+          0,
+          0,
+          0,
+          0,
+          7,
+          11,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Bezout_U_ascending": [
+          2,
+          10,
+          5,
+          12,
+          5,
+          3,
+          0,
+          6,
+          11,
+          1
+        ],
+        "Bezout_V_ascending": [
+          10,
+          7,
+          9,
+          3,
+          2,
+          6,
+          4,
+          10,
+          5,
+          4,
+          0,
+          12,
+          1,
+          2,
+          8,
+          4,
+          0,
+          7,
+          2,
+          12
+        ],
+        "BezoutIdentity": "U*h+V*g=1 in F13[X]",
+        "scope": "Arithmetic replay; arbitrary-ramification inequalities are proved in PROOF.md"
+      }
+    },
+    {
+      "script": "u_one/check_jets.py",
+      "optimized": false,
+      "receipt": {
+        "status": "PASS",
+        "unitJacobians": [
+          {
+            "vResidue": 2,
+            "DResidue": 3,
+            "matrix": [
+              [
+                9,
+                6
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "determinant": 11
+          },
+          {
+            "vResidue": 11,
+            "DResidue": 10,
+            "matrix": [
+              [
+                0,
+                7
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "determinant": 11
+          }
+        ],
+        "records": [
+          {
+            "branch": "v11_w3",
+            "jetRowsConstant_R_S_T": [
+              [
+                2,
+                0,
+                12,
+                7
+              ],
+              [
+                3,
+                4,
+                6,
+                1
+              ],
+              [
+                9,
+                0,
+                0,
+                11
+              ]
+            ],
+            "linearSystemDeterminant": 5,
+            "solution_R_S_T": [
+              8,
+              1,
+              11
+            ],
+            "normalizedMiddleCoefficient": 9,
+            "gcdLowFirst": [
+              1
+            ],
+            "bezoutU_LowFirst": [
+              9,
+              11,
+              4,
+              12,
+              5,
+              7,
+              1,
+              9,
+              5
+            ],
+            "bezoutV_LowFirst": [
+              3,
+              8,
+              4,
+              8,
+              10,
+              2,
+              9,
+              7,
+              5,
+              6,
+              12,
+              0,
+              12,
+              4,
+              4,
+              6,
+              12,
+              4,
+              8
+            ]
+          },
+          {
+            "branch": "v11_w11",
+            "jetRowsConstant_R_S_T": [
+              [
+                2,
+                0,
+                12,
+                7
+              ],
+              [
+                3,
+                4,
+                6,
+                1
+              ],
+              [
+                7,
+                1,
+                1,
+                11
+              ]
+            ],
+            "linearSystemDeterminant": 3,
+            "solution_R_S_T": [
+              0,
+              5,
+              6
+            ],
+            "normalizedMiddleCoefficient": 6,
+            "gcdLowFirst": [
+              1
+            ],
+            "bezoutU_LowFirst": [
+              9,
+              0,
+              11,
+              11,
+              6,
+              5,
+              6,
+              12,
+              8,
+              10
+            ],
+            "bezoutV_LowFirst": [
+              11,
+              12,
+              0,
+              4,
+              6,
+              5,
+              4,
+              2,
+              3,
+              8,
+              5,
+              12,
+              4,
+              3,
+              8,
+              0,
+              7,
+              1,
+              5,
+              3
+            ]
+          },
+          {
+            "branch": "v2_w4",
+            "jetRowsConstant_R_S_T": [
+              [
+                12,
+                9,
+                8,
+                6
+              ],
+              [
+                6,
+                4,
+                7,
+                1
+              ],
+              [
+                1,
+                0,
+                5,
+                8
+              ]
+            ],
+            "linearSystemDeterminant": 11,
+            "solution_R_S_T": [
+              5,
+              12,
+              7
+            ],
+            "normalizedMiddleCoefficient": 4,
+            "gcdLowFirst": [
+              1
+            ],
+            "bezoutU_LowFirst": [
+              2,
+              10,
+              5,
+              12,
+              5,
+              3,
+              0,
+              6,
+              11,
+              1
+            ],
+            "bezoutV_LowFirst": [
+              10,
+              7,
+              9,
+              3,
+              2,
+              6,
+              4,
+              10,
+              5,
+              4,
+              0,
+              12,
+              1,
+              2,
+              8,
+              4,
+              0,
+              7,
+              2,
+              12
+            ]
+          },
+          {
+            "branch": "v2_w1",
+            "jetRowsConstant_R_S_T": [
+              [
+                12,
+                9,
+                8,
+                6
+              ],
+              [
+                6,
+                4,
+                7,
+                1
+              ],
+              [
+                7,
+                0,
+                9,
+                2
+              ]
+            ],
+            "linearSystemDeterminant": 2,
+            "solution_R_S_T": [
+              1,
+              0,
+              3
+            ],
+            "normalizedMiddleCoefficient": 0,
+            "gcdLowFirst": [
+              0,
+              1
+            ],
+            "bezoutU_LowFirst": [
+              12,
+              0,
+              10,
+              0,
+              7,
+              12,
+              2,
+              11,
+              5
+            ],
+            "bezoutV_LowFirst": [
+              6,
+              9,
+              11,
+              7,
+              0,
+              0,
+              4,
+              7,
+              1,
+              4,
+              2,
+              8,
+              2,
+              4,
+              2,
+              1,
+              11,
+              2,
+              8
+            ]
+          }
+        ],
+        "scope": "Exact finite arithmetic for the four u=1 branches. The written valuation arguments prove integrality and applicability over arbitrary ramified extensions; C!=0 is used in the final branch."
+      }
+    },
+    {
+      "script": "u_equals_v/check_jets.py",
+      "optimized": false,
+      "receipt": {
+        "status": "PASS",
+        "B2": -341088,
+        "Bprime2_mod13": 11,
+        "initialJacobianMod13": [
+          [
+            10,
+            6
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "initialJacobianDeterminantMod13": 12,
+        "rows_F_H3_H1at1_f4": [
+          [
+            10,
+            6,
+            8
+          ],
+          [
+            4,
+            1,
+            7
+          ],
+          [
+            11,
+            2,
+            9
+          ],
+          [
+            10,
+            8,
+            5
+          ]
+        ],
+        "constantJets": [
+          7,
+          6,
+          4,
+          3
+        ],
+        "H10_div13_coefficient_residues": [
+          3,
+          7,
+          8
+        ],
+        "root4_Hasse_values_orders0to3": [
+          0,
+          0,
+          0,
+          5
+        ],
+        "root1_Hasse_values_orders0to2": [
+          0,
+          0,
+          9
+        ],
+        "root2_derivative": 9,
+        "branches": [
+          {
+            "branch": "wbar1",
+            "jetMatrix": [
+              [
+                10,
+                6,
+                8
+              ],
+              [
+                4,
+                1,
+                7
+              ],
+              [
+                11,
+                2,
+                9
+              ]
+            ],
+            "constantVector": [
+              7,
+              6,
+              4
+            ],
+            "matrixDeterminantMod13": 3,
+            "solution_r_l_k": [
+              12,
+              3,
+              3
+            ],
+            "normalizedH10LowFirst": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              7,
+              11,
+              0,
+              0,
+              0,
+              1
+            ],
+            "residualCommonRootGcd": [
+              9,
+              1
+            ],
+            "GprimeAt4": 3,
+            "f4_div13_jet": 6
+          },
+          {
+            "branch": "wbar4",
+            "jetMatrix": [
+              [
+                10,
+                6,
+                8
+              ],
+              [
+                4,
+                1,
+                7
+              ],
+              [
+                10,
+                8,
+                5
+              ]
+            ],
+            "constantVector": [
+              7,
+              6,
+              3
+            ],
+            "matrixDeterminantMod13": 5,
+            "solution_r_l_k": [
+              5,
+              7,
+              12
+            ],
+            "normalizedH10LowFirst": [
+              4,
+              0,
+              0,
+              0,
+              0,
+              7,
+              11,
+              0,
+              0,
+              0,
+              1
+            ],
+            "residualCommonRootGcd": [
+              1
+            ],
+            "GprimeAt4": 3,
+            "f4_div13_jet": 0
+          }
+        ]
+      }
+    },
+    {
+      "script": "u_one/check_u_equals_v_audit.py",
+      "optimized": false,
+      "receipt": {
+        "status": "PASS",
+        "method": "Independent full integer-polynomial composition, then exact division by13",
+        "rows_r_ell_k": [
+          [
+            10,
+            6,
+            8
+          ],
+          [
+            4,
+            1,
+            7
+          ],
+          [
+            11,
+            2,
+            9
+          ],
+          [
+            10,
+            8,
+            5
+          ]
+        ],
+        "constants": [
+          7,
+          6,
+          4,
+          3
+        ],
+        "initialUnitJacobianDeterminant": 12,
+        "secondUnitJacobianDeterminant": 3,
+        "allNonlinearDividedCoefficientsIn13Z": true,
+        "secondPrecisionPoint": [
+          12,
+          3,
+          3
+        ],
+        "H10_at4_div13_reduction": "k-3",
+        "G10DerivativeAt4": 3,
+        "fAt4Div13AtSecondPrecisionPoint": 6,
+        "finalGcds": {
+          "wbar1": [
+            9,
+            1
+          ],
+          "wbar4": [
+            1
+          ]
+        },
+        "scope": "Exact arithmetic and coefficient identities supporting the written ramification-safe valuation audit."
+      }
+    },
+    {
+      "script": "structural_audit/check_independent_jets.py",
+      "optimized": false,
+      "receipt": {
+        "status": "PASS",
+        "branches": [
+          "v2_w1",
+          "v2_w4",
+          "v11_w3",
+          "v11_w11"
+        ],
+        "output": "/var/folders/zw/csz72k695vl0vzqj_fpgn8kr0000gn/T/casas-c-replay-oq7yvfoy/package/structural_audit/independent-jets.json"
+      }
+    },
+    {
+      "script": "cluster/check_jets.py",
+      "optimized": true,
+      "receipt": {
+        "status": "PASS",
+        "arithmetic": "Python standard-library integers",
+        "baseCoefficients": {
+          "20": 1,
+          "16": -4845,
+          "15": 62016,
+          "3": 3,
+          "1": -57175
+        },
+        "BExpansionAtOne": [
+          62016,
+          0,
+          -155040,
+          -155040,
+          -77520,
+          -15504
+        ],
+        "localJacobian": [
+          [
+            9,
+            6
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "localJacobianDeterminant": 11,
+        "firstOrderMatrix": [
+          [
+            9,
+            6,
+            8
+          ],
+          [
+            4,
+            1,
+            7
+          ],
+          [
+            0,
+            8,
+            5
+          ]
+        ],
+        "constantVector": [
+          12,
+          6,
+          1
+        ],
+        "matrixDeterminant": 2,
+        "uniqueResidueSolution_t_l_k": [
+          5,
+          7,
+          12
+        ],
+        "middleDerivativeReductionAscending": [
+          4,
+          0,
+          0,
+          0,
+          0,
+          7,
+          11,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Bezout_U_ascending": [
+          2,
+          10,
+          5,
+          12,
+          5,
+          3,
+          0,
+          6,
+          11,
+          1
+        ],
+        "Bezout_V_ascending": [
+          10,
+          7,
+          9,
+          3,
+          2,
+          6,
+          4,
+          10,
+          5,
+          4,
+          0,
+          12,
+          1,
+          2,
+          8,
+          4,
+          0,
+          7,
+          2,
+          12
+        ],
+        "BezoutIdentity": "U*h+V*g=1 in F13[X]",
+        "scope": "Arithmetic replay; arbitrary-ramification inequalities are proved in PROOF.md"
+      }
+    },
+    {
+      "script": "u_one/check_jets.py",
+      "optimized": true,
+      "receipt": {
+        "status": "PASS",
+        "unitJacobians": [
+          {
+            "vResidue": 2,
+            "DResidue": 3,
+            "matrix": [
+              [
+                9,
+                6
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "determinant": 11
+          },
+          {
+            "vResidue": 11,
+            "DResidue": 10,
+            "matrix": [
+              [
+                0,
+                7
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "determinant": 11
+          }
+        ],
+        "records": [
+          {
+            "branch": "v11_w3",
+            "jetRowsConstant_R_S_T": [
+              [
+                2,
+                0,
+                12,
+                7
+              ],
+              [
+                3,
+                4,
+                6,
+                1
+              ],
+              [
+                9,
+                0,
+                0,
+                11
+              ]
+            ],
+            "linearSystemDeterminant": 5,
+            "solution_R_S_T": [
+              8,
+              1,
+              11
+            ],
+            "normalizedMiddleCoefficient": 9,
+            "gcdLowFirst": [
+              1
+            ],
+            "bezoutU_LowFirst": [
+              9,
+              11,
+              4,
+              12,
+              5,
+              7,
+              1,
+              9,
+              5
+            ],
+            "bezoutV_LowFirst": [
+              3,
+              8,
+              4,
+              8,
+              10,
+              2,
+              9,
+              7,
+              5,
+              6,
+              12,
+              0,
+              12,
+              4,
+              4,
+              6,
+              12,
+              4,
+              8
+            ]
+          },
+          {
+            "branch": "v11_w11",
+            "jetRowsConstant_R_S_T": [
+              [
+                2,
+                0,
+                12,
+                7
+              ],
+              [
+                3,
+                4,
+                6,
+                1
+              ],
+              [
+                7,
+                1,
+                1,
+                11
+              ]
+            ],
+            "linearSystemDeterminant": 3,
+            "solution_R_S_T": [
+              0,
+              5,
+              6
+            ],
+            "normalizedMiddleCoefficient": 6,
+            "gcdLowFirst": [
+              1
+            ],
+            "bezoutU_LowFirst": [
+              9,
+              0,
+              11,
+              11,
+              6,
+              5,
+              6,
+              12,
+              8,
+              10
+            ],
+            "bezoutV_LowFirst": [
+              11,
+              12,
+              0,
+              4,
+              6,
+              5,
+              4,
+              2,
+              3,
+              8,
+              5,
+              12,
+              4,
+              3,
+              8,
+              0,
+              7,
+              1,
+              5,
+              3
+            ]
+          },
+          {
+            "branch": "v2_w4",
+            "jetRowsConstant_R_S_T": [
+              [
+                12,
+                9,
+                8,
+                6
+              ],
+              [
+                6,
+                4,
+                7,
+                1
+              ],
+              [
+                1,
+                0,
+                5,
+                8
+              ]
+            ],
+            "linearSystemDeterminant": 11,
+            "solution_R_S_T": [
+              5,
+              12,
+              7
+            ],
+            "normalizedMiddleCoefficient": 4,
+            "gcdLowFirst": [
+              1
+            ],
+            "bezoutU_LowFirst": [
+              2,
+              10,
+              5,
+              12,
+              5,
+              3,
+              0,
+              6,
+              11,
+              1
+            ],
+            "bezoutV_LowFirst": [
+              10,
+              7,
+              9,
+              3,
+              2,
+              6,
+              4,
+              10,
+              5,
+              4,
+              0,
+              12,
+              1,
+              2,
+              8,
+              4,
+              0,
+              7,
+              2,
+              12
+            ]
+          },
+          {
+            "branch": "v2_w1",
+            "jetRowsConstant_R_S_T": [
+              [
+                12,
+                9,
+                8,
+                6
+              ],
+              [
+                6,
+                4,
+                7,
+                1
+              ],
+              [
+                7,
+                0,
+                9,
+                2
+              ]
+            ],
+            "linearSystemDeterminant": 2,
+            "solution_R_S_T": [
+              1,
+              0,
+              3
+            ],
+            "normalizedMiddleCoefficient": 0,
+            "gcdLowFirst": [
+              0,
+              1
+            ],
+            "bezoutU_LowFirst": [
+              12,
+              0,
+              10,
+              0,
+              7,
+              12,
+              2,
+              11,
+              5
+            ],
+            "bezoutV_LowFirst": [
+              6,
+              9,
+              11,
+              7,
+              0,
+              0,
+              4,
+              7,
+              1,
+              4,
+              2,
+              8,
+              2,
+              4,
+              2,
+              1,
+              11,
+              2,
+              8
+            ]
+          }
+        ],
+        "scope": "Exact finite arithmetic for the four u=1 branches. The written valuation arguments prove integrality and applicability over arbitrary ramified extensions; C!=0 is used in the final branch."
+      }
+    },
+    {
+      "script": "u_equals_v/check_jets.py",
+      "optimized": true,
+      "receipt": {
+        "status": "PASS",
+        "B2": -341088,
+        "Bprime2_mod13": 11,
+        "initialJacobianMod13": [
+          [
+            10,
+            6
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "initialJacobianDeterminantMod13": 12,
+        "rows_F_H3_H1at1_f4": [
+          [
+            10,
+            6,
+            8
+          ],
+          [
+            4,
+            1,
+            7
+          ],
+          [
+            11,
+            2,
+            9
+          ],
+          [
+            10,
+            8,
+            5
+          ]
+        ],
+        "constantJets": [
+          7,
+          6,
+          4,
+          3
+        ],
+        "H10_div13_coefficient_residues": [
+          3,
+          7,
+          8
+        ],
+        "root4_Hasse_values_orders0to3": [
+          0,
+          0,
+          0,
+          5
+        ],
+        "root1_Hasse_values_orders0to2": [
+          0,
+          0,
+          9
+        ],
+        "root2_derivative": 9,
+        "branches": [
+          {
+            "branch": "wbar1",
+            "jetMatrix": [
+              [
+                10,
+                6,
+                8
+              ],
+              [
+                4,
+                1,
+                7
+              ],
+              [
+                11,
+                2,
+                9
+              ]
+            ],
+            "constantVector": [
+              7,
+              6,
+              4
+            ],
+            "matrixDeterminantMod13": 3,
+            "solution_r_l_k": [
+              12,
+              3,
+              3
+            ],
+            "normalizedH10LowFirst": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              7,
+              11,
+              0,
+              0,
+              0,
+              1
+            ],
+            "residualCommonRootGcd": [
+              9,
+              1
+            ],
+            "GprimeAt4": 3,
+            "f4_div13_jet": 6
+          },
+          {
+            "branch": "wbar4",
+            "jetMatrix": [
+              [
+                10,
+                6,
+                8
+              ],
+              [
+                4,
+                1,
+                7
+              ],
+              [
+                10,
+                8,
+                5
+              ]
+            ],
+            "constantVector": [
+              7,
+              6,
+              3
+            ],
+            "matrixDeterminantMod13": 5,
+            "solution_r_l_k": [
+              5,
+              7,
+              12
+            ],
+            "normalizedH10LowFirst": [
+              4,
+              0,
+              0,
+              0,
+              0,
+              7,
+              11,
+              0,
+              0,
+              0,
+              1
+            ],
+            "residualCommonRootGcd": [
+              1
+            ],
+            "GprimeAt4": 3,
+            "f4_div13_jet": 0
+          }
+        ]
+      }
+    },
+    {
+      "script": "u_one/check_u_equals_v_audit.py",
+      "optimized": true,
+      "receipt": {
+        "status": "PASS",
+        "method": "Independent full integer-polynomial composition, then exact division by13",
+        "rows_r_ell_k": [
+          [
+            10,
+            6,
+            8
+          ],
+          [
+            4,
+            1,
+            7
+          ],
+          [
+            11,
+            2,
+            9
+          ],
+          [
+            10,
+            8,
+            5
+          ]
+        ],
+        "constants": [
+          7,
+          6,
+          4,
+          3
+        ],
+        "initialUnitJacobianDeterminant": 12,
+        "secondUnitJacobianDeterminant": 3,
+        "allNonlinearDividedCoefficientsIn13Z": true,
+        "secondPrecisionPoint": [
+          12,
+          3,
+          3
+        ],
+        "H10_at4_div13_reduction": "k-3",
+        "G10DerivativeAt4": 3,
+        "fAt4Div13AtSecondPrecisionPoint": 6,
+        "finalGcds": {
+          "wbar1": [
+            9,
+            1
+          ],
+          "wbar4": [
+            1
+          ]
+        },
+        "scope": "Exact arithmetic and coefficient identities supporting the written ramification-safe valuation audit."
+      }
+    },
+    {
+      "script": "structural_audit/check_independent_jets.py",
+      "optimized": true,
+      "receipt": {
+        "status": "PASS",
+        "branches": [
+          "v2_w1",
+          "v2_w4",
+          "v11_w3",
+          "v11_w11"
+        ],
+        "output": "/var/folders/zw/csz72k695vl0vzqj_fpgn8kr0000gn/T/casas-c-replay-oq7yvfoy/package/structural_audit/independent-jets.json"
+      }
+    }
+  ],
+  "negativeControl": "Altered H16-normalization coefficient rejected under -O",
+  "conclusion": "Arithmetic and case coverage support the written C exclusion and seven-term corollary.",
+  "scope": "Exact arithmetic/internal proof; not external review, formal verification, or novelty certification."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "reviewer": "separate internal code-review agent",
+  "scope": "POSIX portability and execution controls",
+  "checks": [
+    "independent smoke rerun",
+    "independent descendant cleanup after checker failure and outer timeout",
+    "exit/deadline race regression inspected",
+    "original file comparison: mathematical inputs and receipts unchanged"
+  ],
+  "notRepeated": [
+    "full m6 census",
+    "27-check campaign"
+  ],
+  "notClaimed": [
+    "external validation",
+    "mathematical theorem upgrade",
+    "REF rating upgrade"
+  ]
+}

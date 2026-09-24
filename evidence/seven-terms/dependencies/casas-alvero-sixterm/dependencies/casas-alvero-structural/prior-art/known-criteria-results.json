@@ -1,0 +1,1281 @@
+{
+  "status": "PASS",
+  "formula_alias_checks": 3654,
+  "scope": "Arithmetic checks only; all relevant primes for reducing a >=3-element degree-20 support to <=2 are <=19.",
+  "support_results": [
+    {
+      "support": [
+        4,
+        10,
+        17,
+        19
+      ],
+      "checks": [
+        {
+          "p": 2,
+          "visible": [
+            4
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 3,
+          "visible": [
+            10,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            2
+          ],
+          "N_mod_p": 0,
+          "excluded": false
+        },
+        {
+          "p": 5,
+          "visible": [
+            10
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 7,
+          "visible": [
+            4,
+            10,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            5,
+            6,
+            6
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 11,
+          "visible": [
+            4,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            5,
+            7,
+            9
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 13,
+          "visible": [
+            4,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            9,
+            9,
+            7
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 17,
+          "visible": [
+            17,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            3
+          ],
+          "N_mod_p": 0,
+          "excluded": false
+        },
+        {
+          "p": 19,
+          "visible": [
+            19
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        }
+      ],
+      "exclusion_primes": []
+    },
+    {
+      "support": [
+        4,
+        8,
+        9,
+        10,
+        11,
+        12,
+        17,
+        19
+      ],
+      "checks": [
+        {
+          "p": 2,
+          "visible": [
+            4
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 3,
+          "visible": [
+            9,
+            10,
+            11,
+            19
+          ],
+          "binomial_residues": [
+            2,
+            1,
+            2,
+            2
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 5,
+          "visible": [
+            10
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 7,
+          "visible": [
+            4,
+            8,
+            9,
+            10,
+            11,
+            12,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            5,
+            2,
+            5,
+            2,
+            5,
+            6,
+            6
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 11,
+          "visible": [
+            4,
+            8,
+            9,
+            11,
+            12,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            5,
+            9,
+            1,
+            1,
+            9,
+            7,
+            9
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 13,
+          "visible": [
+            4,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            9,
+            9,
+            7
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 17,
+          "visible": [
+            17,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            3
+          ],
+          "N_mod_p": 0,
+          "excluded": false
+        },
+        {
+          "p": 19,
+          "visible": [
+            19
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        }
+      ],
+      "exclusion_primes": []
+    },
+    {
+      "support": [
+        2,
+        4,
+        5,
+        10,
+        19
+      ],
+      "checks": [
+        {
+          "p": 2,
+          "visible": [
+            4
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 3,
+          "visible": [
+            2,
+            10,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            1,
+            2
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 5,
+          "visible": [
+            5,
+            10
+          ],
+          "binomial_residues": [
+            4,
+            1
+          ],
+          "N_mod_p": 1,
+          "excluded": false
+        },
+        {
+          "p": 7,
+          "visible": [
+            2,
+            4,
+            5,
+            10,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            1,
+            6,
+            5,
+            6
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 11,
+          "visible": [
+            2,
+            4,
+            5,
+            19
+          ],
+          "binomial_residues": [
+            3,
+            5,
+            5,
+            9
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 13,
+          "visible": [
+            2,
+            4,
+            5,
+            19
+          ],
+          "binomial_residues": [
+            8,
+            9,
+            8,
+            7
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 17,
+          "visible": [
+            2,
+            19
+          ],
+          "binomial_residues": [
+            3,
+            3
+          ],
+          "N_mod_p": 2,
+          "excluded": true
+        },
+        {
+          "p": 19,
+          "visible": [
+            19
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        }
+      ],
+      "exclusion_primes": [
+        17
+      ]
+    },
+    {
+      "support": [
+        2,
+        4,
+        10,
+        12,
+        19
+      ],
+      "checks": [
+        {
+          "p": 2,
+          "visible": [
+            4
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 3,
+          "visible": [
+            2,
+            10,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            1,
+            2
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 5,
+          "visible": [
+            10
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 7,
+          "visible": [
+            2,
+            4,
+            10,
+            12,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            1,
+            5,
+            5,
+            6
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 11,
+          "visible": [
+            2,
+            4,
+            12,
+            19
+          ],
+          "binomial_residues": [
+            3,
+            5,
+            9,
+            9
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 13,
+          "visible": [
+            2,
+            4,
+            19
+          ],
+          "binomial_residues": [
+            8,
+            9,
+            7
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 17,
+          "visible": [
+            2,
+            19
+          ],
+          "binomial_residues": [
+            3,
+            3
+          ],
+          "N_mod_p": 2,
+          "excluded": true
+        },
+        {
+          "p": 19,
+          "visible": [
+            19
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        }
+      ],
+      "exclusion_primes": [
+        17
+      ]
+    },
+    {
+      "support": [
+        2,
+        4,
+        10,
+        16,
+        19
+      ],
+      "checks": [
+        {
+          "p": 2,
+          "visible": [
+            4,
+            16
+          ],
+          "binomial_residues": [
+            1,
+            1
+          ],
+          "N_mod_p": 1,
+          "excluded": false
+        },
+        {
+          "p": 3,
+          "visible": [
+            2,
+            10,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            1,
+            2
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 5,
+          "visible": [
+            10
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 7,
+          "visible": [
+            2,
+            4,
+            10,
+            16,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            1,
+            5,
+            1,
+            6
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 11,
+          "visible": [
+            2,
+            4,
+            16,
+            19
+          ],
+          "binomial_residues": [
+            3,
+            5,
+            5,
+            9
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 13,
+          "visible": [
+            2,
+            4,
+            16,
+            19
+          ],
+          "binomial_residues": [
+            8,
+            9,
+            9,
+            7
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 17,
+          "visible": [
+            2,
+            19
+          ],
+          "binomial_residues": [
+            3,
+            3
+          ],
+          "N_mod_p": 2,
+          "excluded": true
+        },
+        {
+          "p": 19,
+          "visible": [
+            19
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        }
+      ],
+      "exclusion_primes": [
+        17
+      ]
+    },
+    {
+      "support": [
+        2,
+        10,
+        14,
+        16,
+        19
+      ],
+      "checks": [
+        {
+          "p": 2,
+          "visible": [
+            16
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 3,
+          "visible": [
+            2,
+            10,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            1,
+            2
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 5,
+          "visible": [
+            10
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 7,
+          "visible": [
+            2,
+            10,
+            14,
+            16,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            5,
+            1,
+            1,
+            6
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 11,
+          "visible": [
+            2,
+            14,
+            16,
+            19
+          ],
+          "binomial_residues": [
+            3,
+            7,
+            5,
+            9
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 13,
+          "visible": [
+            2,
+            14,
+            16,
+            19
+          ],
+          "binomial_residues": [
+            8,
+            7,
+            9,
+            7
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 17,
+          "visible": [
+            2,
+            19
+          ],
+          "binomial_residues": [
+            3,
+            3
+          ],
+          "N_mod_p": 2,
+          "excluded": true
+        },
+        {
+          "p": 19,
+          "visible": [
+            19
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        }
+      ],
+      "exclusion_primes": [
+        17
+      ]
+    },
+    {
+      "support": [
+        3,
+        4,
+        10,
+        18,
+        19
+      ],
+      "checks": [
+        {
+          "p": 2,
+          "visible": [
+            4
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 3,
+          "visible": [
+            10,
+            18,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            1,
+            2
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 5,
+          "visible": [
+            10
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 7,
+          "visible": [
+            3,
+            4,
+            10,
+            18,
+            19
+          ],
+          "binomial_residues": [
+            6,
+            1,
+            5,
+            1,
+            6
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 11,
+          "visible": [
+            3,
+            4,
+            18,
+            19
+          ],
+          "binomial_residues": [
+            7,
+            5,
+            3,
+            9
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 13,
+          "visible": [
+            3,
+            4,
+            18,
+            19
+          ],
+          "binomial_residues": [
+            9,
+            9,
+            8,
+            7
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 17,
+          "visible": [
+            3,
+            18,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            3,
+            3
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 19,
+          "visible": [
+            19
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        }
+      ],
+      "exclusion_primes": []
+    },
+    {
+      "support": [
+        3,
+        10,
+        16,
+        17,
+        19
+      ],
+      "checks": [
+        {
+          "p": 2,
+          "visible": [
+            16
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 3,
+          "visible": [
+            10,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            2
+          ],
+          "N_mod_p": 0,
+          "excluded": false
+        },
+        {
+          "p": 5,
+          "visible": [
+            10
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 7,
+          "visible": [
+            3,
+            10,
+            16,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            6,
+            5,
+            1,
+            6,
+            6
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 11,
+          "visible": [
+            3,
+            16,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            7,
+            5,
+            7,
+            9
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 13,
+          "visible": [
+            3,
+            16,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            9,
+            9,
+            9,
+            7
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 17,
+          "visible": [
+            3,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            1,
+            3
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 19,
+          "visible": [
+            19
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        }
+      ],
+      "exclusion_primes": []
+    },
+    {
+      "support": [
+        4,
+        5,
+        10,
+        17,
+        19
+      ],
+      "checks": [
+        {
+          "p": 2,
+          "visible": [
+            4
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 3,
+          "visible": [
+            10,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            2
+          ],
+          "N_mod_p": 0,
+          "excluded": false
+        },
+        {
+          "p": 5,
+          "visible": [
+            5,
+            10
+          ],
+          "binomial_residues": [
+            4,
+            1
+          ],
+          "N_mod_p": 1,
+          "excluded": false
+        },
+        {
+          "p": 7,
+          "visible": [
+            4,
+            5,
+            10,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            6,
+            5,
+            6,
+            6
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 11,
+          "visible": [
+            4,
+            5,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            5,
+            5,
+            7,
+            9
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 13,
+          "visible": [
+            4,
+            5,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            9,
+            8,
+            9,
+            7
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 17,
+          "visible": [
+            17,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            3
+          ],
+          "N_mod_p": 0,
+          "excluded": false
+        },
+        {
+          "p": 19,
+          "visible": [
+            19
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        }
+      ],
+      "exclusion_primes": []
+    },
+    {
+      "support": [
+        8,
+        10,
+        16,
+        17,
+        19
+      ],
+      "checks": [
+        {
+          "p": 2,
+          "visible": [
+            16
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 3,
+          "visible": [
+            10,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            2
+          ],
+          "N_mod_p": 0,
+          "excluded": false
+        },
+        {
+          "p": 5,
+          "visible": [
+            10
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 7,
+          "visible": [
+            8,
+            10,
+            16,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            5,
+            5,
+            1,
+            6,
+            6
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 11,
+          "visible": [
+            8,
+            16,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            9,
+            5,
+            7,
+            9
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 13,
+          "visible": [
+            16,
+            17,
+            19
+          ],
+          "binomial_residues": [
+            9,
+            9,
+            7
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        },
+        {
+          "p": 17,
+          "visible": [
+            17,
+            19
+          ],
+          "binomial_residues": [
+            1,
+            3
+          ],
+          "N_mod_p": 0,
+          "excluded": false
+        },
+        {
+          "p": 19,
+          "visible": [
+            19
+          ],
+          "binomial_residues": [
+            1
+          ],
+          "N_mod_p": null,
+          "excluded": false
+        }
+      ],
+      "exclusion_primes": []
+    }
+  ]
+}

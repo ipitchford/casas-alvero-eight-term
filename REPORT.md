@@ -1,0 +1,1831 @@
+---
+title: "Local obstructions and proof audits for Casas–Alvero"
+subtitle: "Consolidated research report for review"
+date: "23 September 2026"
+lang: en-GB
+---
+
+# Scope and principal conclusions
+
+This report consolidates an audit and an attempted solution of the Casas--Alvero
+conjecture, with particular attention to unrestricted degree 20. It supplies
+the resulting partial theorems, explicit countermodels to proposed arguments,
+and finite certificates for review. **Neither unrestricted degree 20 nor the
+conjecture in all degrees is proved by this work.** No counterexample to the
+characteristic-zero conjecture has been found.
+
+For a field of characteristic zero, the conjecture says that a monic polynomial
+$f$ of degree $n\geq2$ satisfying
+$$\deg\gcd(f,f^{(i)})>0\qquad(1\leq i<n)$$
+must be $(X-a)^n$. The common root may depend on $i$. Our original two targets
+were this statement for $n=20$ without a sparsity restriction, and the statement
+for every $n$. Neither a proof gap in someone else's argument nor a sparse
+special case fulfils either target.
+
+The report has three mathematical parts. The first reconstructs the proof
+audit and the seven-term lower bound in centered degree 20. The second gives
+the subsequent local reductions and case exclusions for general degree-20
+coefficients. The third develops the valid conclusions, and the explicit
+limitations, of several proposed approaches in arbitrary degree. The supplied
+proof notes retain details too long for the main narrative, including complete
+case lists, polynomial identities, and separate internal audits.
+
+## What has been established within the reviewed arguments
+
+1. The stated generality of Ghosh's Proposition 3.3 fails in characteristics
+   five and seven. The explicit ideals, generator counts, and dependency
+   analysis identify proof obligations; they do not disprove the
+   characteristic-zero conjecture.
+2. A hypothetical nontrivial degree-20 counterexample has at least seven
+   nonzero terms after centering, counting its leading term. This is a
+   statement about monomials, not distinct roots or derivative witnesses.
+3. The characteristic-17 visible model has nine normalized nontrivial seeds
+   over the full algebraic closure. One whole seed cannot lift. Eight remain.
+   Three of the surviving branches have complete unramified marked lifting
+   descriptions; a fourth has a complete description allowing ramification
+   index at most two.
+4. Complete coefficient-support systems in the row-9 branch and one in row 4
+   have been excluded by finite residue searches followed by exact lifting.
+   The final coverage is 79 of 240 row-9 systems; 161 remain unexecuted. This is not a whole-branch exclusion.
+5. In the row-8 branch, a valuation bound and a divided identity constrain
+   all supports. A large first-scale stratum admits an exact finite
+   classification of quartic leading models, an exact cluster-collapse
+   conclusion, and a further conditional exclusion. The whole branch
+   remains unresolved.
+6. Finite formal and resultant-algebra descriptions provide exact remaining
+   exclusion targets. Their unevaluated generic fibres are not empty merely
+   because the rings are finite.
+7. In arbitrary degree, valid moment and height bounds coexist with explicit
+   countermodels to relaxed descent arguments. The repaired contraction
+   argument still requires the missing Casas--Alvero step. An exact matrix
+   representation is available, but its proposed eigenvector shortcut fails.
+
+These are internal mathematical conclusions supported by the arguments and
+checks described below. They have not undergone external refereeing or formal
+proof-assistant verification. Priority and publication significance are not
+established. In particular, the earliest five-term lower bound was found to
+follow from prior work; the report preserves that correction rather than
+treating every intermediate bound as an original contribution.
+
+## Notation and interpretation of computations
+
+Write
+$$f(X)=\sum_{j=0}^{n}\binom nj a_jX^{n-j},\qquad
+G_j(X)=\sum_{i=0}^{j}\binom ji a_iX^{j-i}.$$
+Thus $G_j$ is the monic divided derivative of degree $j$. Hasse order $k$
+means $H_kf=f^{(k)}/k!$ in characteristic zero, continued by the integral
+binomial formula in positive characteristic. Deficiency index $j$, normalized
+derivative degree $j$, and Hasse order $n-j$ are related but must not be
+interchanged. A support is the set of indices of exactly nonzero normalized
+coefficients. An active coefficient can have zero residue.
+
+Local valuations are normalized by $v(p)=1$. Ramified candidates can have
+fractional positive valuation. Reduction in the residue field and divisibility
+by $p$ in the valuation ring are different assertions. Whenever an identity is
+divided by $p$, its required integral divisibility is proved before division.
+Likewise, searches over a specified finite extension are complete only after
+that extension has been shown to contain every required algebraic residue root.
+
+The computational assertions have three distinct levels. An enumeration
+certifies a finite set of residue configurations. A finite-precision lift
+certifies polynomial congruences. A separate coverage and uniqueness argument
+explains why those congruences exclude characteristic-zero candidates,
+including candidates originally lying in ramified fields. The report does
+not infer the third level from successful execution of the first two.
+
+## Evidence organization
+
+`evidence/audit/` contains the original proof audit and its certificates;
+`evidence/AUDIT_NOVELTY_CORRECTION.md` supersedes its earliest novelty assessment.
+`evidence/seven-terms/` contains the complete seven-term proof and its unchanged
+dependency packages. `evidence/full/` contains the later unrestricted campaign,
+including successful results and failed experiments. Historical files can have
+outdated status language; this report and `REVIEW_GUIDE.md` identify what is
+superseded. The older files are retained for traceability.
+
+The top-level `PROOF_INDEX.md` lists the proof notes, while `replay.py` gives
+bounded, reproducible checks in a temporary copy. The default replay does not
+launch exploratory solvers or regenerate optional large discovery certificates.
+It records failures and timeouts explicitly. Its output establishes only the
+listed checks, not a proof of either original target.
+
+
+# The claimed proof audit and the centered seven-term theorem
+
+This section records two different outcomes: an explicit counterexample to a supporting proposition in a claimed proof, and a restricted positive theorem in degree 20. Neither settles the Casas–Alvero conjecture. The first is a proof audit; the second is an unpublished mathematical result with exact certificates and internal adversarial reviews. Priority, external refereeing, and publication are separate matters.
+
+## What the Ghosh audit establishes
+
+The audited source is Soham Ghosh, *Proof of the Casas–Alvero conjecture*, [arXiv:2501.09272v2](https://arxiv.org/html/2501.09272v2). The arXiv history dates v2 to 21 March 2026. The captured manuscript has a different internal date, 24 August 2026; these dates are recorded separately. Its PDF SHA-256 is `562050e1bff0fbfae2493951b4456485c61181381ba374271889d81d96bb5daa`. The source identity, exact proof, replay, and dependency audit are in [the audit evidence](evidence/audit/README.md).
+
+For an ideal \(I\) in a ring \(R\), \(\mu_R(I)\) denotes its minimum number of generators as an \(R\)-module. Over a local ring \((R,\mathfrak m)\), this equals \(\dim_{R/\mathfrak m}I/\mathfrak mI\). It is not the dimension or length of \(R/I\).
+
+The paper defines \(I_n(j_1,\ldots,j_n)\) by applying root-recentering automorphisms to elementary symmetric polynomials. Proposition 3.3 asserts equality between its global generator number and its generator number at every minimal prime, provided the characteristic does not divide \(\prod_{i=1}^n\binom n{i-1}\). Here \(n\) corresponds to CA polynomial degree \(n+1\). For \(n=3\), that product is 9, so characteristics 5 and 7 satisfy the stated hypothesis.
+
+### An explicit counterexample in characteristic 5
+
+For \((j_1,j_2,j_3)=(1,2,3)\), the definitions give, in \(R=k[x,y,z]\),
+
+\[
+F_1=-x(y-x)(z-x),\quad
+F_2=xz-2xy-2yz+3y^2,\quad F_3=x+y-3z.
+\]
+
+Put \(I=(F_1,F_2,F_3)\). In characteristic 5, use invertible linear coordinates
+
+\[
+\ell=x+y-3z,\qquad u=y-2z,\qquad t=z.
+\]
+
+Substitution gives \(F_2=(2t-2u)\ell+ut\) and
+
+\[
+F_1=-\ell^3-\ell^2u+\ell t^2+\ell tu-ut^2-u^2t+2u^3.
+\]
+
+Consequently \(I=(\ell,ut,u^3)\). At \(\mathfrak m=(\ell,u,t)\), these monomial generators have independent classes in \(I/\mathfrak mI\). Thus the local generator number is three; localization cannot increase the number, and the presentation has three generators, so \(\mu_R(I)=3\).
+
+The radical is the unique minimal prime \(\mathfrak p=(\ell,u)\). The element \(t\) is a unit there, and
+
+\[
+I_{\mathfrak p}=(\ell,u)R_{\mathfrak p},\qquad
+\mu_{R_{\mathfrak p}}(I_{\mathfrak p})=2.
+\]
+
+The last equality follows also from height two in this regular local ring. This proves \(3\ne2\) under the proposition's hypotheses, including over an algebraic closure.
+
+The discrepancy is visible in
+
+\[
+I=(\ell,u)\cap(\ell,t,u^3).
+\]
+
+An embedded component carries nilpotent structure at the origin. More directly,
+
+\[
+\mathfrak pI=(\ell^2,\ell u,u^2t,u^4).
+\]
+
+The class of \(u^3\) in \(I/\mathfrak pI\) is nonzero but killed by \(t\). Localization removes the third generator; this torsion cannot be cancelled.
+
+The audit also reproduces the failure in the proof's literal translated, augmented ideal. Set
+
+\[
+H_i=F_i(3s+A,s+B,3s+C),\quad L=A+B-3C,\quad U=B-2C.
+\]
+
+Then \(\mathfrak m^+=(L,U,B)\) and
+
+\[
+J^+=(H_1,H_2,H_3,B)=(L,B,Q,U^3),\qquad Q=3sU+2U^2.
+\]
+
+In \(k[s,L,U,B]/\mathfrak m^+J^+\), the class of \(U^3\) is nonzero: setting \(L=B=0\) leaves the quotient by \((3sU^2+2U^3,U^4)\), whose degree-three relation does not contain \(U^3\) alone. Yet
+
+\[
+3sU^3=U^2Q-2U^4\in\mathfrak m^+J^+.
+\]
+
+Thus the actual parameter is a zero divisor. The localization remains nonzero after inverting \(s\); nonzero localization does not imply absence of torsion.
+
+### Characteristic 7 and the scope of the refutation
+
+In characteristic 7, \(\ell=x+y-3z,\ u=y-3z,\ t=z\) gives
+
+\[
+I=(\ell,u^2,ut^2)=(\ell,u)\cap(\ell,u^2,t^2).
+\]
+
+Again the global generator number is three and the number at the unique minimal prime is two. Permuting \((x,y,z,0)\) and recentering gives all 24 distinct-entry ordered triples. They constitute one symmetry orbit, not 24 unrelated mechanisms.
+
+The same configuration does not refute the characteristic-zero restriction. Eliminating \(F_3\) gives
+
+\[
+(y-3z)(y-2z)(2y-3z),\qquad5y^2-9yz+3z^2.
+\]
+
+Their affine resultant is \(315=3^2\cdot5\cdot7\), with no common projective root at infinity in characteristic zero. The ideal then has height three and both generator numbers are three. The established conclusion is that Proposition 3.3 is false as stated and the proof contains an invalid cancellation. This is neither a characteristic-zero CA counterexample nor a disproof of Theorem A's conclusion.
+
+### A separate characteristic-zero inference involving nilpotents
+
+The [dependency audit](evidence/audit/DEPENDENCY_AUDIT.md) traces Proposition 3.3 through Corollary 3.9, Lemma 4.5, the filtered homology argument, and the claimed descent in degree. It identifies another invalid inference: a polynomial unit over an Artinian local ring can have nonzero nilpotent coefficients. For example,
+
+\[
+A=\mathbb Q[\epsilon]/(\epsilon^2),\qquad
+(1-\epsilon X)(1+\epsilon X)=1,
+\]
+
+although \(\epsilon\ne0\). This refutes the supporting coefficient argument, not Lemma 4.5 itself for the special CA family.
+
+A stronger abstract pressure test is retained. In \(R=\mathbb Q[u,v,w]\), take the rows \((uv,u^2,v^2)\), \((w^3,u^3,v^3)\), and their minors ideal \(D\). At \(\mathfrak p=(u,v)\), \(D_{\mathfrak p}=(u^2,v^2)\). Thus \(uv\) is nonzero and square-zero in the quotient, and \(w^3+uvX\) is a polynomial unit. The corresponding polynomials \(uvX+w^3,\ u^2(X+u),\ v^2(X+v)\) form a regular sequence: splitting the last two equations into the four choices \(u=v=0\), \(u=0,X=-v\), \(v=0,X=-u\), or \(X=-u=-v\) shows that their common zero set has dimension one in four variables. Surrounding regular-sequence and Cohen–Macaulay properties therefore do not automatically fix the inference. This model has a different degree pattern and is explicitly not a CA configuration.
+
+A valid cancellation repair needs the precise colon equality \((N:t)=N\) for the relevant conormal module. A repair of the unit-polynomial step needs control of nilpotents or a different argument. The audit does not establish that such repairs are impossible. Later work on the general repair target is reported separately.
+
+## The positive sparse theorem
+
+The authoritative statement is [the seven-term proof](evidence/seven-terms/PROOF.md):
+
+**Theorem.** Every nontrivial characteristic-zero degree-20 CA polynomial has at least seven nonzero monomials after centering, including the leading monomial.
+
+Centering translates the unique root of \(f^{(19)}\) to zero. The CA condition makes this a root of \(f\) too. After making the polynomial monic, write
+
+\[
+f=X^{20}+\sum_{m\in S}c_mX^{20-m},\qquad
+S\subseteq\{2,\ldots,19\},\quad c_m\ne0.
+\]
+
+The term count is \(1+|S|\). The index \(m\) is the exponent deficiency; missing \(c_m\) means the Hasse derivative of order \(20-m\) vanishes at zero. This is neither a distinct-root count nor a recycled-witness count. It concerns the centered form, not every translate.
+
+The last new exclusion is
+
+\[
+f=X^{20}+AX^{16}+BX^{15}+CX^{10}+DX^3+EX,\qquad ABCDE\ne0.
+\tag{C}
+\]
+
+No such characteristic-zero polynomial is CA. Coefficient degenerations are handled by preceding support results, not silently absorbed into this exact-support statement.
+
+### Complete support coverage
+
+The inherited proof excludes at most five total terms. For exactly six, the sieve examines all \(\binom{18}{5}=8568\) deficiency supports. Established Lucas-visibility, one- and two-visible-coefficient restrictions, placement restrictions, and the Castryck–Laterveer–Ounaïes determinant criterion leave five:
+
+| Label | Deficiency support | Exclusion |
+|---|---|---|
+| A | \(\{3,4,10,18,19\}\) | Characteristic-13 seed, exact witness collision, characteristic-zero resultants |
+| B | \(\{3,10,16,17,19\}\) | Characteristic-13 identities including coefficient degenerations |
+| C | \(\{4,5,10,17,19\}\) | Six valuation branches below |
+| D | \(\{4,10,12,17,19\}\) | Seed \(X^{20}+aX^{16}+cX^3+dX\) |
+| E | \(\{8,10,16,17,19\}\) | Seed \(X^{20}+bX^4+cX^3+dX\) |
+
+The two-visible criterion is already in de Frutos Marín's thesis, Proposition 3.5.5; the determinant criterion is CLO's. Neither is a new method here. The complete frontier, its application of exclusions, and the preceding lower bound are bundled in [the predecessor proof](evidence/seven-terms/dependencies/casas-alvero-sixterm/PROOF.md).
+
+For A, the unique normalized nonmonomial seed is
+
+\[
+X^{20}+4X^{17}+X^{16}+4X^2+3X.
+\]
+
+Its Hasse orders 17, 16, and 2 have common witness 1, a simple polynomial root, so their lifts coincide exactly. This gives
+
+\[
+X^{20}-1140X^{17}+14535X^{16}+tX^{10}
+ +(-1589350-45t)X^2+(1575954+44t)X.
+\]
+
+Exact resultant certificates exclude this family, retaining \(t=0\) separately. For B, \(X^{20}+aX^{17}+bX^4+cX^3+dX\) has no nonmonomial CA point over an algebraic closure of characteristic 13. Its main-chart certificate is
+
+\[
+U(u)C(u)R_3(u)+V(u)D(u)R_1(u)=(u+1)^{17}
+\]
+
+where \(u\ne-1\). Factors \(C,D\) retain zero-coefficient cases, and separate certificates cover exceptional charts. This is not a search restricted to prime-field rational points.
+
+### Reduction of C and its six marked cases
+
+Use Hasse derivatives \(H_k(X^j)=\binom jkX^{j-k}\); in characteristic zero they have the same roots as ordinary derivatives. Extend the 13-adic valuation and scale a root of least valuation to 1. All roots and coefficients become integral, with a unit root retained. More generally, in \(f=\sum\binom{20}{j}a_jX^{20-j}\), evaluation of each monic normalized derivative at an integral common root inductively proves integrality of every \(a_j\). This justifies the binomially invisible coefficients disappearing in reduction.
+
+For exact C, the order-10 witness \(z\) gives the stronger divisibility
+
+\[
+C=-184756z^{10}-8008Az^6-3003Bz^5\in13O.
+\]
+
+The coefficient \(A\) is a unit: its zero-residue seed charts either contradict their derivative equations or force its exact witness to be the simple mean root, implying \(A=0\). Thus its order-16 witness can be scaled to 1, giving \(A=-4845\) and \(E=-1-A-B-C-D\).
+
+The geometric seed classification gives exactly
+
+\[
+(\bar A,\bar B,\bar D,\bar E)
+=(4,6,3,12),\ (4,6,2,0),\ (4,6,10,5).
+\]
+
+At the middle point a nonzero repeated root \(w\) must reduce to zero. In
+
+\[
+f'(w)-f(w)/w
+=19w^{19}+15Aw^{15}+14Bw^{14}+9Cw^9+2Dw^2,
+\]
+
+the last term has uniquely least valuation, a contradiction. This includes its extension-field marked witnesses.
+
+Let \(u,v,w\) witness orders 15, 3, and 1. Define
+
+\[
+h_3=X^{20}+4X^{16}+6X^{15}+3X^3+12X,\qquad
+h_{10}=X^{20}+4X^{16}+6X^{15}+10X^3+5X.
+\]
+
+The remaining cases and exclusions are:
+
+| \((\bar v,\bar u,\bar w)\) | Forced equality | \(\overline{C/13}\) | Final obstruction |
+|---|---|---:|---|
+| \((2,1,1)\) | \(u=w=1\) | 0 | Middle witness is exact 0, so \(C=0\) |
+| \((2,1,4)\) | None initially | 12 | Coprime reduced polynomial and divided middle derivative |
+| \((2,2,1)\) | \(u=v,\ w=1\) | 3 | Second-precision contradiction at 4 |
+| \((2,2,4)\) | \(u=v\) | 12 | Coprime reductions |
+| \((11,1,3)\) | \(u=1\) | 1 | Coprime reductions |
+| \((11,1,11)\) | \(u=1,\ v=w\) | 5 | Coprime reductions |
+
+Exact equalities follow from simple-root uniqueness or exhaustion of a size-two cluster by an exact repeated root. Equality of residues alone does not justify them.
+
+### Why ramified lifts are covered
+
+Two short principles underpin the proof. For integral equations in positive-valuation deviations, an invertible residue Jacobian forces each deviation to have at least the valuation of the constant defects. Otherwise the invertible linear part has a minimum valuation strictly below the constants and all nonlinear terms, so cancellation is impossible. In the triple residue cluster at 4, the repeated-root condition gives \(\nu(w-4)\ge1/2\): the constant and linear coefficients of \(f'(4+(w-4))\) lie in \(13O\), while its quadratic coefficient is a unit. Then \(f(w)=0\) forces \(\nu(f(4))>1\). This does not assume \(w-4\in13O\).
+
+If \(u=1\), then \(B=62016\). The Jacobians of \((f(v),H_3f(v))\) in \((v,D)\) at \((2,3)\) and \((11,10)\) are
+
+\[
+\begin{pmatrix}9&6\\4&1\end{pmatrix},\qquad
+\begin{pmatrix}0&7\\4&1\end{pmatrix},
+\]
+
+both with determinant 11. Hence write \(C=13k,\ v=v_0+13t,\ D=d_0+13l\). The first equations reduce to
+
+\[
+9t+6l+8k+12=0,\quad4t+l+7k+6=0
+\]
+
+at \(v_0=2\), and
+
+\[
+7l+12k+2=0,\quad4t+l+6k+3=0
+\]
+
+at \(v_0=11\). The exact or clustered order-1 witness supplies a third equation. The four solutions \((t,l,k)\) are \((1,3,0),(5,7,12),(8,11,1),(0,6,5)\), respectively.
+
+Dividing \(H_{10}f\) by 13 and a unit gives the reduction
+
+\[
+g_{9k}=X^{10}+11X^6+7X^5+9k.
+\]
+
+Exact Euclidean identities give
+
+\[
+\gcd(h_3,g_0)=X,\quad\gcd(h_3,g_4)=1,\quad
+\gcd(h_{10},g_9)=\gcd(h_{10},g_6)=1.
+\]
+
+The first forces the middle witness to exact zero because zero is a simple root of \(h_3\), whence \(C=0\). The others are immediate contradictions.
+
+For \((2,1,4)\), without an initial exact collision, put \(s=u-1\). The order-15 equation gives
+
+\[
+B-62016=-15504s^2(10+10s+5s^2+s^3).
+\]
+
+For \(r=\nu(s)>0\), the unit Jacobian bounds \(v-2,D-3\) below by \(\min(1,2r)\). In \((f(u)-f(1))/s\), the linear term in \(s\) has unit coefficient 9 modulo 13. If \(r<1\), it has uniquely least valuation. Hence \(r\ge1\), and the preceding \((2,4)\) computation applies. Fractional ramification has been controlled rather than omitted.
+
+For \(u=v\equiv2\), substitution gives the unit Jacobian \(\begin{pmatrix}10&6\\4&1\end{pmatrix}\). With \(u=2+13r\), the first equations are
+
+\[
+10r+6l+8k+7=0,\quad4r+l+7k+6=0.
+\]
+
+The \(w\equiv4\) row gives \(k=12\) and the same coprime pair. The \(w=1\) row gives \((r,l,k)=(12,3,3)\), where \(\gcd(h_3,g_1)=X-4\) and \(g_1'(4)=3\). Applying the unit-Jacobian bound to the exact equations divided by 13 fixes the three parameters modulo \(13O\). The simple divided-derivative root then forces \(z-4\in13O\). But direct expansion gives \(\overline{f(4)/13}=6\ne0\), while \(f(z)-f(4)\in13^2O\). This closes the last case.
+
+### Arithmetic evidence and historical corrections
+
+The combined replay checks 40 inherited items and ten new normal/optimized runs, reconstructs six-row coverage, and includes an altered-coefficient negative control. Finite-field certificates are polynomial identities: interpolation uses more distinct extension-field points than rigorously bounded degrees. Characteristic-zero resultant coprimality has the required specialization and degree checks. The compact C proof does not depend on the optional 1,544-determinant resultant replay or exploratory collision logs. Internal reviews check valuation implications separately from arithmetic.
+
+The [unchanged historical correction](evidence/AUDIT_NOVELTY_CORRECTION.md) is essential. The early five-total-term bound follows already from Massri's derivative-pair restrictions and CLO's mean and determinant constraints. Its certificate remains correct; its assessment as a potentially new theorem is withdrawn. Conversely, the correction's then-current statement that no six-term theorem was claimed is historical: the seven-term package supersedes it. The predecessor's unresolved-C language is similarly superseded by the C proof, while its certificates remain dependencies.
+
+## Current status and priority boundary
+
+The 23 September 2026 primary-source refresh still exposes Ghosh v2 as the latest arXiv revision. This does not establish that no public criticism or private repair exists. Ghosh is not the only author to have claimed a full proof: [Lu's v6](https://arxiv.org/abs/1707.04754v6), dated 16 March 2021, makes such a claim; it was not audited here.
+
+Gasull's 2026 primer calls 24 the smallest open degree and cites Draisma–de Jong. Its own proof covers degrees 4 and 5. The cited theorem's degree-20 consequence was expressly withdrawn by its authors' August 2011 erratum: the required characteristic-5 quartic exclusion fails. Thus this citation chain supplies no new degree-20 proof. Inheritance of an uncorrected status sentence is a plausible explanation, not an established account of Gasull's reasoning. [Primer](https://link.springer.com/article/10.1007/s44425-026-00047-6), [erratum](https://math-unibe.ch/jdraisma/publications/erratumcasasalvero.pdf).
+
+The bounded sparse-priority search found no exact primary-source match for the seven-total-term bound. This is not novelty clearance. The ProofAtlas project page reports degree-20 certificate and Hensel work without the full exponent systems and certificates needed to resolve overlap. Its A1/A2/A3 labels must not be identified with this campaign's A/B/C. A further thesis source remained unavailable. Standard valuation, Hensel, determinant, and support methods are attributed to their predecessors. The defensible result is an internally audited seven-term theorem with unresolved historical priority, alongside a reproducible proof-gap audit. Unrestricted degree 20 and the all-degree conjecture remain unproved by this work.
+
+
+# The unrestricted degree-20 investigation
+
+This section concerns a hypothetical nontrivial degree-20 Casas–Alvero
+polynomial in characteristic zero. No sparsity assumption is imposed unless
+a particular support is named. The results comprise complete residue
+classifications, one whole residue-branch exclusion, several lifting
+reductions, conditional exclusions, and finite algebraic targets that remain
+unevaluated. They do not prove the degree-20 conjecture. Eight of the nine
+characteristic-17 branches below remain unresolved as whole branches.
+
+## Normalization, integrality, and the simple mean
+
+Write \(H_kf=f^{(k)}/k!\) for the \(k\)-th Hasse derivative. Translate the
+root shared with \(H_{19}f\) to zero and make \(f\) monic. Its mean root is
+now zero. At a prime \(p\), scale by a nonzero root of minimum valuation.
+All roots are integral and at least one is a unit. Write
+
+\[
+ f(X)=\sum_{j=0}^{20}C_ja_jX^{20-j},\quad C_j=\binom{20}{j},
+ \qquad a_0=1,\quad a_1=a_{20}=0,
+\]
+\[
+ G_j(X)=\frac{H_{20-j}f(X)}{C_j}
+       =\sum_{i=0}^{j}\binom ji a_iX^{j-i}.                 \tag{D1}
+\]
+
+Every \(G_j\) shares a root \(w_j\) with \(f\). Induction in \(j\), using
+the coefficient one on \(a_j\) in \(G_j(w_j)=0\), proves that **all
+normalized coefficients are integral**. Ordinary coefficient integrality
+alone would not prove this. The residue arguments retain these normalized
+coefficients even when \(C_j\) vanishes modulo \(p\).
+
+Algebraic counterexamples suffice for an existence argument. The root and
+derivative incidences, with a normalization enforcing two distinct roots,
+are polynomial equations over the rationals. A complex point would give
+an algebraic point by the weak Nullstellensatz. Thus finite extensions of
+local fields suffice. No argument below assumes these extensions
+unramified unless that conclusion is proved.
+
+The exact mean is simple. If it were multiple, \(a_{19}=0\). Normalize
+integrally at 19. Every \(C_j\), \(2\le j\le18\), is divisible by 19;
+the other nonleading coefficients vanish by centering, the root at zero,
+and \(a_{19}=0\). The reduction would be \(X^{20}\), contradicting the
+retained unit root. This proves the needed special case of the cited
+simple-mean theorem directly.
+
+A separated-cluster lemma will be used repeatedly. Suppose a cluster
+contains \(m\) roots, with multiplicity, and common witnesses for Hasse
+orders \(1,\ldots,m-1\). If degree-\(m\) Hasse–CA holds in the residue
+characteristic, the cluster is one exact root. Otherwise translate a
+cluster root to zero and scale by a nonzero difference of least valuation.
+The cluster factor reduces to a degree-\(m\) polynomial with at least two
+roots; the outside factor reduces to a nonzero constant. Hasse's product
+rule transfers all the indicated incidences to the cluster reduction,
+a contradiction. Actual witnesses and the full separated cluster are
+essential; occupancy counts alone do not suffice.
+
+In characteristic \(p\), this applies when \(m=p^e\): a highest nonconstant
+term below \(X^{p^e}\), if present, would have a nonzero constant Hasse
+derivative of its own order. It also applies to degrees 2,3,4 in
+characteristic 17. The cubic reduces after centering to \(X^3+bX\);
+its first-derivative common-root equations force \(b=0\). The centered
+quartic is \(X^4+aX^2+bX\). If \(a=0\), then \(b=0\); otherwise normalize
+an \(H_2\) witness to one, obtaining \(X^4-6X^2+5X\), coprime to
+\(4X^3-12X+5\) over \(\mathbb F_{17}\).
+
+Proof sources: [normalization and simple mean](evidence/full/LIFT_CONSEQUENCES_17.md),
+[cluster collapse](evidence/full/two_adic/CLUSTER_COLLAPSE.md), and
+[the quartic arithmetic check](evidence/full/wild17/blowup/m4/check_lift_consequences.py).
+
+## The complete reductions at 2 and 5
+
+At 2, Lucas's rule gives
+\[
+ \bar f=X^{20}+\bar a_4X^{16}+\bar a_{16}X^4.
+\]
+Scale a unit root to one, so \(\bar a_4+\bar a_{16}=1\). An \(H_4\)
+common root satisfies \(r^{16}=\bar a_{16}\); substitution in \(\bar f\)
+gives \(\bar a_4\bar a_{16}=0\). There are exactly two ordinary seeds:
+
+| Type | Seed | Cluster sizes at \(0,1\) |
+|---|---|---|
+| A | \(X^{20}+X^{16}\) | \(16,4\) |
+| B | \(X^{20}+X^4\) | \(4,16\) |
+
+Both satisfy every residue Hasse–CA condition. Every witness reduces to
+zero or one. Its equation determines \(\bar a_j=0\) when \(\bar w_j=0\),
+and \(\bar a_j=\sum_{i<j}\binom ji\bar a_i\) otherwise. This proves
+containment in \(\mathbb F_2\) over any residue-field extension. Degrees
+4 and 16 are forced, leaving 16 witness bits per type. Complete
+enumeration gives 65,536 marked assignments in each type, representing
+873 and 1,128 distinct coefficient patterns.
+
+A genuine integral lifting cut improves this. Put \((m,k)=(4,16)\) in A
+and \((16,4)\) in B, and scale the actual unit \(G_m\) witness exactly
+to one. Set \(F=f(1)\), \(P=f(w_k)\), \(g=G_m(1)\), \(q=G_k(w_k)\).
+The integer polynomial
+\[
+ S=P+w_k^mq+(g+1)(F+g+q)                                  \tag{D2}
+\]
+has every coefficient even: modulo 2 substitute
+\(F=1+a_m+a_k\), \(P=w_k^{20}+a_mw_k^k+a_kw_k^m\),
+\(g=1+a_m\), \(q=w_k^k+a_k\), and use \(m+k=20\).
+Thus \(S/2\) is integral and vanishes at every characteristic-zero
+incidence point. Its reduction gives
+\[
+ \bar a_8+\bar a_{12}+\bar a_{18}=0\quad(A),\qquad
+ \bar a_2+\bar a_{12}+\bar a_{18}=0\quad(B).                \tag{D3}
+\]
+No merely positive-valuation coordinate difference is divided by 2.
+The identity therefore permits arbitrary ramification.
+
+The cuts leave 465 and 603 coefficient patterns, respectively, and
+40,960 marked assignments per type. Cluster collapse and the simple
+mean remove another 4 marked assignments in A and 4,096 in B: the
+zero cluster cannot contain all witnesses through Hasse order 15 in A,
+or through order 3 in B. The resulting total is **77,820 marked
+assignments and 1,068 coefficient patterns**. No additional entire
+coefficient pattern is removed by this occupancy test.
+
+The active-witness equations also give \(a_m+1\in2O\), \(a_k\in2O\),
+and \(f\equiv X^{20}-X^k\pmod{2O[X]}\). Comparing coefficient
+valuations at a zero-cluster root gives
+\[
+ \nu_2(r)\ge1/14\quad(A),\qquad \nu_2(r)\ge1/2\quad(B)
+\]
+for nonzero \(r\), and then
+\(\nu_2(a_{16})\ge8/7\) in A and \(\nu_2(a_4)\ge2\) in B.
+These are exact rational comparisons of binomial valuations with
+exponent gaps. Neither type is excluded. Low-precision incidence points
+exist modulo 16 in A and modulo 4 in B; they are not characteristic-zero
+lifts. In A one such point is \(a_4=-1,a_{19}=3875\), all other
+coefficients zero, with witnesses \(w_4=w_{19}=1\) and all others zero.
+In B use \(a_{16}=-1\), all others zero, with \(w_{16}=1\).
+The displayed ring precisions satisfy all incidences but do not assert
+infinite liftability. The [two-adic proof and replays](evidence/full/two_adic/REDUCTION_AND_LIFTING.md)
+include both independent censuses and further conditional precision facts.
+
+At 5, the reduction is
+\[
+ \bar f=X^{20}+aX^{15}+bX^{10}+cX^5=q(X)^5,\qquad
+ q=X^4+AX^3+BX^2+CX.
+\]
+Frobenius and the Hasse identities make \(q\) a characteristic-5
+Hasse–CA quartic. Translate its own \(H_3\) root to zero for this
+classification, giving \(Q=X^4+UX^2+VX\). If \(U=0\), the \(H_1\)
+condition forces \(V=0\), contrary to two distinct roots. Otherwise
+normalize an \(H_2\) witness to one. Since \(H_2Q=X^2+U\), its equation
+and \(Q(1)=0\) give \(U=-1,V=0\). The original root zero is therefore
+either the double root or a simple root. Up to scaling preserving zero,
+the two seeds are
+\[
+ X^{20}-X^{10},\qquad X^{20}+X^{15}+3X^5,
+\]
+with cluster sizes \(10,5,5\) at \(0,1,-1\), or \(5,10,5\) at \(0,1,2\).
+Both satisfy all residue incidences. The internal translation of \(q\)
+is not an arbitrary translation of the centered characteristic-zero
+\(f\). This is a full-support reduction, not a contradiction; see the
+[five-adic proof](evidence/full/five_adic/REDUCTION.md).
+
+## Nine characteristic-17 seeds and one whole-branch exclusion
+
+At 17 the visible polynomial is
+\[
+ h=X^{20}+aX^{18}+bX^{17}+cX^3+dX^2+eX.                  \tag{D4}
+\]
+Here \(a,b,c,d,e\) are ordinary residue coefficients. Over every
+algebraically closed characteristic-17 field, the nonmonomial Hasse–CA
+polynomials of this form have the following representatives after the
+indicated nonzero scaling.
+
+| Row | \(a\) | \(b\) | \(c\) | \(d\) | \(e\) | Witness normalized to 1 |
+|---|---:|---:|---:|---:|---:|---|
+| 1 | 0 | 0 | 16 | 0 | 0 | \(H_3\) |
+| 2 | 14 | 0 | 16 | 0 | 3 | \(H_3\) |
+| 3 | 14 | 8 | 16 | 12 | 0 | \(H_3\) |
+| 4 | 14 | 0 | 0 | 11 | 8 | \(H_{18}\) |
+| 5 | 14 | 2 | 0 | 0 | 0 | \(H_{18}\) |
+| 6 | 14 | 2 | 0 | 11 | 6 | \(H_{18}\) |
+| 7 | 14 | 2 | 0 | 14 | 3 | \(H_{18}\) |
+| 8 | 0 | 16 | 0 | 0 | 0 | \(H_{17}\) |
+| 9 | 0 | 16 | 0 | 14 | 3 | \(H_{17}\) |
+
+Containment in \(\mathbb F_{17}\) is a conclusion, not an initial
+restriction. Completeness uses explicit elimination certificates and
+elementary boundaries. Put
+\[
+ U=X^{17}+c,\quad V=X^3+aX+b,\quad
+ Q=dX^2+(e-ac)X-bc.
+\]
+Then \(h=UV+Q\), \(H_3h=U\), \(H_{17}h=V\),
+\(H_2h=3XU+d\), \(H_{18}h=3X^2+a\), and
+\(H_1h=(3X^2+a)U+2dX+e-ac\). Other derivative conditions hold at zero.
+If \(c\ne0\), normalize the unique \(H_3\) root to one, so
+\(c=-1,e=-a-b-d\) and \(Q=(X-1)(dX-b)\). An \(H_{17}\) common root
+then gives three covering charts: \(b=0\); witness one; or witness
+\(u\ne1\), with \(a=-u^2-d,b=ud\). The remaining conditions are the
+three resultants with \(H_{18},H_2,H_1\).
+
+In the first chart their ideal contains \(d^{20}\) and a polynomial
+specializing at \(d=0\) to \(a^3(a+3)^{17}\). The second chart has a
+certificate for 1. In the third, with \(s=u,t=d\), certificates give
+\(t^{20}(t+5)\), \(t^{20}(s+5)\), and a polynomial specializing at
+\(t=0\) to \(s^6(s^2-3)^{17}\). These force rows 1–3.
+If \(c=0,a\ne0\), normalize \(a=-3\), with parameters \(b=s,d=t\).
+The resultant ideal contains
+\[
+ [s(s-2)]^{19},\quad[st+6s-2t+5]^{19},\quad
+ [t(t-11)(t-14)]^{18},
+\]
+giving rows 4–7. If \(c=a=0,b\ne0\), normalize \(b=-1,e=-d\).
+For \(d\ne0\), an \(H_2\) witness satisfies
+\(-r^{16}(r-1)^2(2r+1)=0\); the possible coefficient values give row 9
+or fail \(H_1\). The case \(d=0\) is row 8. If \(a=b=c=0,d\ne0\),
+normalization gives \(d=-3,e=2\); the remaining equations force \(r=7\),
+but \(h(7)/7=1\). The final binomial case fails unless it is monomial.
+
+The [classification appendix](evidence/full/support_frontier/prime17/CLASSIFICATION.md)
+contains the membership certificates, checked by coefficient multiplication.
+Twelve resultants are independently reconstructed using 12,895 exact
+evaluations and proved interpolation bounds over a sufficiently large
+extension field. Every retained seed is checked by univariate gcds.
+This is an algebraic-closure classification, not a prime-field search.
+
+**Row 3 cannot lift.** Its \(\gcd(h,H_1h)=X\), while zero has
+multiplicity exactly two. An exact repeated root \(r\) of a lift must
+reduce to zero, but the simple-mean theorem says \(r\ne0\).
+Then \(X(X-r)^2\mid f\), and reduction of its integral monic
+factorization forces \(X^3\mid h\), a contradiction. This excludes
+the entire row, including invisible coefficients and ramified lifts.
+
+The other exact consequences used below are
+\[
+\begin{array}{c|l}
+4&a_2=-1,\ a_3=a_{17}=0,\\
+6,7&a_2=-1,\ a_3=2,\ a_{17}=0,\\
+9&a_2=a_{17}=0,\ a_3=-1,\ (X-1)^3\mid f.
+\end{array}                                                    \tag{D5}
+\]
+For rows 4,6,7, simple residue classes force equality of the relevant
+exact witnesses; \(G_2(1)\) and \(G_3(1)\) give the constants.
+In row 9 the gcds for \(H_1,H_2,H_{17}\) are
+\((X-1)^2,X-1,X-1\). The three-root cluster has its \(H_1,H_2\)
+witnesses and collapses exactly by the degree-three lemma. The simple
+mean gives \(a_2=a_{17}=0\); normalization at its \(H_{17}\) witness
+gives \(a_3=-1\). See the
+[lifting consequences](evidence/full/LIFT_CONSEQUENCES_17.md).
+
+## Complete local descriptions for rows 4,6,7,9
+
+These reductions impose a square system with nonsingular residue
+Jacobian, or a controlled quadratic exception, leaving one exact scalar
+equation. Solving the square system does not assert that last equation.
+Uniqueness also covers ramification: if two integral solutions with the
+same residues differ at minimum valuation \(\gamma>0\), an invertible
+integral Jacobian preserves that minimum in the linear Taylor term;
+nonlinear terms have value at least \(2\gamma\), so cannot cancel it.
+
+Write \(u_j=a_j\), \(4\le j\le16\). In row 9, solving only
+\(f(1)=f'(1)=0\) gives
+\[
+\begin{split}
+ f_u={}&X^{20}-1140X^{17}+\sum C_ju_jX^{20-j}\\
+ &+\left(18221-\sum(19-j)C_ju_j\right)X^2\\
+ &+\left(-17082+\sum(18-j)C_ju_j\right)X.
+\end{split}                                                    \tag{D6}
+\]
+Sums in this subsection run over the middle degrees. The residue is the
+fixed seed for every integral \(u\): each parameter derivative is
+\(C_j[X^{20-j}-(19-j)X^2+(18-j)X]\), divisible by 17.
+Mark each middle witness residue. Use exact zero or one for those
+classes, justified by the simple mean and triple collapse; for other
+classes introduce root variables with equations \(f_u(r_j)=0\).
+Add all \(G_j(w_j)=0\). The reduced Jacobian has blocks
+\[
+ \begin{pmatrix}D&0\\ B&L\end{pmatrix},
+\]
+where \(D\) has nonzero simple-root derivatives on its diagonal and
+\(L\) is lower triangular with diagonal one. The triangular equations
+put all coefficient residues in the seed's finite splitting field.
+Every marking thus has a unique unramified square-system lift, also
+unique in ramified ambient fields. The missing triple equation is
+\[
+ T(u)=-8037+\sum_{j=4}^{16}\binom{19-j}{2}\frac{C_j}{17}u_j=0,
+ \qquad H_2f_u(1)=17T(u).                                    \tag{D7}
+\]
+There are 18 distinct residue roots, with splitting field
+\(\mathbb F_{17^{10}}\), giving naive marking bound \(18^{13}\).
+Prime-field witnesses alone would omit cases.
+
+Row 6 has its \(H_2\) witness \(s\) reducing to 6 and its exact double
+root \(r\) reducing to 10. Eliminate
+\[
+ A=a_{18}=-s^{18}+153s^{16}-1632s^{15}
+       -\sum\binom{18}{j}u_js^{18-j},\qquad
+ 20a_{19}=-2091-\sum C_ju_j-190A.
+\]
+Use \(f_{u,s}(s)=0\), the critical equation \(G_{19}(r)=0\), the other
+simple-root equations, and all middle equations. The root block is
+lower triangular with nonzero diagonal \(7,9\), followed by simple-root
+derivatives. The middle block has diagonal one. Here 7 is the total
+\(s\)-derivative, including the eliminated coefficients. The remaining
+equation is \(f_{u,s}(r)=0\).
+
+In row 7 the \(H_2\) witness is the simple exact root one. Solving
+\(f(1)=H_2f(1)=0\) gives
+\[
+ 190a_{18}=-281200-\sum\binom{20-j}{2}C_ju_j,
+\]
+\[
+ 20a_{19}=279109+\sum\left(\binom{20-j}{2}-1\right)C_ju_j.
+\]
+The double cluster reduces to 7. Its critical equation \(G_{19}(r)=0\)
+has derivative 11 modulo 17, and parameter derivatives vanish modulo
+17. The same block argument applies, leaving \(f_u(r)=0\) untested.
+Both reductions cover every marking and arbitrary ramified candidates,
+but exclude neither row.
+
+Row 4 has two double residue clusters. Its seed factors as
+\(X(X+7)(X+11)(X+16)(X^2+3X+3)^2\) times three irreducible quartics,
+so it splits over \(\mathbb F_{17^4}\). Let \(\alpha,\beta\) be the
+quadratic roots and choose which supplies the repeated root.
+The \(H_2\) witness \(s\) reduces to 6. Eliminate
+\[
+ a_{18}=-s^{18}+153s^{16}-\sum\binom{18}{j}u_js^{18-j},\qquad
+ 20a_{19}=189-\sum C_ju_j-190a_{18}.
+\]
+The total derivative of \(f_{u,s}(s)\) is 9 modulo 17, giving an
+integral analytic solution \(s=S(u)\). Simple classes give analytic
+root functions; \(G_{19}(R_\alpha)=0\) gives a critical-root function
+with derivative 2. The separated beta factor is
+\((X-c(u))^2-d(u)\), with \(d(u)\) coefficientwise divisible by 17.
+For each witness in this cluster choose independently \(c(u)+z\) or
+\(c(u)-z\). The middle Jacobian in \(u\) has unit triangular diagonal,
+so \(u=u(z)\) is an integral power-series vector. The remaining
+cluster equation \(z^2-d(u(z))=0\) is, by Weierstrass preparation, a
+unit times a monic quadratic congruent to \(z^2\) modulo 17.
+
+Every actual row-4 point, with all its roots, therefore lies in an
+extension of degree at most two over the unramified degree-four
+extension of \(\mathbb Q_{17}\). Its local degree is at most eight
+and its ramification index at most two. Signed charts retain both roots
+of the second cluster. The additional scalar equation is still
+\(f_{u(z)}(R_\alpha(u(z)))=0\); all charts have not been excluded.
+
+One complete row-4 support, with middle set \(\{4,10,12\}\), is excluded.
+Its divided critical value leaves only two conjugate orientations among
+\(2\cdot17^3=9,826\) complete markings, with witnesses \((10,1,6)\)
+and coefficients \((1,4,9)\). Their square-system Jacobian is
+\(\left(\begin{smallmatrix}2&12\\0&9\end{smallmatrix}\right)\).
+The unique lift has critical value
+\(17^2(9+4\alpha)\pmod{17^3}\), nonzero because
+\(\alpha^2+3\alpha+3=0\) is irreducible. This excludes that support in
+ramified extensions too, not all row 4.
+
+Detailed equations, factorization checks and separate reviews are in
+[the row-4 lifting proof](evidence/full/tame17/ROW4_QUADRATIC_LIFTING.md),
+[its support exclusion](evidence/full/tame17/ROW4_SMALLEST_SUPPORT_EXCLUSION.md),
+and the [row-6](evidence/full/tame17/ROW6_ETALE_AUDIT.md),
+[row-7](evidence/full/tame17/ROW7_ETALE_AUDIT.md), and
+[row-9](evidence/full/tame17/ROW9_ETALE_AUDIT.md) lifting audits.
+
+## Complete row-9 support calculations and the unevaluated norm
+
+Canonical zero-witness choices and the audited support sieve reduce row 9
+to 240 eligible coefficient-support systems. An exactly active coefficient
+cannot have a witness reducing to zero: that simple class contains only
+the exact mean. Its coefficient residue may nevertheless be zero; these
+degenerations remain included. Each active middle witness ranges over
+the 17 nonzero residue roots, including extension-field values. The
+triangular coefficient recursion is followed by the residue test for
+(D7). Every survivor has a unique square-system lift;
+a nonzero exact digit of \(T\) excludes it. Frobenius-orbit grouping
+does not omit conjugate or extension-field markings.
+
+The computation uses a slightly different square subsystem from the
+genuine-candidate description above. Put \(q_u=f_u/[X(X-1)^2]\).
+After the triangular derivative recursion, impose \(q_u(x_r)=0\)
+for each distinct selected residue root. Its reduced Jacobian is
+diagonal with entries \(\overline q'(r)\ne0\), because all parameter
+dependence of \(q_u\) is divisible by 17. In this subsystem the root
+near residue one is allowed to move; it is not fixed equal to one
+before \(T=0\) is imposed. Every genuine candidate is covered.
+Unit-Jacobian uniqueness over ramified ambient extensions shows that
+an exact solution agrees with a saved approximation modulo \(17^N\).
+Thus a saved value of \(T\) of valuation less than \(N\) excludes that
+marking. This is the lifting implication used by all three batches.
+
+The support-sieve dependency is explicit. The frozen full inventory has
+2,482 remaining centered supports across term counts 7 through 17, after
+Lucas visibility, the stated prior-art conditions, and the separately
+proved sparse exclusions. It is a list of necessary supports, not CA
+polynomials. The row-9 exact conditions select the 240 systems from that
+inventory. Subsequent local exclusions are recorded separately rather than
+silently changing the frozen count; see
+[the support diagnostic](evidence/full/support_frontier/REPORT.md).
+
+The three completed batches exclude all **79 systems with at most six
+active middle coefficients**, among the 240 systems in the cover. The
+remaining **161 systems have not been executed**. The complete searches
+cover **1,261,339,055 marked residue assignments**. Their 819 first-residue
+survivors form 307 Frobenius orbits, all excluded at precision at most
+\(17^4\): 811 survivor markings are excluded at \(17^2\), six at \(17^3\), and two
+at \(17^4\). Assignments failing the first-residue test need no lift.
+
+| Active middle coefficients | Systems | Marked assignments | Residue survivors | Frobenius orbits |
+|---|---:|---:|---:|---:|
+| Three or four | 7 | 506,039 | 20 | 7 |
+| Five | 21 | 29,816,997 | 113 | 48 |
+| Six | 51 | 1,231,016,019 | 686 | 252 |
+| Total | 79 | 1,261,339,055 | 819 | 307 |
+
+The first two batches have complete FLINT enumerations and separate
+native enumerations, followed by independent survivor and exact-lift
+checks. For the final batch, the guarded native producer completed 46
+systems before its wall limit; a continuation ran only the remaining
+five. A fresh complete native run agreed byte for byte. This is a repeat
+of the same enumeration algorithm, **not an independent exhaustive
+FLINT replay**. Separate code checks verify the support inventory,
+complete enumeration blocks, surviving markings, Frobenius coverage,
+and lifting arithmetic; normal and optimized runs agree.
+The final batch was the last search attempted for this review.
+
+The complete proofs and receipts are in
+[the batch evidence](evidence/full/collective17/exclusions/).
+The separate prime-field-witness subcase follows from the cited
+Massri theorem after an affine coordinate change; see
+[its prior-art argument](evidence/full/collective17/prime-field/PRIOR_ART.md).
+That external computational proof was not replayed and is not presented
+as a new exclusion. Its application has a short exact bridge: row 9 has
+only the prime-field residue roots \(0,1,-2\). Their genuine-candidate
+clusters are exact zero, exact triple one, and a unique simple root \(r\).
+Active witnesses must therefore be \(1\) or \(r\); inactive derivatives
+can use zero. All incidences use three exact roots. The change
+\(F(x)=f(1-x)\) gives precisely Massri's degree-20 three-recycled-root
+configuration, with repeated root zero and mean one.
+
+There is also a single exact collective algebraic target. Set
+\(g_u=f_u/(X-1)^2\), a monic degree-18 integer polynomial, so
+\(g_u(1)=17T(u)\). Define
+\[
+ R_j(u)=\operatorname{Res}_X(g_u,G_j),\qquad
+ B=\mathbb Z_{17}\langle u_4,\ldots,u_{16}\rangle/(R_4,\ldots,R_{16}).
+                                                               \tag{D8}
+\]
+The brackets denote the 17-adically completed polynomial ring.
+When \(T=0\), \(g_u\) and \(f_u\) have the same roots. Thus
+\(R_4=\cdots=R_{16}=T=0\) is equivalent to the complete incidence
+system in this normalized integral branch. Without \(T=0\), using
+\(g_u\) is an enlargement, not that equivalence.
+
+Modulo 17, \(g_u\) is the fixed squarefree degree-18 polynomial
+\(D=h/(X-1)^2\). Each
+\(\bar R_j=\operatorname{Res}(D,\bar G_j)\) is monic of degree 18 in
+the fresh variable \(u_j\) and has no later \(u_i\). Successive monic
+division gives residue basis \(\prod u_j^{e_j}\), \(0\le e_j<18\);
+these reductions form a regular sequence. The flatness lift is direct.
+If a complete 17-torsion-free ring \(A\) has an element \(r\) with
+nonzerodivisor reduction and \(17x=ry\), then \(y=17z\) after reduction;
+cancellation gives \(x=rz\). Thus \(A/(r)\) stays 17-torsion-free.
+Apply this successively to the resultants. Completeness lifts the
+residue basis to generators; repeated division of any relation by 17
+proves independence. Consequently \(B\) is finite free of rank
+\[
+ 18^{13}=20,822,964,865,671,168.
+\]
+
+Let \(N\) be the determinant of multiplication by \(T\) on \(B\).
+The whole integral row-9 branch is empty in characteristic zero
+**if and only if \(N\ne0\) in \(\mathbb Q_{17}\)**. Indeed this is
+equivalent to \(T\) being a unit in the finite generic algebra and
+therefore to its quotient by \(T\) being zero. A nonzero quotient has
+a geometric point; its coordinates are integral because \(B\) is
+finite over \(\mathbb Z_{17}\). Nilpotents and coincident markings
+are retained. Nonvanishing is sufficient; \(N\) need not be a 17-adic
+unit and could be highly divisible by 17.
+
+For a canonical middle support \(J\), use \(g_u/X\) and only \(j\in J\).
+The exact identity
+\(R_j=u_j\operatorname{Res}(g_u/X,G_j)\) justifies deleting the mean
+for active witnesses. The resulting completed algebra has rank
+\(17^{|J|}\). Across the 240 supports these ranks sum to
+813,975,725,115,600. Neither these generic norms nor \(N\) have been
+evaluated. The exact resultants need not be triangular over the integers:
+the proof used their triangular reductions and completion.
+
+A compact circuit uses degree-17 or degree-18 companion matrices to
+represent each resultant. It does not construct the enormous final
+multiplication matrix. There is also a small Frobenius description of
+the residue domain:
+\[
+ (X-1)D=X^{17}(X^2+X+1)-3X.
+\]
+Every root \(r\) obeys \(r^{17}=3r/(r^2+r+1)\), with nonzero denominator.
+For \(r\ne1\), the change \(y=7(r+1)/(r-1)\) transforms this to
+\(y^{17}=y^2-5\); the root \(r=1\) corresponds to infinity. This
+description has not supplied a collective norm evaluation. The
+[finite-free proof and presentation](evidence/full/collective17/elimination/FINITE_FLAT_REDUCTION.md)
+give the coefficient identities, support-list dependency and replay.
+
+## Wild row 8: scales and quartic first models
+
+Here \(\bar f=X^{17}(X^3-1)\). Normalize its actual \(G_3\) unit
+witness to one, giving \(a_3=-1-3a_2\). Let \(\delta>0\) be the least
+valuation of a nonzero root in the 17-root zero cluster. The witnesses
+of \(G_2,G_{17},G_{18},G_{19}\) are in that cluster. Their equations give
+\[
+ \nu(a_2)\ge2\delta,\qquad
+ \nu(a_j)\ge\min(j\delta,1+(j-16)\delta),\quad j=17,18,19.
+\]
+At a root attaining \(\delta\), the \(X^{17}\) term has value \(17\delta\);
+all others have value at least \(\min(20\delta,1+4\delta)\).
+Cancellation requires \(\delta\ge1/13\). In particular the final three
+coefficient valuations are at least \(1+\delta,1+2\delta,1+3\delta\).
+The exact equation
+\[
+ 0=-17\cdot67-17\cdot190a_2+\sum_{j=4}^{16}C_ja_j
+        +1140a_{17}+190a_{18}+20a_{19}
+\]
+may consequently be divided by 17 and reduced, yielding
+\[
+ \sum_{j=4}^{16}(C_j/17)\bar a_j=-1.                       \tag{D9}
+\]
+The stronger valuation estimates, rather than residue divisibility
+alone, justify this division with arbitrary ramification.
+
+All middle witness residues lie in \(\{0,1,\zeta,\zeta^2\}\), where
+\(\zeta\) is a primitive cube root in \(\mathbb F_{17^2}\). Triangular
+equations determine every normalized coefficient residue. Exactly
+233,310 of the \(4^{13}=67,108,864\) marked assignments satisfy (D9).
+Two exact common-root obstructions leave 180,341: no root is common
+to \(f,H_4f,H_{16}f\), or to \(f,H_5f,H_{10}f,H_{15}f\).
+Translate such a root to zero and normalize integrally at 2 or 5.
+The specified exact coefficient zeros would remove every nonleading
+Lucas-visible term, contradicting a unit root. Simplicity of the three
+unit residue classes permits these obstructions on equal unit labels.
+It does not identify arbitrary zero-cluster witnesses. A single unit
+middle witness, if present, must have normalized degree 11, residue
+one, and coefficient residue 11; that case is not excluded.
+
+For a remaining marking let \(J\) be the largest middle degree with
+a unit witness and \(L\) the largest with nonzero coefficient residue.
+Then \(4\le L\le J\le16\). Zero-witness recursion for \(j>J\) gives
+\(\nu(a_j)\ge(j-J)\delta\), and the final three recurrences give
+\(\nu(a_j)\ge\min(j\delta,1+(j-J)\delta)\). The minimum-term argument
+improves to \(\delta\ge1/(J-3)\). Conversely, factor \(f=UV\), with
+\(U\) its degree-17 zero-cluster factor and \(V\) its integral degree-three
+unit factor. The coefficient of \(X^{20-L}\) has valuation at least
+\((L-3)\delta\), but is \(C_La_L\) of valuation one. Hence
+\[
+ \frac1{J-3}\le\delta\le\frac1{L-3}.                      \tag{D10}
+\]
+Exactly 179,765 markings have \(J=L\), fixing the scale. The other
+576 remain with this interval; none is discarded.
+
+Choose a minimal root \(\pi\). For \(J=L\), reduction of
+\(-f(\pi Y)/\pi^{17}\) is \(Y^{17}+q(Y)\), with
+\(\deg q=m=20-J\), sharing roots with every \(H_k\), \(1\le k<m\).
+Translate its \(H_{m-1}\) common root to zero and scale to obtain
+\[
+ g(Y)=Y^{17}-Y^m+\sum_{i=1}^{m-2}c_iY^i.
+\]
+Descending solution of \(H_kg(z_k)=0\) expresses \(c_k\) homogeneously
+with degree \(m-k\) in its marked witnesses. The remaining equations
+\(g(z_k)=0\) have leading monomials \(z_k^{17}\), with lower tails
+of total degree \(m<17\). Pairwise-coprime leading monomials give a
+Gröbner basis, and the finite leading-model algebra has dimension
+\(17^{m-2}\). This retains nilpotents, but not a classification of
+later characteristic-zero lifts. Its translated zero need not be the
+original mean.
+
+The largest stratum \(J=L=16\) contains 124,068 markings and has \(m=4\).
+Write \(g=Y^{17}-Y^4+bY^2+cY\), with \(H_2\) witness \(u\) and
+\(H_1\) witness \(v\). Then
+\[
+ b=6u^2,\qquad c=4v^3-12u^2v,
+\]
+\[
+ u^{17}+5u^4+4uv^3-12u^3v=0,\qquad
+ v^{17}+3v^4-6u^2v^2=0.                                  \tag{D11}
+\]
+For \(uv\ne0\), put \(t=v/u\), \(q(t)=-5-4t^3+12t\).
+Elimination gives \(u^{13}=q(t)\) and
+\[
+ t^{15}q(t)+3t^2-6=-4(t+8)^2(t-7)^2(t-1)^3F_5(t)F_6(t),
+\]
+where
+\[
+ F_5=t^5+t^4-8t^3+6t+6,\qquad
+ F_6=t^6+t^4-4t^3+7t^2+8t-8
+\]
+are irreducible over \(\mathbb F_{17}\). There are 14 distinct \(t\),
+each with 13 choices of \(u\). The boundaries are one origin,
+13 points \(u=0,v^{13}=-3\), and 13 points \(v=0,u^{13}=-5\).
+Thus there are **209 reduced models**, whose local lengths sum to 289,
+the full algebra dimension.
+
+Exact extension-field gcds show just one repeated root: multiplicity
+four at the origin model, three when \(t=1\), and two otherwise.
+All Hasse witnesses below that multiplicity lie there. Small-degree
+cluster collapse makes it an exact multiple root. The original simple
+mean cannot be there, and must have a simple first root. Thus every
+other root in the original zero cluster has valuation exactly \(1/13\);
+the original polynomial would have exactly one multiple root globally,
+of multiplicity two, three, or four. Further,
+\[
+\begin{array}{c|c}
+a_2&0\text{ exactly, or valuation }2/13\\
+a_{17}&0\text{ exactly, or valuation }14/13\\
+a_{18}&0\text{ exactly, or valuation }15/13\\
+a_{19}&\text{valuation }16/13.
+\end{array}                                                    \tag{D12}
+\]
+The linear coefficient follows from the product of the other roots.
+The \(a_{17},a_{18}\) alternatives use uniqueness of the \(H_3,H_2\)
+common locations: if a leading coefficient vanishes, the witness shares
+the mean's simple class and equals the exact mean.
+
+A first correction links these finite models to the original unit
+coefficients. Let \(A_j\) be the unramified constants obtained by
+triangular recursion at exact cube roots for unit labels and zero for
+zero labels, starting with \(a_2=0,a_3=-1\). Unit-root perturbations
+have value at least \(2\delta\). For a zero middle label put
+\(x_j=\overline{w_j/\pi}\) and
+\(d_j=\overline{(a_j-A_j)/\pi}\). Then
+\[
+ d_j=-j\bar a_{j-1}x_j\quad(\bar w_j=0),\qquad
+ d_j=-\sum_{i=4}^{j-1}\binom ji d_i\bar w_j^{\,j-i}
+       \quad(\bar w_j\ne0).
+\]
+The next coefficient of the divided \(f(1)\) equation is
+\[
+ \sum_{j=4}^{16}(C_j/17)d_j-\bar a_{16}x_{17}=0,
+\]
+where \(x_{17}\) is the actual \(H_3\) witness. In canonical model
+coordinates, write the first sum as \(\sum\lambda_jx_j\), let \(z_j\)
+be the marked zero-cluster roots, and let \(\gamma\) be the original
+mean. This becomes
+\[
+ \sum\lambda_j(z_j-\gamma)+\bar a_{16}\gamma=0.
+\]
+Every \(z_j,\gamma\) must be a root of \(g\), and \(\gamma\) is simple.
+This is a finite coefficient-linked test, not an emptiness result.
+
+One uniform next-lift configuration is excluded: if \(a_{17}=a_{18}=0\),
+not all zero-residue middle witnesses can equal the exact mean.
+Otherwise set \(T=a_2\). Unit roots are congruent modulo \(17O\) to
+the roots of \((X-1)(X^2+X+1+3T)\). Those roots are integral power
+series over the fixed unramified quadratic base. Triangular recursion
+expresses each middle coefficient modulo \(17O\) as a series \(A_j(T)\),
+or zero. The divided equation gives
+\[
+ F(T)+20a_{19}/17\in17O,\qquad
+ F\in O_{\rm unr}[[T]],\quad F(0)\in17O_{\rm unr}.
+\]
+By (D12), \(T=0\) or has value \(2/13\), while \(a_{19}/17\) has
+value \(3/13\). A unit linear coefficient of \(F\) makes its value
+\(2/13\); otherwise the value is at least \(4/13\), or one if \(T=0\).
+Neither can cancel the value \(3/13\). This includes the vacuous case
+of no zero middle labels. Other placements remain.
+
+The [row-8 proof](evidence/full/wild17/ROW8_BOUND_AND_DIVIDED_IDENTITY.md),
+[collective reduction](evidence/full/wild17/blowup/COLLECTIVE_REDUCTION.md),
+and [quartic lift consequences](evidence/full/wild17/blowup/m4/LIFT_CONSEQUENCES.md)
+contain the full valuations and exact checks. Separate audits cover the
+census, quartic model classification, and next-lift argument. None
+excludes the complete \(J=L=16\) stratum or the \(J=16,L<16\) cases.
+
+## Cross-prime restrictions
+
+The normalization inherited from 17 need not remain integral at 2.
+Let \(r\) be the total new scale, including subsequent unit normalization,
+and put \(b_j=a_j/r^j\), \(t=1/r\), \(\lambda=\nu_2(t)\ge0\).
+Rows 4,6,7 have \(b_2=-t^2,b_{17}=0\), with \(b_3=0\) in row 4 and
+\(b_3=2t^3\) in rows 6,7; their root \(t\) is simple. Row 9 has
+\(b_2=b_{17}=0,b_3=-t^3\), with \(t\) exactly triple.
+
+Row 9 cannot have 2-adic type B with \(\lambda>0\). Its four-root
+zero cluster would be exhausted by simple zero and triple \(t\), so
+\(F=X(X-t)^3V\), with \(V(0)\) a unit. The missing \(X^3\) coefficient
+gives
+\[
+ 0=-3tV_0+3t^2V_1-t^3V_2.
+\]
+After division by \(t\ne0\), the first term is a unit and the others
+nonunits, a contradiction. This excludes a scale/type subcase, not row 9.
+
+For rows 4,6,7, suppose type B has \(\lambda>0\) and repeated root
+\(u\) in the zero cluster. Then \(F=X(X-t)(X-u)^2V\).
+Put \(\mu=\nu_2(u)\ge1/2\). The missing \(X^3\) coefficient gives
+\[
+ t(V_0-2uV_1+u^2V_2)=u(-2V_0+uV_1).
+\]
+Initially this forces \(\lambda>1\). The zero-cluster quartic is then
+\(X^4\pmod{2O[X]}\), and the type-B congruence yields
+\(V\equiv X^{16}-1\pmod{2O[X]}\). Thus \(\nu(V_1)\ge1\), giving
+the exact equality \(\lambda=\mu+1\). The \(G_{18}\) residue condition
+forces \(\bar b_{18}=0\), while factorization gives
+\(\nu(b_{18})=2\mu-1\). Hence \(\mu>1/2\), \(\lambda>3/2\), and
+\[
+ \nu(b_2)=2\mu+2,\quad \nu(b_{18})=2\mu-1,\quad
+ \nu(b_{19})=3\mu-1.
+\]
+The \(H_2\) witness must be a unit; otherwise the size-four cluster
+would collapse onto the simple mean. Returning to the original
+normalization gives \(\nu_2(ru)=-1\),
+\(\nu_2(a_4)\in\{\infty,0,-4\}\), and
+\(\nu_2(a_{19}/a_{18})=-1\). In particular, when \(0<\lambda\le3/2\),
+every first-derivative common root must be in the unit cluster.
+
+The finite residue intersections remain nonempty in all other scale/type
+cases. The coefficient-pattern/marked-assignment counts are, for rows
+4,6,7, \(50/4095,58/6143,145/4608,97/3584\), respectively for
+A-nonunit, A-unit, B-nonunit, B-unit. Row 9 gives
+\(22/1535,24/512,0/0,161/1536\). They count the stated necessary
+residue system, not solutions of the additional valuation conditions.
+The exact identities and their verification are in
+[the cross-prime proof](evidence/full/cross_prime/CROSS_PRIME_RESTRICTIONS.md).
+
+## A conditional first jet at 19 and the full finite formal cover
+
+Normalize a repeated root exactly to one at 19. The reduction is
+\(X^{20}-X=X(X-1)^{19}\), with the exact mean simple. Put \(b_j=G_j(1)\).
+From \(f(1)-G_{19}(1)=0\) obtain
+\[
+ \sum_{i=2}^{19}c_i a_i=0,\qquad
+ c_i=\frac1{19}\binom{19}{i-1}\in\mathbb Z.               \tag{D13}
+\]
+The polynomial \(f(1+Y)/(1+Y)=Y^2P(Y)\) has \(P\) monic of degree 17,
+with all lower coefficients divisible by 19. Every nonzero displacement
+therefore has valuation at least \(1/17\). If \(b_{18}\) is a unit,
+\(P(0)=190b_{18}\) has valuation one; all 17 displacements have value
+exactly \(1/17\), and their normalized residues are the distinct 17th
+roots of unity. Root one is exactly double, and \(a_{18}=0\), since
+the \(G_{18}\) witness cannot lie in the unit cluster.
+
+For an exact support \(I\), express coefficients by triangular equations
+at witnesses \(1+\delta_j\), putting inactive coefficients zero.
+Let \(\mathcal F(\delta)\) be (D13) after substitution, and
+\(K_j=\partial_j\mathcal F(0)\pmod{19}\). The constant residue
+condition, followed by division by a minimal displacement, gives
+\[
+ \sum_{j\in I}K_j\zeta_j=0,\qquad
+ \zeta_j\in\{0\}\cup\mu_{17},\quad\zeta_{19}=0,\qquad
+\sum K_j=\bar b_{18}\ne0.                               \tag{D14}
+\]
+For the last identity, move every formal witness by the same parameter
+\(s\). Triangular homogeneity gives \(a_i(s)=\alpha_i(1+s)^i\).
+Differentiating (D13) and subtracting its constant residue equation
+leaves \(\bar b_{18}\). This proves the weight sum without assuming
+that a selected witness actually has nonzero displacement.
+A zero \(\zeta_j\) means an exact zero displacement, not just a
+higher-valuation one. For example, \(I=\{12,13,15,16,17,19\}\) has
+\(b_{18}=5\) and weights \((9,0,15,0,0,0)\) modulo 19.
+Since \(\mu_{17}\cap\mathbb F_{19}^*=\{1\}\), the nontrivial ratio 7
+prevents nonzero phases at 12 or 15, forcing those exact witnesses
+to one. Other phases remain unconstrained, and the all-zero assignment
+is not prohibited. The cases \(b_{18}=0\) and higher jets remain.
+See [the first-jet proof](evidence/full/global/P19_CLUSTER_FIRST_JET.md).
+
+Finally, every degree-20 candidate has a finite formal cover at 19.
+Over \(\mathbb Z_{19}\), take variables \(a_2,\ldots,a_{19}\) and
+\(w_2,\ldots,w_{18}\), put \(w_{19}=1\), and impose all 36 equations
+\(f(w_j)=G_j(w_j)=0\), \(2\le j\le19\). The special fibre has
+\(a_{19}=-1\), hence \(f=X(X-1)^{19}\). Every witness is zero or one,
+and triangular equations determine all coefficients. Conversely every
+word of 17 bits works. There are exactly \(2^{17}\) marked geometric
+points, all rational over \(\mathbb F_{19}\).
+
+The special fibre is finite-type and zero-dimensional, hence Artinian
+with nilpotents retained. Complete the local ring at a point, obtaining
+\(R\). Since \(R/19R\) is Artinian, a power of the maximal ideal lies
+in \(19R\), so its topology agrees with the 19-adic topology. Lift a
+basis of \(R/19R\). Successive approximation and completeness express
+every element as a \(\mathbb Z_{19}\)-linear combination of those lifts.
+Thus \(R\) is finite over \(\mathbb Z_{19}\), with no flatness or
+reducedness assumption.
+
+Nonintegral normalized candidates cannot escape this cover. For a point
+already satisfying \(w_{19}=1\), scale by a minimum-valuation root
+\(\eta\). Its scaled reduction is \(X^{20}+\bar a_{19}X\), with
+\(\bar a_{19}\ne0\). The chosen repeated root \(1/\eta\) cannot reduce
+to zero, since the scaled \(G_{19}\) does not vanish there. Therefore
+\(\eta\) is a unit and the original point was integral. Every algebraic
+candidate maps to one completed local ring, including arbitrary ramified
+extensions. Their generic fibres are finite algebras, and the whole
+normalized generic fibre is consequently finite as well.
+
+No local lengths, field factors, numerical ramification bounds, or
+candidate list have been computed for this cover. Finiteness does not
+show that any generic fibre vanishes. This standard argument includes
+all 576 exceptional row-8 markings and every other branch; it does not
+complete their lifting computations. See the
+[formal-cover proof](evidence/full/wild17/blowup/COLLECTIVE_REDUCTION.md)
+and [independent audit](evidence/full/wild17/blowup/COLLECTIVE_REDUCTION_AUDIT.md).
+
+The conclusion remains limited: row 3 is excluded completely; the other
+eight characteristic-17 branches have the restrictions and partial
+exclusions stated here. The complete support calculations, finite
+leading algebras and generic norm criterion give exact targets for
+further work. None proves unrestricted degree 20, and a degree-20
+result alone would not establish the all-degree conjecture.
+
+
+# All-degree deductions, countermodels, and unresolved implications
+
+This section records the completed all-degree investigations. It contains
+proved necessary conditions, exact reformulations, and countermodels to
+specified weakened arguments. It does not prove the Casas–Alvero conjecture,
+establish novelty, or assess tractability. Positive-characteristic examples
+below are not characteristic-zero counterexamples. Examples satisfying all
+but one common-root condition are explicitly identified as such.
+
+In characteristic zero, write a centered monic polynomial as
+
+\[
+ f(X)=\sum_{i=0}^n\binom ni a_iX^{n-i},\qquad a_0=1,
+ \qquad G_j(X)=\sum_{i=0}^j\binom ji a_iX^{j-i}.
+\]
+
+Thus \(G_j=f^{(n-j)}/(n!/j!)\) and \(G'_j=jG_{j-1}\).
+Centering means \(a_1=0\). For a CA polynomial the mean is a root, so
+\(a_n=0\) as well. The CA conditions are that \(f\) and each \(G_j\),
+\(1\le j<n\), have a common root. In arbitrary characteristic, \(H_j\)
+denotes the Hasse derivative, defined by
+\(f(X+T)=\sum_jH_jf(X)T^j\).
+
+## What a characteristic-zero contraction repair must prove
+
+The first investigation concerns the elimination step associated with
+[Ghosh's v2 proof claim, Sections 4.1–4.2](https://arxiv.org/html/2501.09272v2).
+The algebraic statements here do not assume Proposition 3.3. The application
+to that paper retains its separate determinantal-height input; this section
+does not reprove the prequel supplying that input.
+
+**Proposition 1 (contraction equivalence).** Let
+\(R=k[x_1,\ldots,x_m]\), \(S=R[t]\), and
+
+\[
+ I=(tf_i+g_i:1\le i\le m),\quad J=(f_1,\ldots,f_m),
+ \quad D=I_2\begin{pmatrix}f_1&\cdots&f_m\\g_1&\cdots&g_m\end{pmatrix}.
+\]
+
+Assume that: (i) some \(L=t+\ell\), \(\ell\in R\), satisfies
+\(\operatorname{ht}(I+(L))=m+1\); (ii) all minimal primes of \(D\)
+have height \(m-1\), and \(R/D\) has no embedded associated primes;
+(iii) \(J\) is proper and has height at least \(m-1\). Then
+
+\[
+             I\cap R=D\quad\Longleftrightarrow\quad
+             \operatorname{ht}J=m.                         \tag{1}
+\]
+
+**Proof.** The minors belong to \(I\cap R\). If \(\operatorname{ht}J=m\),
+each minimal prime \(\mathfrak p\) of \(D\) omits some \(f_l\).
+After localizing there, eliminate \(t\) with \(tf_l+g_l\). The resulting
+equations are exactly the minors involving column \(l\), which generate all
+minors because \(f_l\) is a unit. Thus contraction agrees with \(D\) at
+every minimal prime. A nonzero submodule of \(R/D\) has an associated prime
+among those of \(R/D\); the absence of embedded primes therefore makes the
+kernel of \(R/D\longrightarrow S/I\) zero.
+
+Conversely, suppose \(\operatorname{ht}J=m-1\), and choose a minimal prime
+\(\mathfrak p\) of \(J\) of that height. Since \(D\subset J\), it is
+also minimal over \(D\). Some \(g_l\) is a unit in \(R_{\mathfrak p}\):
+otherwise \(I+(L)\subset\mathfrak pS+(L)\), contradicting its required
+height. In the Artinian ring \(A=R_{\mathfrak p}/D_{\mathfrak p}\), every
+\(f_i\) is nilpotent. Consequently \(tf_l+g_l\) is a unit of \(A[t]\),
+by a finite geometric-series inverse. Thus \(IS_{\mathfrak p}=S_{\mathfrak p}\),
+whereas \(D_{\mathfrak p}\) is proper. Contraction fails at this component.
+These are the only possible heights of proper \(J\). \(\blacksquare\)
+
+In the paper's elementary-symmetric family, the right side of (1) is its
+lower-degree CA regular-sequence condition; the upper-degree CA assumption
+provides the linear completion. Accordingly, proving this contraction
+identity uniformly would prove the missing descent, rather than replace it
+with a weaker routine lemma. A component on which every \(f_i\) vanishes
+and some \(g_i\) is invertible is precisely the component lost by the
+finite-\(t\) elimination chart.
+
+**Countermodel 1 (generic reducedness is unavailable).** In the elementary-symmetric family on \(x,y,z\), put
+
+\[
+ a=xyz,\ b=xy+xz+yz,\ c=x+y+z,\qquad
+ f=(a,b,c),\quad g=(0,a,b).
+\]
+
+The determinantal ideal is \(D=(a^2,ab,b^2-ca)\), with radical
+\((xy,xz,yz)\). At \(\mathfrak p=(x,y)\), \(z\) is a unit. The only
+order-two initial form among the displayed generators is
+\(z^2(x^2+xy+y^2)\); the others start in orders three and four.
+The order-two form \(zxy\) of \(a\) is not its scalar multiple over
+\(\mathbb Q(z)\). Hence \(a\notin D_{\mathfrak p}\), although
+\(a^2\in D_{\mathfrak p}\). The quotient is not generically reduced.
+This is not a contraction counterexample: \(c\) is a unit at this prime,
+and exact elimination confirms contraction in this example.
+
+**Countermodel 2 (the general structural hypotheses do not repair it).**
+Over \(R=\mathbb Q[u,v,z,s]\), take
+
+\[
+ f=(u^4,uvs,v^2,z),\qquad g=(-u^5,s^4,2v^3,3z^2).
+\]
+
+These have the descending degree pattern and the first-column relation of
+the proposed argument. At \(\mathfrak p=(u,v,z)\),
+\(J_{\mathfrak p}=(u^4,uv,v^2,z)\) still needs four generators, equal to
+the global number. Because \(g_2=s^4\) is a unit, the column-2 minors give
+
+\[
+ D_{\mathfrak p}=(u^4,v^2,z),\qquad
+ R_{\mathfrak p}/D_{\mathfrak p}
+ =\mathbb Q(s)[u,v]_{(u,v)}/(u^4,v^2).
+\]
+
+Here \(uv\ne0\) is square-zero and \(s^4+uvst\) is a polynomial
+unit. Contraction therefore fails despite the local/global generator equality.
+The upper equations form a regular sequence: modulo \(t\), their constants
+generate \((u^5,s^4,v^3,z^2)\), of height four. The determinantal ideal has
+expected height three: at primes containing \(J\) this follows from
+\(\sqrt J=(u,v,z)\); elsewhere a unit \(f_i\) eliminates \(t\) from the
+upper complete intersection. Thus the standard expected-height determinantal
+criterion also gives Cohen–Macaulayness.
+
+Even all six linear completions
+\(L_r=u+v+z+s+t-6r\), \(r\in\{u,v,z,s,t,0\}\), have height five.
+For a direct check, when \(u,v\ne0\), normalize \(u=t=1\), obtaining
+\(v=-1/2\), \(z\in\{0,-1/3\}\), and \(s=0\) or \(s^3=1/2\).
+None of the six linear equations vanishes; each prescribes an incompatible
+rational value of \(s\). When either \(u\) or \(v\) is zero, \(s=0\)
+and the remaining factors give the same conclusion. Exact ideal-dimension
+checks accompany this case analysis. This is an abstract algebraic model,
+not a CA configuration. It shows why derivative-specific identities are
+essential to any repair.
+
+Evidence: `evidence/full/global/REPAIR_EQUIVALENCE.md`,
+`actual_nilpotents.sing`, `descending_degree_model.sing`, and their
+`*-verification.txt` outputs in that directory. The unresolved assertion is
+the exclusion of the bad components in the special derivative-linked family.
+
+## Cluster counts and an occupancy countermodel at every scale
+
+**Proposition 2 (derivative counts in a separated cluster).** Work over an
+algebraically closed nonarchimedean valued field. A separated closed disk
+contains \(m\) roots of \(f\), counted with multiplicity. Rescale it to the
+unit disk and divide by a nonzero scalar, obtaining
+\(Q(Y)=A(Y)B(Y)\), where \(A\) is monic of degree \(m\), all its roots
+are integral, and \(\overline B=1\). Then \(H_mf\) has no root in the
+original disk. If \(H_j\overline A\ne0\) has degree \(d\), \(H_jf\)
+has exactly \(d\) roots there. In particular the count is \(m-j\) when
+\(j<m\) and \(\binom mj\) is a residue-field unit.
+
+**Proof.** Reduction commutes with Hasse differentiation, so
+\(\overline{H_mQ}=1\), proving nonvanishing on integral arguments.
+An integral polynomial of Gauss norm one whose reduction has degree \(d\)
+has exactly \(d\) integral roots: factor its integral-root factors as
+\(Y-\beta\) and its nonintegral-root factors as \(1-Y/\beta\). The latter
+reduce to 1; the remaining scalar is a unit. Reduction therefore counts the
+integral roots exactly. Apply this to \(H_jQ\) and undo the affine change.
+If the entire reduction is zero, this argument makes no root-count claim. \(\blacksquare\)
+
+These counts alone say nothing about which derivative roots are also roots
+of \(f\). The following exact family prevents a general occupancy-only
+induction from supplying that missing information.
+
+**Proposition 3 (digit-block Hasse–CA models).** In characteristic \(p\),
+choose distinct nonnegative integers \(e_i\), digits \(1\le d_i<p\), and
+distinct root positions \(a_i\). Put
+
+\[
+ N=\sum_i d_ip^{e_i},\qquad P(X)=\prod_i(X-a_i)^{d_ip^{e_i}}.
+\]
+
+For \(j=\sum_ej_ep^e\), with unused degree digits zero,
+
+\[
+ H_jP=\prod_i\binom{d_i}{j_{e_i}}
+            (X-a_i)^{(d_i-j_{e_i})p^{e_i}}                 \tag{2}
+\]
+
+when every \(j_e\le d_e\), and is zero otherwise. Consequently \(P\)
+is Hasse–CA for arbitrary positions, and is nontrivial when at least two
+positions occur.
+
+**Proof.** Expand each Taylor factor using Frobenius:
+\((X-a_i+T)^{d_ip^{e_i}}
+=\sum_{k=0}^{d_i}\binom{d_i}k(X-a_i)^{(d_i-k)p^{e_i}}T^{kp^{e_i}}\).
+The possible exponents have unique carry-free base-\(p\) expansions, proving
+(2). For \(0<j<N\), either the derivative is zero or a root factor remains. \(\blacksquare\)
+
+For any nonempty proper subset \(S\) of positions, let
+\(m_S=\sum_{i\in S}d_ip^{e_i}\). Every derivative order \(1\le j<m_S\)
+has a common root among those positions: removing all their factors requires
+\(j\ge m_S\). At order \(m_S\) all and only their factors are removed,
+so that derivative has no root there. Thus every separated cluster has the
+maximum possible initial occupancy and satisfies Proposition 2's counts.
+Nevertheless, every cluster containing distinct positions has a nontrivial
+local Hasse–CA polynomial of its own degree by the same construction.
+
+There can be arbitrarily many such nested clusters: over
+\(\overline{\mathbb F_p((t))}\), use positions
+\(1,t,\ldots,t^r,0\) with distinct digit-position multiplicities \(p^i\).
+Repeated rescaling does not produce a good local degree. In degree 20,
+two-position examples occur at primes \(2,3,7,11,13,17,19\), using the
+digit decompositions \(4+16,2+18,6+14,9+11,7+13,3+17,1+19\).
+The last example is \(X(X-1)^{19}=X^{20}-X\) in characteristic 19.
+
+This does not obstruct every characteristic-zero cluster proof. Indeed
+\(X(X-1)^{19}\) over \(\mathbb Q\) satisfies orders 1 through 18 but
+fails order 19, where the derivative is \(20X-19\). Divisibility hidden by
+reduction supplies the missing obstruction. A valid use of cluster collapse
+must establish both the required exact witness occupancy and a good local
+residue degree, or add a lifting argument.
+
+There is also a finite-prime limitation. For a fixed algebraic polynomial,
+put all distinct roots in one number field. Outside finitely many primes,
+all nonzero root differences are units. Every disk containing two distinct
+positions then contains every position. Only finitely many primes can
+therefore supply a proper separated cluster with distinct roots. This follows
+from the finite prime support of each difference and its denominator; it
+does not rule out success at an exceptional prime.
+
+Evidence: `evidence/full/cluster_tree/COUNTERMODEL_AND_COUNTS.md` and
+`verify_digit_blocks.py`; the conditional collapse lemma is in
+`evidence/full/two_adic/CLUSTER_COLLAPSE.md`. The replay checks direct Taylor
+expansions, every derivative, and subset occupancies for the displayed models.
+
+## Integral reconstruction and a linked Newton bound
+
+The exact integral recursion is
+
+\[
+       G_j(z)=j\int_{r_j}^{z}G_{j-1}(t)\,dt,
+       \qquad G_j(r_j)=0.                                \tag{3}
+\]
+
+Polynomial integrals are path independent. The additional equations
+\(f(r_j)=0\) are indispensable: convex-hull membership is insufficient even
+when all but one incidence is exact.
+
+**Countermodel 3.** For every \(n\ge4\),
+
+\[
+ f_n=X(X-1)^{n-2}(X+n-2),\qquad
+ G_j=(X-1)^{j-2}\left(X^2+(j-2)X-\frac{(j-1)(n-j)}n\right)
+                                                               \tag{4}
+\]
+
+for \(2\le j\le n\), and \(G_1=X\). These identities follow by
+differentiation and the terminal equality \(G_n=f_n\). The polynomial is
+centered and real-rooted, with simple mean root 0 and repeated root 1.
+It satisfies every CA condition except that for \(G_2=X^2-(n-2)/n\).
+Choose nodes \(r_1=0\), \(r_2=\sqrt{(n-2)/n}\), and \(r_j=1\) for
+\(j\ge3\), including the terminal node. All lie in \([0,1]\), all but
+one are final roots, and they satisfy (3). Yet the final root radius is
+\(n-2\), while the node radius is 1. These hypotheses imply neither
+contraction nor a degree-independent bound by a constant times the node
+radius. The example does not refute an estimate using all incidences.
+
+**Proposition 4 (first nonzero coefficient witness).** For a nontrivial
+centered CA polynomial, let \(d\) be least with \(a_d\ne0\), choose a
+common root \(r\) of \(G_d=X^d+a_d\) and \(f\), and let \(m_0,m_r\)
+be the multiplicities of 0 and \(r\). Then \(2\le d<n\), \(r\ne0\),
+and, writing \(R\) for the final root radius,
+
+\[
+ \left(d\binom nd-m_r\right)|r|^d
+       \le(n-m_0-m_r)R^d.                                \tag{5}
+\]
+
+**Proof.** Newton's identity and \(a_d=-r^d\) give
+\(\sum_\alpha\alpha^d=d\binom nd r^d\), with multiplicities. Removing
+the zero roots and the \(m_r\) copies of the actual root \(r\), and applying
+the triangle inequality, proves (5). Its left coefficient exceeds its right
+coefficient, so \(0<|r|<R\). Equality requires every remaining root to have
+modulus \(R\) and its \(d\)th power to have the argument of \(r^d\). \(\blacksquare\)
+
+In particular all nonzero roots cannot lie on one circle about the mean.
+The estimate does not iterate by translating to \(r\): the new first
+coefficient occurs at index 1, and its linear derivative selects the old
+mean. No decreasing quantity across these changes of center has been proved.
+
+For the special normalization \(a_2=-1,a_3=2\) with simple roots 0 and 1,
+Newton's identities also give
+
+\[
+ R^2\ge\frac{n(n-1)-1}{n-2},\qquad
+ R^3\ge\frac{n(n-1)(n-2)+1}{n-2}.                      \tag{6}
+\]
+
+The degree-five polynomial
+\(X(X-1)(X^3+X^2-9X+11)=X^5-10X^3+20X^2-11X\)
+has these normalized \(G_2,G_3\), and simple roots 0 and 1, but has a
+nonreal pair and is squarefree. It satisfies the other three derivative
+conditions and fails the first. Thus real-rootedness of \(G_3\) cannot be
+propagated backward. If the original roots were collinear, a double root of
+\(G_3\) would instead force multiplicity at least \(n-1\) in \(f\): for
+a real-rooted polynomial every non-inherited derivative root is simple,
+as follows from \((P'/P)'=-\sum m_i/(x-r_i)^2<0\). Iterating and rotating
+proves this restricted statement, not an exclusion of complex configurations.
+
+Evidence: `evidence/full/global_analytic/INTEGRAL_OBSTRUCTION.md` and
+`verify_integral_countermodels.py`. The arbitrary-degree proofs above are
+supplemented by exact replays of (4) for degrees 4–40 and of the degree-five
+example. The unresolved step is an additional all-incidence estimate giving
+an incompatible upper bound or an actual descent.
+
+## What the product formula yields
+
+Now assume the coefficients and roots are algebraic, in a common number field
+\(K\). For each place use the usual absolute value and weights
+\(w_v=[K_v:\mathbb Q_v]/[K:\mathbb Q]\), without separately squaring complex
+moduli. Put
+
+\[
+ R_v=\max_i|\alpha_i|_v,\qquad H_R=\prod_vR_v^{w_v}.
+\]
+
+This root-vector projective height is unchanged by one global root scaling.
+Fix the same algebraic witness \(r\) from Proposition 4 at all places and
+write \(B=d\binom nd-m_r\), \(M=n-m_0-m_r\).
+
+**Proposition 5 (height lower bound).** One has \(M>0\) and
+
+\[
+ H_R\ge(B/M)^{1/d}>1,
+ \qquad H_R\ge
+ \left(\frac{n(n-1)-1}{n-2}\right)^{1/(n-1)}.             \tag{7}
+\]
+
+**Proof.** The exact identity underlying (5) is
+\(Br^d=\sum_{\alpha_i\ne0,r}\alpha_i^d\); if \(M=0\) it is impossible.
+At every infinite place it gives \(R_v/|r|_v\ge(B/M)^{1/d}\).
+At finite places the stronger relevant lower bound is simply
+\(R_v/|r|_v\ge1\), because \(r\) is an actual root. Multiply and use
+the product formula on \(r\), and the sum 1 of the infinite-place weights.
+For the second estimate, \(d\binom nd\ge n(n-1)\); the ratio is minimized
+at \(m_0=m_r=1\), and \(d\le n-1\). \(\blacksquare\)
+
+The product formula does not set \(H_R=1\). Different roots can maximize
+the radius at different places. Normalization by a different root at each
+place is not multiplication by one global element.
+
+**Proposition 6 (coefficient-height comparison).** Define
+\(Q_v=\max_{1\le i\le n}|a_i|_v^{1/i}\) and
+\(H_A=\prod_vQ_v^{w_v}\). Then \(Q_v=R_v\) at finite places, and
+
+\[
+ H_A\le\kappa H_R,\qquad
+ \kappa=\sqrt{\frac{(n-m_0)(n-m_0-1)}{n(n-1)}}<1.         \tag{8}
+\]
+
+**Proof.** A common witness \(\beta_j\) gives
+\(a_j=-\sum_{i<j}\binom ji a_i\beta_j^{j-i}\). Nonarchimedean induction
+therefore yields \(|a_j|_v\le R_v^j\). The monic root-radius formula gives
+\(R_v=\max_i|\binom ni a_i|_v^{1/i}\le Q_v\), proving equality.
+At infinite places the elementary symmetric functions, after removing
+\(m_0\) zero roots, give
+\(|a_i|_v\le[\binom{n-m_0}i/\binom ni]R_v^i\).
+The successive factors of this ratio decrease. Since \(a_1=0\), their
+geometric means for \(i\ge2\) are at most \(\kappa\). Multiplication
+proves (8). \(\blacksquare\)
+
+These are comparisons between different heights, not a self-decreasing
+height. Scaling to \(r=1\) gives \(a_d=-1\), so \(H_A\ge1\); it merely
+requires a larger root height. The root-difference height
+\(\prod_v(\max_{i,j}|\alpha_i-\alpha_j|_v)^{w_v}\) is invariant under
+translation and global scaling, so translating to a new root cannot strictly
+decrease that alternative either.
+
+**Countermodel 4.** The exact polynomial
+
+\[
+ F=X^6-15X^4+20X^3-6X
+   =X(X-1)^2(X^3+2X^2-12X-6)
+\]
+
+has normalized coefficients \((1,0,-1,1,0,-1,0)\). It satisfies four of
+five CA conditions, including the first nonzero-coefficient witness and
+ordinary derivative, but \(\gcd(F,G_3)=1\). At every finite place its roots
+are integral by monicity, and the exact root 1 gives \(R_v=Q_v=1\).
+The cubic has roots in \((-5,-4),(-1,0),(2,3)\), by endpoint signs, so
+\(H_R\in(4,5)\) while \(H_A=1\). Bound (7) here is
+\(H_R\ge\sqrt{28/3}\), which is compatible with the model.
+
+Moreover
+\(F_t=X(X-1)^2(X^3+2X^2-12X-6+60t)\), \(t\in\mathbb Z\), has
+normalized coefficients \((1,0,-1,1+3t,-8t,-1+10t,0)\). It retains
+witnesses for \(G_1,G_2,G_5\), a simple mean root, a double root 1, and all
+finite-place coefficient bounds, while
+\(H_R(F_t)\ge|60t-6|^{1/3}\to\infty\). The remaining incidences are
+not asserted. Thus the stated weakened data supply no height upper bound.
+
+Evidence: `evidence/full/global_height/ALL_PLACE_BOUND.md` and
+`verify_height_models.py`. Integrality at all finite places follows from
+monicity and the exact unit root, not from sampling primes. An all-incidence
+height inequality beyond (7)–(8) remains missing.
+
+## Exact matrix flags and limits of spectral shortcuts
+
+For \(D=\operatorname{diag}(\alpha_1,\ldots,\alpha_n)\), there is an exact
+nested orthogonal compression flag with characteristic polynomials
+\(G_1,\ldots,G_n\). The input is Pereira's theorem: every complex matrix
+has a unit trace vector \(v\), satisfying
+\(v^*A^kv=\operatorname{tr}(A^k)/m\) for \(0\le k<m\), and compression
+to \(v^\perp\) has polynomial \(p_A'/m\). This includes nonnormal
+matrices. The primary statement is explicitly recalled in
+[Pereira (2005), Definitions 3–4 and Proposition 5](https://www.numdam.org/item/CRMATH_2005__341_11_651_0.pdf).
+
+For completeness, the identity follows from
+\(p_{A|v^\perp}(z)=p_A(z)v^*(zI-A)^{-1}v\): the trace-vector moments and
+Cayley–Hamilton identify the resolvent expression with
+\(p_A'(z)/(mp_A(z))\). Iterating the existence theorem gives the flag;
+compression along nested orthogonal subspaces is associative. In an adapted
+basis the full matrix is normal, every leading block has polynomial \(G_j\),
+and centering makes every diagonal entry zero. CA is exactly the shared-
+spectrum condition between every proper block and the full matrix. This is
+a reformulation, not an exclusion.
+
+**Proposition 7.** The first compression along the flat vector
+\(v=(1,\ldots,1)/\sqrt n\) is normal if and only if the roots lie on an
+affine line.
+
+**Proof.** Write \(D\) in the decomposition \(v^\perp\oplus\mathbb Cv\)
+as \(\begin{pmatrix}B&b\\c^*&\mu\end{pmatrix}\), where
+\(\mu=\operatorname{tr}D/n\), \(b=(D-\mu)v\), and
+\(c=(D^*-\overline\mu)v\). Normality gives
+\(BB^*-B^*B=cc^*-bb^*\). If \(b=0\), all roots coincide. Otherwise
+equality of these rank-one matrices is equivalent to \(c=\eta b\),
+\(|\eta|=1\), or
+\(\overline{\alpha_i-\mu}=\eta(\alpha_i-\mu)\) for every \(i\).
+This is exactly collinearity. \(\blacksquare\)
+
+**Proposition 8.** For \(n\ge5\), no fixed \(n\times2\) isometry \(V\)
+represents \(G_2\) as the characteristic polynomial of \(V^*DV\) for all
+root tuples.
+
+**Proof.** Cauchy–Binet and comparison of each monomial
+\(\alpha_i\alpha_j\) force every squared two-row minor of \(V\) to be
+\(1/\binom n2\). Summing minors gives each row squared norm \(2/n\).
+After row normalization, the rank-one Hermitian projectors have pairwise
+Hilbert–Schmidt products \(t=(n-2)/(2(n-1))\) off the diagonal and 1 on it.
+Their Gram matrix \((1-t)I+tJ\) is positive definite, so the \(n\)
+projectors are real-linearly independent. The ambient Hermitian
+\(2\times2\) space has dimension four, a contradiction. \(\blacksquare\)
+
+This rules out a root-independent universal flag, not the root-dependent
+flag just constructed. Shared spectrum also does not imply that compressed
+eigenvectors come from original eigenspaces, even in an exact derivative flag.
+
+**Countermodel 5.** Start with the normal operator \(0\oplus C_{n-1}\),
+where \(C_{n-1}\) cyclically permutes \(u_1,\ldots,u_{n-1}\), and the
+separate zero vector is \(e_0\). Put
+\(b=1/\sqrt n\), \(a=\sqrt{(n-1)/n}\),
+\(w=ae_0+bu_{n-1}\), \(v=-be_0+au_{n-1}\). In the ordered basis
+\(u_1,\ldots,u_{n-2},w,v\), the characteristic polynomials of its leading
+blocks are
+
+\[
+ p_n=z^n-z,\qquad p_{n-1}=z^{n-1}-1/n,\qquad
+ p_j=z^j\quad(1\le j\le n-2).                          \tag{9}
+\]
+
+Indeed the penultimate block is a weighted cycle with edge-product
+\(b^2=1/n\), and the smaller blocks are nilpotent shifts. These are exactly
+the normalized derivatives of \(z^n-z\). The original eigenvalue 0 is
+simple, with eigenvector \(e_0=aw-bv\), orthogonal to every one of the
+first \(n-2\) subspaces. Yet their blocks have 0 as their sole eigenvalue,
+with algebraic multiplicity \(j\). The final required incidence fails:
+the penultimate roots satisfy \(z^{n-1}=1/n\), whereas the original nonzero
+roots satisfy \(z^{n-1}=1\). Thus this is another all-but-one-incidence
+countermodel, not a CA polynomial.
+
+Evidence: `evidence/full/global_matrix/COMPRESSION_AUDIT.md` and
+`verify_compressions.py`. The replay checks the explicit dimension-four
+matrix over \(\mathbb Q(\sqrt3)\), its normality, intermediate nonnormality,
+all characteristic polynomials, trace-vector moments, and kernel vector.
+The arbitrary-degree arguments are algebraic proofs. A matrix proof would
+still need an obstruction coupling all common-spectrum conditions with all
+trace-vector equations; isolated eigenvalue sharing does not supply it.
+
+## Review boundary and replay map
+
+The four Python replay directories listed above retain `verification.json`
+and `verification-optimized.json`; they report `PASS` under ordinary and
+optimized execution. The algebraic repair dossier retains exact Singular
+outputs. These checks certify the displayed finite calculations, while the
+arguments in this section carry the arbitrary-degree quantifiers. They do
+not certify the conjecture, the unproved contraction descent, full cluster
+occupancy, a height descent, or an all-incidence spectral exclusion.
+
+The degree-20 prime-19 first-jet calculation is separate:
+`evidence/full/global/P19_CLUSTER_FIRST_JET.md` and
+`verify_p19_first_jet.py`. Its valuation and phase restrictions are not
+all-degree theorems and are not needed for the statements above.
+
+
+# Remaining obligations and review priorities
+
+The unrestricted degree-20 problem still requires an exclusion of every
+candidate in the eight surviving characteristic-17 branches. The branch
+tables describe ordinary reductions of polynomials; many normalized
+coefficients are invisible there. All admissible placements of derivative
+witnesses must also be included. Finite-field nonexistence in a chosen
+specialization, or a count of local algebra dimensions, cannot substitute for
+that coverage.
+
+The tame branches now have explicit lifting descriptions, and the completed
+support exclusions make part of their finite search decisive. Their largest
+systems dominate the remaining cost. Counts of excluded supports do not
+measure a proportional distance to a full proof. In the wild branches,
+leading models and valuation constraints still leave genuine lifting
+questions. No deduction in this report eliminates all eight branches.
+
+For the all-degree conjecture, the missing requirement is a uniform argument.
+The contraction repair is not such an argument because its decisive
+injectivity statement retains the lower-degree Casas--Alvero problem. The
+moment inequalities provide lower bounds without a contradictory upper
+bound. The height argument compares two different projective heights. The
+matrix flag represents the exact derivative chain, but the countermodel
+prevents an inference of inherited eigenvectors from shared eigenvalues.
+None of these failures rules out a stronger future argument; none supplies
+that argument now.
+
+## Work completed for this review
+
+The closeout consolidates the existing proofs and independently checked
+certificates, refreshes the primary-source attributions, and makes a final
+bounded attempt on the next complete row-9 batch. The computation's actual
+outcome and limits are recorded with the case-exclusion results. All supplied
+replay commands have explicit scope; the archive preserves unfinished and
+negative results as such. No additional open-ended proof campaign is a
+dependency of this review package.
+
+## Questions for mathematical review
+
+The most consequential review tasks are the following.
+
+* Check the normalization, coefficient integrality, simple-mean input, and
+  transfer from algebraic incidence points to the local fields used in each
+  exclusion. In particular, test every change from a residue statement to
+  an identity in the valuation ring.
+* Check the completeness of the nine-seed classification and the subsequent
+  marked covers. For row 4, examine the signed quadratic charts and the
+  coefficientwise divided obstruction. For rows 6, 7 and 9, examine the
+  Jacobian and uniqueness arguments over ramified ambient extensions.
+* Check the row-8 scale bounds, retention of the exceptional assignments,
+  treatment of nilpotents in the leading algebra, and identification of
+  the original mean after translation. The uniform next-lift exclusion
+  depends on exact witness locations, not just equal residues.
+* Check the sparse theorem's complete support and branch coverage. Its
+  short valuation proof, rather than the optional large integer resultant,
+  is the main proof of the final six-term family exclusion.
+* Independently assess novelty and significance. The unavailable-source
+  overlap recorded in the seven-term dossier remains material. A successful
+  replay, an explicit certificate, and an internal audit do not establish
+  either historical priority or sufficient importance for publication.
+
+`REVIEW_GUIDE.md` gives a shorter reading order and the principal claim-to-file
+map. The complete original proof notes remain available for a reviewer who
+wants to examine each intermediate lemma and experiment.
+
+## Provenance and availability
+
+This is an unpublished research report prepared with AI assistance. The
+arguments and computations were developed in a Codex task using additional
+AI agents for bounded derivations and adversarial checks. Those agents are
+not independent human referees. Python, exact integer and finite-field
+arithmetic, Singular, and selected symbolic libraries were used as identified
+in the evidence files. No empirical data, human participants, or animal
+subjects are involved.
+
+The package contains the report source, proof notes, scripts, finite
+certificates, recorded outputs, and a file-integrity manifest. Referenced
+third-party manuscripts are linked rather than redistributed. Authorship,
+funding, and conflict-of-interest declarations for any future submission
+have not been supplied and are not invented here. No submission, publication,
+author contact, or external release was performed as part of this closeout.
+
+
+# References, versions, and source limits
+
+Checked 23 September 2026. These entries distinguish a primary source's claim from a theorem independently checked in this campaign. “Current” means the record retrieved on this date; it does not assert that no other manuscript, public comment, or private calculation exists. Version histories were refreshed for the arXiv entries below during preparation of this review. The thesis and supporting full-text passages were inspected in earlier bounded rounds on the same date, as recorded in the source notes.
+
+## Primary mathematical sources
+
+**[Ghosh-proof] Soham Ghosh, *Proof of the Casas-Alvero conjecture*.** [arXiv:2501.09272v2](https://arxiv.org/abs/2501.09272v2), [version-pinned full text](https://arxiv.org/html/2501.09272v2). First submission 16 January 2025; v2, 21 March 2026, 01:41:44 UTC. The current record shows v2 and the comment “Major revisions”; it shows no later revision, withdrawal, or journal reference. The captured PDF's internal date is 24 August 2026. The campaign audit addresses Proposition 3.3, its conormal cancellation, and the polynomial-unit inference in Lemma 4.5. The abstract's full-conjecture claim is not accepted as a result established by this review. Source hashes and the byte-identity record are retained in [SOURCE_IDENTITY.json](evidence/audit/SOURCE_IDENTITY.json).
+
+**[Ghosh-finiteness] Soham Ghosh, *A finiteness result towards the Casas-Alvero Conjecture*.** [arXiv:2402.18717v3](https://arxiv.org/abs/2402.18717v3), [full text](https://arxiv.org/html/2402.18717v3). First submission 28 February 2024; v3, 14 January 2025. The [American Journal of Mathematics publisher's accepted-papers list](https://www.press.jhu.edu/journals/american-journal-mathematics) records this title as accepted 7 April 2026. This is the earlier finiteness paper, not the claimed full proof. The latter uses its height/finiteness inputs. Acceptance is bibliographic evidence, not an independent verification of every imported lemma. This review does not claim a complete audit of the prequel.
+
+**[CLO] Wouter Castryck, Robert Laterveer, Myriam Ounaïes, *Constraints on counterexamples to the Casas-Alvero conjecture, and a verification in degree 12*.** [arXiv:1208.5404v1](https://arxiv.org/abs/1208.5404v1), 27 August 2012; [full text](https://arxiv.org/html/1208.5404). Relevant locations are Theorem 2 (degree \(p+1\), mean-root and determinant restrictions), Theorem 13 (distinct-root bound), Proposition 15 (prime-power derivative placement), and the scenario/descendant treatment in the computational sections. These are established predecessor methods, not campaign contributions. Their demonstrated full-degree computation is degree 12. In degree 20, derivative orders \(1,19\), orders \(4,16\), and the simultaneous triple \(5,10,15\) supply forbidden shared-root configurations. The appropriate hypotheses and normalization must be retained when translating these into coefficient conditions.
+
+**[deFrutos] Rosa María de Frutos Marín, *Perspectivas aritméticas para la Conjetura de Casas-Alvero*.** Doctoral thesis, Universidad de Valladolid, repository year 2013; advisor Antonio Campillo López. [Primary PDF](https://uvadoc.uva.es/bitstream/10324/3602/1/tesis367-130927.pdf), [repository metadata](https://uvadoc.uva.es/handle/10324/3602?show=full), DOI [10.35376/10324/3602](https://doi.org/10.35376/10324/3602). The title-page date is 21 December 2012, the university catalog defense date is 11 June 2013, and repository availability is 27 September 2013; these describe distinct events. Sections 2.3 and 3.5, especially Proposition 3.5.5, contain the older sparse/two-visible-coefficient criterion used in the campaign's support sieve. Indexed primary PDF text was retrieved and inspected; local byte download and screenshot retrieval were unsuccessful, so no local PDF hash or visual-page check is claimed. A short companion is her official 2015 abstract, [*Un problema sobre números combinatorios*](https://www.singacom.uva.es/JTN2015/contribuciones/ordinarias/frutos.pdf), at the Valladolid number-theory meeting, 29 June–3 July 2015.
+
+**[Massri] Cesar Massri, *The Casas-Alvero conjecture for three recycled roots in degree 20*.** [arXiv:1806.09561v6](https://arxiv.org/abs/1806.09561v6), [full text](https://arxiv.org/html/1806.09561v6). First submission 25 June 2018; v6, 25 August 2023. Some earlier versions are marked withdrawn; the current v6 title and scope should be cited, not an earlier full-proof claim. Relevant passages are Remark 7.4, the proof of Theorem 7.9, Theorem 7.10, and the finiteness/normalization results in Sections 5–6. The restrictions on shared derivative pairs \((5,10)\), \((10,15)\) imply more sparsity than a title-only comparison reveals. Together with CLO they defeat novelty of the campaign's initial five-term bound. The reported three-recycled-root computation is not a monomial-count theorem; no complete public replay of its reported \(3^{17}\) assignments was retrieved. The current arXiv metadata supplies no journal reference.
+
+**[Marashdeh] Mohammad F. Marashdeh, *A descent-set obstruction for the Casas-Alvero conjecture*.** [arXiv:2608.14726v1](https://arxiv.org/abs/2608.14726v1), [full text](https://arxiv.org/html/2608.14726v1), 12 August 2026. The record exposes only v1. Relevant comparisons concern support stratification, triangular elimination of coefficients, descent-count determinants, and the two-element-support argument. These are not a degree-20 seven-total-term theorem. The campaign does not use a reported equation count as a proof that the remaining incidence system is empty. The preprint and its statements are distinct from external refereeing or a priority clearance.
+
+**[Bothmer-et-al] Hans-Christian Graf von Bothmer, Oliver Labs, Josef Schicho, Christiaan van de Woestijne, *The Casas-Alvero conjecture for infinitely many degrees*.** [arXiv:math/0605090v2](https://arxiv.org/abs/math/0605090v2), 25 June 2007; first submission 3 May 2006. *Journal of Algebra* 316 (2007), 224–230, DOI [10.1016/j.jalgebra.2007.06.017](https://doi.org/10.1016/j.jalgebra.2007.06.017). The weighted projective formulation and good-prime transfer, including Propositions 2.1–2.2 and 2.6, explain why geometric special-fibre emptiness can prove a characteristic-zero result and propagate degree \(n\) to \(np^e\). Prime-field rational-point absence or an empty unsaturated affine chart does not meet those hypotheses.
+
+**[Draisma-deJong] Jan Draisma, Johan P. de Jong, *On the Casas–Alvero conjecture*.** *EMS Newsletter* 80 (June 2011), 29–33; [original issue PDF](https://ems.press/content/serial-issue-files/13698). **Read with the authors' [August 2011 erratum](https://math-unibe.ch/jdraisma/publications/erratumcasasalvero.pdf).** Theorem 7's original \(4p^e\) statement omitted the bad prime 5. The erratum explicitly withdraws the resulting degree-20 conclusion: the characteristic-5 quartic resultant equations have the \(b=0\) solutions needed to defeat that argument. This is a correction of a reduction argument, not a characteristic-zero counterexample.
+
+**[Gasull] Armengol Gasull, *A Primer on Resultants and Their Applications*.** [Publisher full text](https://link.springer.com/article/10.1007/s44425-026-00047-6), DOI 10.1007/s44425-026-00047-6, published 28 May 2026. Section 3.4's smallest-open-degree statement names 24 and cites [Draisma-deJong]. The article's own Proposition 7 proves degrees 4 and 5. The cited erratum defeats the degree-20 consequence of the original reference, and no replacement degree-20 proof appears in this citation chain. That mathematical scope was checked directly. “Inherited uncorrected statement” is an inference about the explanation, not a verified account of authorial intent.
+
+**[Schaub-Spivakovsky-badprimes] Daniel Schaub, Mark Spivakovsky, *A description of and an upper bound on the set of bad primes in the study of the Casas-Alvero Conjecture*.** [arXiv:2411.13967v1](https://arxiv.org/abs/2411.13967v1), [full text](https://arxiv.org/html/2411.13967v1), 21 November 2024. The full-scope regular-sequence/Macaulay-matrix formulation is relevant to the unrestricted goal. Its upper bound on bad primes assumes the characteristic-zero conjecture in the degree concerned; this assumption cannot be used circularly to prove that degree.
+
+**[Schaub-Spivakovsky-note] Daniel Schaub, Mark Spivakovsky, *A note on the Casas-Alvero Conjecture*.** [arXiv:2312.08742v7](https://arxiv.org/abs/2312.08742v7), [full text](https://arxiv.org/html/2312.08742v7), 11 February 2025; first submission 14 December 2023. Theorem 5's nonredundancy result for high derivative resultants is weaker than a regular-sequence assertion. Its reference to Ghosh is not an independent substitute for the missing proof steps. Cite this version when discussing its added remarks.
+
+**[Berger] Laurent Berger, *The Weierstrass preparation theorem and resultants of p-adic power series*.** [arXiv:1910.05319v2](https://arxiv.org/abs/1910.05319v2), 4 November 2019; first submission 11 October 2019. [Author-hosted PDF](https://perso.ens-lyon.fr/laurent.berger/articles/article33.pdf). Section 1, including Corollary 1.2, supplies a precise complete-ring preparation statement. In the campaign's row-4 local argument, a power series reducing coefficientwise to \(z^2\) over a complete unramified DVR is a unit times a monic distinguished quadratic. The campaign separately proves the hypotheses, convergence, and coverage of actual ramified points.
+
+**[Lu-claim] Zhipeng Lu, *Casas-Alvero conjecture in computational algebraic geometry*.** [arXiv:1707.04754v6](https://arxiv.org/abs/1707.04754v6), 16 March 2021; first submission 15 July 2017. The current abstract claims a full proof via regular sequences. It was not independently certified in this campaign. It is enough to disprove the bibliographic assertion that Ghosh is the only author with a claimed full proof; it is not used as evidence that the conjecture is settled.
+
+**[Pereira] Rajesh Pereira, *Matrix-theoretical derivations of some results of Borcea–Shapiro on hyperbolic polynomials*.** *C. R. Acad. Sci. Paris, Ser. I* 341 (2005), 651–653. [Primary PDF](https://www.numdam.org/item/CRMATH_2005__341_11_651_0.pdf), DOI [10.1016/j.crma.2005.10.002](https://doi.org/10.1016/j.crma.2005.10.002). Accepted after revision 27 September 2005; available online 7 November 2005. Definitions 3–4 and Proposition 5, on p. 652, are exactly the material used in the all-degree section: every complex matrix has a unit trace vector, and compression to its orthogonal complement has characteristic polynomial \(p_A'/n\) for the convention \(p_A(X)=\det(XI-A)\). This statement includes nonnormal matrices, despite the article's hyperbolic-polynomial title. The 2005 article explicitly recalls the result from the author's earlier *Differentiators and the geometry of polynomials*, *J. Math. Anal. Appl.* 285 (2003), 336–348, Theorem 2.5. The 2005 title should not be replaced with that distinct 2003 title. Primary PDF and its usage were checked directly on 23 September 2026; the HTML landing page failed, but the PDF was accessible.
+
+## Provenance and unresolved source gaps
+
+1. **ProofAtlas overlap.** The [project's own Casas–Alvero page](https://www.proofatlas.ai/collaboration/casas-alvero-conjecture/) was inspected in the campaign's bounded priority rounds. It reports degree-20 certificate/Hensel work and systems called A1/A2/A3, but the retrieved material did not provide enough exponents, full integer systems, or certificates to compare with this campaign's C family. Those labels are not interchangeable with ours. This is primary evidence of reported activity, not a verified theorem. No priority clearance, outreach, or assumption of non-overlap follows.
+
+2. **Unavailable thesis.** The primary [NTHU catalog record for Shih Cheng Pang's 2022 master's thesis, *On the Casas-Alvero Conjecture*](https://etd.lib.nycu.edu.tw/cgi-bin/gs32/hugsweb.cgi?o=dnthucdr&s=id%3D%22G021090215100%22.&searchmode=basic), was located, but the full text was not obtained. No overlap conclusion is made.
+
+3. **Unverified criticism lead.** A search lead involving the prequel's Lemma 5.4 was not recovered as a sufficiently complete primary mathematical argument. This review does not attribute that criticism to an identified author, repeat it as an established result, or use it to discredit the accepted paper. The explicit audit evidence stands on its own calculations.
+
+4. **Chellali and small bad primes.** The earlier literature inventory consulted [arXiv:1211.2059](https://arxiv.org/abs/1211.2059) and primary-manuscript material concerning degree \(5p^e\) and exceptional primes. A fresh bibliographic re-verification was not needed for this review's proof: the degree-5 characteristic-2 seed is displayed and checked directly, and the degree-4 characteristic-5 obstruction has the primary authors' explicit erratum. Do not promote this pointer to a newly audited complete theorem or fill missing metadata by guesswork.
+
+5. **Exact certificate versus priority.** The initial audit package and its [unchanged correction](evidence/AUDIT_NOVELTY_CORRECTION.md) are both preserved. The correction retracts candidate novelty of the five-total-term lower bound while preserving its valid certificate. Its historical “no six-term theorem” statement and the predecessor's unresolved-C status are superseded by [the seven-term proof](evidence/seven-terms/PROOF.md). Earlier arithmetic is not silently rewritten.
+
+6. **What was refreshed.** This final pass reread the Ghosh record, relevant local source definitions, the Draisma–de Jong erratum, the Gasull citation chain, arXiv version records, the publisher's Ghosh-finiteness acceptance entry, and the thesis metadata. It did not start an exhaustive new literature survey. Earlier exact-family queries and their limitations remain in the bundled sparse prior-art notes. No new degree-20 proof was identified in the bounded checked material; the stronger universal claim that no such proof or comment exists is not made.
+
+7. **Proof foundations.** Elementary valuation comparisons, unit-Jacobian bounds, simple-root uniqueness, finite-dimensional local-algebra arguments, and the explicit polynomial identities in this review are proved or reduced to replayable identities in the corresponding evidence. Their use does not constitute a claim of new general theory. The review does not rely on external publication or a formal proof assistant to validate those arguments.
+

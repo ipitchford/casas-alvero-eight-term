@@ -1,0 +1,19 @@
+{
+  "REPORT.md": "e43705d23dce4e88155da06c41614aa197a7cb712497283d4d4889526fc92706",
+  "residue_bv.py": "2caaa9409aadfd4c33ef0fa9171b1ee15806ff36e420db42163fe2f51d7c4f1f",
+  "verify_outputs.py": "50408806090131a5d9d5f3af4beb797b342485ceb09bcf76ac4c4770da97dfc5",
+  "verification.json": "636badbadf2b5ad4afd962ec51e49e5b986677f1e8dbfed3df7892049b69510f",
+  "verification-optimized.json": "636badbadf2b5ad4afd962ec51e49e5b986677f1e8dbfed3df7892049b69510f",
+  "RUN_RECEIPTS.json": "ba516d1eace4f385b66b687d3db072241d321dccc1129491243401e5d98aab35",
+  "cvc5-capability.json": "13c0aea1e73c9fd13e177d09cc2886fe3047cfd6e8b98f03b453425467fd228c",
+  "bv-fixture.json": "9c0c0f2362e7b6c88b48041975bc000b323a0e7e591fb74c24a085d715c93691",
+  "bv-nonprime.json": "0af92f5e1ef46838f11a222b50fe187b9c6db97c6b0a11671177c8a557f997cf",
+  "bv-initial-fixture.json": "bbb6b8f8a169462890b49822c1bec0fc6b25232760cebff62c3f8c22eade9fee",
+  "bv-subfield5.json": "8cbbe2c0a22a06454240538378e2738183382e1f36677890722b0ff8a9ca0003",
+  "bv-subfield5-supports.json": "3f628e0b031f5c4ae5bd53f0deaa77bc5994991fe1f50015e6356482a69d9231",
+  "bv-fixture-progress.log": "5e48b8c9ef5ed08f8608984b81bc1bfc1c6e0ecdce43a9cfbf7bc552daab91a0",
+  "bv-nonprime-progress.log": "dbce4e460b9f79e0dae904a3bf13e376d3c9f068bbdeea9e5ec989b3351baf43",
+  "bv-initial-fixture-progress.log": "3473092a4dfe9f095d92977ae86a9e4231749594277908d2851d82ebc9626f8c",
+  "bv-subfield5-progress.log": "65bbf0ea52affb3274aa38fe1dc3891837cde8644e68c12006c3385186430ed9",
+  "bv-subfield5-supports-progress.log": "67b78a52bbf5f2f2bfe955f1d3136a6ea3267c54601eacdbe2f854036e227649"
+}

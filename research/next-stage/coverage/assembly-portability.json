@@ -1,0 +1,27 @@
+{
+  "bundleResearchMapping": "work/casas-alvero-upgrade/research/ -> new-results/",
+  "checkerSHA256": "a74928d6b43a62e96cf89dac9eb8fc570fdb9a901638fb6c6951d3d8ee902203",
+  "mathematicalReceiptDataIdentical": true,
+  "normalEqualsOptimized": {
+    "bundle": true,
+    "workspace": true
+  },
+  "packagingTransformRecordsMatch": true,
+  "scope": "Path portability and assembly receipt comparison; no proof identity or census was recomputed.",
+  "sourceHashDifferences": [
+    {
+      "bundleSHA256": "474f7fdfa502918cbde4223cbb7b88bf6bed650491f8cd4e4531dd2a4ea031e6",
+      "difference": "Relative evidence link prefix only; exact byte replacement verified",
+      "logicalSource": "work/casas-alvero-upgrade/research/GLOBAL_SUPPORT_COROLLARY.md",
+      "workspaceSHA256": "bc6812a8cadec6b7c24602c9eb57e17183d356e4d16461e0630c8dc3dcab56e0"
+    },
+    {
+      "bundleSHA256": "1c55e4f9693df68facdc212e734d29c52c84682f48b93f1a74a6747163ad1335",
+      "difference": "Relative evidence link prefix only; exact byte replacement verified",
+      "logicalSource": "work/casas-alvero-upgrade/research/SEVEN_TERM_FRONTIER.md",
+      "workspaceSHA256": "4eccb2fceddb99e2337dd80d85cc34ba237d2c0c7e7bfa2b1538a08a2cb258db"
+    }
+  ],
+  "stableLogicalInputNames": 34,
+  "status": "PASS"
+}

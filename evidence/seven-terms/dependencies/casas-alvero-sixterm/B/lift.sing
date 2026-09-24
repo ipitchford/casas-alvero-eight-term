@@ -1,0 +1,23 @@
+ring r=13,(u,v,w),dp;
+poly b=-9*u^16-4*u^13;
+poly c=-9*v^17-3*v^14-4*b*v;
+poly d=-5-b-c;
+poly E4=u*(5*u^19+c*u^2+d);
+poly E3=v*(5*v^19+v^16+10*b*v^3+d);
+poly E1=w*(w^19+4*w^16+b*w^3+c*w^2+d);
+poly D1=7*w^19+3*w^16+4*b*w^3+3*c*w^2+d;
+ideal I=E4,E3,E1,D1;
+int started=timer;
+matrix L=lift(I,ideal(1));
+print("elapsed_seconds");
+print(timer-started);
+print("identity_check");
+print(I*L);
+int i;
+for(i=1;i<=4;i++)
+{
+  print("COEFFICIENT");
+  print(i);
+  print(L[i,1]);
+}
+quit;

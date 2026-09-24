@@ -1,0 +1,295 @@
+{
+  "compatibleSeedPairs": 19,
+  "exactSupports": 14,
+  "inputSHA256": {
+    "outputs/casas-alvero-review/evidence/seven-terms/COMPLETION_AUDIT.md": "538e931b205a66f50a9b6b3b90c9a68ac5decd3d076e84ca672880e61b318ea4",
+    "outputs/casas-alvero-review/evidence/seven-terms/PROOF.md": "de893907a9044e8520f5acfe09db21dff471d60d983c55b6a1ff052732656aa4",
+    "outputs/casas-alvero-review/evidence/seven-terms/dependencies/casas-alvero-sixterm/PROOF.md": "b1cb48dcabbba41751c93609343a15759fd6d2982bc9549a43f32c74fa3fb060",
+    "outputs/casas-alvero-review/evidence/seven-terms/dependencies/casas-alvero-sixterm/dependencies/casas-alvero-extension/PROOF.md": "c8e96ef44b77dbfc2c3c43755d9f3877bc41fa503cc2278d503f40812758fe7d",
+    "outputs/casas-alvero-review/evidence/seven-terms/dependencies/casas-alvero-sixterm/dependencies/casas-alvero-structural/sixterm/REPORT.md": "7be5b1cbc041e966b40dcc04e2a3292e757fc78fc7150f8c17925d967ea7ac81",
+    "outputs/casas-alvero-review/evidence/seven-terms/structural_audit/AUDIT.md": "4f415bcfee967a1f477839108b94e0f9c0c432e599bc0e421946d1fee563c7ba",
+    "work/casas-alvero-full/LIFT_CONSEQUENCES_17.md": "6f63e077dcde8963f1e236aeeba1eb8fc011bd58f32315bb321fa9b06b575895",
+    "work/casas-alvero-full/collective17/exclusions/BATCH1_PROOF.md": "d44071baca52fdd79f78a30f84b7c3a199d08b18fac3192717abf208ca0533a7",
+    "work/casas-alvero-full/collective17/exclusions/lift-batch.json": "154ddc8de0ab895d30299d068bd65f67dcac046a86e4a4ff2ce5ddbd7658ba89",
+    "work/casas-alvero-full/collective17/exclusions/residue-batch.json": "9c14cd5c11b2a7decade6baef13431ce77a035c31754114428f9b52d95332797",
+    "work/casas-alvero-full/collective17/exclusions/verification-normal.json": "26e11999db88072a39827b023f5087758e89b8327d9d74afeff941e8660557be",
+    "work/casas-alvero-full/literature/PRIME17_CLASSIFICATION_AUDIT.md": "dd6f8731ad9fbe3717780c4964e261a546e7d40a1da14d94eb80297349718876",
+    "work/casas-alvero-full/support_frontier/prime17/CLASSIFICATION.md": "e36315780106ed45b8ef63516ce39d8bbf60c814c2e8ee8cd31f04947ca138b6",
+    "work/casas-alvero-full/tame17/ROW4_SMALLEST_SUPPORT_AUDIT.md": "eacb6244a7047eefa186bb06fd1a7407084247265397e49068f72e1e5e345d9a",
+    "work/casas-alvero-full/tame17/ROW4_SMALLEST_SUPPORT_EXCLUSION.md": "c3c0ad6657c26cac1b1f1cd8d2b65d7416b3751736f037941c740444a6f5dc6d",
+    "work/casas-alvero-upgrade/next-stage/ROW1_AUDIT.md": "abd47f8086b93811dd226fa13d01fc8919376b070879fbbc215e3067b914aa80",
+    "work/casas-alvero-upgrade/next-stage/ROW1_RAMIFICATION.md": "81d077a984e6aa33b0e5c3f375538884db055c160fcb009ca312741c130bba8b",
+    "work/casas-alvero-upgrade/next-stage/ROW1_RAMIFICATION_AUDIT.md": "cf60d5326c1497b7abf6d3c80b052c0af2bb9eabb52b8258272d5e80a1d50e32",
+    "work/casas-alvero-upgrade/next-stage/ROW1_UNIT16.md": "f0a096068d80be6663f83ad466b15e2421166cec29c5459790503c4ef505ed46",
+    "work/casas-alvero-upgrade/next-stage/ROW5_COMPLETION.md": "03b35ff5e51d9d5c27716d2a5c896ed5e19c8f9cba11ebe52f58594c4567a38d",
+    "work/casas-alvero-upgrade/next-stage/ROW5_COMPLETION_AUDIT.md": "ef6241785f8fa423835d1a8d63b8c538f32895626009694482f05eb9911f1ad4",
+    "work/casas-alvero-upgrade/next-stage/coverage/INVENTORY_AUDIT.md": "335c790c206e86e70461c50636a129d85e96155715e976cc5244159daafc1a6b",
+    "work/casas-alvero-upgrade/next-stage/coverage/inventory-normal.json": "166c5c3517797e0940a449ea1713af01e53e485e3b83931971c08a99ea0203dd",
+    "work/casas-alvero-upgrade/next-stage/coverage/inventory-optimized.json": "166c5c3517797e0940a449ea1713af01e53e485e3b83931971c08a99ea0203dd",
+    "work/casas-alvero-upgrade/next-stage/last-four/middle/MIXED_AUDIT.md": "8fab84c14e8cd234f6f722f626e89cedaea8b0a217eb365a9fd5c6401b287add",
+    "work/casas-alvero-upgrade/next-stage/last-four/middle/MIXED_STRATA.md": "9f0e1ff062f320c0de94aca3d8237681ac4e0bb656ee69c5c4050df4d7bbc083",
+    "work/casas-alvero-upgrade/next-stage/last-four/quadratic/A/A_ROW1_EXCLUSION.md": "336a587c43501633de0400a3cd552f6c5ef12558ceb9bf01977ca0798e29f7df",
+    "work/casas-alvero-upgrade/next-stage/last-four/quadratic/A/A_ROW1_SECOND_AUDIT.md": "e7f450f4f589a07aa690cf2e0533af025dfad3a256b813d48c8bfbb376a8b4c7",
+    "work/casas-alvero-upgrade/next-stage/last-four/quadratic/B/B_AUDIT.md": "a65595a3f641da75f57e4c5fbe756c089723c66036519d3265d9ffb52df2e404",
+    "work/casas-alvero-upgrade/next-stage/last-four/quadratic/B/B_EXCLUSION.md": "4fbbf6b96fd2e800428bd480ad726a17add7df39cffcbf39913efc8d00cdc62b",
+    "work/casas-alvero-upgrade/next-stage/last-four/row2/ROW2_AUDIT.md": "a9b20e03d3d2e8353b663115b4270c5a5c5b143552b2980941cf192338a1d55a",
+    "work/casas-alvero-upgrade/next-stage/last-four/row2/ROW2_PROOF.md": "d6bc0338a391347061745e57a9559dd745bd63d1c2c6c9f918426a7c38645ea0",
+    "work/casas-alvero-upgrade/research/GLOBAL_SUPPORT_COROLLARY.md": "474f7fdfa502918cbde4223cbb7b88bf6bed650491f8cd4e4531dd2a4ea031e6",
+    "work/casas-alvero-upgrade/research/SEVEN_TERM_FRONTIER.md": "1c55e4f9693df68facdc212e734d29c52c84682f48b93f1a74a6747163ad1335"
+  },
+  "row9RecordedMarkings": 4913,
+  "row9RecordedObstruction": "11*17^2 mod 17^3",
+  "rows": [
+    {
+      "compatibleSeedRows": [
+        5,
+        8
+      ],
+      "label": "S1",
+      "proofs": {
+        "5": "row5-completion",
+        "8": "row8-divided-identity"
+      },
+      "support": [
+        2,
+        3,
+        4,
+        10,
+        12,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        8
+      ],
+      "label": "S2",
+      "proofs": {
+        "8": "row8-divided-identity"
+      },
+      "support": [
+        3,
+        4,
+        9,
+        10,
+        12,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        8
+      ],
+      "label": "S3",
+      "proofs": {
+        "8": "row8-divided-identity"
+      },
+      "support": [
+        3,
+        4,
+        5,
+        10,
+        13,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        8
+      ],
+      "label": "S4",
+      "proofs": {
+        "8": "row8-divided-identity"
+      },
+      "support": [
+        3,
+        4,
+        10,
+        12,
+        15,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        8
+      ],
+      "label": "S5",
+      "proofs": {
+        "8": "row8-divided-identity"
+      },
+      "support": [
+        3,
+        7,
+        9,
+        10,
+        16,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        1,
+        8
+      ],
+      "label": "S6",
+      "proofs": {
+        "1": "row1-nonzero-a3",
+        "8": "row8-divided-identity"
+      },
+      "support": [
+        3,
+        6,
+        10,
+        16,
+        17,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        1
+      ],
+      "label": "S7",
+      "proofs": {
+        "1": "row1-unit16"
+      },
+      "support": [
+        7,
+        8,
+        10,
+        16,
+        17,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        1
+      ],
+      "label": "S8",
+      "proofs": {
+        "1": "row1-unit16-or-mixed"
+      },
+      "support": [
+        10,
+        12,
+        13,
+        16,
+        17,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        1
+      ],
+      "label": "S9",
+      "proofs": {
+        "1": "row1-unit16"
+      },
+      "support": [
+        6,
+        10,
+        15,
+        16,
+        17,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        1
+      ],
+      "label": "S10",
+      "proofs": {
+        "1": "row1-unit16-or-mixed"
+      },
+      "support": [
+        9,
+        10,
+        15,
+        16,
+        17,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        4
+      ],
+      "label": "S11",
+      "proofs": {
+        "4": "row4-complete-J4-10-12"
+      },
+      "support": [
+        2,
+        4,
+        10,
+        12,
+        18,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        8,
+        9
+      ],
+      "label": "S12",
+      "proofs": {
+        "8": "row8-divided-identity",
+        "9": "row9-complete-J4-10-13"
+      },
+      "support": [
+        3,
+        4,
+        10,
+        13,
+        18,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        1,
+        2,
+        4
+      ],
+      "label": "S13",
+      "proofs": {
+        "1": "quadratic-A-row1",
+        "2": "quadratic-A-row2",
+        "4": "row4-exact-a17-zero"
+      },
+      "support": [
+        2,
+        4,
+        10,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "compatibleSeedRows": [
+        1
+      ],
+      "label": "S14",
+      "proofs": {
+        "1": "quadratic-B-row1"
+      },
+      "support": [
+        4,
+        10,
+        16,
+        17,
+        18,
+        19
+      ]
+    }
+  ],
+  "scope": "Assembly/routing and saved-receipt consistency only; mathematical implications are reviewed in EIGHT_TERM_AUDIT.md. No census or finite identity was re-proved by this script.",
+  "status": "PASS",
+  "uncoveredSeedPairs": []
+}

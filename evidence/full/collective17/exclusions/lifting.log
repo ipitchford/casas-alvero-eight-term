@@ -1,0 +1,8 @@
+{"active": [4, 10, 13], "representative": [1, 1, 15], "orbit": 1, "status": "EXCLUDED", "T": [3179, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+{"active": [4, 5, 12, 15], "representative": [1, 15, 1, 1], "orbit": 1, "status": "EXCLUDED", "T": [238, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+{"active": [4, 9, 10, 14], "representative": [15, 0, 1, 15], "orbit": 10, "status": "EXCLUDED", "T": [272, 272, 51, 119, 170, 17, 153, 85, 102, 34]}
+{"active": [4, 9, 10, 14], "representative": [15, 1, 1, 15], "orbit": 1, "status": "EXCLUDED", "T": [153, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+{"active": [4, 9, 10, 14], "representative": [15, 7, 1, 15], "orbit": 5, "status": "EXCLUDED", "T": [0, 68, 187, 170, 68, 0, 238, 68, 221, 34]}
+{"active": [4, 9, 10, 14], "representative": [15, 15, 1, 15], "orbit": 1, "status": "EXCLUDED", "T": [204, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+{"active": [5, 12, 15, 16], "representative": [15, 15, 15, 15], "orbit": 1, "status": "EXCLUDED", "T": [51, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+{"seconds": 0.03849054200691171, "caseStatuses": ["EXCLUDED", "EXCLUDED", "EXCLUDED", "EXCLUDED", "EXCLUDED", "EXCLUDED", "EXCLUDED"]}

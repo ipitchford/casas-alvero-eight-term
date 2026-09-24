@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "resultantDegrees": [
+    19,
+    28
+  ],
+  "degreeBoundsFromAffineSylvesterMatrices": [
+    29,
+    38
+  ],
+  "exactIntegerDeterminantEvaluations": [
+    30,
+    39
+  ],
+  "modularGcdPrime": 101,
+  "modularGcd": [
+    1
+  ],
+  "bothDegreesPreserved": true,
+  "H1ResultantAtZeroNonzero": true,
+  "sourceSha256": "0b3a792a531c31a7ae7a9cf038a5dd8892344e5839189f69ba67b07b49ff4748",
+  "elapsedSeconds": 0.188,
+  "conclusion": "The two characteristic-zero resultant polynomials are coprime; no collision-family parameter e satisfies both common-root conditions."
+}

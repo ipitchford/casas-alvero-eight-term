@@ -1,0 +1,24 @@
+date: 2026-09-23
+objective: solve in full unrestricted degree 20 and the full Casas-Alvero conjecture
+status: neither target is proved; results consolidated for review
+degree_20_statement: Every monic degree-20 polynomial over a characteristic-zero field sharing a root with each derivative of orders 1 through 19 is a twentieth power of a linear polynomial.
+all_degrees_statement: For every integer n>=2 and every characteristic-zero field K, every monic f in K[X] of degree n with gcd(f,f^(i)) nonconstant for each 1<=i<n has f=(X-alpha)^n for some alpha in K.
+normalization: Translate the unique root of the (n-1)st derivative to zero and make f monic. Then the constant and X^(n-1) coefficients vanish. Scale only by nonzero roots or justified units.
+finite_characteristic_convention: Hasse derivatives; monic divided derivatives must retain binomial-normalized coefficients.
+scope_invariant: A larger sparsity lower bound, one support exclusion, a proof-gap audit, a finite residue classification, or a packaging milestone does not complete either target.
+prior_result: Internally audited seven-term lower bound in centered degree20; not unrestricted degree20.
+small_instances:
+  n3: [1, -3, 3, -1]
+  n4: [1, -4, 6, -4, 1]
+  n5: [1, -5, 10, -10, 5, -1]
+small_instance_convention: Descending coefficient vectors of the trivial examples (X-1)^n; these are fingerprints, not evidence for the universal conjecture.
+coefficient_recurrence: f=sum_j binom(n,j)*a_j*X^(n-j); monic divided derivative G_j=sum_(i=0)^j binom(j,i)*a_i*X^(j-i).
+degree20_global_models:
+  p2: X20+a X16+b X4; fourth power of a degree5 seed
+  p5: X20+a X15+b X10+c X5; fifth power of a degree4 seed
+  p17: X20+a X18+b X17+c X3+d X2+e X
+  p19: X20-X after unit-root normalization
+aliases: [Casas-Alvero, recycled roots, root-incidence variety, Goncharoff interpolation, prescribed derivative roots, regular sequence, Hasse derivative, bad prime, valuation lifting]
+generating_function_and_spectrum: No sequence or spectral object is being claimed; the exact derivative recurrence and finite prime models are the relevant fingerprints.
+contribution_goal: Complete mathematical proofs of both quantified statements, independently audited for their full scope.
+publication: Not authorized by this research goal; no external communication or release.

@@ -1,0 +1,34 @@
+ring r=17,(x,s,t),dp;
+poly a=s;poly b=0;poly d=t;
+  poly e=-a-b-d;
+  poly h=x^20+a*x^18+b*x^17-x^3+d*x^2+e*x;
+  poly H18=3*x^2+a;
+  poly H2=3*x^18-3*x+d;
+  poly H1=3*x^19+a*x^17-3*x^2+2*d*x+e;
+
+
+  poly R18=resultant(h,H18,x);
+  poly R2=resultant(h,H2,x);
+  poly R1=resultant(h,H1,x);
+
+  ideal I=R18,R2,R1;
+  option(redSB);
+  ideal G=std(I);
+
+ideal Targets=G[2],G[4];
+
+ring q=17,(s,t),dp;
+ideal J=imap(r,I);ideal T=imap(r,Targets);
+print("COUNTS");print(size(J));print(size(T));
+proc emitPoly(poly f,string label)
+{
+ print("POLY "+label); intvec ex;
+ while(f!=0){ex=leadexp(f);print(string(int(leadcoef(f)))+" "+string(ex[1])+" "+string(ex[2]));f=f-lead(f);}
+ print("END");
+}
+int i;int j;
+for(i=1;i<=size(J);i++){emitPoly(J[i],"I"+string(i));}
+for(i=1;i<=size(T);i++){emitPoly(T[i],"T"+string(i));}
+matrix M=lift(J,T);
+for(i=1;i<=nrows(M);i++){for(j=1;j<=ncols(M);j++){emitPoly(M[i,j],"M"+string(i)+"_"+string(j));}}
+print("DONE");quit;

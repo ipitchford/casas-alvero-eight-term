@@ -1,0 +1,5 @@
+   ? object to declare is not a name
+   ? error occurred in or before /Users/admin/Documents/Codex/2026-09-21/fi/work/casas-alvero-sixterm/prime31/A/normalized.sing line 2: `int degBound=40;`
+   ? wrong type declaration. type 'help int;'
+
+TIMEOUT_110_SECONDS

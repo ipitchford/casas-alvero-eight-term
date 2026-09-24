@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "certificateSha256": "5a361c539843a71648b1c792367a3e4c7d2c12f56b71248ec79959398821183e",
+  "parameterDegreesL_N_D_E": [
+    8,
+    18,
+    25,
+    25
+  ],
+  "coefficientDegreeBoundsQ_H10_H1": [
+    25,
+    18,
+    25
+  ],
+  "resultantDegreeBounds": [
+    592,
+    950
+  ],
+  "integerDeterminantEvaluations": [
+    593,
+    951
+  ],
+  "resultantDegrees": [
+    422,
+    661
+  ],
+  "exactCommonFactor": "L^10",
+  "quotientDegrees": [
+    360,
+    581
+  ],
+  "degreePreservingPrime": 101,
+  "quotientModularGcd": [
+    1
+  ],
+  "L_N_ModularGcd": [
+    1
+  ],
+  "parameterizationIdentities": "f(1)=f(u)=H15(u)=H3(u)=0",
+  "L_at_2_mod13": 4,
+  "mutationControl": "PASS",
+  "elapsedSeconds": 131.60657341699698
+}

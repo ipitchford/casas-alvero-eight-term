@@ -1,0 +1,14 @@
+[
+  {
+    "receipt": "verification-normal.json",
+    "status": "PASS",
+    "wallGuardSeconds": 90,
+    "elapsedSeconds": 14.844797875004588
+  },
+  {
+    "receipt": "verification-optimized.json",
+    "status": "PASS",
+    "wallGuardSeconds": 90,
+    "elapsedSeconds": 14.62034062499879
+  }
+]

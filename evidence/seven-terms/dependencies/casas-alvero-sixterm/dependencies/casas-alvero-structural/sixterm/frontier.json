@@ -1,0 +1,115 @@
+{
+  "sixTotalTermOldOnlySurvivors": [
+    [
+      3,
+      4,
+      10,
+      18,
+      19
+    ],
+    [
+      3,
+      10,
+      16,
+      17,
+      19
+    ],
+    [
+      4,
+      5,
+      10,
+      17,
+      19
+    ],
+    [
+      4,
+      10,
+      12,
+      17,
+      19
+    ],
+    [
+      8,
+      10,
+      16,
+      17,
+      19
+    ]
+  ],
+  "afterFirstCharacteristic13Mask": [
+    [
+      3,
+      4,
+      10,
+      18,
+      19
+    ],
+    [
+      3,
+      10,
+      16,
+      17,
+      19
+    ],
+    [
+      4,
+      5,
+      10,
+      17,
+      19
+    ],
+    [
+      8,
+      10,
+      16,
+      17,
+      19
+    ]
+  ],
+  "secondCharacteristic13Mask": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    16,
+    17,
+    19
+  ],
+  "excludedBySecondMask": [
+    [
+      8,
+      10,
+      16,
+      17,
+      19
+    ]
+  ],
+  "remainingThreeSupports": [
+    [
+      3,
+      4,
+      10,
+      18,
+      19
+    ],
+    [
+      3,
+      10,
+      16,
+      17,
+      19
+    ],
+    [
+      4,
+      5,
+      10,
+      17,
+      19
+    ]
+  ],
+  "secondSeedProof": "LAST_MASK_PROOF.md",
+  "replay": "verify_last_mask.py",
+  "producerReceiptSha256": "f906bbcc0a82bd63c1512df41272ea4bedeb3670917fd98eae4d83dd5eb8d82f",
+  "status": "internally_checked_candidate; historical novelty unassessed"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "support": [
+      4,
+      10,
+      17,
+      19
+    ],
+    "prime": 11,
+    "seconds": 0.0575159590007388,
+    "limitSeconds": 20,
+    "status": "PROPER_IDEAL",
+    "basisResult": "PROPER",
+    "completeCertificate": false,
+    "sourceSha256": "db46bd2a35d415b8183e09ca755c60b55e0218de08f0d783cd4b8267040b3380",
+    "logSha256": "cd67c4b4786417db26624a77d7d9b7c20874e64568961c91d5b6bcfb412353b9",
+    "certificateBytes": 0,
+    "characteristicZeroConclusion": false
+  },
+  {
+    "support": [
+      4,
+      10,
+      17,
+      19
+    ],
+    "prime": 7,
+    "seconds": 7.056111915997462,
+    "limitSeconds": 20,
+    "status": "PROPER_IDEAL",
+    "basisResult": "PROPER",
+    "completeCertificate": false,
+    "sourceSha256": "6329734ba3453462b1077ca0c690a2f44ff82338f258f259770eeb361400962a",
+    "logSha256": "cd67c4b4786417db26624a77d7d9b7c20874e64568961c91d5b6bcfb412353b9",
+    "certificateBytes": 0,
+    "characteristicZeroConclusion": false
+  }
+]

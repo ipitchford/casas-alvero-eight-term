@@ -1,0 +1,160 @@
+{
+  "status": "PASS",
+  "models": [
+    {
+      "p": 2,
+      "degree": 31,
+      "digits": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "root_locations_t_exponents_null_means_zero": [
+        0,
+        1,
+        2,
+        3,
+        null
+      ],
+      "subset_checks": 30,
+      "status": "PASS"
+    },
+    {
+      "p": 3,
+      "degree": 59,
+      "digits": {
+        "0": 2,
+        "1": 1,
+        "3": 2
+      },
+      "root_locations_t_exponents_null_means_zero": [
+        0,
+        1,
+        null
+      ],
+      "subset_checks": 6,
+      "status": "PASS"
+    },
+    {
+      "p": 2,
+      "degree": 20,
+      "digits": {
+        "2": 1,
+        "4": 1
+      },
+      "root_locations_t_exponents_null_means_zero": [
+        null,
+        0
+      ],
+      "subset_checks": 2,
+      "status": "PASS"
+    },
+    {
+      "p": 3,
+      "degree": 20,
+      "digits": {
+        "0": 2,
+        "2": 2
+      },
+      "root_locations_t_exponents_null_means_zero": [
+        null,
+        0
+      ],
+      "subset_checks": 2,
+      "status": "PASS"
+    },
+    {
+      "p": 7,
+      "degree": 20,
+      "digits": {
+        "0": 6,
+        "1": 2
+      },
+      "root_locations_t_exponents_null_means_zero": [
+        null,
+        0
+      ],
+      "subset_checks": 2,
+      "status": "PASS"
+    },
+    {
+      "p": 11,
+      "degree": 20,
+      "digits": {
+        "0": 9,
+        "1": 1
+      },
+      "root_locations_t_exponents_null_means_zero": [
+        null,
+        0
+      ],
+      "subset_checks": 2,
+      "status": "PASS"
+    },
+    {
+      "p": 13,
+      "degree": 20,
+      "digits": {
+        "0": 7,
+        "1": 1
+      },
+      "root_locations_t_exponents_null_means_zero": [
+        null,
+        0
+      ],
+      "subset_checks": 2,
+      "status": "PASS"
+    },
+    {
+      "p": 17,
+      "degree": 20,
+      "digits": {
+        "0": 3,
+        "1": 1
+      },
+      "root_locations_t_exponents_null_means_zero": [
+        null,
+        0
+      ],
+      "subset_checks": 2,
+      "status": "PASS"
+    },
+    {
+      "p": 19,
+      "degree": 20,
+      "digits": {
+        "0": 1,
+        "1": 1
+      },
+      "root_locations_t_exponents_null_means_zero": [
+        null,
+        0
+      ],
+      "subset_checks": 2,
+      "status": "PASS"
+    }
+  ],
+  "characteristic_zero": {
+    "status": "PASS",
+    "degree20_failed_order_values": [
+      [
+        1,
+        1820
+      ],
+      [
+        -4,
+        560
+      ],
+      [
+        6,
+        120
+      ],
+      [
+        -4,
+        16
+      ]
+    ]
+  }
+}

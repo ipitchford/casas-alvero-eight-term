@@ -1,0 +1,16 @@
+{
+  "convention": "rows are [H3 witness residue, H15 witness residue, H1 witness residue]",
+  "exactSupportExponents": [20, 16, 15, 10, 3, 1],
+  "allNonleadingCoefficientsNonzero": true,
+  "rows": [
+    {"residues": [2, 1, 1], "proof": "u_one/JET_PROOF.md", "forcedCOver13Residue": 0, "middleGcd": "X", "lastStep": "simple zero root forces forbidden C=0"},
+    {"residues": [2, 1, 4], "proof": "cluster/PROOF.md", "forcedCOver13Residue": 12, "middleGcd": "1", "lastStep": "no common residue root"},
+    {"residues": [2, 2, 1], "proof": "u_equals_v/JET_PROOF.md", "forcedCOver13Residue": 3, "middleGcd": "X-4", "lastStep": "second precision step contradicts f(4)/13 residue 6"},
+    {"residues": [2, 2, 4], "proof": "u_equals_v/JET_PROOF.md", "forcedCOver13Residue": 12, "middleGcd": "1", "lastStep": "no common residue root"},
+    {"residues": [11, 1, 3], "proof": "u_one/JET_PROOF.md", "forcedCOver13Residue": 1, "middleGcd": "1", "lastStep": "no common residue root"},
+    {"residues": [11, 1, 11], "proof": "u_one/JET_PROOF.md", "forcedCOver13Residue": 5, "middleGcd": "1", "lastStep": "no common residue root"}
+  ],
+  "priorDiscardedPoint": [4, 6, 2, 0],
+  "priorDiscardedPointScope": "all three geometric marked assignments, including two quadratic-extension H15 witnesses",
+  "consequence": "No nontrivial centered degree-20 CA polynomial with six nonzero monomials; inherited lower bound gives at least seven."
+}

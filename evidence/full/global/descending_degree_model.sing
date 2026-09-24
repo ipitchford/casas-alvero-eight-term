@@ -1,0 +1,20 @@
+// Characteristic-zero model retaining descending degrees and mean-root forms.
+ring R=0,(t,u,v,z,s),dp;
+option(redSB);
+poly f1=u^4; poly f2=u*v*s; poly f3=v^2; poly f4=z;
+poly g1=-u^5; poly g2=s^4; poly g3=2*v^3; poly g4=3*z^2;
+ideal F=t*f1+g1,t*f2+g2,t*f3+g3,t*f4+g4;
+ideal D=f1*g2-f2*g1,f1*g3-f3*g1,f1*g4-f4*g1,
+        f2*g3-f3*g2,f2*g4-f4*g2,f3*g4-f4*g3;
+print("dim S/F");print(dim(std(F)));
+print("dim S/D (includes free t)");print(dim(std(D)));
+poly sum=u+v+z+s+t;
+ideal roots=u,v,z,s,t,0;
+int i;
+ideal J;
+for(i=1;i<=6;i++){
+  print("completion "+string(i));
+  J=F,sum-6*roots[i];
+  print(dim(std(J)));
+}
+quit;

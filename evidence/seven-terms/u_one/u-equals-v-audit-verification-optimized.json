@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "method": "Independent full integer-polynomial composition, then exact division by13",
+  "rows_r_ell_k": [
+    [
+      10,
+      6,
+      8
+    ],
+    [
+      4,
+      1,
+      7
+    ],
+    [
+      11,
+      2,
+      9
+    ],
+    [
+      10,
+      8,
+      5
+    ]
+  ],
+  "constants": [
+    7,
+    6,
+    4,
+    3
+  ],
+  "initialUnitJacobianDeterminant": 12,
+  "secondUnitJacobianDeterminant": 3,
+  "allNonlinearDividedCoefficientsIn13Z": true,
+  "secondPrecisionPoint": [
+    12,
+    3,
+    3
+  ],
+  "H10_at4_div13_reduction": "k-3",
+  "G10DerivativeAt4": 3,
+  "fAt4Div13AtSecondPrecisionPoint": 6,
+  "finalGcds": {
+    "wbar1": [
+      9,
+      1
+    ],
+    "wbar4": [
+      1
+    ]
+  },
+  "scope": "Exact arithmetic and coefficient identities supporting the written ramification-safe valuation audit."
+}

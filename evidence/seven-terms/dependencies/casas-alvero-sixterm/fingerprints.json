@@ -1,0 +1,173 @@
+[
+  {
+    "label": "A",
+    "deficiencies": [
+      3,
+      4,
+      10,
+      18,
+      19
+    ],
+    "exponents": [
+      20,
+      17,
+      16,
+      10,
+      2,
+      1
+    ],
+    "binomialCoefficients": [
+      1140,
+      4845,
+      184756,
+      190,
+      20
+    ],
+    "visibleSeeds": {
+      "11": {
+        "exponents": [
+          20,
+          17,
+          16,
+          2,
+          1
+        ],
+        "activeBinomialResidues": [
+          7,
+          5,
+          3,
+          9
+        ]
+      },
+      "13": {
+        "exponents": [
+          20,
+          17,
+          16,
+          2,
+          1
+        ],
+        "activeBinomialResidues": [
+          9,
+          9,
+          8,
+          7
+        ]
+      }
+    }
+  },
+  {
+    "label": "B",
+    "deficiencies": [
+      3,
+      10,
+      16,
+      17,
+      19
+    ],
+    "exponents": [
+      20,
+      17,
+      10,
+      4,
+      3,
+      1
+    ],
+    "binomialCoefficients": [
+      1140,
+      184756,
+      4845,
+      1140,
+      20
+    ],
+    "visibleSeeds": {
+      "11": {
+        "exponents": [
+          20,
+          17,
+          4,
+          3,
+          1
+        ],
+        "activeBinomialResidues": [
+          7,
+          5,
+          7,
+          9
+        ]
+      },
+      "13": {
+        "exponents": [
+          20,
+          17,
+          4,
+          3,
+          1
+        ],
+        "activeBinomialResidues": [
+          9,
+          9,
+          9,
+          7
+        ]
+      }
+    }
+  },
+  {
+    "label": "C",
+    "deficiencies": [
+      4,
+      5,
+      10,
+      17,
+      19
+    ],
+    "exponents": [
+      20,
+      16,
+      15,
+      10,
+      3,
+      1
+    ],
+    "binomialCoefficients": [
+      4845,
+      15504,
+      184756,
+      1140,
+      20
+    ],
+    "visibleSeeds": {
+      "11": {
+        "exponents": [
+          20,
+          16,
+          15,
+          3,
+          1
+        ],
+        "activeBinomialResidues": [
+          5,
+          5,
+          7,
+          9
+        ]
+      },
+      "13": {
+        "exponents": [
+          20,
+          16,
+          15,
+          3,
+          1
+        ],
+        "activeBinomialResidues": [
+          9,
+          8,
+          9,
+          7
+        ]
+      }
+    }
+  }
+]

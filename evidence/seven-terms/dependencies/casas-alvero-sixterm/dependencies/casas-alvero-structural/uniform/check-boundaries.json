@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "cZeroObstructionInteger": -64156636448,
+  "aZeroObstructionInteger": -17696646119024,
+  "examples": [
+    {
+      "label": "c=0 boundary",
+      "prime": 23,
+      "degree": 30,
+      "coefficients": {
+        "30": 1,
+        "26": 11,
+        "1": 11
+      },
+      "activeWitnesses": {
+        "26": 1,
+        "1": 5
+      },
+      "offSupportWitness": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "c=0 boundary",
+      "prime": 87169343,
+      "degree": 87169350,
+      "coefficients": {
+        "87169350": 1,
+        "87169346": 87169308,
+        "1": 34
+      },
+      "activeWitnesses": {
+        "87169346": 1,
+        "1": 55264232
+      },
+      "offSupportWitness": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "a=0 boundary",
+      "prime": 1229,
+      "degree": 1236,
+      "coefficients": {
+        "1236": 1,
+        "3": 1194,
+        "1": 34
+      },
+      "activeWitnesses": {
+        "3": 1,
+        "1": 1137
+      },
+      "offSupportWitness": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "a=0 boundary",
+      "prime": 3114019,
+      "degree": 3114026,
+      "coefficients": {
+        "3114026": 1,
+        "3": 3113984,
+        "1": 34
+      },
+      "activeWitnesses": {
+        "3": 1,
+        "1": 1799855
+      },
+      "offSupportWitness": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "all coefficients nonzero",
+      "prime": 19,
+      "degree": 26,
+      "coefficients": {
+        "26": 1,
+        "22": 3,
+        "3": 14,
+        "1": 1
+      },
+      "activeWitnesses": {
+        "22": 1,
+        "3": 2,
+        "1": 13
+      },
+      "offSupportWitness": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "p=17 a-only example",
+      "prime": 17,
+      "degree": 24,
+      "coefficients": {
+        "24": 1,
+        "20": 16
+      },
+      "activeWitnesses": {
+        "20": 1
+      },
+      "offSupportWitness": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "p=17 c-only example",
+      "prime": 17,
+      "degree": 24,
+      "coefficients": {
+        "24": 1,
+        "3": 16
+      },
+      "activeWitnesses": {
+        "3": 1
+      },
+      "offSupportWitness": 0,
+      "status": "PASS"
+    }
+  ],
+  "mutationControl": "PASS",
+  "scope": "Exact finite witnesses and integer factors; necessity is a written proof."
+}

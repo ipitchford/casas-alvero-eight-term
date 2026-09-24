@@ -1,0 +1,13 @@
+{
+  "role": "replay",
+  "startedUTC": "2026-09-23T16:31:11.493276+00:00",
+  "wallGuardSeconds": 240,
+  "status": "COMPLETE",
+  "sourceSHA256": "bf4c3066bc57c3a74844c99ee74e91505a5f13c59183bea4bb44a8b3923b9873",
+  "binarySHA256": "3db71de2244c5b480217d33636c9f940787ab5b33c802631ff78de5d1212e13e",
+  "inputSHA256": "e9c6bebb2458aa945616433b0ef315e58a2e8525176cb03e38426bad959f5f22",
+  "returncode": 0,
+  "elapsedSeconds": 165.234420666995,
+  "endedUTC": "2026-09-23T16:33:56.729119+00:00",
+  "outputSHA256": "bcf48a0913d9233603ceef3cb2c89bdf0ecc51554eef4a8e144b1152670d2be6"
+}

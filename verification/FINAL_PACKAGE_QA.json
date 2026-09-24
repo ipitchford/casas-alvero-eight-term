@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "date": "2026-09-24",
+  "manuscriptSHA256": "7b3cd1c108203dca16118d6af1c81f9dad996db5c51fc8de08ebb4b2971fd0ac",
+  "pdfSHA256": "5314ee895e8a6e5b50bf30ff004f123cc5cd49f53090e597dab9575502c228d1",
+  "pages": 40,
+  "visuallyInspectedPages": [
+    1,
+    5,
+    15,
+    23,
+    37,
+    40
+  ],
+  "allPageTextBoundingBoxesWithinPage": true,
+  "texWarnings": [
+    "One underfull hbox, badness 1158; no overfull boxes, missing glyphs or undefined references"
+  ],
+  "currentDocumentLocalLinks": "all resolve",
+  "newCheckers": 15,
+  "newExecutions": 30,
+  "inheritedDefaultChecks": 27,
+  "optionalM6FullCensusRerun": false,
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "sympy": "1.14.0",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "scope": "Manuscript presentation, exact replay and package QA; not external peer review, priority clearance, formal verification, or a full-conjecture solution."
+}

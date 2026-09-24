@@ -1,0 +1,20 @@
+ring r=13,(u,v,w),dp;
+option(redSB);
+poly b=5*u^5+u;
+poly c=4*v^17+9*v^13;
+poly d=8-b-c;
+ideal I=u^20+4*u^16+b*u^15+c*u^3+d*u,
+        v^20+4*v^16+b*v^15+c*v^3+d*v,
+        w^20+4*w^16+b*w^15+c*w^3+d*w,
+        7*w^19+12*w^15+2*b*w^14+3*c*w^2+d;
+ideal G=std(I);
+poly V=v^3+3*v^2-4*v+1;
+reduce(b-6,G);
+reduce(V,G);
+ideal J=b-6,V;
+matrix M=lift(I,J);
+print("CERTIFICATE_BEGIN");
+int i,j;
+for(i=1;i<=4;i++){for(j=1;j<=2;j++){print(string(i)+","+string(j)+":"+string(M[i,j]));}}
+print("CERTIFICATE_END");
+quit;

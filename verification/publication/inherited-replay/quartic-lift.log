@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "quarticBezout": {
+    "coefficientOnFAscending": [
+      5,
+      7,
+      14
+    ],
+    "coefficientOnH1Ascending": [
+      7,
+      5,
+      11,
+      5
+    ]
+  },
+  "allNonzeroZeroClusterRootValuations": "1/13",
+  "normalizedCoefficientValuations": {
+    "a2": "zero exactly, or2/13",
+    "a17": "zero exactly, or14/13",
+    "a18": "zero exactly, or15/13",
+    "a19": "16/13"
+  },
+  "powerSeriesValuationConflict": {
+    "required": "3/13",
+    "linearUnit": "2/13",
+    "linearNonunitLowerBound": "4/13"
+  },
+  "firstCorrectionUniversalSurvivor": {
+    "u": 0,
+    "v": 12,
+    "gamma": 0,
+    "allZeroMiddleLabels": 0
+  },
+  "scope": "Auxiliary exact arithmetic for the proved cluster and next-lift arguments; no whole-stratum exclusion."
+}

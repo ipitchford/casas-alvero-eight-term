@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "fieldPrime": 17,
+  "fieldDegree": 5,
+  "residueActiveIndices": [
+    4,
+    9,
+    10,
+    14
+  ],
+  "residueDividedObstruction": 0,
+  "frobeniusFixedCoefficientClaim": "FALSE",
+  "integerActiveIndices": [
+    4,
+    5,
+    8,
+    10,
+    11
+  ],
+  "integerCoefficients": {
+    "4": 3,
+    "5": -6,
+    "8": 181,
+    "10": -7144,
+    "11": 50665
+  },
+  "integerDividedObstruction": 11294240224,
+  "integerObstructionValuation": 3,
+  "scope": "two small exact examples; no census and no row-9 exclusion"
+}

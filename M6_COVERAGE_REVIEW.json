@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "Code-difference, canonical-support and log-coverage review; no census rerun",
+  "supportCount": 51,
+  "split": [
+    46,
+    5
+  ],
+  "markingsPerSupport": 24137569,
+  "totalMarkings": 1231016019,
+  "survivors": 686,
+  "survivorsBySegment": [
+    652,
+    34
+  ],
+  "fullReplay": {
+    "status": "COMPLETE",
+    "byteIdenticalToCombined": true
+  },
+  "arithmeticBounds": {
+    "fieldOrder": 2015993900449,
+    "matrixDotProduct": 2560,
+    "largestBinomialIntermediateN20": 1847560,
+    "largestWeight": 444600
+  },
+  "sourceSHA256": "bf4c3066bc57c3a74844c99ee74e91505a5f13c59183bea4bb44a8b3923b9873",
+  "combinedOutputSHA256": "bcf48a0913d9233603ceef3cb2c89bdf0ecc51554eef4a8e144b1152670d2be6",
+  "presentationSHA256": "bc59991844eadd06a1d8a1946c4fc545f8515c65dcb5c2f7f886f9390b55d04c"
+}

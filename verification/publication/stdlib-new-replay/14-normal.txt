@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "scope": "Independent finite coefficient/residue checks; valuation proof reviewed separately.",
+  "proofSHA256": "d6bc0338a391347061745e57a9559dd745bd63d1c2c6c9f918426a7c38645ea0",
+  "residueCases": [
+    [
+      5,
+      14,
+      2
+    ],
+    [
+      5,
+      8,
+      6
+    ],
+    [
+      9,
+      7,
+      5
+    ],
+    [
+      9,
+      6,
+      0
+    ]
+  ],
+  "mod289Values": {
+    "f": [
+      0,
+      170
+    ],
+    "fprime": [
+      130,
+      283
+    ],
+    "G10": [
+      204,
+      0
+    ],
+    "G10prime": [
+      0,
+      92
+    ]
+  },
+  "quarticDiscriminant": 4725,
+  "finalImpossibleSquare": 2
+}

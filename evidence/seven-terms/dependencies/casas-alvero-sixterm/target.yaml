@@ -1,0 +1,19 @@
+date: 2026-09-23
+objective: attempt a seven-term lower bound for centered characteristic-zero degree-20 Casas-Alvero polynomials
+statement: every nontrivial monic centered degree-20 CA polynomial has at least seven nonzero monomials, including the leading term
+status: unproved target
+centering: translate the root of the nineteenth derivative to zero
+deficiency_convention: coefficient at index m multiplies X^(20-m)
+remaining_six_total_term_supports:
+  A: [3, 4, 10, 18, 19]
+  B: [3, 10, 16, 17, 19]
+  C: [4, 5, 10, 17, 19]
+coefficient_scope: all nonzero on exact characteristic-zero support; modular reductions may lose any subset
+finite_characteristic_convention: Hasse derivatives
+source: ../casas-alvero-structural/sixterm/frontier.json
+fingerprints: fingerprints.json contains three exact families, binomial vectors, and visible modular seed exponents at 11 and 13
+aliases: [Casas-Alvero, sparse polynomial, six monomials, five coefficient support, Hasse common-root conditions, prescribed root witnesses, Hermite-Birkhoff incidence]
+generating_function_and_spectrum: not applicable; this target is a finite list of polynomial supports, not a sequence or matrix kernel
+contribution_units: [specific exclusions, seven-term necessary condition if all three excluded, reusable structural argument if found]
+excluded_claims: [full conjecture, unrestricted degree-20 solution, historical priority without evidence, publication readiness]
+release: no publication or outreach

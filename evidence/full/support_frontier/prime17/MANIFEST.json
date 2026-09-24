@@ -1,0 +1,11 @@
+{
+  "CLASSIFICATION.md": "e36315780106ed45b8ef63516ce39d8bbf60c814c2e8ee8cd31f04947ca138b6",
+  "REPORT.md": "930f3cb180ba99fa21c2b396d86493d77937eeac4c543741ddcf29eb706b5e45",
+  "check_classification.py": "11929e5b70bc87a16cea458f0b5af73dd98b20fdb3b840473cd3ca87f5f405ab",
+  "verification-normal.json": "837f2c158a920a10db53cb1911bfabac2ef022500c8fcb202360e45333eb80d1",
+  "verification-optimized.json": "7e2171340b8b288fa2b4aeb0579fb574aba37973f1e413ef59e9e3ac865fc0c7",
+  "certificate_c_nonzero.sing.log": "402669dc3f41c297dee08bf1760b4c529b08f4820be0428c50a1b472867dbb09",
+  "certificate_u_one.sing.log": "2bce5d4a7ec4090f26d17bca785b85c0729af9b4b13de64aeb6d431d5da2363d",
+  "certificate_u_other.sing.log": "b85c415aeae45438eb99c7c3260d164f38fa37b4efbb61f05dc733586e317e10",
+  "certificate_c_zero.sing.log": "bfea38e4dc1b953831a3be8de58036b5a87a660a93e743b45d6152ba8b68959b"
+}

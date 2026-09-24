@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "scope": "finite exact audit certificates only",
+  "examples": [
+    {
+      "characteristic": 5,
+      "global_mu": 3,
+      "local_mu": 2,
+      "unique_minimal_prime": "(ell,u)",
+      "embedded_prime": "(ell,u,t)",
+      "normal_ideal_monomials": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "torsion_checked_in": "I / pI"
+    },
+    {
+      "characteristic": 7,
+      "global_mu": 3,
+      "local_mu": 2,
+      "unique_minimal_prime": "(ell,u)",
+      "embedded_prime": "(ell,u,t)",
+      "normal_ideal_monomials": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "torsion_checked_in": "I / pI"
+    }
+  ],
+  "distinct_entry_tuples_per_field": 24,
+  "literal_paper_quotient": {
+    "characteristic": 5,
+    "line": [
+      3,
+      1,
+      3
+    ],
+    "r": 2,
+    "J_plus": "(L,B,3sU+2U^2,U^3)",
+    "m_plus": "(L,U,B)",
+    "nonzero_class": "U^3",
+    "annihilator": "s"
+  },
+  "characteristic_zero_supporting_inference": {
+    "field": "Q",
+    "prime": "(u,v)",
+    "D_local": "(u^2,v^2)",
+    "nonzero_nilpotent": "uv",
+    "unit_polynomial": "w^3+uv*z",
+    "scope": "abstract supporting inference; not a Casas-Alvero ideal"
+  },
+  "negative_controls": {
+    "wrong_cubic_coefficient": true,
+    "wrong_local_generator": true,
+    "zero_torsion_witness_rejected": true,
+    "excluded_characteristic_three_rejected": true
+  }
+}

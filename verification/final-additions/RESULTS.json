@@ -1,0 +1,30 @@
+[
+  {
+    "script": "check_structural_argument.py",
+    "mode": "normal",
+    "status": "PASS",
+    "sourceSHA256": "18a9975461afb5f8e316feed824f972346153bcb204d6c83b41ebf5c498457d0",
+    "cwd": "/tmp"
+  },
+  {
+    "script": "check_structural_argument.py",
+    "mode": "optimized",
+    "status": "PASS",
+    "sourceSHA256": "18a9975461afb5f8e316feed824f972346153bcb204d6c83b41ebf5c498457d0",
+    "cwd": "/tmp"
+  },
+  {
+    "script": "check_row8_seven_term.py",
+    "mode": "normal",
+    "status": "PASS",
+    "sourceSHA256": "593d9e24a8164e3271de4d7e21a389b714a14c881827529df15ca4be8b87d5e2",
+    "cwd": "/tmp"
+  },
+  {
+    "script": "check_row8_seven_term.py",
+    "mode": "optimized",
+    "status": "PASS",
+    "sourceSHA256": "593d9e24a8164e3271de4d7e21a389b714a14c881827529df15ca4be8b87d5e2",
+    "cwd": "/tmp"
+  }
+]

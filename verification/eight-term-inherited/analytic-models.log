@@ -1,0 +1,234 @@
+{
+  "status": "PASS",
+  "family": [
+    {
+      "degree": 4,
+      "conditions_satisfied": 2,
+      "failed_hasse_order": 2,
+      "root_radius_over_node_radius": 2
+    },
+    {
+      "degree": 5,
+      "conditions_satisfied": 3,
+      "failed_hasse_order": 3,
+      "root_radius_over_node_radius": 3
+    },
+    {
+      "degree": 6,
+      "conditions_satisfied": 4,
+      "failed_hasse_order": 4,
+      "root_radius_over_node_radius": 4
+    },
+    {
+      "degree": 7,
+      "conditions_satisfied": 5,
+      "failed_hasse_order": 5,
+      "root_radius_over_node_radius": 5
+    },
+    {
+      "degree": 8,
+      "conditions_satisfied": 6,
+      "failed_hasse_order": 6,
+      "root_radius_over_node_radius": 6
+    },
+    {
+      "degree": 9,
+      "conditions_satisfied": 7,
+      "failed_hasse_order": 7,
+      "root_radius_over_node_radius": 7
+    },
+    {
+      "degree": 10,
+      "conditions_satisfied": 8,
+      "failed_hasse_order": 8,
+      "root_radius_over_node_radius": 8
+    },
+    {
+      "degree": 11,
+      "conditions_satisfied": 9,
+      "failed_hasse_order": 9,
+      "root_radius_over_node_radius": 9
+    },
+    {
+      "degree": 12,
+      "conditions_satisfied": 10,
+      "failed_hasse_order": 10,
+      "root_radius_over_node_radius": 10
+    },
+    {
+      "degree": 13,
+      "conditions_satisfied": 11,
+      "failed_hasse_order": 11,
+      "root_radius_over_node_radius": 11
+    },
+    {
+      "degree": 14,
+      "conditions_satisfied": 12,
+      "failed_hasse_order": 12,
+      "root_radius_over_node_radius": 12
+    },
+    {
+      "degree": 15,
+      "conditions_satisfied": 13,
+      "failed_hasse_order": 13,
+      "root_radius_over_node_radius": 13
+    },
+    {
+      "degree": 16,
+      "conditions_satisfied": 14,
+      "failed_hasse_order": 14,
+      "root_radius_over_node_radius": 14
+    },
+    {
+      "degree": 17,
+      "conditions_satisfied": 15,
+      "failed_hasse_order": 15,
+      "root_radius_over_node_radius": 15
+    },
+    {
+      "degree": 18,
+      "conditions_satisfied": 16,
+      "failed_hasse_order": 16,
+      "root_radius_over_node_radius": 16
+    },
+    {
+      "degree": 19,
+      "conditions_satisfied": 17,
+      "failed_hasse_order": 17,
+      "root_radius_over_node_radius": 17
+    },
+    {
+      "degree": 20,
+      "conditions_satisfied": 18,
+      "failed_hasse_order": 18,
+      "root_radius_over_node_radius": 18
+    },
+    {
+      "degree": 21,
+      "conditions_satisfied": 19,
+      "failed_hasse_order": 19,
+      "root_radius_over_node_radius": 19
+    },
+    {
+      "degree": 22,
+      "conditions_satisfied": 20,
+      "failed_hasse_order": 20,
+      "root_radius_over_node_radius": 20
+    },
+    {
+      "degree": 23,
+      "conditions_satisfied": 21,
+      "failed_hasse_order": 21,
+      "root_radius_over_node_radius": 21
+    },
+    {
+      "degree": 24,
+      "conditions_satisfied": 22,
+      "failed_hasse_order": 22,
+      "root_radius_over_node_radius": 22
+    },
+    {
+      "degree": 25,
+      "conditions_satisfied": 23,
+      "failed_hasse_order": 23,
+      "root_radius_over_node_radius": 23
+    },
+    {
+      "degree": 26,
+      "conditions_satisfied": 24,
+      "failed_hasse_order": 24,
+      "root_radius_over_node_radius": 24
+    },
+    {
+      "degree": 27,
+      "conditions_satisfied": 25,
+      "failed_hasse_order": 25,
+      "root_radius_over_node_radius": 25
+    },
+    {
+      "degree": 28,
+      "conditions_satisfied": 26,
+      "failed_hasse_order": 26,
+      "root_radius_over_node_radius": 26
+    },
+    {
+      "degree": 29,
+      "conditions_satisfied": 27,
+      "failed_hasse_order": 27,
+      "root_radius_over_node_radius": 27
+    },
+    {
+      "degree": 30,
+      "conditions_satisfied": 28,
+      "failed_hasse_order": 28,
+      "root_radius_over_node_radius": 28
+    },
+    {
+      "degree": 31,
+      "conditions_satisfied": 29,
+      "failed_hasse_order": 29,
+      "root_radius_over_node_radius": 29
+    },
+    {
+      "degree": 32,
+      "conditions_satisfied": 30,
+      "failed_hasse_order": 30,
+      "root_radius_over_node_radius": 30
+    },
+    {
+      "degree": 33,
+      "conditions_satisfied": 31,
+      "failed_hasse_order": 31,
+      "root_radius_over_node_radius": 31
+    },
+    {
+      "degree": 34,
+      "conditions_satisfied": 32,
+      "failed_hasse_order": 32,
+      "root_radius_over_node_radius": 32
+    },
+    {
+      "degree": 35,
+      "conditions_satisfied": 33,
+      "failed_hasse_order": 33,
+      "root_radius_over_node_radius": 33
+    },
+    {
+      "degree": 36,
+      "conditions_satisfied": 34,
+      "failed_hasse_order": 34,
+      "root_radius_over_node_radius": 34
+    },
+    {
+      "degree": 37,
+      "conditions_satisfied": 35,
+      "failed_hasse_order": 35,
+      "root_radius_over_node_radius": 35
+    },
+    {
+      "degree": 38,
+      "conditions_satisfied": 36,
+      "failed_hasse_order": 36,
+      "root_radius_over_node_radius": 36
+    },
+    {
+      "degree": 39,
+      "conditions_satisfied": 37,
+      "failed_hasse_order": 37,
+      "root_radius_over_node_radius": 37
+    },
+    {
+      "degree": 40,
+      "conditions_satisfied": 38,
+      "failed_hasse_order": 38,
+      "root_radius_over_node_radius": 38
+    }
+  ],
+  "degree_five": {
+    "status": "PASS",
+    "failed_hasse_order": 1,
+    "cubic_discriminant": -2096
+  },
+  "degree20_squared_radius_lower_bound": "379/18",
+  "degree20_cubed_radius_lower_bound": "6841/18"
+}

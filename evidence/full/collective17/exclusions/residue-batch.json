@@ -1,0 +1,587 @@
+{
+  "scope": "Complete residue enumeration for seven canonical systems; higher-precision lifting separate.",
+  "presentationSHA256": "bc59991844eadd06a1d8a1946c4fc545f8515c65dcb5c2f7f886f9390b55d04c",
+  "fieldPolynomialAscending": [
+    -8,
+    7,
+    4,
+    -6,
+    1,
+    0,
+    6,
+    0,
+    -1,
+    4,
+    1
+  ],
+  "nonzeroRoots": [
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      11,
+      11,
+      14,
+      12,
+      12,
+      16,
+      14,
+      4
+    ],
+    [
+      1,
+      12,
+      7,
+      5,
+      4,
+      0,
+      8,
+      12,
+      12,
+      9
+    ],
+    [
+      2,
+      6,
+      11,
+      0,
+      3,
+      13,
+      10,
+      9,
+      4,
+      12
+    ],
+    [
+      5,
+      11,
+      6,
+      10,
+      0,
+      4,
+      3,
+      4,
+      5,
+      14
+    ],
+    [
+      6,
+      4,
+      2,
+      12,
+      5,
+      13,
+      4,
+      8,
+      12,
+      14
+    ],
+    [
+      6,
+      9,
+      8,
+      10,
+      13,
+      3,
+      10,
+      11,
+      8,
+      4
+    ],
+    [
+      7,
+      11,
+      2,
+      13,
+      6,
+      12,
+      10,
+      9,
+      1,
+      11
+    ],
+    [
+      9,
+      12,
+      8,
+      12,
+      11,
+      14,
+      4,
+      7,
+      13,
+      5
+    ],
+    [
+      11,
+      8,
+      6,
+      16,
+      13,
+      1,
+      11,
+      5,
+      5,
+      3
+    ],
+    [
+      13,
+      6,
+      3,
+      7,
+      16,
+      11,
+      3,
+      8,
+      0,
+      2
+    ],
+    [
+      14,
+      3,
+      2,
+      6,
+      2,
+      9,
+      8,
+      10,
+      15,
+      0
+    ],
+    [
+      14,
+      11,
+      0,
+      7,
+      0,
+      3,
+      10,
+      15,
+      2,
+      5
+    ],
+    [
+      14,
+      14,
+      4,
+      14,
+      16,
+      5,
+      1,
+      8,
+      6,
+      12
+    ],
+    [
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      15,
+      11,
+      15,
+      13,
+      16,
+      2,
+      8,
+      14,
+      5,
+      7
+    ]
+  ],
+  "frobeniusPermutation": [
+    3,
+    1,
+    6,
+    12,
+    9,
+    4,
+    5,
+    11,
+    13,
+    10,
+    16,
+    8,
+    2,
+    14,
+    7,
+    15,
+    0
+  ],
+  "cases": [
+    {
+      "support": [
+        3,
+        4,
+        10,
+        13,
+        18,
+        19
+      ],
+      "active": [
+        4,
+        10,
+        13
+      ],
+      "markingsChecked": 4913,
+      "residueTStreamSHA256": "d7ad642c66d8126796e1addd0a60a1c5d70395a935a48a6f9d6910e5164cc9c0",
+      "survivors": [
+        [
+          1,
+          1,
+          15
+        ]
+      ],
+      "frobeniusOrbits": [
+        {
+          "representative": [
+            1,
+            1,
+            15
+          ],
+          "size": 1
+        }
+      ],
+      "elapsedSeconds": 0.013467457989463583
+    },
+    {
+      "support": [
+        3,
+        4,
+        5,
+        12,
+        15,
+        18,
+        19
+      ],
+      "active": [
+        4,
+        5,
+        12,
+        15
+      ],
+      "markingsChecked": 83521,
+      "residueTStreamSHA256": "e44f5c74b708b93493e2bcb90c506dea791cdf46a909b81f40de4b552f78ff0c",
+      "survivors": [
+        [
+          1,
+          15,
+          1,
+          1
+        ]
+      ],
+      "frobeniusOrbits": [
+        {
+          "representative": [
+            1,
+            15,
+            1,
+            1
+          ],
+          "size": 1
+        }
+      ],
+      "elapsedSeconds": 0.2843555409926921
+    },
+    {
+      "support": [
+        3,
+        4,
+        7,
+        10,
+        15,
+        18,
+        19
+      ],
+      "active": [
+        4,
+        7,
+        10,
+        15
+      ],
+      "markingsChecked": 83521,
+      "residueTStreamSHA256": "eaf025673da0e839c0e3ed0a7d4c3d8659dd02266ed91591bb35e6a0bb2d8e0c",
+      "survivors": [],
+      "frobeniusOrbits": [],
+      "elapsedSeconds": 0.28696433300501667
+    },
+    {
+      "support": [
+        3,
+        4,
+        9,
+        10,
+        12,
+        18,
+        19
+      ],
+      "active": [
+        4,
+        9,
+        10,
+        12
+      ],
+      "markingsChecked": 83521,
+      "residueTStreamSHA256": "defdef3ac3861e56b43066aaf820be3cb8d312738b886592db419474d5702cdd",
+      "survivors": [],
+      "frobeniusOrbits": [],
+      "elapsedSeconds": 0.2917581250076182
+    },
+    {
+      "support": [
+        3,
+        4,
+        9,
+        10,
+        14,
+        18,
+        19
+      ],
+      "active": [
+        4,
+        9,
+        10,
+        14
+      ],
+      "markingsChecked": 83521,
+      "residueTStreamSHA256": "bf0d7aa36c6c179b46915040f8c6acb5b244a4bbb4efbe05844cdb91f36d1378",
+      "survivors": [
+        [
+          15,
+          0,
+          1,
+          15
+        ],
+        [
+          15,
+          1,
+          1,
+          15
+        ],
+        [
+          15,
+          2,
+          1,
+          15
+        ],
+        [
+          15,
+          3,
+          1,
+          15
+        ],
+        [
+          15,
+          4,
+          1,
+          15
+        ],
+        [
+          15,
+          5,
+          1,
+          15
+        ],
+        [
+          15,
+          6,
+          1,
+          15
+        ],
+        [
+          15,
+          7,
+          1,
+          15
+        ],
+        [
+          15,
+          8,
+          1,
+          15
+        ],
+        [
+          15,
+          9,
+          1,
+          15
+        ],
+        [
+          15,
+          10,
+          1,
+          15
+        ],
+        [
+          15,
+          11,
+          1,
+          15
+        ],
+        [
+          15,
+          12,
+          1,
+          15
+        ],
+        [
+          15,
+          13,
+          1,
+          15
+        ],
+        [
+          15,
+          14,
+          1,
+          15
+        ],
+        [
+          15,
+          15,
+          1,
+          15
+        ],
+        [
+          15,
+          16,
+          1,
+          15
+        ]
+      ],
+      "frobeniusOrbits": [
+        {
+          "representative": [
+            15,
+            0,
+            1,
+            15
+          ],
+          "size": 10
+        },
+        {
+          "representative": [
+            15,
+            1,
+            1,
+            15
+          ],
+          "size": 1
+        },
+        {
+          "representative": [
+            15,
+            7,
+            1,
+            15
+          ],
+          "size": 5
+        },
+        {
+          "representative": [
+            15,
+            15,
+            1,
+            15
+          ],
+          "size": 1
+        }
+      ],
+      "elapsedSeconds": 0.2868567499972414
+    },
+    {
+      "support": [
+        3,
+        5,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "active": [
+        5,
+        12,
+        15,
+        16
+      ],
+      "markingsChecked": 83521,
+      "residueTStreamSHA256": "2c3f8c64d1aa1fc9bdec211f7a7957bdaa28d4df713efce605d92255ebef5ed6",
+      "survivors": [
+        [
+          15,
+          15,
+          15,
+          15
+        ]
+      ],
+      "frobeniusOrbits": [
+        {
+          "representative": [
+            15,
+            15,
+            15,
+            15
+          ],
+          "size": 1
+        }
+      ],
+      "elapsedSeconds": 0.2894904169952497
+    },
+    {
+      "support": [
+        3,
+        10,
+        11,
+        15,
+        16,
+        18,
+        19
+      ],
+      "active": [
+        10,
+        11,
+        15,
+        16
+      ],
+      "markingsChecked": 83521,
+      "residueTStreamSHA256": "c8bc3b3782aafdeca0081056fe7abf99d6a869f0908d88e261931c412b6e77ac",
+      "survivors": [],
+      "frobeniusOrbits": [],
+      "elapsedSeconds": 0.2827488750044722
+    }
+  ],
+  "totalMarkingsChecked": 506039,
+  "elapsedSeconds": 1.756953208008781
+}

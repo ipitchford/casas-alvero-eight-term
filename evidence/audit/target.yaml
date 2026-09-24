@@ -1,0 +1,49 @@
+target_id: casas-alvero-degree20-centered-five-term-bound
+search_date: '2026-09-23'
+intended_contribution_unit: theorem
+claim:
+  exact_statement: |
+    Let f be a characteristic-zero polynomial of degree 20 sharing a
+    nonconstant factor with every derivative of orders 1 through 19.
+    Translate the unique root of f^(19) to zero and scale f to be monic.
+    Either this normal form is X^20, or it has at least five nonzero
+    monomials, including the leading monomial.
+  exclusions:
+    - No solution of the full degree-20 or all-degree Casas-Alvero conjecture.
+    - No claim about the support size before centering.
+    - No historical priority claim or external referee certification.
+source:
+  originating_reference: Casas-Alvero conjecture; CLO (2014), Theorem 2 and Proposition 15
+  url: 'https://arxiv.org/html/1208.5404'
+normalisation:
+  indices: 'm denotes the coefficient of X^(20-m); derivative order is 20-m.'
+  scaling: 'Mean root at zero, leading coefficient one, chosen Hasse-15 witness scaled to one.'
+  basis_order: 'Exact monomial identities; no monomial-order assumption in the verifier.'
+  symmetries:
+    - Root witness collisions are allowed.
+    - Arbitrary translations do not preserve the support count.
+sequences: []
+generating_functions: []
+matrices:
+  - name: CLO determinant for missing coefficient indices J
+    formula: 'Rows [-1, j*binom(j-2,k-2) for k in J, zero for k>j]; last row [-1,(-1)^k].'
+    tested_residues_mod19: [15, 7, 10, 0, 12, 13]
+aliases:
+  algebra: [Casas-Alvero, sparse, lacunary, fewnomial, tetranomial, quadrinomial]
+  equivalent_support: ['5,16,19', 'exponents 20,15,4,1', 'active derivative orders 15,4,1']
+known_invariants:
+  remaining_family: 'X^20+a*X^15+b*X^4+c*X, abc nonzero'
+  normalized_a: -15504
+  integral_u_leading_coefficient: -4844
+  certificate_prime: 31
+  finite_module_generator_bound: 361
+  certificate_sha256: e63069da3f19151f84cd44ec9f5c46e55d6d806e743c0ccbd25827c6214020a0
+  audit_ideals: ['F5: (ell,u*t,u^3)', 'F7: (ell,u^2,u*t^2)']
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora: [arXiv, primary journal pages, general scholarly web search]
+  limits: 'Formula indexing incomplete; unpublished and non-indexed cases not excluded; no author contact.'
+verdict:
+  mathematical_scope: complete sparse exclusion, internally audited
+  historical_novelty: unresolved after bounded no-hit search
+  significance: modest partial advance if novel

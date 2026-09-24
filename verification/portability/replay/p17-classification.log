@@ -1,0 +1,661 @@
+{"chart": "c_nonzero", "status": "PASS"}
+{"chart": "u_one", "status": "PASS"}
+{"chart": "u_other", "status": "PASS"}
+{"chart": "c_zero", "status": "PASS"}
+{
+  "field": "F17[alpha]/(alpha^2-3)",
+  "charts": {
+    "c_nonzero": {
+      "sha256": "402669dc3f41c297dee08bf1760b4c529b08f4820be0428c50a1b472867dbb09",
+      "membershipIdentities": 2,
+      "resultants": [
+        {
+          "hasseOrder": 18,
+          "bidegreeBound": [
+            22,
+            2
+          ],
+          "exactEvaluations": 69
+        },
+        {
+          "hasseOrder": 2,
+          "bidegreeBound": [
+            18,
+            38
+          ],
+          "exactEvaluations": 741
+        },
+        {
+          "hasseOrder": 1,
+          "bidegreeBound": [
+            39,
+            39
+          ],
+          "exactEvaluations": 1600
+        }
+      ],
+      "certificateMonomials": 723
+    },
+    "u_one": {
+      "sha256": "2bce5d4a7ec4090f26d17bca785b85c0729af9b4b13de64aeb6d431d5da2363d",
+      "membershipIdentities": 1,
+      "resultants": [
+        {
+          "hasseOrder": 18,
+          "bidegreeBound": [
+            22,
+            2
+          ],
+          "exactEvaluations": 69
+        },
+        {
+          "hasseOrder": 2,
+          "bidegreeBound": [
+            18,
+            38
+          ],
+          "exactEvaluations": 741
+        },
+        {
+          "hasseOrder": 1,
+          "bidegreeBound": [
+            39,
+            39
+          ],
+          "exactEvaluations": 1600
+        }
+      ],
+      "certificateMonomials": 2425
+    },
+    "u_other": {
+      "sha256": "b85c415aeae45438eb99c7c3260d164f38fa37b4efbb61f05dc733586e317e10",
+      "membershipIdentities": 3,
+      "resultants": [
+        {
+          "hasseOrder": 18,
+          "bidegreeBound": [
+            44,
+            22
+          ],
+          "exactEvaluations": 1035
+        },
+        {
+          "hasseOrder": 2,
+          "bidegreeBound": [
+            36,
+            38
+          ],
+          "exactEvaluations": 1443
+        },
+        {
+          "hasseOrder": 1,
+          "bidegreeBound": [
+            78,
+            39
+          ],
+          "exactEvaluations": 3160
+        }
+      ],
+      "certificateMonomials": 18138
+    },
+    "c_zero": {
+      "sha256": "bfea38e4dc1b953831a3be8de58036b5a87a660a93e743b45d6152ba8b68959b",
+      "membershipIdentities": 3,
+      "resultants": [
+        {
+          "hasseOrder": 17,
+          "bidegreeBound": [
+            23,
+            3
+          ],
+          "exactEvaluations": 96
+        },
+        {
+          "hasseOrder": 2,
+          "bidegreeBound": [
+            18,
+            38
+          ],
+          "exactEvaluations": 741
+        },
+        {
+          "hasseOrder": 1,
+          "bidegreeBound": [
+            39,
+            39
+          ],
+          "exactEvaluations": 1600
+        }
+      ],
+      "certificateMonomials": 15403
+    }
+  },
+  "seeds": [
+    {
+      "coefficients": [
+        0,
+        0,
+        16,
+        0,
+        0
+      ],
+      "markedMonicGcdsLowToHigh": {
+        "1": [
+          0,
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "2": [
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "3": [
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "17": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "18": [
+          0,
+          0,
+          1
+        ],
+        "19": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "coefficients": [
+        14,
+        0,
+        16,
+        0,
+        3
+      ],
+      "markedMonicGcdsLowToHigh": {
+        "1": [
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "2": [
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "3": [
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "17": [
+          0,
+          14,
+          0,
+          1
+        ],
+        "18": [
+          16,
+          1
+        ],
+        "19": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "coefficients": [
+        14,
+        8,
+        16,
+        12,
+        0
+      ],
+      "markedMonicGcdsLowToHigh": {
+        "1": [
+          0,
+          1
+        ],
+        "2": [
+          5,
+          1
+        ],
+        "3": [
+          16,
+          1
+        ],
+        "17": [
+          5,
+          1
+        ],
+        "18": [
+          16,
+          1
+        ],
+        "19": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "coefficients": [
+        14,
+        0,
+        0,
+        11,
+        8
+      ],
+      "markedMonicGcdsLowToHigh": {
+        "1": [
+          3,
+          3,
+          1
+        ],
+        "2": [
+          11,
+          1
+        ],
+        "3": [
+          0,
+          1
+        ],
+        "17": [
+          0,
+          1
+        ],
+        "18": [
+          16,
+          1
+        ],
+        "19": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "coefficients": [
+        14,
+        2,
+        0,
+        0,
+        0
+      ],
+      "markedMonicGcdsLowToHigh": {
+        "1": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          1
+        ],
+        "2": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "3": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "17": [
+          2,
+          14,
+          0,
+          1
+        ],
+        "18": [
+          16,
+          1
+        ],
+        "19": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "coefficients": [
+        14,
+        2,
+        0,
+        11,
+        6
+      ],
+      "markedMonicGcdsLowToHigh": {
+        "1": [
+          7,
+          1
+        ],
+        "2": [
+          11,
+          1
+        ],
+        "3": [
+          0,
+          1
+        ],
+        "17": [
+          16,
+          1
+        ],
+        "18": [
+          16,
+          1
+        ],
+        "19": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "coefficients": [
+        14,
+        2,
+        0,
+        14,
+        3
+      ],
+      "markedMonicGcdsLowToHigh": {
+        "1": [
+          10,
+          1
+        ],
+        "2": [
+          16,
+          1
+        ],
+        "3": [
+          0,
+          1
+        ],
+        "17": [
+          16,
+          1
+        ],
+        "18": [
+          16,
+          1
+        ],
+        "19": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "coefficients": [
+        0,
+        16,
+        0,
+        0,
+        0
+      ],
+      "markedMonicGcdsLowToHigh": {
+        "1": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "2": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "3": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "17": [
+          16,
+          0,
+          0,
+          1
+        ],
+        "18": [
+          0,
+          0,
+          1
+        ],
+        "19": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "coefficients": [
+        0,
+        16,
+        0,
+        14,
+        3
+      ],
+      "markedMonicGcdsLowToHigh": {
+        "1": [
+          1,
+          15,
+          1
+        ],
+        "2": [
+          16,
+          1
+        ],
+        "3": [
+          0,
+          1
+        ],
+        "17": [
+          16,
+          1
+        ],
+        "18": [
+          0,
+          1
+        ],
+        "19": [
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "status": "PASS",
+  "elapsedSeconds": 1.1141954170016106
+}

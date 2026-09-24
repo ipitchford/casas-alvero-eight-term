@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "primitive_content": "1",
+  "content_factorization": {},
+  "denominator_factorization": "z**24*(35*z - 51)**12*(3*z**6 - 595)**2",
+  "numerator_degree": 72,
+  "denominator_degree": 48,
+  "U": "(35*z**18 - 49694995)/(250563*z**6 - 49694995)",
+  "H_matches_root": true
+}

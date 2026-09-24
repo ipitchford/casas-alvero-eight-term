@@ -1,0 +1,29 @@
+--- reviewed/PAPER.md
++++ final/PAPER.md
+@@ -192,7 +192,7 @@
+ 
+ ## A recurring precision principle
+ 
+-**Lemma 3 (unit-Jacobian precision).** Let \(\mathcal O\) be a valued ring, let \(F\in\mathcal O[X_1,\ldots,X_n]^n\), and let \(x,x_0\in\mathcal O^n\) have the same residue. Suppose \(F(x)=0\), \(\det DF(x_0)\) is a unit, and every coordinate of \(F(x_0)\) has valuation at least \(q>0\). Then every coordinate of \(x-x_0\) has valuation at least \(q\). The conclusion remains valid in any valued extension.
++**Lemma 3 (unit-Jacobian precision).** Let \(\mathcal O\) be the valuation ring of a nonarchimedean valued field, let \(F\in\mathcal O[X_1,\ldots,X_n]^n\), and let \(x,x_0\in\mathcal O^n\) have the same residue. Suppose \(F(x)=0\), \(\det DF(x_0)\) is a unit, and every coordinate of \(F(x_0)\) has valuation at least \(q>0\). Then every coordinate of \(x-x_0\) has valuation at least \(q\). The conclusion remains valid over the extended valuation ring in any valued field extension.
+ 
+ **Proof.** If the minimum coordinate valuation \(r\) of \(x-x_0\) were less than \(q\), then \(r>0\). Multiplication by the integral matrix \(DF(x_0)\) with integral inverse preserves that minimum valuation. In the Taylor equation, the constant term has valuation at least \(q\), and all terms of degree at least two in the difference have valuation at least \(2r>r\). They cannot cancel a linear coordinate of valuation \(r\). This contradiction proves the claim without assuming an integer-valued valuation. \(\square\)
+ 
+@@ -1765,7 +1765,7 @@
+ 
+ # Data, code, and declarations
+ 
+-**Data and code availability.** The review archive contains the PDF, editable Markdown, standalone LaTeX, proof notes, certificate data, executable checkers, audit records, and a SHA-256 manifest. The README identifies the current proof and reproduction commands. No public repository, permanent identifier, submission, or publication is claimed by preparing this package.
++**Data and code availability.** The review archive contains the PDF, editable Markdown, standalone LaTeX, proof notes, certificate data, executable checkers, audit records, and a SHA-256 manifest. The README identifies the current proof and reproduction commands. The versioned research archive is identified by DOI [10.5281/zenodo.22943640](https://doi.org/10.5281/zenodo.22943640); source and exact replay are available at [https://github.com/ipitchford/casas-alvero-eight-term](https://github.com/ipitchford/casas-alvero-eight-term). This archival identity does not constitute external refereeing.
+ 
+ **Review provenance.** A supplied arithmetic-review report concerns earlier identities. Its third-party source files are retained privately and are not redistributed in this release; they are not dependencies of the theorem. The latest supplied review reports additional reruns, but its linked audit archive was not available at publication intake. The new theorem has separate internal argument audits, independent arithmetic reconstructions, and a final coverage audit. These do not constitute external peer review of the present manuscript.
+ 
+@@ -2388,7 +2388,7 @@
+ \[
+ (0,0),\quad(1,0),\quad(8,9),\quad(8,8).
+ \]
+-It checks all 1,216 markings for the seven supports in the closing table. None satisfies the divided relation. The source, full histograms, and normal and optimized receipts are in `new-results/check_row8_seven_term.py` and its companion records.
++It checks all 1,216 markings for the seven supports in the closing table. None satisfies the divided relation. The source, histogram digests and assignment counts, and normal and optimized receipts are in `new-results/check_row8_seven_term.py` and its companion records.
+ 
+ ## Row 4 with middle support \(\{4,10,12\}\)
+ 

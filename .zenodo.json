@@ -1,0 +1,29 @@
+{
+  "title": "An eight-term bound for degree-twenty Casas\u2013Alvero polynomials",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "version": "0.1.0-candidate",
+  "license": "cc-zero",
+  "description": "Unrefereed candidate: every nontrivial characteristic-zero degree-twenty Casas\u2013Alvero polynomial has at least eight monomials after centering at its nineteenth-derivative root, counting the leading term. Written proof, exact finite checks and producer-involved internal review. The unrestricted degree-twenty and general conjectures are not solved. No formal verification, external journal acceptance or certified priority is claimed. Original prose/data: CC0; original code: MIT; see LICENSES.md.",
+  "doi": "10.5281/zenodo.22943640",
+  "publication_date": "2026-09-24",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/casas-alvero-eight-term",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "keywords": [
+    "Casas-Alvero conjecture",
+    "polynomial sparsity",
+    "valuation theory",
+    "computer-assisted mathematics"
+  ]
+}

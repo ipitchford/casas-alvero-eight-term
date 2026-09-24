@@ -1,0 +1,113 @@
+{
+  "scope": "two supports, three primes, each <=20s; affine modular results alone do not imply characteristic-zero emptiness",
+  "cases": [
+    {
+      "support": [
+        4,
+        10,
+        17,
+        19
+      ],
+      "prime": 31,
+      "seconds": 20.014710374998685,
+      "limitSeconds": 20,
+      "status": "TIMEOUT",
+      "basisResult": "UNDETERMINED",
+      "completeCertificate": false,
+      "sourceSha256": "ee2b6bbde39148e268c58f3e045f4661da975913831b98148f2e2633080c18d2",
+      "logSha256": "f9f1e3c0affca7f200bc30621ab998a2327a1684e807ae367c59a9e257dfd00e",
+      "certificateBytes": 0,
+      "characteristicZeroConclusion": false
+    },
+    {
+      "support": [
+        4,
+        10,
+        17,
+        19
+      ],
+      "prime": 37,
+      "seconds": 20.057334791999892,
+      "limitSeconds": 20,
+      "status": "TIMEOUT",
+      "basisResult": "UNDETERMINED",
+      "completeCertificate": false,
+      "sourceSha256": "e10040558f1252f87e9482dcc29f5624c5fee7a559557c84a877c0a1834420c5",
+      "logSha256": "f9f1e3c0affca7f200bc30621ab998a2327a1684e807ae367c59a9e257dfd00e",
+      "certificateBytes": 0,
+      "characteristicZeroConclusion": false
+    },
+    {
+      "support": [
+        4,
+        10,
+        17,
+        19
+      ],
+      "prime": 41,
+      "seconds": 20.011059832999308,
+      "limitSeconds": 20,
+      "status": "TIMEOUT",
+      "basisResult": "UNDETERMINED",
+      "completeCertificate": false,
+      "sourceSha256": "469dd74941fe1e350163d869119920bb0850c65c03faa95374b4ee8b24d7baa8",
+      "logSha256": "f9f1e3c0affca7f200bc30621ab998a2327a1684e807ae367c59a9e257dfd00e",
+      "certificateBytes": 0,
+      "characteristicZeroConclusion": false
+    },
+    {
+      "support": [
+        5,
+        15,
+        16,
+        19
+      ],
+      "prime": 31,
+      "seconds": 20.018828749998647,
+      "limitSeconds": 20,
+      "status": "TIMEOUT",
+      "basisResult": "UNDETERMINED",
+      "completeCertificate": false,
+      "sourceSha256": "600cf7a2a628b4aacdcc87bc332abcbc73d4ac8fae2c42b022dae964db919c2b",
+      "logSha256": "f9f1e3c0affca7f200bc30621ab998a2327a1684e807ae367c59a9e257dfd00e",
+      "certificateBytes": 0,
+      "characteristicZeroConclusion": false
+    },
+    {
+      "support": [
+        5,
+        15,
+        16,
+        19
+      ],
+      "prime": 37,
+      "seconds": 9.380617791000986,
+      "limitSeconds": 20,
+      "status": "PROPER_IDEAL",
+      "basisResult": "PROPER",
+      "completeCertificate": false,
+      "sourceSha256": "b53c1933da4158c09c75b1098e952775884bc44cd36a6e553786d6ead9e9a326",
+      "logSha256": "d3bdeda3345b00e972907f08222cb87025c92c3daf2af67c729e38c814f48e9a",
+      "certificateBytes": 0,
+      "characteristicZeroConclusion": false
+    },
+    {
+      "support": [
+        5,
+        15,
+        16,
+        19
+      ],
+      "prime": 41,
+      "seconds": 20.01195170799474,
+      "limitSeconds": 20,
+      "status": "TIMEOUT",
+      "basisResult": "UNDETERMINED",
+      "completeCertificate": false,
+      "sourceSha256": "b15d32432fee0d4e29068b4f55dbe4b123afa39cbbff03ac40ae652f86bf6e5e",
+      "logSha256": "f9f1e3c0affca7f200bc30621ab998a2327a1684e807ae367c59a9e257dfd00e",
+      "certificateBytes": 0,
+      "characteristicZeroConclusion": false
+    }
+  ]
+}

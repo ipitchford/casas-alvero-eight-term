@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "method": "Independent standard-library Euclidean polynomial gcd",
+  "coefficientPoints": [
+    {
+      "coefficients": [
+        4,
+        6,
+        2,
+        0
+      ],
+      "all19HasseConditions": "PASS",
+      "activeGcdsAscending": {
+        "1": [
+          0,
+          0,
+          1
+        ],
+        "3": [
+          3,
+          1
+        ],
+        "15": [
+          2,
+          7,
+          3,
+          1
+        ],
+        "16": [
+          12,
+          1
+        ]
+      },
+      "primeFieldRootMultiplicities": {
+        "0": 3,
+        "1": 1,
+        "10": 1
+      }
+    },
+    {
+      "coefficients": [
+        4,
+        6,
+        3,
+        12
+      ],
+      "all19HasseConditions": "PASS",
+      "activeGcdsAscending": {
+        "1": [
+          10,
+          11,
+          4,
+          1
+        ],
+        "3": [
+          11,
+          1
+        ],
+        "15": [
+          11,
+          5,
+          9,
+          1
+        ],
+        "16": [
+          12,
+          1
+        ]
+      },
+      "primeFieldRootMultiplicities": {
+        "0": 1,
+        "1": 2,
+        "2": 1,
+        "4": 3,
+        "9": 1
+      }
+    },
+    {
+      "coefficients": [
+        4,
+        6,
+        10,
+        5
+      ],
+      "all19HasseConditions": "PASS",
+      "activeGcdsAscending": {
+        "1": [
+          7,
+          12,
+          1
+        ],
+        "3": [
+          2,
+          1
+        ],
+        "15": [
+          12,
+          1
+        ],
+        "16": [
+          12,
+          1
+        ]
+      },
+      "primeFieldRootMultiplicities": {
+        "0": 1,
+        "1": 1,
+        "3": 2,
+        "11": 2
+      }
+    }
+  ],
+  "quadraticUBranch": "u^2+4u-2 irreducible over F13; two distinct F13bar roots",
+  "geometricMarkedAssignmentsBeforeLiftFilter": 9,
+  "geometricMarkedAssignmentsAfterDZeroLiftFilter": 6,
+  "scope": "Witness classification given the separately certified three coefficient points; no lift existence claim"
+}

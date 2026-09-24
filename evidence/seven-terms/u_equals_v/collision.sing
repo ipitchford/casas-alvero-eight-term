@@ -1,0 +1,28 @@
+ring r=0,(x,u),dp;
+poly A=-4845;
+poly B=-15504*u^5+77520*u;
+poly L0=1-120*u^7+119*u^9;
+poly N0=4844-77520*u+15504*u^5+32558400*u^13-32485725*u^15-7053180*u^17+7037677*u^19;
+poly L=L0/(u-1);
+poly N=N0/(u-1);
+if(L*(u-1)!=L0 || N*(u-1)!=N0){ERROR("bad exact division");}
+print("PARAMETRIZATION_GCD");gcd(L,N);
+print("L");print(L);
+print("N");print(N);
+poly D=(7053180*u^17-32558400*u^13)*L-120*N*u^7;
+poly E=(-7037677*u^19+32485725*u^15)*L+119*N*u^9;
+poly Q=L*(x^19+A*x^15+B*x^14)+N*x^9+D*x^2+E;
+poly H10=L*(184756*x^10+8008*A*x^6+3003*B*x^5)+N;
+poly H1=L*(20*x^19+16*A*x^15+15*B*x^14)+10*N*x^9+3*D*x^2+E;
+print("DEGREES_L_N_D_E");print(deg(L));print(deg(N));print(deg(D));print(deg(E));
+int started=timer;
+poly R10=resultant(Q,H10,x);
+print("R10_TIME");print(timer-started);print("R10_DEGREE");print(deg(R10));
+poly R1=resultant(Q,H1,x);
+print("R1_TIME");print(timer-started);print("R1_DEGREE");print(deg(R1));
+poly G=gcd(N*R10,R1);
+print("GCD");print(G);
+print("FACTORS");factorize(G);
+print("R10");print(R10);
+print("R1");print(R1);
+quit;

@@ -1,0 +1,134 @@
+{
+  "scope": "Single marked row9 residue scenario; not complete row9 exclusion.",
+  "unramifiedPolynomialLowToHigh": [
+    -3,
+    -5,
+    -2,
+    0,
+    -3,
+    1
+  ],
+  "deficiencySupport": [
+    3,
+    4,
+    9,
+    10,
+    14,
+    18,
+    19
+  ],
+  "residueWitnesses": {
+    "s": [
+      15,
+      0,
+      0,
+      0,
+      0
+    ],
+    "t": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "residueParameters": {
+    "4": [
+      10,
+      0,
+      0,
+      0,
+      0
+    ],
+    "9": [
+      14,
+      7,
+      8,
+      5,
+      12
+    ],
+    "10": [
+      4,
+      15,
+      5,
+      1,
+      16
+    ],
+    "14": [
+      13,
+      9,
+      3,
+      4,
+      13
+    ]
+  },
+  "jacobianDiagonalMod17": [
+    [
+      8,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      13,
+      9,
+      5,
+      4,
+      1
+    ]
+  ],
+  "lifts": [
+    {
+      "precision": 2,
+      "modulus": 289,
+      "s": [
+        202,
+        187,
+        255,
+        51,
+        238
+      ],
+      "t": [
+        272,
+        222,
+        255,
+        153,
+        187
+      ],
+      "F_s": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "F_t": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "T": [
+        221,
+        187,
+        221,
+        136,
+        51
+      ]
+    }
+  ],
+  "status": "SCENARIO EXCLUDED",
+  "firstNonzeroPrecision": 2,
+  "valuationOfT": 1,
+  "firstNonzeroTDigit": [
+    13,
+    11,
+    13,
+    8,
+    3
+  ],
+  "frobeniusConjugateScenariosExcluded": 5
+}

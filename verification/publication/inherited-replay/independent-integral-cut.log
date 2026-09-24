@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "unitWitnessNormalizedDegree": 4,
+      "oppositeWitnessNormalizedDegree": 16,
+      "integerIdentityTerms": 148,
+      "quotientFingerprint": "89751447a74be19db54233b8900c0af93a15f7d4483d811e0426d41b81786ce6",
+      "residueCutIndices": [
+        8,
+        12,
+        18
+      ],
+      "survivingCoefficientPatterns": 465,
+      "survivingMarkedAssignments": 40960,
+      "oppositeClusterRootValuationLowerBound": "1/14"
+    },
+    {
+      "unitWitnessNormalizedDegree": 16,
+      "oppositeWitnessNormalizedDegree": 4,
+      "integerIdentityTerms": 250,
+      "quotientFingerprint": "1f0509fef8e54ee5b0e7f83f20cf3628b09fb4030e7dba7bf0446cce665ad939",
+      "residueCutIndices": [
+        2,
+        12,
+        18
+      ],
+      "survivingCoefficientPatterns": 603,
+      "survivingMarkedAssignments": 40960,
+      "oppositeClusterRootValuationLowerBound": "1/2"
+    }
+  ],
+  "scope": "Exact integral necessary identities; no exclusion of characteristic-zero lifts"
+}

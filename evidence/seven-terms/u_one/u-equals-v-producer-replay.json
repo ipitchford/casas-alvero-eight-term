@@ -1,0 +1,162 @@
+{
+  "status": "PASS",
+  "B2": -341088,
+  "Bprime2_mod13": 11,
+  "initialJacobianMod13": [
+    [
+      10,
+      6
+    ],
+    [
+      4,
+      1
+    ]
+  ],
+  "initialJacobianDeterminantMod13": 12,
+  "rows_F_H3_H1at1_f4": [
+    [
+      10,
+      6,
+      8
+    ],
+    [
+      4,
+      1,
+      7
+    ],
+    [
+      11,
+      2,
+      9
+    ],
+    [
+      10,
+      8,
+      5
+    ]
+  ],
+  "constantJets": [
+    7,
+    6,
+    4,
+    3
+  ],
+  "H10_div13_coefficient_residues": [
+    3,
+    7,
+    8
+  ],
+  "root4_Hasse_values_orders0to3": [
+    0,
+    0,
+    0,
+    5
+  ],
+  "root1_Hasse_values_orders0to2": [
+    0,
+    0,
+    9
+  ],
+  "root2_derivative": 9,
+  "branches": [
+    {
+      "branch": "wbar1",
+      "jetMatrix": [
+        [
+          10,
+          6,
+          8
+        ],
+        [
+          4,
+          1,
+          7
+        ],
+        [
+          11,
+          2,
+          9
+        ]
+      ],
+      "constantVector": [
+        7,
+        6,
+        4
+      ],
+      "matrixDeterminantMod13": 3,
+      "solution_r_l_k": [
+        12,
+        3,
+        3
+      ],
+      "normalizedH10LowFirst": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        7,
+        11,
+        0,
+        0,
+        0,
+        1
+      ],
+      "residualCommonRootGcd": [
+        9,
+        1
+      ],
+      "GprimeAt4": 3,
+      "f4_div13_jet": 6
+    },
+    {
+      "branch": "wbar4",
+      "jetMatrix": [
+        [
+          10,
+          6,
+          8
+        ],
+        [
+          4,
+          1,
+          7
+        ],
+        [
+          10,
+          8,
+          5
+        ]
+      ],
+      "constantVector": [
+        7,
+        6,
+        3
+      ],
+      "matrixDeterminantMod13": 5,
+      "solution_r_l_k": [
+        5,
+        7,
+        12
+      ],
+      "normalizedH10LowFirst": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        7,
+        11,
+        0,
+        0,
+        0,
+        1
+      ],
+      "residualCommonRootGcd": [
+        1
+      ],
+      "GprimeAt4": 3,
+      "f4_div13_jet": 0
+    }
+  ]
+}

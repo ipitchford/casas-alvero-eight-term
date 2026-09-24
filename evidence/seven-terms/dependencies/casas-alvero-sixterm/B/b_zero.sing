@@ -1,0 +1,20 @@
+ring r=13,(v,w),dp;
+poly c=-9*v^17-3*v^14;
+poly d=-5-c;
+poly E3=v*(5*v^19+v^16+d);
+poly E1=w*(w^19+4*w^16+c*w^2+d);
+poly D1=7*w^19+3*w^16+3*c*w^2+d;
+ideal I=E3,E1,D1;
+matrix L=lift(I,ideal(1));
+print("IDENTITY");print(I*L);
+int i;poly z;
+for(i=1;i<=3;i++)
+{
+  z=L[i,1];
+  while(z!=0)
+  {
+    print("C|"+string(i)+"|"+string(leadcoef(z))+"|"+string(leadexp(z)));
+    z=z-lead(z);
+  }
+}
+quit;

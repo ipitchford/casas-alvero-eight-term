@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "residualGcdsLowFirst": {
+    "17": [
+      12,
+      1
+    ],
+    "16": [
+      12,
+      1
+    ],
+    "2": [
+      12,
+      1
+    ],
+    "1": [
+      6,
+      1
+    ]
+  },
+  "residualDerivativeAt1": 11,
+  "collisionCoefficientAffinePairs": {
+    "A": [
+      -1140,
+      0
+    ],
+    "B": [
+      14535,
+      0
+    ],
+    "C": [
+      -1589350,
+      -45
+    ],
+    "D": [
+      1575954,
+      44
+    ]
+  },
+  "H10BinomialCoefficients": [
+    184756,
+    19448,
+    8008
+  ],
+  "a_b_zero_chart": {
+    "H1_minus_7P": [
+      10,
+      1
+    ],
+    "P_at_3": 12
+  }
+}
